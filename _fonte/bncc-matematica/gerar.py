@@ -28,6 +28,7 @@ CONFIG = {
     'disciplina': 'Matemática', 'arquivo': 'bncc-matematica',
     'anos': [[a, f'{a}º ano'] for a in ORDEM], 'periodo': 'do 1º ao 9º ano',
     'eixos': UNIDADES, 'termoEixo': 'unidade temática', 'termoEixos': 'unidades temáticas', 'passo': 'ano', 'trilhaForte': True,
+    'etapas': [['iniciais', 'Anos iniciais', [1, 2, 3, 4, 5], 'dos anos iniciais, 1º ao 5º ano'], ['finais', 'Anos finais', [6, 7, 8, 9], 'dos anos finais, 6º ao 9º ano']],
     'material': 'material gratuito no ohtopico.com.br', 'materiais': 'materiais gratuitos no ohtopico.com.br',
 }
 

@@ -18,6 +18,7 @@ CONFIG = {
     'disciplina': 'Arte', 'arquivo': 'bncc-arte',
     'anos': [[1, '1º ao 5º ano', 'nos anos iniciais (1º ao 5º)'], [6, '6º ao 9º ano', 'nos anos finais (6º ao 9º)']],
     'periodo': 'do 1º ao 9º ano', 'eixos': LINGUAGENS, 'termoEixo': 'linguagem', 'termoEixos': 'linguagens', 'passo': 'etapa',
+    'etapas': [['iniciais', 'Anos iniciais', [1, 2, 3, 4, 5], 'dos anos iniciais, 1º ao 5º ano'], ['finais', 'Anos finais', [6, 7, 8, 9], 'dos anos finais, 6º ao 9º ano']],
     'material': '', 'anosVisao': [[a, f'{a}º ano'] for a in range(1, 10)],
 }
 

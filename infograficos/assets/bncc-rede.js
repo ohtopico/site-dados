@@ -3,6 +3,33 @@
 (function () {
   const D = window.BNCC, C = D.config;
   const $ = id => document.getElementById(id);
+
+  // ---------- Etapa (anos iniciais / anos finais) ----------
+  // C.etapas = [[id, nome, [anos], período]]. A escolha vai na URL (?etapa=iniciais) e todos os
+  // gráficos são desenhados só com as habilidades daqueles anos.
+  if (C.etapas) {
+    let atual = '';
+    try { atual = new URLSearchParams(location.search).get('etapa') || ''; } catch (e) {}
+    const et = C.etapas.find(x => x[0] === atual);
+    if (et) {
+      const dentro = a => et[2].includes(a);
+      D.habilidades = D.habilidades.filter(h => dentro(h.ano));
+      const ok = new Set(D.habilidades.map(h => h.codigo));
+      D.ligacoes = D.ligacoes.filter(l => ok.has(l.de) && ok.has(l.para));
+      D.fios = D.fios.map(f => ({ ...f, habs: f.habs.filter(c => ok.has(c)) })).filter(f => f.habs.length);
+      C.anos = C.anos.filter(a => dentro(a[0]));
+      if (C.anosVisao) C.anosVisao = C.anosVisao.filter(a => dentro(a[0]));
+      C.periodo = et[3];
+    }
+    const box = document.createElement('div');
+    box.className = 'seletor'; box.id = 'etapa'; box.setAttribute('role', 'group'); box.setAttribute('aria-label', 'Etapa');
+    box.innerHTML = '<span class="muted" style="align-self:center">Ver:</span>' +
+      [['', 'Todos os anos'], ...C.etapas.map(x => [x[0], `${x[1]} (${x[2][0]}º ao ${x[2][x[2].length - 1]}º)`])].map(([id, nome]) =>
+        `<a class="chip" href="?${id ? 'etapa=' + id : ''}#etapa" aria-pressed="${String(id === (et ? et[0] : ''))}">${nome}</a>`).join('');
+    const resumo = $('resumo');
+    resumo.parentNode.insertBefore(box, resumo);
+    box.style.marginBottom = '16px';
+  }
   const NS = 'http://www.w3.org/2000/svg';
   const ANOS = C.anos.map(a => a[0]);
   const NOMES = Object.fromEntries(C.anos);
@@ -45,7 +72,8 @@
   const verboTop = Object.entries(verbos).sort((a, b) => b[1] - a[1])[0];
   $('resumo').innerHTML = [
     [D.habilidades.length, `habilidades de ${C.disciplina} ${PERIODO}`],
-    [D.ligacoes.length, ETAPA ? 'ligações de conteúdo entre as duas etapas' : 'ligações de conteúdo entre anos seguidos'],
+    ETAPA && ANOS.length === 1 ? [C.anosVisao.length, 'anos em que estas habilidades valem, aprofundadas a cada ano']
+      : [D.ligacoes.length, ETAPA ? 'ligações de conteúdo entre as duas etapas' : 'ligações de conteúdo entre anos seguidos'],
     [semAntes.length, `${semAntes.length === 1 ? 'habilidade que começa' : 'habilidades que começam'} um assunto novo (sem ligação com a ${ANTERIOR})`.replace('a ano', 'o ano')],
     [verboTop[0], `é o verbo mais usado, em ${verboTop[1]} habilidades`],
     C.material ? [comMaterial, 'habilidades com pelo menos um material gratuito pronto'] : [C.eixos.length, C.termoEixos]

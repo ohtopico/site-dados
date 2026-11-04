@@ -7,7 +7,7 @@ import html, json, os
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.join(AQUI, '..', '..')
-V = '202611041330'
+V = '202611041345'
 METODO = ('o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, '
           'cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, '
           'com um pequeno bônus quando são {bonus}. Cada habilidade se liga às duas mais parecidas {seguinte}, se a semelhança passar de 0,12. '
