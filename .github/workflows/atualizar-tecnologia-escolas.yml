@@ -41,10 +41,14 @@ jobs:
             grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt && break
             echo "tentativa $t sem certificado:"; tail -3 /tmp/inep-sc.err; sleep 10
           done
-          grep -E '^ *[0-9] s:|^ *i:' /tmp/inep-sc.txt || true
-          openssl x509 -in /tmp/inep-sc.txt -outform PEM > /tmp/inep-folha.pem
-          openssl x509 -in /tmp/inep-folha.pem -noout -subject -issuer
-          aia=$(openssl x509 -in /tmp/inep-folha.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+          # se o INEP não responder ao openssl, usa o intermediário conhecido (RNP ICPEdu, 2025)
+          aia=http://secure.globalsign.com/cacert/rnpicpedugr46ovtlsca2025.crt
+          if grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt; then
+            grep -E '^ *[0-9] s:|^ *i:' /tmp/inep-sc.txt || true
+            openssl x509 -in /tmp/inep-sc.txt -outform PEM > /tmp/inep-folha.pem
+            lido=$(openssl x509 -in /tmp/inep-folha.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+            [ -n "$lido" ] && aia="$lido"
+          fi
           echo "intermediário: $aia"
           curl -fsSL "$aia" -o /tmp/inep-inter.crt
           openssl x509 -inform DER -in /tmp/inep-inter.crt -out /tmp/inep-inter.pem 2>/dev/null || cp /tmp/inep-inter.crt /tmp/inep-inter.pem
