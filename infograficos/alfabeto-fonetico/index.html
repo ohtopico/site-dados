@@ -60,14 +60,33 @@
     <div class="wrap"><div class="hero-inner">
       <span class="terminal">$ alfabeto fonético internacional</span>
       <h1>Os sons das línguas <mark>em dados</mark></h1>
-      <p class="lead">O quadro do Alfabeto Fonético Internacional (IPA) com som. Clique em um símbolo para ouvir e ver em quantas línguas do mundo ele existe e em quais famílias linguísticas aparece mais.</p>
-      <ul class="pilulas"><li>111 símbolos</li><li>110 gravações</li><li>2.084 línguas</li><li>179 famílias</li><li>dados para baixar</li></ul>
+      <p class="lead">O quadro do Alfabeto Fonético Internacional (IPA) com som. Escreva uma frase para ver a transcrição, ou clique em um símbolo para ouvir e ver em quantas línguas do mundo ele existe e em quais famílias linguísticas aparece mais.</p>
+      <ul class="pilulas"><li>transcrição de texto</li><li>111 símbolos</li><li>110 gravações</li><li>2.084 línguas</li><li>179 famílias</li><li>dados para baixar</li></ul>
     </div></div>
   </section>
 
   <section class="block">
     <div class="wrap">
       <div class="resumo-num" id="resumo"></div>
+    </div>
+  </section>
+
+  <section class="block" id="transcrever">
+    <div class="wrap">
+      <span class="eyebrow">Transcreva</span>
+      <h2>Escreva uma frase e veja como ela fica no IPA</h2>
+      <p class="muted">Digite no nosso alfabeto, escolha o idioma e veja a transcrição fonética. Clique em um símbolo para ouvir o som dele e ver no quadro.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>transcrever.html</span></div>
+        <div class="janela-corpo">
+          <div class="controles-ipa">
+            <label class="busca" style="flex:1 1 320px"><span class="sr-only">Texto</span><input type="text" id="tr-texto" value="Os sons das línguas do mundo" autocomplete="off" spellcheck="false" style="width:100%;min-width:0"></label>
+            <label><span class="sr-only">Idioma</span><select id="tr-idioma" aria-label="Idioma do texto"></select></label>
+            <button class="chip" type="button" id="tr-ouvir">Ouvir símbolo por símbolo</button>
+          </div>
+          <p class="tr-saida" id="tr-saida" aria-live="polite"></p>
+          <div class="tr-palavras" id="tr-palavras"></div>
+          <p class="nota" id="tr-nota"></p>
+        </div></div>
     </div>
   </section>
 
@@ -127,6 +146,7 @@
         <li><b>Famílias e regiões:</b> <a href="https://glottolog.org/">Glottolog 5.2.1</a> (Hammarström, Forkel, Haspelmath e Bank), licença CC BY 4.0. Os dialetos contam como a língua a que pertencem. As línguas isoladas, que não têm parentes conhecidos, ficam juntas no grupo "Línguas isoladas". Os nomes das famílias em português são os mesmos do infográfico de <a href="../familias-de-linguas/">famílias de línguas</a>, e cada família tem link para lá.</li>
         <li><b>Como os sons são contados:</b> cada símbolo do quadro conta as línguas que têm aquele som como fonema, também quando a fonte marca um detalhe do lugar da língua nos dentes (por exemplo, t̪ dental conta como t). Formas com aspiração (tʰ), alongamento (tː) ou outra articulação junto (tʷ) são fonemas diferentes e aparecem só em "sons parecidos". Os cliques contam com qualquer acompanhamento (kǃ, ŋǃ), que é como as línguas os usam.</li>
         <li><b>Gravações:</b> arquivos do <a href="https://commons.wikimedia.org/wiki/Category:General_phonetics">Wikimedia Commons</a>, de Peter Isotalo, Erutoon, TFighterPilot, Adamsa123 e outros autores, licença <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, convertidos para MP3. O nome de cada arquivo original aparece no painel do som. O símbolo ɺ ainda não tem gravação.</li>
+        <li><b>Transcrição:</b> é feita no navegador, por regras de leitura da ortografia escritas para esta página (português do Brasil, espanhol, italiano e alemão), com divisão de sílabas e sílaba tônica. É uma transcrição aproximada: as regras não sabem, por exemplo, se o "e" de "pela" é aberto ou fechado, nem a pronúncia de nomes próprios e palavras estrangeiras. O espanhol segue a pronúncia americana (c e z como s). O inglês vem do dicionário de pronúncia <a href="https://github.com/cmusphinx/cmudict">CMUdict</a> (Carnegie Mellon University, licença BSD), com cerca de 125 mil palavras do inglês dos Estados Unidos; palavras fora do dicionário aparecem com "?".</li>
         <li><b>Português:</b> a marca de "fonema do português" segue o português do Brasil. Os vários "r" de "rato" (x, χ, h, ʁ, r) e outras pronúncias regionais aparecem como "alguns sotaques".</li>
         <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/alfabeto-fonetico">_fonte/alfabeto-fonetico</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação das fontes; os dados e os sons seguem a licença CC BY-SA 3.0.</li>
       </ul>
@@ -139,6 +159,7 @@
   <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
 </div></footer>
 <script src="dados.js?v=202611041700"></script>
-<script src="ipa.js?v=202611041700"></script>
+<script src="transcrever.js?v=202611041730"></script>
+<script src="ipa.js?v=202611041730"></script>
 </body>
 </html>
