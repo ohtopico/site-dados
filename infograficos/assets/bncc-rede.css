@@ -47,3 +47,7 @@ button.cod:hover, a.cod:hover { background: var(--pill); }
 .lista-habs .meta-hab { font-size: 13px; color: var(--ink-2); }
 .lista-habs p { margin: 0 0 6px; }
 .lista-habs .acoes { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
+
+/* "Sobre os dados": texto alinhado com o título e na largura do bloco */
+.leitura { max-width: none; padding-left: 0; list-style: none; gap: 12px; }
+.leitura li { margin: 0; }
