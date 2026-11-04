@@ -33,10 +33,20 @@ jobs:
       - name: Baixar os microdados do Censo Escolar (2019 em diante)
         run: |
           mkdir -p /tmp/censo
+          # O servidor do INEP não envia o certificado intermediário. Busca o
+          # intermediário pelo endereço indicado no próprio certificado (AIA)
+          # e verifica normalmente com ele.
+          echo | openssl s_client -connect download.inep.gov.br:443 -servername download.inep.gov.br 2>/dev/null \
+            | openssl x509 -outform PEM > /tmp/inep-folha.pem
+          aia=$(openssl x509 -in /tmp/inep-folha.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+          echo "intermediário: $aia"
+          curl -fsSL "$aia" -o /tmp/inep-inter.crt
+          openssl x509 -inform DER -in /tmp/inep-inter.crt -out /tmp/inep-inter.pem 2>/dev/null || cp /tmp/inep-inter.crt /tmp/inep-inter.pem
+          cat /etc/ssl/certs/ca-certificates.crt /tmp/inep-inter.pem > /tmp/ca-inep.pem
           ano_atual=$(date +%Y)
           for ano in $(seq 2019 "$ano_atual"); do
             url="https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_${ano}.zip"
-            if curl -fsSL --retry 4 --retry-delay 10 -m 1500 -o "/tmp/censo/${ano}.zip" "$url"; then
+            if curl -fsSL --cacert /tmp/ca-inep.pem --retry 4 --retry-delay 10 -m 1500 -o "/tmp/censo/${ano}.zip" "$url"; then
               echo "baixado $ano: $(du -h /tmp/censo/${ano}.zip | cut -f1)"
             else
               echo "sem microdados para $ano"
