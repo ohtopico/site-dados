@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bastidores do painel de dados da educação no Vale do Rio Pardo | Júlia Quoos</title>
+<meta name="description" content="Como juntei o Censo Escolar do INEP e o Censo do IBGE de 21 municípios gaúchos em um painel interativo, e as decisões que os dados públicos exigem.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/">
+<meta property="og:title" content="Bastidores do painel de dados da educação no Vale do Rio Pardo | Júlia Quoos">
+<meta property="og:description" content="Como juntei o Censo Escolar do INEP e o Censo do IBGE de 21 municípios gaúchos em um painel interativo, e as decisões que os dados públicos exigem.">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/dados-da-regiao/og-dados-da-regiao.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-04">
+<meta property="article:section" content="Projetos">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/#post",
+      "headline": "Bastidores do painel de dados da educação no Vale do Rio Pardo",
+      "description": "Como juntei o Censo Escolar do INEP e o Censo do IBGE de 21 municípios gaúchos em um painel interativo, e as decisões que os dados públicos exigem.",
+      "url": "https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/",
+      "mainEntityOfPage": "https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/",
+      "image": "https://juliaroberta.com/infograficos/dados-da-regiao/og-dados-da-regiao.jpg",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "pt-BR",
+      "keywords": [
+        "Censo Escolar",
+        "dados abertos",
+        "visualização de dados",
+        "INEP",
+        "IBGE"
+      ],
+      "articleSection": "Projetos",
+      "author": {
+        "@type": "Person",
+        "@id": "https://juliaroberta.com/#julia",
+        "name": "Júlia Roberta Quoos Alves",
+        "url": "https://juliaroberta.com/"
+      },
+      "publisher": {
+        "@id": "https://juliaroberta.com/#julia"
+      },
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://juliaroberta.com/blog/#blog",
+        "name": "Blog de dados de Júlia Roberta Quoos Alves"
+      },
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://juliaroberta.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://juliaroberta.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bastidores do painel de dados da educação no Vale do Rio Pardo",
+          "item": "https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/assets/blog.css?v=6e76ae2a56">
+<link rel="alternate" type="application/rss+xml" title="Blog de dados de Júlia Roberta Quoos Alves" href="/blog/feed.xml">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="area">
+<div class="janela">
+    <header class="cabecalho">
+        <a class="marca-site" href="/">Júlia Quoos</a>
+        <nav class="cabecalho-links" aria-label="Principal">
+            <a href="/blog/">Blog</a>
+            <a href="/infograficos/">Infográficos</a>
+            <a href="/curriculo/">Currículo</a>
+        </nav>
+    </header>
+    <div class="corpo">
+        <main class="pagina" id="conteudo" tabindex="-1">
+<article class="texto">
+    <nav class="trilha" aria-label="Você está em"><ol><li><a href="/">Início</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Projetos</li></ol></nav>
+    <p class="rotulo">Projetos</p>
+    <h1>Bastidores do painel de dados da educação no Vale do Rio Pardo</h1>
+    <p class="linha-fina">Como juntei o Censo Escolar do INEP e o Censo do IBGE de 21 municípios gaúchos em um painel interativo, e as decisões que os dados públicos exigem.</p>
+    <div class="meta">
+        <img src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="36" height="36">
+        <span>Por <a href="/curriculo/" rel="author">Júlia Roberta Quoos Alves</a></span>
+        <span><time datetime="2026-11-04">4 de novembro de 2026</time></span>
+        <span>3 min de leitura</span>
+    </div>
+    <div class="artigo">
+<p>O <a href="/infograficos/dados-da-regiao/">painel de dados da educação no Vale do Rio Pardo</a> reúne escolas, matrículas, estrutura das escolas, alfabetização e renda de 21 municípios gaúchos, de 2010 a 2025. Neste texto conto de onde vêm os números e quais decisões precisei tomar no caminho, porque é nelas que um painel com dados públicos fica confiável ou não.</p>
+
+<h2>Duas fontes que não conversam sozinhas</h2>
+<p>A parte da escola vem dos microdados do Censo Escolar da Educação Básica, do INEP, nas edições de 2010, 2022 e 2025, considerando só as escolas em atividade. A parte de fora da escola vem do IBGE: os Censos Demográficos de 2010 e 2022 consultados no Sidra, o PIB dos Municípios e a Produção Agrícola Municipal.</p>
+<p>Cada fonte tem o seu recorte, o seu calendário e o seu jeito de nomear as coisas. O trabalho começa por colocar tudo na mesma chave, o código do município do IBGE, e por decidir quais anos dá para comparar de verdade.</p>
+
+<h2>Comparar só o que é comparável</h2>
+<p>Três cuidados aparecem no próprio painel, nas notas sobre os dados:</p>
+<ul>
+<li><strong>Nem toda pergunta existia em 2010.</strong> Água potável e acessibilidade nas escolas não eram perguntadas no Censo Escolar de 2010. Em vez de inventar uma linha de base, o painel mostra esses itens só a partir de quando existem.</li>
+<li><strong>A mesma palavra pode medir coisas diferentes.</strong> Em 2022, "água da rede" no Censo Demográfico conta os domicílios que usam a rede como forma principal. Por isso a comparação com 2010 é aproximada, e o painel diz isso.</li>
+<li><strong>Dinheiro de anos diferentes não se soma direto.</strong> Os valores em reais de 2010 foram corrigidos pelo IPCA antes de qualquer comparação de renda.</li>
+</ul>
+<p>Outro detalhe: as matrículas, turmas e professores de 2025 ainda não estavam publicados quando montei o painel. Os gráficos de matrículas param em 2022 e avisam por quê.</p>
+
+<h2>Quando o dado vem de um gráfico</h2>
+<p>Alguns valores de 2010 dos municípios vizinhos de Candelária (água, lixo, alfabetização e renda) só estavam disponíveis em um gráfico, não em tabela. Eu li esses valores pela posição no gráfico original. Eles entram no painel em cinza e com asterisco, para que ninguém confunda estimativa com dado medido. A alfabetização de 2010 na região de Santa Cruz do Sul foi calculada a partir do avanço em pontos percentuais e pode variar 0,1 ponto.</p>
+<p>Marcar a incerteza dá mais trabalho do que esconder, mas é o que permite a alguém usar o painel numa reunião de escola ou numa reportagem sem medo de errar.</p>
+
+<h2>Regiões que se sobrepõem</h2>
+<p>O painel tem três recortes: Candelária e vizinhos (9 municípios), Novo Cabrais e vizinhos (5) e a microrregião de Santa Cruz do Sul do IBGE (16). Alguns municípios aparecem em mais de uma região, por isso a soma das regiões passa de 21. O mapa usa a malha municipal do IBGE.</p>
+<p>Para um município, também fiz uma página própria, a de <a href="/infograficos/dados-da-regiao/novo-cabrais/">Novo Cabrais</a>, que conta em texto o que mudou nas escolas e na vida de quem mora lá entre 2010 e 2022.</p>
+
+<h2>O que fica de lição</h2>
+<p>Um painel com dados públicos não é só gráfico. É uma série de pequenas escolhas: o que comparar, o que deixar de fora, como mostrar a incerteza. Deixar essas escolhas escritas na própria página, em "Fontes e notas", é o que separa um painel bonito de um painel útil.</p>
+<p>Os dados tratados são de uso livre com citação da fonte. Se encontrar algum erro ou tiver sugestão de indicador, escreva para <a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a>.</p>
+    </div>
+    <div class="compartilhar">
+        <p>Compartilhar:</p>
+        <a class="btn98" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjuliaroberta.com%2Fblog%2Fbastidores-painel-educacao-vale-do-rio-pardo%2F" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (abre em nova aba)</span></a>
+        <a class="btn98" href="https://wa.me/?text=Bastidores%20do%20painel%20de%20dados%20da%20educa%C3%A7%C3%A3o%20no%20Vale%20do%20Rio%20Pardo%20https%3A%2F%2Fjuliaroberta.com%2Fblog%2Fbastidores-painel-educacao-vale-do-rio-pardo%2F" target="_blank" rel="noopener">WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+    </div>
+    <aside class="autora" aria-labelledby="sobre-autora">
+        <img src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="72" height="72" loading="lazy">
+        <div>
+            <h2 id="sobre-autora">Júlia Roberta Quoos Alves</h2>
+            <p>Engenheira de dados e de machine learning, especialista em Ciência de Dados e Big Data Analytics (UNISC) e mestranda em Ciência da Computação na UFSM.</p>
+            <p class="links"><a href="/curriculo/">Currículo</a> <a href="https://github.com/ohtopico" rel="me">GitHub</a> <a href="https://www.linkedin.com/in/ohtopico" rel="me">LinkedIn</a></p>
+        </div>
+    </aside>
+</article>
+        </main>
+        <aside class="lateral lateral-esq" aria-label="Menu do blog">
+            <section class="caixa caixa-amarela">
+                <h2 class="caixa-titulo">★ Navegue</h2>
+                <ul class="lista-menu"><li><a href="/"><span aria-hidden="true">◄</span> Área de trabalho</a></li><li><a href="/blog/"><span aria-hidden="true">⌂</span> Início do blog</a></li><li><a href="/infograficos/"><span aria-hidden="true">▲</span> Infográficos</a></li><li><a href="/infograficos/interesse-por-ia/notebooks/"><span aria-hidden="true">✎</span> Notebooks</a></li><li><a href="/curriculo/"><span aria-hidden="true">✦</span> Currículo</a></li></ul>
+                <button type="button" class="btn98 tema-btn" id="tema-btn"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg> Tema claro/escuro</button>
+            </section>
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Temas</h2>
+                <ul class="lista-menu"><li><a href="/blog/#projetos">Projetos</a></li></ul>
+            </section>
+            <section class="caixa caixa-verde">
+                <h2 class="caixa-titulo">★ Posts recentes</h2>
+                <ul class="lista-recentes"><li><a href="/blog/bastidores-painel-educacao-vale-do-rio-pardo/">Bastidores do painel de dados da educação no Vale do Rio Pardo</a></li></ul>
+            </section>
+        </aside>
+        <aside class="lateral lateral-dir" aria-label="Sobre a autora">
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Quem escreve</h2>
+                <img class="foto" src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="96" height="96" loading="lazy">
+                <p><strong>Júlia Roberta Quoos Alves</strong>, engenheira de dados e de machine learning, mestranda em Ciência da Computação na UFSM.</p>
+                <a class="btn98 escuro" href="/curriculo/">Currículo</a>
+            </section>
+            <section class="caixa caixa-amarela">
+                <h2 class="caixa-titulo">★ Site de docência</h2>
+                <p>Material didático, simuladores e formação de professores ficam em ohtopico.com.br.</p>
+                <a class="btn98 escuro" href="https://ohtopico.com.br/">Ir para o site</a>
+            </section>
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Selos</h2>
+                <ul class="selos">
+                    <li class="selo selo-amarelo">feito à mão</li>
+                    <li class="selo selo-verde">dados abertos</li>
+                    <li class="selo"><a href="/blog/feed.xml">RSS</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+</div>
+</div>
+<footer class="rodape">
+    <p>© 2026 Júlia Roberta Quoos Alves · dados e IA</p>
+    <p><a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a> · <a href="https://www.linkedin.com/in/ohtopico" rel="me">LinkedIn</a> · <a href="https://github.com/ohtopico" rel="me">GitHub</a> · <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</footer>
+<script src="/blog/assets/blog.js?v=6e76ae2a56" defer></script>
+</body>
+</html>

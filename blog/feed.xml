@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Blog de dados de Júlia Roberta Quoos Alves</title>
+  <link>https://juliaroberta.com/blog/</link>
+  <description>Bastidores de projetos de dados e IA, dados abertos do Brasil e notas de quem trabalha com engenharia de dados, machine learning e visualização.</description>
+  <language>pt-BR</language>
+  <item>
+    <title>Bastidores do painel de dados da educação no Vale do Rio Pardo</title>
+    <link>https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/</link>
+    <guid>https://juliaroberta.com/blog/bastidores-painel-educacao-vale-do-rio-pardo/</guid>
+    <pubDate>Wed, 04 Nov 2026 09:00:00 -0300</pubDate>
+    <description>Como juntei o Censo Escolar do INEP e o Censo do IBGE de 21 municípios gaúchos em um painel interativo, e as decisões que os dados públicos exigem.</description>
+  </item>
+</channel>
+</rss>

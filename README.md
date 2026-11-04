@@ -9,12 +9,17 @@ O trabalho com formação de professores, material didático, simuladores e blog
 | Caminho | O que é |
 |---|---|
 | `index.html` | Página inicial, no mesmo modelo de área de trabalho do ohtopico.com.br |
+| `blog/` | Blog de dados e IA, gerado por `_fonte/blog/gerar.py` |
 | `curriculo/` | Currículo de dados (a versão de docência fica em ohtopico.com.br/curriculo/) |
 | `infograficos/` | Painéis: dados da educação no Vale do Rio Pardo, Novo Cabrais, chuva do RS e El Niño, interesse por IA na Wikipédia, paisagem sonora de Nova York |
 | `infograficos/interesse-por-ia/notebooks/` | Página dos notebooks com dados da Wikipédia |
 | `notebooks/` | Notebooks (.ipynb) que abrem no Colab |
 | `assets/md.css` | Estilo compartilhado pelos infográficos |
-| `_fonte/` | Geradores (não publicados): `dados-da-regiao`, `interesse-ia`, `notebooks` |
+| `_fonte/` | Geradores (não publicados): `blog`, `dados-da-regiao`, `interesse-ia`, `notebooks` |
+
+## Blog
+
+Cada post é uma entrada em `_fonte/blog/posts.json` (slug, título, descrição, data, tema, imagem, alt) e um arquivo `_fonte/blog/conteudo/<slug>.html` com o texto. Posts com data futura ficam agendados: a Action `.github/workflows/publicar-blog.yml` roda todo dia às 6h (Brasília) e publica os que chegaram na data, além do índice, do RSS (`blog/feed.xml`) e do sitemap.
 
 ## Atualização automática
 
