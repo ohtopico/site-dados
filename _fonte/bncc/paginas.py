@@ -7,7 +7,7 @@ import html, json, os
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.join(AQUI, '..', '..')
-V = '202611041300'
+V = '202611041330'
 METODO = ('o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, '
           'cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, '
           'com um pequeno bônus quando são {bonus}. Cada habilidade se liga às duas mais parecidas {seguinte}, se a semelhança passar de 0,12. '
@@ -74,9 +74,9 @@ PAGINAS = [
         'og_alt': 'BNCC Arte em dados: as habilidades dos anos iniciais aos anos finais ligadas por conteúdo',
         'lead': 'As 61 habilidades de Arte do Ensino Fundamental, ligadas pelo conteúdo dos anos iniciais (1º ao 5º ano) para os anos finais (6º ao 9º ano). Clique em uma habilidade para ver de onde ela vem e para onde vai.',
         'pilulas': ['61 habilidades', '1º ao 9º ano', '5 linguagens', 'dados para baixar'],
-        'progressao': 'Na BNCC, as habilidades de Arte valem para blocos de anos: 26 para o 1º ao 5º ano e 35 para o 6º ao 9º ano. Cada caixinha é uma habilidade, na coluna do seu bloco. As linhas ligam habilidades dos dois blocos que tratam do mesmo conteúdo; quanto mais grossa, mais forte a ligação. Os fios seguem os objetos de conhecimento, como processos de criação ou patrimônio cultural.',
+        'progressao': 'Na BNCC, as habilidades de Arte valem para blocos de anos: 26 para o 1º ao 5º ano e 35 para o 6º ao 9º ano. Cada caixinha é uma habilidade, na coluna do seu bloco. As linhas ligam habilidades dos dois blocos que tratam do mesmo conteúdo; quanto mais grossa, mais forte a ligação. Os fios seguem os objetos de conhecimento, como processos de criação ou patrimônio cultural. Para ver ano a ano, use o quadro de linguagens ou o filtro de ano na lista.',
         'eixos_eyebrow': 'Linguagens', 'eixos_h2': 'Artes visuais, dança, música, teatro e artes integradas',
-        'eixos_p': 'Quantas habilidades de cada linguagem há em cada bloco de anos. Clique em um quadro para ver a lista.',
+        'eixos_p': 'Quantas habilidades de cada linguagem valem em cada ano. Como a BNCC agrupa Arte em dois blocos, os números se repetem do 1º ao 5º e do 6º ao 9º ano: o que muda de um ano para o outro é a profundidade, definida pela escola ou pela rede. Clique em um quadro para ver a lista.',
         'verbos_p': 'O verbo que abre cada habilidade diz o tipo de trabalho esperado: explorar, experimentar, criar, analisar. Clique em uma barra para ver as habilidades.',
         'material_h2': '', 'material_p': '',
         'busca': 'Buscar por código ou palavra, por exemplo: música',

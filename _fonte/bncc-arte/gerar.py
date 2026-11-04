@@ -18,12 +18,14 @@ CONFIG = {
     'disciplina': 'Arte', 'arquivo': 'bncc-arte',
     'anos': [[1, '1º ao 5º ano', 'nos anos iniciais (1º ao 5º)'], [6, '6º ao 9º ano', 'nos anos finais (6º ao 9º)']],
     'periodo': 'do 1º ao 9º ano', 'eixos': LINGUAGENS, 'termoEixo': 'linguagem', 'termoEixos': 'linguagens', 'passo': 'etapa',
-    'material': '',
+    'material': '', 'anosVisao': [[a, f'{a}º ano'] for a in range(1, 10)],
 }
 
 
 def main():
     habs = habilidades.habilidades()
+    for h in habs:
+        h['anos'] = list(range(1, 6)) if h['ano'] == 1 else list(range(6, 10))
     objetos = []
     for h in habs:
         if h['objeto'] not in objetos:

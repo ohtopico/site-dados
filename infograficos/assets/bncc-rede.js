@@ -14,6 +14,16 @@
   const NO = Object.fromEntries(C.anos.map(a => [a[0], a[2] || 'no ' + a[1]]));
   const no = a => NO[a];
   const PERIODO = C.periodo;
+  // Anos de leitura: em Arte a BNCC agrupa as habilidades em blocos (1º ao 5º, 6º ao 9º); cada
+  // habilidade traz em h.anos os anos em que vale, e o quadro, a lista e o filtro mostram ano a ano.
+  const ANOS_V = C.anosVisao ? C.anosVisao.map(a => a[0]) : ANOS;
+  const NOME_V = C.anosVisao ? Object.fromEntries(C.anosVisao) : NOMES;
+  const vale = (h, a) => h.anos ? h.anos.includes(a) : h.ano === a;
+  const valeTexto = h => {
+    if (!h.anos) return anoNome(h.ano);
+    const n = h.anos.map(a => a + 'º');
+    return 'vale para o ' + n.slice(0, -1).join(', ') + ' e ' + n[n.length - 1] + ' ano';
+  };
   const TIPOS = { jogo: ['jogo', 'jogos'], plano: ['plano de aula', 'planos de aula'], ficha: ['ficha', 'fichas'], '3d': ['recurso 3D', 'recursos 3D'], adaptada: ['ficha adaptada', 'fichas adaptadas'], revisao: ['ficha de revisão', 'fichas de revisão'] };
   const H = Object.fromEntries(D.habilidades.map(h => [h.codigo, h]));
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -45,6 +55,7 @@
   let filtro = null; // { texto, teste }
   function filtrar(texto, teste, rolar = true) {
     filtro = { texto, teste };
+    const sel = $('filtro-ano'); if (sel && rolar) sel.value = '';
     $('busca').value = '';
     desenharLista();
     if (rolar) $('t-lista').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
@@ -134,7 +145,7 @@
     const link = h.link ? ` <a href="${h.link}">${esc(h.linkTexto || 'Ver planos, jogos e fichas de ' + c)}</a>` : '';
     $('detalhe').innerHTML = `
       <h3>${h.codigo} · ${esc(h.objeto)}</h3>
-      <p class="muted">${anoNome(h.ano)} · ${esc(EIXOS[h.eixo])}</p>
+      <p class="muted">${h.anos ? anoNome(h.ano) + ' (' + valeTexto(h) + ')' : anoNome(h.ano)} · ${esc(EIXOS[h.eixo])}</p>
       <p>${esc(h.texto)}</p>
       <p><b>Trilha:</b></p>
       <div class="trilha">${porAno.map(l => `<span><span class="muted">${anoNome(H[l[0]].ano)}:</span> ${l.map(codBtn).join(' ')}</span>`).join('<span class="seta" aria-hidden="true">→</span>')}</div>
@@ -175,17 +186,17 @@
 
   // ---------- Mapa de calor eixo x ano ----------
   const tab = $('t-eixos');
-  const cont = (e, a) => D.habilidades.filter(h => h.eixo === e && h.ano === a).length;
-  const maxC = Math.max(...Object.keys(EIXOS).flatMap(e => ANOS.map(a => cont(e, a))));
-  tab.innerHTML = `<thead><tr><th scope="col"></th>${ANOS.map(a => `<th scope="col">${anoNome(a)}</th>`).join('')}</tr></thead><tbody>` +
-    Object.entries(EIXOS).map(([e, n]) => `<tr><th scope="row">${n}</th>${ANOS.map(a => {
+  const cont = (e, a) => D.habilidades.filter(h => h.eixo === e && vale(h, a)).length;
+  const maxC = Math.max(...Object.keys(EIXOS).flatMap(e => ANOS_V.map(a => cont(e, a))));
+  tab.innerHTML = `<thead><tr><th scope="col"></th>${ANOS_V.map(a => `<th scope="col">${NOME_V[a]}</th>`).join('')}</tr></thead><tbody>` +
+    Object.entries(EIXOS).map(([e, n]) => `<tr><th scope="row">${n}</th>${ANOS_V.map(a => {
       const c = cont(e, a), op = c ? .25 + .75 * c / maxC : 0;
-      return `<td><button type="button" data-e="${e}" data-a="${a}" style="background: color-mix(in srgb, var(--${COR[e]}) ${Math.round(op * 70)}%, var(--paper))" aria-label="${c} habilidades de ${n} ${no(a)}">${c}</button></td>`;
+      return `<td><button type="button" data-e="${e}" data-a="${a}" style="background: color-mix(in srgb, var(--${COR[e]}) ${Math.round(op * 70)}%, var(--paper))" aria-label="${c} habilidades de ${n} no ${NOME_V[a]}">${c}</button></td>`;
     }).join('')}</tr>`).join('') + '</tbody>';
   tab.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     const eixo = b.dataset.e, ano = +b.dataset.a;
-    filtrar(`${EIXOS[eixo]} ${no(ano)}`, h => h.eixo === eixo && h.ano === ano);
+    filtrar(`${EIXOS[eixo]} no ${NOME_V[ano]}`, h => h.eixo === eixo && vale(h, ano));
   });
 
   // ---------- Verbos ----------
@@ -253,7 +264,7 @@
       const mat = Object.entries(tipos).map(([t, n]) => `${n} ${(TIPOS[t] || [t, t])[n > 1 ? 1 : 0]}`).join(', ');
       const link = h.link ? `<a href="${h.link}">${C.material ? (mat ? 'Material: ' + mat : 'Página da habilidade') : esc(h.linkTexto || 'Página da habilidade')}</a>` : (C.material && mat ? `<span>Material: ${mat}</span>` : '');
       return `<li class="eixo-${COR[h.eixo]}">
-        <div class="topo"><strong>${h.codigo}</strong><span>${esc(h.objeto)}</span><span class="meta-hab">${anoNome(h.ano)} · ${EIXOS[h.eixo]}</span></div>
+        <div class="topo"><strong>${h.codigo}</strong><span>${esc(h.objeto)}</span><span class="meta-hab">${h.anos ? valeTexto(h).replace('vale', 'Vale') : anoNome(h.ano)} · ${EIXOS[h.eixo]}</span></div>
         <p>${esc(h.texto)}</p>
         <div class="acoes">
           ${vem.length ? `<span>Vem de ${vem.map(codBtn).join(' ')}</span>` : ''}
@@ -262,8 +273,18 @@
         </div></li>`;
     }).join('');
   }
-  $('busca').addEventListener('input', () => { filtro = null; desenharLista(); });
-  $('limpar').addEventListener('click', () => { filtro = null; $('busca').value = ''; desenharLista(); });
+  // filtro por ano
+  const selAno = document.createElement('select');
+  selAno.className = 'chip'; selAno.id = 'filtro-ano'; selAno.setAttribute('aria-label', 'Filtrar por ano');
+  selAno.innerHTML = '<option value="">Todos os anos</option>' + ANOS_V.map(a => `<option value="${a}">${NOME_V[a]}</option>`).join('');
+  $('limpar').before(selAno);
+  selAno.addEventListener('change', () => {
+    if (!selAno.value) { filtro = null; $('busca').value = ''; desenharLista(); return; }
+    const a = +selAno.value;
+    filtrar(NOME_V[a], h => vale(h, a), false);
+  });
+  $('busca').addEventListener('input', () => { filtro = null; selAno.value = ''; desenharLista(); });
+  $('limpar').addEventListener('click', () => { filtro = null; $('busca').value = ''; selAno.value = ''; desenharLista(); });
   $('lista').addEventListener('click', e => {
     const b = e.target.closest('[data-cod]'); if (!b) return;
     selecionar(b.dataset.cod);
