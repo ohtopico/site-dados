@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dados da educação no Vale do Rio Pardo (RS) | Júlia Quoos</title>
+<meta name="description" content="Painel do Censo Escolar e do IBGE em 21 municípios do Vale do Rio Pardo (RS): escolas, matrículas, estrutura, alfabetização e renda, de 2010 a 2025.">
+<meta property="og:title" content="Dados da educação na região | Júlia Quoos">
+<meta property="og:description" content="Escolas, matrículas e estrutura das escolas de Candelária, Novo Cabrais, Santa Cruz do Sul e vizinhos, de 2010 a 2025. Painel interativo com mapa e comparações.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/dados-da-regiao/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/dados-da-regiao/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/dados-da-regiao/og-dados-da-regiao.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Painel de dados da educação na região de Santa Cruz do Sul">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="assets/painel.css?v=202610280100">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Dados da educação na região de Santa Cruz do Sul, Candelária e Novo Cabrais",
+"description":"Indicadores do Censo Escolar (INEP) 2010, 2022 e 2025 e do Censo Demográfico (IBGE) 2010 e 2022 para 21 municípios do Vale do Rio Pardo, Rio Grande do Sul.",
+"url":"https://juliaroberta.com/infograficos/dados-da-regiao/","inLanguage":"pt-BR","spatialCoverage":"Vale do Rio Pardo, Rio Grande do Sul, Brasil","temporalCoverage":"2010/2025",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar","https://sidra.ibge.gov.br/"]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ painel interativo</span>
+      <h1>Dados da educação <mark>na região</mark></h1>
+      <p class="lead">Escolas, matrículas e estrutura das escolas de 21 municípios do Vale do Rio Pardo, de 2010 a 2025, com dados do Censo Escolar (INEP) e do Censo Demográfico (IBGE). Escolha uma região, clique em um município no mapa e compare.</p>
+      <p class="small muted">Dados reunidos e analisados por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>.</p>
+      <p class="small">Página de cada município: <a href="novo-cabrais/">escolas e dados de Novo Cabrais</a>.</p>
+      <p class="small">Outros painéis: <a href="../interesse-por-ia/">o interesse por inteligência artificial na Wikipédia</a> e <a href="../">todos os infográficos interativos</a>.</p>
+    </div></div>
+  </section>
+
+  <div class="filtros" role="region" aria-label="Filtros do painel">
+    <div class="wrap">
+      <div class="campo"><span id="rot-regiao">Região</span>
+        <div class="seg" id="f-regiao" role="group" aria-labelledby="rot-regiao"></div></div>
+      <label class="campo"><span>Município</span>
+        <select class="sel" id="f-mun"></select></label>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Resumo</span>
+      <h2 id="resumo-titulo">Resumo</h2>
+      <p class="muted" id="resumo-sub"></p>
+      <div class="kpis" id="kpis"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Explorar</span>
+      <h2>Escolha um indicador</h2>
+      <div class="controles">
+        <label class="campo"><span>Indicador</span><select class="sel" id="f-ind"></select></label>
+        <div class="campo"><span id="rot-ano">Ano</span><div class="seg" id="f-ano" role="group" aria-labelledby="rot-ano"></div></div>
+      </div>
+      <p class="nota-est" id="ind-nota"></p>
+      <div class="duas">
+        <div class="painel">
+          <h3>Mapa</h3>
+          <p class="sub" id="mapa-sub"></p>
+          <div class="mapa" id="mapa"></div>
+          <div class="legenda" id="mapa-leg"></div>
+        </div>
+        <div class="painel">
+          <h3 id="rank-titulo">Município a município</h3>
+          <p class="sub" id="rank-sub"></p>
+          <div class="area-barras" id="rank"></div>
+          <p class="nota"><button class="btn-link" type="button" id="rank-tab-btn" aria-expanded="false">Ver como tabela</button></p>
+          <div class="tabela-wrap" id="rank-tab" hidden></div>
+        </div>
+      </div>
+      <div class="painel" style="margin-top:18px">
+        <h3 id="comp-titulo">Comparado ao estado e ao país</h3>
+        <p class="sub" id="comp-sub"></p>
+        <div class="area-barras" id="comp"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Etapas e estrutura</span>
+      <h2 id="etapas-titulo">Matrículas e estrutura das escolas</h2>
+      <div class="duas">
+        <div class="painel">
+          <h3>Matrículas por etapa</h3>
+          <p class="sub">Variação de 2010 a 2022. As matrículas de 2025 ainda não estão nos dados.</p>
+          <div class="area-barras" id="etapas"></div>
+        </div>
+        <div class="painel">
+          <h3>Estrutura das escolas</h3>
+          <p class="sub">Percentual das escolas com cada item.</p>
+          <div class="legenda" style="margin:0 0 8px">
+            <span><i style="background:var(--mark);border-color:var(--ink);width:8px"></i>2010</span>
+            <span><i style="background:var(--g4)"></i>2025, subiu ou manteve</span>
+            <span><i style="background:var(--r5)"></i>2025, caiu</span>
+          </div>
+          <div id="infra"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Comparar</span>
+      <h2>Compare dois municípios</h2>
+      <div class="controles">
+        <label class="campo"><span>Município A</span><select class="sel" id="c-a"></select></label>
+        <label class="campo"><span>Município B</span><select class="sel" id="c-b"></select></label>
+        <label class="campo"><span>Ano</span><select class="sel" id="c-ano"><option value="ultimo">Dado mais recente</option><option value="0">2010</option></select></label>
+      </div>
+      <div class="tabela-wrap" id="comparar"></div>
+      <p class="nota">Em negrito e verde, o valor mais favorável quando o indicador tem um lado melhor (por exemplo, escolas com internet). Valores em cinza com asterisco são estimados.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Censo IBGE</span>
+      <h2>O que mudou além da escola</h2>
+      <p class="muted">Avanços registrados pelos Censos Demográficos de 2010 e 2022 em cada região. Os indicadores de água, lixo, alfabetização e renda também estão no seletor de indicadores acima.</p>
+      <div class="destaques" id="destaques"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>Fontes e notas</h2>
+      <div class="fonte-box">
+        <ul>
+          <li><b>Censo Escolar:</b> INEP, microdados do Censo Escolar da Educação Básica 2010, 2022 e 2025 (escolas em atividade). Matrículas, turmas e professores de 2025 ainda não estão nos dados. Água potável e acessibilidade não eram perguntadas em 2010.</li>
+          <li><b>Censo Demográfico:</b> IBGE, Censos 2010 e 2022 (Sidra), PIB dos Municípios e Produção Agrícola Municipal. Valores em reais de 2010 corrigidos pelo IPCA. Em 2022, "água da rede" conta os domicílios que usam a rede como forma principal, por isso a comparação com 2010 é aproximada.</li>
+          <li><b>Valores estimados:</b> alguns valores de 2010 de água, lixo, alfabetização e renda nos vizinhos de Candelária foram lidos da posição no gráfico original e aparecem com asterisco. A alfabetização de 2010 na região de Santa Cruz do Sul foi calculada a partir do avanço em pontos e pode variar 0,1 ponto.</li>
+          <li><b>Regiões:</b> Candelária e vizinhos (9 municípios), Novo Cabrais e vizinhos (5) e a microrregião de Santa Cruz do Sul do IBGE (16). Alguns municípios aparecem em mais de uma região. Mapa: malha municipal do IBGE.</li>
+          <li>Coleta e análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte. Correções e sugestões: <a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Painel de dados da educação na região, organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja também a <a href="https://ohtopico.com.br/formacao-continuada/">formação continuada para professores</a> e o <a href="https://ohtopico.com.br/material-didatico/">material didático</a>.</p>
+</div></footer>
+
+<div id="tip" role="presentation"></div>
+<script src="assets/dados.js?v=202610280100"></script>
+<script src="assets/painel.js?v=202610280100"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chuva do RS e El Niño | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo: 65 anos de chuva em 8 cidades do RS, o que o El Niño faz com a primavera gaúcha e as enchentes de 2024.">
+<meta property="og:title" content="Chuva do RS e El Niño | Júlia Quoos">
+<meta property="og:description" content="Mês a mês desde 1961, cidade por cidade: quando o El Niño molha o Rio Grande do Sul e o que aconteceu em maio de 2024.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/chuva-el-nino/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/chuva-el-nino/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/chuva-el-nino/og-chuva-el-nino.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chuva no Rio Grande do Sul e o El Niño">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../../infograficos/assets/infograficos.css?v=202611022330">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Chuva do Rio Grande do Sul e El Niño, 1961 a 2026",
+"description":"Chuva mensal de 8 cidades do RS desde 1961 (ERA5), índice ONI do El Niño (NOAA) e vazão dos rios em 2024 (GloFAS).",
+"url":"https://juliaroberta.com/infograficos/chuva-el-nino/","inLanguage":"pt-BR","spatialCoverage":"Rio Grande do Sul, Brasil","temporalCoverage":"1961/2026",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://open-meteo.com/en/docs/historical-weather-api","https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php","https://open-meteo.com/en/docs/flood-api"]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ clima do RS</span>
+      <h1>A chuva do RS <mark>e o El Niño</mark></h1>
+      <p class="lead">Quando o Pacífico esquenta, o Rio Grande do Sul costuma ter primaveras muito chuvosas. Aqui estão 65 anos de chuva em oito cidades gaúchas, mês a mês, ao lado do termômetro do Pacífico. Em agosto de 2026 ele marcou +2,16, um El Niño muito forte.</p>
+      <ul class="pilulas"><li>1961 a 2026</li><li>8 cidades do RS</li><li>ERA5 · NOAA · GloFAS</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">O termômetro do Pacífico</span>
+      <h2>El Niño e La Niña desde 1950</h2>
+      <p class="muted">O ONI mede quanto a água do Pacífico equatorial está mais quente (laranja) ou mais fria (azul) que o normal. Acima de +0,5 é El Niño; abaixo de −0,5, La Niña.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>oni.html</span></div>
+        <div class="janela-corpo"><svg id="g-oni" class="grafico" role="img" aria-label="Índice ONI mês a mês de 1950 a 2026"></svg></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Escolha um lugar</span>
+      <h2>65 anos de chuva, mês a mês</h2>
+      <p class="muted">Cada quadradinho é um mês, comparado com a média de 1991 a 2020 daquele mês. Verde é mais chuva que o normal, marrom é menos. A faixa de cima mostra a fase do Pacífico em outubro de cada ano. Abril e maio de 2024 estão com contorno.</p>
+      <div class="seletor" id="cidades" role="group" aria-label="Escolha a cidade"></div>
+      <div class="janela" style="margin-top:16px"><div class="janela-barra"><i></i><i></i><i></i><span>chuva-mes-a-mes.html</span></div>
+        <div class="janela-corpo">
+          <div class="rolagem"><svg id="g-mapa" class="grafico" role="img" aria-label="Chuva mensal desde 1961 comparada ao normal"></svg></div>
+          <div class="legenda" id="leg-anom"></div>
+          <div class="legenda"><span><b style="background:var(--en)"></b>El Niño</span><span><b style="background:var(--neutro-c)"></b>neutro</span><span><b style="background:var(--ln)"></b>La Niña</span></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Setembro a novembro</span>
+      <h2>A primavera do El Niño</h2>
+      <p class="muted">Cada bolinha é uma primavera (setembro, outubro e novembro). Quanto mais à direita, mais forte o El Niño; quanto mais alto, mais chuva que o normal. O lugar escolhido acima vale aqui também.</p>
+      <div class="resumo-num">
+        <div><b id="r-en">–</b><span>chuva média nas primaveras de El Niño, <span class="nome-cidade"></span></span></div>
+        <div><b id="r-ne">–</b><span>nas primaveras neutras</span></div>
+        <div><b id="r-ln">–</b><span>nas primaveras de La Niña</span></div>
+        <div><b id="r-forte">–</b><span>primaveras de El Niño forte (ONI acima de 1,5) com chuva acima do normal</span></div>
+      </div>
+      <div class="janela" style="margin-top:16px"><div class="janela-barra"><i></i><i></i><i></i><span>primavera.html</span></div>
+        <div class="janela-corpo"><svg id="g-prim" class="grafico" role="img" aria-label="Chuva na primavera contra o índice ONI de outubro"></svg></div></div>
+      <h3 style="margin-top:28px">Em que época do ano o El Niño pesa mais</h3>
+      <p class="muted">Correlação entre o ONI e a chuva de cada trimestre (0 é nenhuma relação, 1 seria relação perfeita). O efeito aparece forte de setembro a janeiro e fraco no inverno.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>correlacao.html</span></div>
+        <div class="janela-corpo"><svg id="g-corr" class="grafico" role="img" aria-label="Correlação entre ONI e chuva por trimestre"></svg></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Abril e maio de 2024</span>
+      <h2>A enchente que veio depois do El Niño</h2>
+      <p class="muted">O El Niño de 2023 terminou em abril de 2024, e a chuva de abril e maio foi a maior desde 1961 na média do RS. As barras mostram a maior chuva somada em 10 dias de 2024 em cada lugar; o traço preto é o maior valor de antes.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>dez-dias.html</span></div>
+        <div class="janela-corpo"><svg id="g-rank" class="grafico" role="img" aria-label="Maior chuva em 10 dias de 2024 comparada ao recorde anterior"></svg></div></div>
+      <h3 style="margin-top:28px">Os rios, dia a dia</h3>
+      <p class="muted">Vazão diária estimada pelo modelo GloFAS. A faixa verde é o intervalo comum de 1997 a 2022 (do 10º ao 90º percentil) e o tracejado é a mediana. Escolha o rio e o ano.</p>
+      <div class="seletor" id="rios" role="group" aria-label="Escolha o rio"></div>
+      <div class="seletor" id="anos-rio" role="group" aria-label="Escolha o ano" style="margin-top:8px"></div>
+      <div class="janela" style="margin-top:16px"><div class="janela-barra"><i></i><i></i><i></i><span>rios.html</span></div>
+        <div class="janela-corpo"><svg id="g-rio" class="grafico" role="img" aria-label="Vazão diária do rio escolhido"></svg><p class="nota" id="rio-texto"></p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os números</h2>
+      <ul class="leitura">
+        <li><b>Chuva:</b> reanálise ERA5 (ECMWF/Copernicus), via Open-Meteo, no ponto de grade de cada cidade (cerca de 25 km). "RS (média)" é a média das oito cidades. Normal = média de 1991 a 2020 do mesmo mês ou da mesma primavera. Reanálise é um modelo ajustado a observações, então suaviza chuvas muito localizadas.</li>
+        <li><b>El Niño:</b> índice ONI da NOAA (média de 3 meses da temperatura do mar na região Niño 3.4).</li>
+        <li><b>Rios:</b> vazão do modelo GloFAS (Copernicus), via Open-Meteo. O modelo subestima o pico de maio de 2024 em vários rios (no Taquari e no Guaíba as cotas medidas foram recorde histórico), então use o gráfico para comparar o formato da cheia, não o valor exato.</li>
+        <li>Correlação é de Spearman, entre o ONI e a chuva do mesmo trimestre, de 1961 a 2025. Análise: Júlia Roberta Quoos Alves.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="clima.js?v=202611022330"></script>
+</body>
+</html>

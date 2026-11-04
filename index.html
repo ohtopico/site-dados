@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Júlia Quoos · Dados e IA: projetos, painéis e currículo</title>
+    <meta name="description" content="Júlia Roberta Quoos Alves, engenheira de dados e de machine learning: projetos de dados e IA, painéis interativos com dados abertos, notebooks e currículo.">
+    <meta name="author" content="Júlia Roberta Quoos Alves">
+    <link rel="canonical" href="https://juliaroberta.com/">
+
+    <!-- Prévia ao compartilhar o link (LinkedIn, WhatsApp etc.) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://juliaroberta.com/">
+    <meta property="og:site_name" content="Júlia Quoos">
+    <meta property="og:title" content="Júlia Quoos · Dados e IA">
+    <meta property="og:description" content="Projetos de dados e IA, painéis interativos com dados abertos, notebooks e currículo de Júlia Roberta Quoos Alves.">
+    <meta property="og:image" content="https://juliaroberta.com/infograficos/og-infograficos.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Infográficos interativos com dados abertos">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://juliaroberta.com/#site",
+      "url": "https://juliaroberta.com/",
+      "name": "Júlia Quoos · Dados e IA",
+      "inLanguage": "pt-BR",
+      "publisher": {"@id": "https://juliaroberta.com/#julia"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://juliaroberta.com/",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://juliaroberta.com/#julia",
+        "name": "Júlia Roberta Quoos Alves",
+        "alternateName": ["Júlia Quoos", "Júlia Quoos Alves", "Júlia Roberta Quoos", "Quoos"],
+        "url": "https://juliaroberta.com/",
+        "jobTitle": ["Engenheira de dados", "Engenheira de machine learning"],
+        "description": "Engenheira de dados e de machine learning, mestranda em Ciência da Computação na UFSM.",
+        "homeLocation": {"@type": "Place", "name": "Rio Grande do Sul, Brasil"},
+        "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Universidade Federal de Santa Maria (UFSM)"}, {"@type": "CollegeOrUniversity", "name": "Universidade de Santa Cruz do Sul (UNISC)"}],
+        "knowsAbout": ["Engenharia de dados", "Machine learning", "Visão computacional", "Python", "SQL", "PySpark", "AWS", "Google Cloud", "Visualização de dados", "Dados abertos"],
+        "knowsLanguage": ["pt-BR", "en", "es"],
+        "email": "mailto:contato@ohtopico.com.br",
+        "sameAs": ["https://ohtopico.com.br/", "https://orcid.org/0000-0002-9948-779X", "https://lattes.cnpq.br/7211035377768669", "https://www.linkedin.com/in/ohtopico", "https://github.com/ohtopico"]
+      }
+    }
+    </script>
+    <!-- Tema salvo, aplicado antes de desenhar a página -->
+    <script>try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    /* =========================================================
+       TOKENS (os mesmos do IA pra Prof)
+       ========================================================= */
+    :root {
+        --paper: #ffffff;
+        --paper-2: #f4f4f2;
+        --pill: #efefed;
+        --pill-2: #e2e2df;
+        --ink: #111111;
+        --ink-2: #4a4a4a;
+        --ink-3: #6f6f6f;
+        --line: #d9d9d6;
+        --accent: #1f5cff;
+        --accent-soft: #e6edff;
+        --display: 'Sniglet', 'Comic Sans MS', system-ui, sans-serif;
+        --body: 'Lexend', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        --topo: 58px;
+        --base: 56px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+            --paper: #151515; --paper-2: #1d1d1d; --pill: #242424; --pill-2: #2f2f2f;
+            --ink: #f3f3f1; --ink-2: #c9c9c6; --ink-3: #9a9a97; --line: #3a3a38;
+            --accent: #7ea2ff; --accent-soft: #1d2747;
+        }
+    }
+
+    :root[data-theme="dark"] {
+        --paper: #151515; --paper-2: #1d1d1d; --pill: #242424; --pill-2: #2f2f2f;
+        --ink: #f3f3f1; --ink-2: #c9c9c6; --ink-3: #9a9a97; --line: #3a3a38;
+        --accent: #7ea2ff; --accent-soft: #1d2747;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+        background-color: var(--paper-2);
+        background-image: radial-gradient(var(--line) 1.2px, transparent 1.2px);
+        background-size: 22px 22px;
+        color: var(--ink);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.55;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    a { color: var(--accent); text-underline-offset: 3px; }
+    button { color: inherit; font: inherit; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+
+    .sr-only {
+        clip: rect(0 0 0 0); height: 1px; overflow: hidden;
+        position: absolute; white-space: nowrap; width: 1px;
+    }
+
+    .titulo-display {
+        font-family: var(--display);
+        font-weight: 800;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+    }
+
+    /* Botão pílula, igual ao do guia */
+    .pill-btn {
+        align-items: center;
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 99px;
+        color: var(--ink);
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 7px;
+        min-height: 38px;
+        padding: 6px 15px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .pill-btn:hover { background: var(--pill); }
+    .pill-btn.escuro { background: var(--ink); color: var(--paper); }
+    .pill-btn.escuro:hover { background: var(--ink-2); }
+    .pill-btn i, .pill-btn svg { font-size: 14px; height: 16px; width: 16px; }
+
+    /* =========================================================
+       BARRA SUPERIOR
+       ========================================================= */
+    .topbar {
+        align-items: center;
+        background: var(--paper);
+        border-bottom: 1.5px solid var(--ink);
+        display: flex;
+        gap: 10px;
+        height: var(--topo);
+        left: 0;
+        padding: 0 16px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    .brand {
+        color: var(--ink);
+        font-family: var(--display);
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: .12em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .topbar .spacer { flex: 1; }
+
+    .icon-only { justify-content: center; padding: 6px; width: 38px; }
+
+    /* =========================================================
+       ÁREA DE TRABALHO
+       ========================================================= */
+    #desktop {
+        height: calc(100vh - var(--topo) - var(--base));
+        position: relative;
+        top: var(--topo);
+    }
+
+    /* Ícones em três colunas fixas (uma .icon-col por coluna) */
+    .desktop-icons {
+        align-items: flex-start;
+        display: flex;
+        gap: 8px;
+        left: 20px;
+        position: absolute;
+        top: 22px;
+        z-index: 5;
+    }
+
+    .icon-col {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* Desktop até 1020 px de altura (notebooks e a maioria dos monitores): ícones mais compactos */
+    @media (min-width: 769px) and (max-height: 1020px) {
+        .desktop-icons { top: 12px; }
+        .icon-col { gap: 4px; }
+        .icon-item { gap: 5px; padding: 3px; }
+        .icon-item .tile { border-radius: 16px; font-size: 21px; height: 50px; width: 50px; }
+    }
+
+    .icon-item {
+        align-items: center;
+        background: none;
+        border: none;
+        border-radius: 16px;
+        color: var(--ink);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 6px;
+        text-decoration: none;
+        width: 96px;
+    }
+
+    .icon-item .tile {
+        align-items: center;
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 18px;
+        display: grid;
+        font-size: 24px;
+        height: 60px;
+        place-items: center;
+        transition: transform .12s ease, box-shadow .12s ease;
+        width: 60px;
+    }
+
+    .icon-item:hover .tile, .icon-item:focus-visible .tile {
+        box-shadow: 4px 4px 0 var(--ink);
+        transform: translate(-2px, -2px);
+    }
+
+    .icon-item .icon-label {
+        font-family: var(--display);
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        line-height: 1.2;
+        min-height: 2.4em; /* reserva duas linhas para as colunas ficarem alinhadas */
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /* =========================================================
+       JANELAS
+       ========================================================= */
+    .janela {
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 22px;
+        box-shadow: 6px 6px 0 var(--ink);
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - var(--topo) - var(--base) - 24px);
+        overflow: hidden;
+        position: absolute;
+        width: 380px;
+        z-index: 10;
+    }
+
+    .janela:focus { outline: none; }
+
+    .janela-header {
+        align-items: center;
+        background: var(--pill);
+        border-bottom: 1.5px solid var(--ink);
+        cursor: grab;
+        display: flex;
+        flex-shrink: 0;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 8px 10px 8px 18px;
+        touch-action: none;
+        user-select: none;
+    }
+
+    .janela-header:active { cursor: grabbing; }
+
+    .janela-titulo {
+        align-items: center;
+        display: flex;
+        font-family: var(--display);
+        font-size: 14px;
+        font-weight: 800;
+        gap: 8px;
+        letter-spacing: .12em;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .janela-controles { display: flex; flex-shrink: 0; gap: 6px; }
+
+    .win-btn {
+        align-items: center;
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 50%;
+        cursor: pointer;
+        display: grid;
+        font-size: 13px;
+        font-weight: 600;
+        height: 30px;
+        line-height: 1;
+        padding: 0;
+        place-items: center;
+        width: 30px;
+    }
+
+    .win-btn:hover { background: var(--ink); color: var(--paper); }
+
+    .janela-conteudo {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 12px;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 18px 20px 20px;
+    }
+
+    .janela.cheia .janela-conteudo { padding: 0; }
+    .janela.cheia iframe { border: none; display: block; flex: 1; height: 100%; width: 100%; }
+
+    .janela.redimensionavel { resize: both; }
+
+    /* ---------- Leia-me ---------- */
+    .readme-head { align-items: center; display: flex; gap: 16px; }
+
+    .readme-photo {
+        border: 1.5px solid var(--ink);
+        border-radius: 50%;
+        flex-shrink: 0;
+        height: 88px;
+        object-fit: cover;
+        width: 88px;
+    }
+
+    .readme h1 {
+        font-family: var(--display);
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        line-height: 1.1;
+        margin: 0 0 6px;
+        text-transform: uppercase;
+    }
+
+    .readme .role {
+        color: var(--ink-2);
+        font-family: var(--display);
+        font-size: 13px;
+        letter-spacing: .08em;
+        line-height: 1.45;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .readme p { margin: 0; }
+    .readme .slogan { font-family: var(--display); font-size: 19px; font-weight: 800; margin: 0 0 6px; }
+    .readme .slogan span { background: linear-gradient(transparent 55%, #ffd84d 55%, #ffd84d 92%, transparent 92%); padding: 0 4px; color: #111; }
+    .readme .lead { font-size: 17px; }
+    .portas { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+    .porta { border: 1.5px solid var(--ink); border-radius: 16px; box-shadow: 3px 3px 0 var(--ink); color: #111; display: flex; flex-direction: column; font-size: 14px; gap: 6px; line-height: 1.4; padding: 12px 14px; text-decoration: none; transition: transform .12s, box-shadow .12s; }
+    .porta:hover, .porta:focus-visible { box-shadow: 5px 5px 0 var(--ink); transform: translate(-2px, -2px); }
+    .porta-titulo { font-family: var(--display); font-size: 16px; font-weight: 800; }
+    .porta-material { background: #ffb3ab; }
+    .porta-formacao { background: #ffe58a; }
+    .porta-mundo { background: #a8e6c1; }
+    .porta-dados { background: #b9d4ff; }
+    .so-celular { display: none; }
+    @media (max-width: 520px) { .some-celular { display: none; } .so-celular { display: inline; } }
+    .projetos { display: flex; flex-direction: column; gap: 14px; }
+    .projeto { border-bottom: 1.5px dashed var(--line); padding-bottom: 12px; }
+    .projeto:last-child { border-bottom: none; padding-bottom: 0; }
+    .projeto h2 { font-family: var(--display); font-size: 17px; font-weight: 800; margin: 0 0 4px; }
+    .projeto h2 a { color: var(--ink); }
+    .projeto p { font-size: 14px; margin: 0 0 4px; }
+    .projeto .tags { color: var(--ink-3); font-size: 12.5px; }
+    .secao-titulo { font-family: var(--display); font-size: 15px; font-weight: 800; letter-spacing: .08em; margin: 6px 0 0; text-transform: uppercase; }
+    @media (max-width: 520px) { .portas { grid-template-columns: 1fr; } }
+    .readme ul { list-style: none; margin: 0; padding: 0; }
+    .readme li { margin-bottom: 8px; padding-left: 22px; position: relative; }
+    .readme li::before {
+        background: var(--ink);
+        border-radius: 50%;
+        content: '';
+        height: 7px;
+        left: 4px;
+        position: absolute;
+        top: .7em;
+        width: 7px;
+    }
+
+    .btn-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .dica {
+        background: var(--pill);
+        border-radius: 99px;
+        color: var(--ink-2);
+        font-size: 13.5px;
+        padding: 10px 18px;
+        text-align: center;
+    }
+
+    /* ---------- Atualizações ---------- */
+    .post {
+        border: 1.5px solid var(--ink);
+        border-radius: 18px;
+        padding: 14px 18px;
+    }
+
+    .post h3 {
+        font-family: var(--display);
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        margin: 0 0 2px;
+        text-transform: uppercase;
+    }
+
+    .post .data { color: var(--ink-3); font-size: 13px; margin: 0 0 8px; }
+    .post p { margin: 0 0 8px; }
+    .post p:last-child { margin: 0; }
+
+    /* ---------- Player ---------- */
+    .player-display {
+        background: var(--ink);
+        border-radius: 16px;
+        color: var(--paper);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 16px;
+    }
+
+    .track-info { font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .vis-bar-container { display: flex; gap: 4px; height: 30px; }
+    .vis-bar {
+        background: var(--paper);
+        border-radius: 3px;
+        flex-grow: 1;
+        height: 100%;
+        transform: scaleY(0.15);
+        transform-origin: bottom;
+        transition: transform .1s ease;
+    }
+
+    .player-controls { display: flex; gap: 8px; }
+    .player-controls .pill-btn { flex: 1; justify-content: center; }
+    .nota { color: var(--ink-3); font-size: 13px; margin: 0; text-align: center; }
+
+    /* ---------- Mascote ---------- */
+    .pet { align-items: center; display: flex; gap: 18px; }
+    .pet-lado { align-items: center; display: flex; flex-direction: column; gap: 10px; width: 42%; }
+
+    .pet-bubble {
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 18px;
+        font-size: 13.5px;
+        padding: 8px 12px;
+        position: relative;
+        text-align: center;
+    }
+
+    .pet-bubble::after {
+        border-left: 1.5px solid var(--ink);
+        border-top: 1.5px solid var(--ink);
+        background: var(--paper);
+        bottom: -7px;
+        content: '';
+        height: 12px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%) rotate(225deg);
+        width: 12px;
+    }
+
+    .pet-sprite {
+        animation: pulo 1.5s ease-in-out infinite alternate;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 52px;
+        padding: 0;
+    }
+
+    @keyframes pulo { from { transform: translateY(0); } to { transform: translateY(-10px); } }
+
+    /* ---------- Tarot ---------- */
+    .tarot { align-items: center; text-align: center; }
+
+    .carta-tarot {
+        border: 1.5px solid var(--ink);
+        border-radius: 18px;
+        box-shadow: 4px 4px 0 var(--ink);
+        padding: 22px 18px;
+        width: 100%;
+    }
+
+    .carta-tarot .nome {
+        font-family: var(--display);
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        margin: 4px 0 8px;
+        text-transform: uppercase;
+    }
+
+    .carta-tarot .simbolo { font-size: 34px; line-height: 1; }
+
+    /* =========================================================
+       BARRA DE TAREFAS E MENU INICIAR
+       ========================================================= */
+    #taskbar {
+        align-items: center;
+        background: var(--paper);
+        border-top: 1.5px solid var(--ink);
+        bottom: 0;
+        display: flex;
+        gap: 10px;
+        height: var(--base);
+        left: 0;
+        padding: 0 12px;
+        position: fixed;
+        right: 0;
+        z-index: 100;
+    }
+
+    .start-btn {
+        background: var(--ink);
+        border: 1.5px solid var(--ink);
+        border-radius: 99px;
+        color: var(--paper);
+        cursor: pointer;
+        font-family: var(--display);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: .14em;
+        min-height: 38px;
+        padding: 4px 18px;
+        text-transform: uppercase;
+    }
+
+    .start-btn[aria-expanded="true"] { background: var(--paper); color: var(--ink); }
+
+    #open-programs-tabs {
+        display: flex;
+        flex: 1;
+        gap: 6px;
+        min-width: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    #open-programs-tabs::-webkit-scrollbar { display: none; }
+
+    .taskbar-tab {
+        align-items: center;
+        background: var(--paper);
+        border: 1.5px solid var(--line);
+        border-radius: 99px;
+        cursor: pointer;
+        display: flex;
+        flex-shrink: 0;
+        font-size: 13.5px;
+        gap: 7px;
+        min-height: 36px;
+        padding: 4px 14px;
+    }
+
+    .taskbar-tab:hover { border-color: var(--ink); }
+    .taskbar-tab.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+    .bandeja { align-items: center; border-left: 1.5px solid var(--line); display: flex; flex-shrink: 0; gap: 6px; padding-left: 10px; }
+    .programa {
+        align-items: center;
+        border: 1.5px solid var(--ink);
+        border-radius: 10px;
+        color: #111;
+        display: flex;
+        font-size: 17px;
+        height: 34px;
+        justify-content: center;
+        text-decoration: none;
+        width: 34px;
+    }
+    .programa-linkedin { background: #b9e6c6; }
+    .programa-github { background: #fff36b; }
+    .programa-facebook { background: #ffb3a7; }
+    .programa-instagram { background: #ffd98a; }
+    .programa:hover, .programa:focus-visible { box-shadow: 3px 3px 0 var(--ink); transform: translate(-1px, -1px); }
+    .bandeja .taskbar-clock { margin-left: 4px; }
+
+    .taskbar-clock {
+        color: var(--ink-2);
+        font-size: 14px;
+        font-variant-numeric: tabular-nums;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    #start-menu {
+        background: var(--paper);
+        border: 1.5px solid var(--ink);
+        border-radius: 22px;
+        bottom: calc(var(--base) + 10px);
+        box-shadow: 6px 6px 0 var(--ink);
+        left: 12px;
+        max-height: calc(100vh - var(--topo) - var(--base) - 24px);
+        overflow-y: auto;
+        padding: 10px;
+        position: fixed;
+        width: 260px;
+        z-index: 200;
+    }
+
+    #start-menu[hidden] { display: none; }
+
+    .menu-heading {
+        color: var(--ink);
+        font-family: var(--display);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: .14em;
+        margin: 8px 10px 6px;
+        text-transform: uppercase;
+    }
+
+    .menu-item {
+        align-items: center;
+        background: none;
+        border: none;
+        border-radius: 12px;
+        color: var(--ink-2);
+        cursor: pointer;
+        display: flex;
+        font-size: 15px;
+        gap: 10px;
+        padding: 8px 10px;
+        text-align: left;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .menu-item i { color: var(--ink); text-align: center; width: 18px; }
+    .menu-item:hover, .menu-item:focus-visible { background: var(--pill); color: var(--ink); }
+
+    .menu-sep { border: none; border-top: 1.5px solid var(--line); margin: 8px 6px; }
+
+    [hidden] { display: none !important; }
+
+    /* =========================================================
+       CELULAR
+       ========================================================= */
+    @media (max-width: 768px), (max-height: 520px) and (pointer: coarse) {
+        :root { --topo: 54px; --base: 58px; }
+
+        .topbar { padding: 0 12px; }
+        .brand { font-size: 19px; }
+
+        #desktop { height: calc(100dvh - var(--topo) - var(--base)); }
+
+        .desktop-icons {
+            display: grid;
+            gap: 4px;
+            grid-template-columns: repeat(4, 1fr);
+            left: 10px;
+            right: 10px;
+            top: 10px;
+        }
+
+        .icon-col { display: contents; }
+        .icon-item { gap: 4px; padding: 2px; width: auto; }
+        .icon-item .tile { border-radius: 14px; font-size: 17px; height: 40px; width: 40px; }
+        .icon-item .icon-label { font-size: 10px; letter-spacing: .06em; }
+
+        .janela {
+            border-radius: 20px;
+            box-shadow: 4px 4px 0 var(--ink);
+            height: auto !important;
+            left: 10px !important;
+            max-height: calc(100dvh - var(--topo) - var(--base) - 100px);
+            min-height: 0 !important;
+            min-width: 0 !important;
+            position: fixed;
+            resize: none !important;
+            right: 14px;
+            top: calc(var(--topo) + 84px) !important;
+            transform: none !important;
+            width: auto !important;
+        }
+
+        .janela.cheia { height: calc(100dvh - var(--topo) - var(--base) - 100px) !important; }
+        .janela-header { cursor: default; }
+        .janela-conteudo { padding: 16px; }
+
+        .readme-photo { height: 64px; width: 64px; }
+        .readme h1 { font-size: 21px; }
+        .pill-btn { min-height: 42px; }
+
+        .pet { flex-direction: column; }
+        .pet-lado { width: 100%; }
+
+        .taskbar-tab .tab-label { display: none; }
+        .taskbar-tab { justify-content: center; padding: 4px 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .pet-sprite { animation: none; }
+        .icon-item .tile, .vis-bar { transition: none; }
+    }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="./">Júlia Quoos</a>
+    <span class="spacer"></span>
+    <a class="pill-btn" href="https://ohtopico.com.br/"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> <span class="some-celular">Formação de professores</span><span class="so-celular">Formação</span></a>
+    <button type="button" class="pill-btn icon-only" id="theme-btn" aria-label="Alternar tema claro/escuro">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+</header>
+
+<main id="desktop">
+
+    <nav class="desktop-icons" aria-label="Atalhos da área de trabalho">
+        <div class="icon-col">
+            <button type="button" class="icon-item" onclick="toggleWindow('win-leiame')" aria-controls="win-leiame">
+                <span class="tile"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></span>
+                <span class="icon-label">Leia-me</span>
+            </button>
+            <button type="button" class="icon-item" onclick="toggleWindow('win-projetos')" aria-controls="win-projetos">
+                <span class="tile"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></span>
+                <span class="icon-label">Projetos</span>
+            </button>
+            <a class="icon-item" href="curriculo/">
+                <span class="tile"><i class="fa-regular fa-id-card" aria-hidden="true"></i></span>
+                <span class="icon-label">Currículo</span>
+            </a>
+        </div>
+        <div class="icon-col">
+            <a class="icon-item" href="infograficos/">
+                <span class="tile"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></span>
+                <span class="icon-label">Infográficos</span>
+            </a>
+            <a class="icon-item" href="infograficos/interesse-por-ia/notebooks/">
+                <span class="tile"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
+                <span class="icon-label">Notebooks</span>
+            </a>
+            <a class="icon-item" href="https://github.com/ohtopico" target="_blank" rel="noopener">
+                <span class="tile"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                <span class="icon-label">GitHub</span>
+            </a>
+        </div>
+        <div class="icon-col">
+            <a class="icon-item" href="https://ohtopico.com.br/">
+                <span class="tile"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span>
+                <span class="icon-label">Formação</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Leia-me (abre junto com a página) -->
+    <section id="win-leiame" class="janela" data-titulo="Leia-me" hidden style="left: 50%; top: 18px; transform: translateX(-50%); width: 600px;">
+        <div class="janela-header">
+            <div class="janela-titulo"><i class="fa-regular fa-file-lines" aria-hidden="true"></i> leia-me</div>
+            <div class="janela-controles">
+                <button class="win-btn" data-minimizar>–</button>
+                <button class="win-btn" data-fechar>✕</button>
+            </div>
+        </div>
+        <div class="janela-conteudo readme">
+            <div class="readme-head">
+                <img src="img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" class="readme-photo" width="88" height="88">
+                <div>
+                    <h1>Júlia Quoos</h1>
+                    <p class="slogan"><span>Do dado ao gráfico.</span></p>
+                    <p class="role">Engenheira de dados · Machine learning e visão computacional · Mestranda em Ciência da Computação (UFSM)</p>
+                </div>
+            </div>
+
+            <p class="lead"><b>Dados e IA</b>, da coleta e limpeza ao modelo e ao painel interativo.</p>
+
+            <div class="portas">
+                <a class="porta porta-dados" href="infograficos/">
+                    <span class="porta-titulo"><i class="fa-solid fa-chart-column" aria-hidden="true"></i> Infográficos</span>
+                    <span>Painéis interativos com dados abertos: educação no Vale do Rio Pardo, chuva e El Niño, interesse por IA e o som de Nova York.</span>
+                </a>
+                <a class="porta porta-formacao" href="#abrir=win-projetos" onclick="openProgram('win-projetos'); return false;" aria-controls="win-projetos">
+                    <span class="porta-titulo"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Projetos</span>
+                    <span>Modelos de machine learning e visão computacional, de ponta a ponta, com o código no GitHub.</span>
+                </a>
+                <a class="porta porta-mundo" href="infograficos/interesse-por-ia/notebooks/">
+                    <span class="porta-titulo"><i class="fa-solid fa-book" aria-hidden="true"></i> Notebooks</span>
+                    <span>Notebooks em Python para abrir no Colab: séries temporais, picos, sazonalidade e modelos de linguagem.</span>
+                </a>
+            </div>
+
+            <p>Python, SQL e PySpark, nuvem (AWS e Google Cloud) e visão computacional. Especialista em Ciência de Dados e Big Data Analytics (UNISC) e mestranda em Ciência da Computação na UFSM, onde comparo arquiteturas MobileNet para hardware embarcado.</p>
+
+            <div class="btn-row">
+                <a class="pill-btn escuro" href="curriculo/"><i class="fa-regular fa-id-card" aria-hidden="true"></i> Currículo</a>
+                <a class="pill-btn" href="https://github.com/ohtopico" target="_blank" rel="me noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a class="pill-btn" href="https://lattes.cnpq.br/7211035377768669" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Lattes</a>
+                <a class="pill-btn" href="mailto:contato@ohtopico.com.br"><i class="fa-regular fa-envelope" aria-hidden="true"></i> E-mail</a>
+            </div>
+
+            <p>Também sou professora de computação e formadora de professores: esse trabalho está em <a href="https://ohtopico.com.br/">ohtopico.com.br</a>.</p>
+
+            <p>Nas redes, sou <b>Júlia Quoos</b>: <a href="https://www.linkedin.com/in/ohtopico" rel="me">LinkedIn</a>, <a href="https://github.com/ohtopico" rel="me">GitHub</a> e <a href="https://www.youtube.com/@ohtopico" rel="me">YouTube</a>.</p>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="win-projetos" class="janela" data-titulo="Projetos" hidden style="left: 160px; top: 40px; width: 560px; max-height: calc(100% - 60px); overflow: auto;">
+        <div class="janela-header">
+            <div class="janela-titulo"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> projetos</div>
+            <div class="janela-controles">
+                <button class="win-btn" data-minimizar>–</button>
+                <button class="win-btn" data-fechar>✕</button>
+            </div>
+        </div>
+        <div class="janela-conteudo readme">
+            <p>Projetos de dados e IA, cada um com o código e os notebooks no GitHub. Os painéis publicados estão em <a href="infograficos/">Infográficos</a>.</p>
+            <div class="projetos">
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/online-retail-dataset" target="_blank" rel="noopener">Previsão de recompra de clientes em 60 dias</a></h2>
+                    <p>Modelo que indica quais clientes de um varejo online devem comprar de novo em 60 dias, com ROC AUC de 0,73 e precisão de 0,70. Limpeza de 541 mil transações, segmentação RFM e comparação de 5 modelos sem vazamento de dados do futuro.</p>
+                    <p class="tags">Python · pandas · scikit-learn · LightGBM · XGBoost</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/state-of-data-brazil" target="_blank" rel="noopener">Faixa salarial na área de dados no Brasil</a></h2>
+                    <p>Classificador de faixa salarial com Random Forest sobre a pesquisa State of Data Brazil 2024 (5.217 respostas). Reagrupar as faixas em 3 macrofaixas elevou a acurácia de 31% para 71%, e um resultado de 99% causado por vazamento do alvo foi identificado e descartado.</p>
+                    <p class="tags">Python · scikit-learn · GridSearchCV · imbalanced-learn · Plotly</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/moedas-brasileiras" target="_blank" rel="noopener">Reconhecimento de moedas brasileiras por foto</a></h2>
+                    <p>Classificador de moedas do Real por foto, com dataset próprio de 186 imagens, segmentação com OpenCV e MobileNetV2 por transfer learning. Na fase 2, um coletor monta um dataset de fotos de leilões numismáticos rotuladas pelo grau de conservação.</p>
+                    <p class="tags">Python · TensorFlow/Keras · OpenCV · Google Cloud · web scraping</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/segmentacao-cegos" target="_blank" rel="noopener">Proximidade de objetos para pessoas com deficiência visual</a></h2>
+                    <p>Detecta objetos, estima a proximidade e avisa a pessoa com deficiência visual. Faz parte da pesquisa de mestrado na UFSM.</p>
+                    <p class="tags">Python · visão computacional · Jupyter</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/clima-rs" target="_blank" rel="noopener">Clima no RS: enchentes e secas</a></h2>
+                    <p>Análise temporal do clima no Rio Grande do Sul, com foco na previsão de enchentes e secas. Deu origem ao infográfico da chuva e do El Niño.</p>
+                    <p class="tags">Python · séries temporais</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/dados-censo" target="_blank" rel="noopener">Censo 2010 e 2022 em regiões do RS</a></h2>
+                    <p>Comparação dos dados do Censo de 2010 e 2022 em municípios gaúchos. Base do painel de dados da educação no Vale do Rio Pardo.</p>
+                    <p class="tags">Python · pandas · dados do IBGE</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/marketing-analytics" target="_blank" rel="noopener">Análises de marketing</a></h2>
+                    <p>Análises exploratórias com datasets de marketing do Kaggle.</p>
+                    <p class="tags">Python · pandas · Jupyter</p>
+                </article>
+                <article class="projeto">
+                    <h2><a href="https://github.com/ohtopico/summarize-text" target="_blank" rel="noopener">Sumarizador de texto em português</a></h2>
+                    <p>Gera resumos automáticos de textos em português.</p>
+                    <p class="tags">Python · processamento de linguagem natural</p>
+                </article>
+            </div>
+            <p class="secao-titulo">Para aprender</p>
+            <p>Simuladores de IA que fiz para as aulas, no site de formação: <a href="https://ohtopico.com.br/simuladores/rede-neural.html">treino de rede neural</a>, <a href="https://ohtopico.com.br/simuladores/matriz-confusao.html">matriz de confusão</a>, <a href="https://ohtopico.com.br/simuladores/regressao.html">regressão linear</a> e <a href="https://ohtopico.com.br/simuladores/significancia.html">significância entre modelos</a>.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer id="taskbar">
+    <button type="button" class="start-btn" onclick="toggleStartMenu()" aria-haspopup="true" aria-expanded="false" aria-controls="start-menu">Iniciar</button>
+    <div id="open-programs-tabs" role="toolbar" aria-label="Janelas abertas"></div>
+    <div class="bandeja">
+        <a class="programa programa-linkedin" href="https://www.linkedin.com/in/ohtopico" target="_blank" rel="me noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn de Júlia Roberta Quoos Alves (abre em nova aba)</span></a>
+        <a class="programa programa-github" href="https://github.com/ohtopico" target="_blank" rel="me noopener" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">GitHub de Júlia Roberta Quoos Alves (abre em nova aba)</span></a>
+        <div class="taskbar-clock" id="clock" aria-hidden="true">00:00</div>
+    </div>
+</footer>
+
+<nav id="start-menu" aria-label="Menu Iniciar" hidden>
+    <div class="menu-heading">Dados e IA</div>
+    <button type="button" class="menu-item" onclick="openProgram('win-leiame')"><i class="fa-regular fa-file-lines" aria-hidden="true"></i> Leia-me</button>
+    <button type="button" class="menu-item" onclick="openProgram('win-projetos')"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Projetos</button>
+    <a class="menu-item" href="curriculo/"><i class="fa-regular fa-id-card" aria-hidden="true"></i> Currículo</a>
+    <a class="menu-item" href="infograficos/"><i class="fa-solid fa-chart-column" aria-hidden="true"></i> Infográficos</a>
+    <a class="menu-item" href="infograficos/dados-da-regiao/"><i class="fa-solid fa-school" aria-hidden="true"></i> Dados da educação na região</a>
+    <a class="menu-item" href="infograficos/chuva-el-nino/"><i class="fa-solid fa-cloud-rain" aria-hidden="true"></i> Chuva do RS e El Niño</a>
+    <a class="menu-item" href="infograficos/interesse-por-ia/"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Interesse por IA</a>
+    <a class="menu-item" href="infograficos/paisagem-sonora/"><i class="fa-solid fa-music" aria-hidden="true"></i> Paisagem sonora</a>
+    <a class="menu-item" href="infograficos/interesse-por-ia/notebooks/"><i class="fa-solid fa-book" aria-hidden="true"></i> Notebooks</a>
+    <hr class="menu-sep">
+    <div class="menu-heading">Formação de professores</div>
+    <a class="menu-item" href="https://ohtopico.com.br/"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> ohtopico.com.br</a>
+    <a class="menu-item" href="https://ohtopico.com.br/simuladores/"><i class="fa-solid fa-flask" aria-hidden="true"></i> Simuladores</a>
+</nav>
+
+<script>
+    // ---------- Tema claro/escuro (compartilhado com o IA pra Prof) ----------
+    document.getElementById('theme-btn').addEventListener('click', () => {
+        const raiz = document.documentElement;
+        const escuro = raiz.dataset.theme === 'dark' ||
+            (!raiz.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+        const proximo = escuro ? 'light' : 'dark';
+        raiz.dataset.theme = proximo;
+        try { localStorage.setItem('iapraprof:theme', JSON.stringify(proximo)); } catch (e) {}
+        // Avisa as janelas com iframe para acompanharem o tema
+        document.querySelectorAll('iframe').forEach(f => {
+            try { f.contentWindow.postMessage({ tipo: 'tema', tema: proximo }, location.origin); } catch (e) {}
+        });
+    });
+
+    const mobileQuery = matchMedia('(max-width: 768px), (max-height: 520px) and (pointer: coarse)');
+    const isMobile = () => mobileQuery.matches;
+
+    // ---------- Janelas ----------
+    const abertas = new Set();   // janelas abertas (visíveis ou minimizadas)
+
+    function bringToFront(win) {
+        document.querySelectorAll('.janela').forEach(w => w.style.zIndex = '10');
+        win.style.zIndex = '50';
+    }
+
+    function openProgram(id) {
+        const win = document.getElementById(id);
+        if (!win) return;
+        if (isMobile()) {
+            document.querySelectorAll('.janela').forEach(w => { if (w !== win) w.hidden = true; });
+        }
+        win.hidden = false;
+        abertas.add(id);
+        bringToFront(win);
+        win.querySelectorAll('iframe[data-src]').forEach(f => { if (!f.getAttribute('src')) f.src = f.dataset.src; });
+        setStartMenu(false, false);
+        updateTaskbarTabs();
+        win.focus({ preventScroll: true });
+    }
+
+    function devolverFoco(id) {
+        const opener = document.querySelector(`[aria-controls="${id}"]`) || document.querySelector('.start-btn');
+        opener.focus();
+    }
+
+    function minimizeWindow(id) {
+        const win = document.getElementById(id);
+        if (!win) return;
+        const tinhaFoco = win.contains(document.activeElement);
+        win.hidden = true;
+        updateTaskbarTabs();
+        if (tinhaFoco) devolverFoco(id);
+    }
+
+    function closeWindow(id) {
+        abertas.delete(id);
+        minimizeWindow(id);
+    }
+
+    function toggleWindow(id) {
+        const win = document.getElementById(id);
+        if (win && win.hidden) openProgram(id); else minimizeWindow(id);
+    }
+
+    function updateTaskbarTabs() {
+        const caixa = document.getElementById('open-programs-tabs');
+        caixa.innerHTML = '';
+        abertas.forEach(id => {
+            const win = document.getElementById(id);
+            const visivel = !win.hidden;
+            const icone = win.querySelector('.janela-titulo i').className;
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'taskbar-tab' + (visivel ? ' active' : '');
+            b.innerHTML = `<i class="${icone}" aria-hidden="true"></i><span class="tab-label">${win.dataset.titulo}</span>`;
+            b.setAttribute('aria-label', win.dataset.titulo);
+            b.setAttribute('aria-pressed', String(visivel));
+            b.addEventListener('click', () => visivel ? minimizeWindow(id) : openProgram(id));
+            caixa.appendChild(b);
+        });
+    }
+
+    // Arrastar pelo cabeçalho (mouse e toque; no celular as janelas ficam fixas)
+    document.querySelectorAll('.janela').forEach(win => {
+        const header = win.querySelector('.janela-header');
+        const nome = win.dataset.titulo;
+        win.setAttribute('role', 'region');
+        win.setAttribute('aria-label', nome);
+        win.tabIndex = -1;
+        win.querySelector('[data-minimizar]').setAttribute('aria-label', `Minimizar ${nome}`);
+        win.querySelector('[data-fechar]').setAttribute('aria-label', `Fechar ${nome}`);
+        win.querySelector('[data-minimizar]').addEventListener('click', () => minimizeWindow(win.id));
+        win.querySelector('[data-fechar]').addEventListener('click', () => closeWindow(win.id));
+        win.addEventListener('pointerdown', () => bringToFront(win));
+
+        header.addEventListener('pointerdown', e => {
+            if (e.target.closest('.win-btn') || isMobile()) return;
+            const r = win.getBoundingClientRect();
+            const area = document.getElementById('desktop').getBoundingClientRect();
+            win.style.transform = 'none';
+            win.style.left = (r.left - area.left) + 'px';
+            win.style.top = (r.top - area.top) + 'px';
+            const dx = e.clientX - r.left, dy = e.clientY - r.top;
+            try { header.setPointerCapture(e.pointerId); } catch (err) {}
+            // iframes não "roubam" o arraste
+            document.querySelectorAll('iframe').forEach(f => f.style.pointerEvents = 'none');
+            const mover = ev => {
+                const x = Math.min(Math.max(ev.clientX - dx - area.left, -r.width + 80), area.width - 80);
+                const y = Math.min(Math.max(ev.clientY - dy - area.top, 0), area.height - 50);
+                win.style.left = x + 'px';
+                win.style.top = y + 'px';
+            };
+            const soltar = () => {
+                header.removeEventListener('pointermove', mover);
+                header.removeEventListener('pointerup', soltar);
+                header.removeEventListener('pointercancel', soltar);
+                document.querySelectorAll('iframe').forEach(f => f.style.pointerEvents = '');
+            };
+            header.addEventListener('pointermove', mover);
+            header.addEventListener('pointerup', soltar);
+            header.addEventListener('pointercancel', soltar);
+        });
+    });
+
+    // ---------- Menu Iniciar ----------
+    function setStartMenu(aberto, focar = true) {
+        const menu = document.getElementById('start-menu');
+        const botao = document.querySelector('.start-btn');
+        menu.hidden = !aberto;
+        botao.setAttribute('aria-expanded', String(aberto));
+        if (aberto && focar) menu.querySelector('.menu-item').focus();
+    }
+
+    function toggleStartMenu() { setStartMenu(document.getElementById('start-menu').hidden); }
+
+    document.addEventListener('click', e => {
+        const menu = document.getElementById('start-menu');
+        if (!menu.hidden && !menu.contains(e.target) && !e.target.closest('.start-btn')) setStartMenu(false, false);
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.key !== 'Escape') return;
+        const menu = document.getElementById('start-menu');
+        if (!menu.hidden) { setStartMenu(false); document.querySelector('.start-btn').focus(); return; }
+        const win = document.activeElement && document.activeElement.closest('.janela');
+        if (win) minimizeWindow(win.id);
+    });
+
+    // ---------- Relógio ----------
+    function updateClock() {
+        document.getElementById('clock').textContent =
+            new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    }
+    setInterval(updateClock, 10000);
+    updateClock();
+
+    // ---------- Pedidos de outras páginas e links com #abrir= ----------
+    const JANELAS_POR_LINK = ['win-leiame', 'win-projetos'];
+
+    window.addEventListener('message', e => {
+        if (e.origin !== location.origin || !e.data || e.data.tipo !== 'abrir-janela') return;
+        if (JANELAS_POR_LINK.includes(e.data.janela)) openProgram(e.data.janela);
+    });
+
+    function abrirPeloEndereco() {
+        const m = location.hash.match(/^#abrir=(win-[a-z]+)$/);
+        if (m && JANELAS_POR_LINK.includes(m[1])) openProgram(m[1]);
+    }
+    window.addEventListener('hashchange', abrirPeloEndereco);
+
+    // O leia-me abre junto com a página (sem roubar o foco), a não ser que o endereço peça outra janela
+    if (!/^#abrir=/.test(location.hash)) {
+        const leiame = document.getElementById('win-leiame');
+        leiame.hidden = false;
+        bringToFront(leiame);
+    }
+    abertas.add('win-leiame');
+    updateTaskbarTabs();
+    abrirPeloEndereco();
+</script>
+</body>
+</html>

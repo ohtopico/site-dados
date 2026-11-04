@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A partitura da cidade: paisagem sonora de Nova York | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo com 18.510 gravações de rua de Nova York: quando cada som aparece, onde, e como soa a cidade em 24 horas.">
+<meta property="og:title" content="A partitura da cidade | Júlia Quoos">
+<meta property="og:description" content="Motores de madrugada, obras de manhã, vozes e sirenes à noite. Ouça 24 horas de Nova York em 12 segundos.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/paisagem-sonora/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/paisagem-sonora/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/paisagem-sonora/og-paisagem-sonora.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Partitura de 24 horas com os sons de Nova York">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../../infograficos/assets/infograficos.css?v=202611030200">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"A partitura da cidade: paisagem sonora de Nova York",
+"description":"Quando e onde cada som urbano aparece em 18.510 gravações de 10 segundos anotadas do SONYC-UST v2 (Nova York, 2016 a 2019).",
+"url":"https://juliaroberta.com/infograficos/paisagem-sonora/","inLanguage":"pt-BR","spatialCoverage":"Nova York, Estados Unidos","temporalCoverage":"2016/2019",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://doi.org/10.5281/zenodo.3966543"],"license":"https://creativecommons.org/licenses/by/4.0/"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ paisagem sonora</span>
+      <h1>A partitura <mark>da cidade</mark></h1>
+      <p class="lead">Durante quatro anos, microfones presos em postes e fachadas de Nova York gravaram trechos de 10 segundos. Voluntários ouviram cada trecho e marcaram o que tinha nele: motor, serra, buzina, cachorro, conversa, música. Com essas marcações dá para ler a cidade como uma partitura: que som entra, a que horas, e onde.</p>
+      <ul class="pilulas"><li>Nova York · 2016 a 2019</li><li>18.510 gravações de 10 s</li><li>56 microfones na rua</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Partitura de 24 horas</span>
+      <h2>Quando cada som toca</h2>
+      <div class="janela">
+        <div class="janela-barra"><i></i><i></i><i></i><span>partitura.html</span></div>
+        <div class="janela-corpo">
+          <p>Cada linha é um som e cada coluna é uma hora do dia. O tamanho da bolinha mostra em que horário aquele som aparece mais, comparado com o próprio pico da linha (a bolinha com contorno é o horário em que ele mais toca). As linhas estão em ordem de pico: a cidade começa com motores de madrugada, passa pelas obras de manhã e termina com vozes, buzinas e sirenes à noite.</p>
+          <div class="controles">
+            <button type="button" class="btn" id="tocar">▶ Ouvir a partitura</button>
+            <span class="nota" id="estado" aria-live="polite">24 horas em 12 segundos. Sons graves são motores; agudos são vozes e sirenes.</span>
+          </div>
+          <div class="rolagem"><svg id="partitura" role="img" aria-label="Partitura de 24 horas com 14 sons urbanos"></svg></div>
+          <div class="legenda" id="legenda"></div>
+          <p class="nota">Passe o mouse numa bolinha para ver a porcentagem de gravações daquela hora com o som. A faixa cinza embaixo mostra a fração de gravações sem nenhum dos sons marcados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Achados</span>
+      <h2>O que a partitura conta</h2>
+      <div class="achados">
+        <article class="achado"><span class="num">5h</span><h3>A hora mais quieta</h3><p>Às 5 da manhã, 44% das gravações não têm nenhum dos sons marcados. Entre 18h e 21h, só 18%.</p></article>
+        <article class="achado"><span class="num">36%</span><h3>A madrugada é dos motores</h3><p>Das 0h às 5h, motores aparecem em 36% das gravações, mais do que em qualquer outro período. Caminhões e ônibus têm pico às 5h, quando começam entregas e coleta de lixo.</p></article>
+        <article class="achado"><span class="num">7h</span><h3>A obra tem horário</h3><p>Serras e bipes de ré disparam às 7h e britadeiras às 9h. De manhã, serras estão em 8,5% das gravações; à noite, em 0,2%.</p></article>
+        <article class="achado"><span class="num">24×</span><h3>A cidade conversa à noite</h3><p>Conversa é o som que mais varia ao longo do dia: no pico, às 21h, aparece 24 vezes mais do que no horário mais calado. À noite, vozes estão em 45% das gravações.</p></article>
+        <article class="achado"><span class="num">½</span><h3>Fim de semana sem obra</h3><p>Sábado e domingo, sons de obra caem para menos da metade (6,4% para 2,7%). Música (4,2% para 6,2%) e cachorros (3,7% para 5,8%) sobem.</p></article>
+        <article class="achado"><span class="num">2,7×</span><h3>Verão tem trilha sonora</h3><p>Música aparece em 7,2% das gravações de junho a agosto e em 2,7% em janeiro e fevereiro. Cachorros fazem o contrário: 6,1% no inverno, 2,3% no verão.</p></article>
+        <article class="achado"><span class="num">0</span><h3>Sons que nunca se encontram</h3><p>Em 18.510 gravações, música e serra elétrica não aparecem juntas nenhuma vez. Já motor e batidas (porta, carga e descarga) aparecem juntos 1,4 vez mais do que o acaso explicaria.</p></article>
+        <article class="achado"><span class="num">6</span><h3>O caminhão de sorvete</h3><p>O som mais raro da base. Das 6 vezes que ele aparece, 5 são no mesmo microfone, sempre entre 16h e 17h, inclusive em janeiro e dezembro.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Relógio da semana</span>
+      <h2>Cada som tem seu dia e sua hora</h2>
+      <div class="janela">
+        <div class="janela-barra"><i></i><i></i><i></i><span>semana.html</span></div>
+        <div class="janela-corpo">
+          <p>Escolha um som. Cada quadrado é uma hora de um dia da semana, e quanto mais forte a cor, mais gravações daquela hora têm o som (comparado com o pico do próprio som).</p>
+          <div class="seletor" id="sons" role="group" aria-label="Escolha o som"></div>
+          <div class="rolagem"><svg id="relogio" class="grafico" role="img" aria-label="Relógio da semana: 7 dias por 24 horas"></svg></div>
+          <p class="nota">Vozes têm pico na sexta às 22h (51% das gravações). A serra elétrica quase some no domingo de manhã e chega a 8,6% na segunda às 8h. Passe o mouse num quadrado para ver o número.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">O ano inteiro</span>
+      <h2>As estações também soam</h2>
+      <div class="janela">
+        <div class="janela-barra"><i></i><i></i><i></i><span>calendario.html</span></div>
+        <div class="janela-corpo">
+          <p>O mesmo som escolhido acima, mês a mês: a fração das gravações de cada mês em que ele aparece, somando os quatro anos.</p>
+          <svg id="calendario" class="grafico" role="img" aria-label="Calendário do ano: um som por mês"></svg>
+          <p class="nota">Música sobe de junho a agosto, no verão de Nova York. Cachorros aparecem mais no inverno. Meses com poucas gravações oscilam mais, então vale olhar o número de gravações no detalhe de cada barra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Retratos de esquinas</span>
+      <h2>Cada microfone tem uma assinatura</h2>
+      <div class="janela">
+        <div class="janela-barra"><i></i><i></i><i></i><span>retratos.html</span></div>
+        <div class="janela-corpo">
+          <p>Cada flor é um microfone com pelo menos 100 gravações. As 8 pétalas são os 8 grupos de som, e o comprimento mostra em que fração das gravações daquele ponto o som aparece. O miolo fica maior quanto mais silencioso é o lugar. Os destacados são os mais extremos.</p>
+          <div class="legenda" id="legenda2"></div>
+          <div class="retratos" id="retratos"></div>
+          <p class="nota">O sensor 1 tem cachorro em 47% das gravações. O sensor 5, no Brooklyn, tem música em 39%. O 30 é quase só motor (74%), o 46 é quase só voz (71%), e o 14, também no Brooklyn, é o mais quieto (48% sem nenhum dos sons).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Para criar com os dados</span>
+      <h2>Baixe e use</h2>
+      <p>As tabelas abaixo têm os números da partitura e dos retratos, prontos para virar som, desenho ou instalação. O notebook refaz tudo no Google Colab e ensina a montar o mesmo mapa com gravações feitas no celular, em qualquer cidade.</p>
+      <div class="btn-row">
+        <a class="btn" href="dados/partitura_24h.csv" download>Partitura de 24 h (CSV)</a>
+        <a class="btn ghost" href="dados/retratos_sensores.csv" download>Retratos dos microfones (CSV)</a>
+        <a class="btn ghost" href="https://colab.research.google.com/github/ohtopico/site-dados/blob/main/notebooks/paisagem-sonora/paisagem_sonora_urbana.ipynb" rel="noopener">Abrir o notebook no Colab</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>Antes de citar os números</h2>
+      <ul class="leitura">
+        <li>As porcentagens são das <b>gravações anotadas</b>, não do tempo total. A equipe escolheu para anotação trechos parecidos com os que já tinham sons de interesse, então sons raros estão super-representados. Comparar horários e lugares entre si funciona; dizer "Nova York tem buzina 15% do tempo" não.</li>
+        <li>A base marca <b>presença</b> de som, não volume. Para medir decibéis é preciso gravar, como mostra o notebook.</li>
+        <li>Por privacidade, o local é só o quarteirão e o horário é só a hora cheia. Quase tudo é de Manhattan (17.662 gravações), com 823 no Brooklyn.</li>
+        <li>Rótulo de cada gravação: a anotação verificada pela equipe quando existe; senão, a da equipe SONYC; senão, a maioria dos voluntários.</li>
+        <li><b>Fonte:</b> Cartwright, M. et al. SONYC-UST-V2: An Urban Sound Tagging Dataset with Spatiotemporal Context. DCASE Workshop, 2020. <a href="https://doi.org/10.5281/zenodo.3966543" rel="noopener">doi:10.5281/zenodo.3966543</a>, licença CC BY 4.0.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="partitura.js?v=202611030200"></script>
+</body>
+</html>

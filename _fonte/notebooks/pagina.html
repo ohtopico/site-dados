@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notebooks de aula com dados da Wikipédia | Júlia Quoos</title>
+<meta name="description" content="Cinco notebooks gratuitos para o Google Colab com dados da Wikipédia: gráficos, previsão de séries, detecção de picos e modelos de linguagem.">
+<meta property="og:title" content="Notebooks de aula com dados da Wikipédia | Júlia Quoos">
+<meta property="og:description" content="Cinco notebooks interativos para o Google Colab: dados abertos, estatística e inteligência artificial em sala de aula.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/interesse-por-ia/notebooks/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/interesse-por-ia/notebooks/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/interesse-por-ia/og-notebooks.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Notebooks de aula com dados da Wikipédia">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../../dados-da-regiao/assets/painel.css?v=202610280100">
+<link rel="stylesheet" href="../assets/interesse.css?v=20261030">
+<style>
+  .nbs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 18px; }
+  .nb h3 { font-size: 20px; margin: 6px 0; }
+  .nb p { font-size: 15px; color: var(--ink-2); margin: 6px 0 0; }
+  .nb .botoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .passos { max-width: 820px; padding-left: 22px; font-size: 16px; }
+  .passos li { margin-bottom: 8px; }
+</style>
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LearningResource","name":"Notebooks de aula com dados da Wikipédia",
+"description":"Cinco notebooks interativos para o Google Colab com dados abertos da Wikipédia: gráficos, previsão de séries temporais, detecção de picos, sazonalidade escolar e modelos de linguagem.",
+"url":"https://juliaroberta.com/infograficos/interesse-por-ia/notebooks/","inLanguage":"pt-BR","isAccessibleForFree":true,
+"learningResourceType":"Notebook","educationalLevel":["Ensino fundamental","Ensino médio","Ensino técnico"],
+"author":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"license":"https://creativecommons.org/licenses/by-nc-sa/4.0/"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ interesse por IA</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ python no navegador</span>
+      <h1>Notebooks de aula com <mark>dados da Wikipédia</mark></h1>
+      <p class="lead">Cinco aulas interativas para o Google Colab. Os alunos baixam dados abertos de verdade, fazem gráficos, testam previsões e constroem um pequeno modelo de linguagem, tudo no navegador e sem instalar nada.</p>
+      <p class="small muted">Feitos por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Gratuitos, licença CC BY-NC-SA 4.0.</p>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Os notebooks</span>
+      <h2>Escolha a aula</h2>
+      <div class="nbs">
+<!-- notebooks -->
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Como usar</span>
+      <h2>Primeira vez no Colab</h2>
+      <ol class="passos">
+        <li>Clique em <b>Abrir no Colab</b>. É preciso entrar com uma conta Google (a conta escolar serve).</li>
+        <li>No menu <b>Arquivo</b>, escolha <b>Salvar uma cópia no Drive</b>. Assim cada pessoa trabalha na sua cópia.</li>
+        <li>Rode as células de cima para baixo com o botão de play ou com Shift + Enter. A primeira célula, Configuração, sempre vem antes.</li>
+        <li>Troque os campos ao lado das células (nome do verbete, número de meses, semente) e rode de novo para ver o que muda.</li>
+        <li>Cada notebook tem um desafio "Sua vez" com uma solução escondida, e perguntas para discutir com a turma.</li>
+      </ol>
+      <p class="small" style="margin-top:14px">Sem computador para todos? Projete o notebook e conduza a aula com a turma decidindo os valores. Para uma versão sem código, use o <a href="../">painel de interesse por IA</a>, o <a href="https://ohtopico.com.br/material-didatico/plano.html?id=p-wikipedia">plano de aula A Wikipédia como base de dados</a> e o <a href="https://ohtopico.com.br/material-didatico/jogos/wikipedia.html">jogo Qual verbete tem mais visitas</a>.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>Fontes</h2>
+      <div class="fonte-box"><ul>
+        <li>Visitas: API de visualizações de páginas da Wikimedia (domínio público, CC0), só acessos de pessoas.</li>
+        <li>Textos dos verbetes: Wikipédia em português (CC BY-SA). Ao usar trechos, cite a Wikipédia.</li>
+        <li>Correções e sugestões: <a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a>.</li>
+      </ul></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Notebooks de aula organizados por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja também a <a href="https://ohtopico.com.br/formacao-continuada/">formação continuada para professores em IA</a>.</p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>

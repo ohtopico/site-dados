@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interesse por IA na Wikipédia em português | Júlia Quoos</title>
+<meta name="description" content="Painel com as visitas mensais aos verbetes de IA, ChatGPT e aprendizado de máquina na Wikipédia em português, desde 2016, atualizado todo mês.">
+<meta property="og:title" content="Interesse por IA na Wikipédia em português | Júlia Quoos">
+<meta property="og:description" content="Quantas pessoas leem sobre inteligência artificial na Wikipédia em português, mês a mês, desde 2016. Painel interativo com dados abertos.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/interesse-por-ia/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/interesse-por-ia/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/interesse-por-ia/og-interesse-por-ia.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Painel do interesse por inteligência artificial na Wikipédia">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../dados-da-regiao/assets/painel.css?v=20261103">
+<link rel="stylesheet" href="assets/interesse.css?v=20261103">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Interesse por inteligência artificial na Wikipédia em português",
+"description":"Visualizações mensais (usuários, sem robôs) de verbetes sobre inteligência artificial, ferramentas de IA e educação digital na Wikipédia em português, desde janeiro de 2016.",
+"url":"https://juliaroberta.com/infograficos/interesse-por-ia/","inLanguage":"pt-BR","temporalCoverage":"2016-01/..",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://wikimedia.org/api/rest_v1/","https://pageviews.wmcloud.org/"],
+"license":"https://creativecommons.org/publicdomain/zero/1.0/"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="./">/ interesse por IA</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ painel interativo</span>
+      <h1>O interesse por <mark>inteligência artificial</mark> na Wikipédia</h1>
+      <p class="lead">Quantas vezes por mês os verbetes sobre IA, ferramentas como o ChatGPT e educação digital são lidos na Wikipédia em português, de janeiro de 2016 até <span id="ate">outubro de 2026</span>. Os dados são abertos e o painel se atualiza sozinho todo mês.</p>
+      <p class="small muted">Dados reunidos e analisados por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>.</p>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Resumo</span>
+      <h2>O que os números mostram</h2>
+      <div class="kpis" id="kpis"></div>
+      <!-- resumo:inicio -->
+<ul class="resumo-lista">
+<li>Nos últimos 12 meses, os verbetes de inteligência artificial acompanhados aqui somaram <b>1.158.119 visitas</b> na Wikipédia em português.</li>
+<li>O mês com mais visitas a esses verbetes foi <b>junho de 2024</b>, com 519.648 visitas.</li>
+<li>O verbete mais lido no período foi <b>ChatGPT</b>, com 771.092 visitas.</li>
+<li><b>OpenAI</b> teve 2,1 vezes as visitas do ano anterior ao lançamento do ChatGPT.</li>
+<li><b>Inteligência artificial</b> teve 1,8 vezes as visitas do ano anterior ao lançamento do ChatGPT.</li>
+</ul>
+<!-- resumo:fim -->
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Explorar</span>
+      <h2>Visitas mês a mês</h2>
+      <div class="controles">
+        <div class="campo"><span id="rot-per">Período</span><div class="seg" id="f-per" role="group" aria-labelledby="rot-per"></div></div>
+        <div class="campo"><span id="rot-esc">Escala</span><div class="seg" id="f-esc" role="group" aria-labelledby="rot-esc"></div></div>
+      </div>
+      <div class="painel" style="margin-top:18px">
+        <h3 id="linha-titulo">Visitas por mês</h3>
+        <p class="sub">Escolha até cinco verbetes. Passe o mouse ou o dedo sobre o gráfico para ver os números de cada mês. Para comparar verbetes muito diferentes, como ChatGPT e Visão computacional, use a escala em % do recorde.</p>
+        <div class="chips-ver" id="f-ver" role="group" aria-label="Verbetes no gráfico"></div>
+        <div class="linha" id="linha"></div>
+        <div class="legenda" id="linha-leg"></div>
+        <p class="nota"><button class="btn-link" type="button" id="tab-btn" aria-expanded="false">Ver como tabela</button> · <button class="btn-link" type="button" id="csv-btn">Baixar os dados (CSV)</button></p>
+        <div class="tabela-wrap" id="tab" hidden></div>
+      </div>
+      <div class="duas">
+        <div class="painel">
+          <h3>Os mais lidos</h3>
+          <p class="sub" id="rank-sub">Visitas nos últimos 12 meses. Clique em um verbete para vê-lo no gráfico.</p>
+          <div class="legenda" style="margin:0 0 6px"><span><i style="background:var(--s1)"></i>Conceitos de IA</span><span><i style="background:var(--s3)"></i>Ferramentas</span><span><i style="background:var(--s5)"></i>Educação e tecnologia</span></div>
+          <div class="area-barras" id="rank"></div>
+        </div>
+        <div class="painel">
+          <h3>Os que mais cresceram</h3>
+          <p class="sub">Visitas nos últimos 12 meses comparadas aos 12 meses antes do lançamento do ChatGPT (dezembro de 2021 a novembro de 2022).</p>
+          <div class="area-barras" id="cresc"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Para a sala de aula</span>
+      <h2>Use estes dados com a turma</h2>
+      <div class="usos">
+        <a class="painel uso" href="https://ohtopico.com.br/material-didatico/plano.html?id=p-wikipedia">
+          <span class="eyebrow">Plano de aula</span>
+          <h3>A Wikipédia como base de dados</h3>
+          <p>Os alunos fazem uma pergunta, coletam as visitas de verbetes, montam um gráfico de linhas na planilha e investigam o que explica cada pico. BNCC de Matemática (estatística) e Computação (qualidade da informação), 7º ao 9º ano.</p>
+        </a>
+        <a class="painel uso" href="https://ohtopico.com.br/material-didatico/jogos/wikipedia.html">
+          <span class="eyebrow">Jogo</span>
+          <h3>Qual verbete tem mais visitas?</h3>
+          <p>Dois verbetes, uma escolha: qual foi mais lido no último ano? Um jogo rápido para comparar números grandes e estimar ordens de grandeza, com dados reais.</p>
+        </a>
+        <a class="painel uso" href="notebooks/">
+          <span class="eyebrow">Notebooks no Colab</span>
+          <h3>Cinco aulas com Python</h3>
+          <p>Gráficos, previsão com treino e teste, detecção de picos, sazonalidade escolar e um pequeno modelo de linguagem, com os mesmos dados. Abrem no navegador, sem instalar nada.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>Fontes e notas</h2>
+      <div class="fonte-box">
+        <ul>
+          <li><b>Fonte:</b> API de visualizações de páginas da Wikimedia (pageviews), Wikipédia em português, todos os acessos (computador, celular e aplicativo), só pessoas: robôs e acessos automáticos ficam de fora. Os mesmos números podem ser conferidos em <a href="https://pageviews.wmcloud.org/?project=pt.wikipedia.org" rel="noopener">pageviews.wmcloud.org</a>.</li>
+          <li><b>Quem lê:</b> a Wikipédia em português é lida no Brasil, em Portugal e nos demais países de língua portuguesa. A maior parte das visitas vem do Brasil, mas a API não separa por país.</li>
+          <li><b>Redirecionamentos:</b> cada verbete soma as visitas ao título principal e aos títulos que levam até ele (atalhos e nomes antigos), para a série não se partir quando um verbete muda de nome.</li>
+          <li><b>Mudanças bruscas:</b> a Wikimedia revisa de tempos em tempos como separa pessoas de acessos automáticos, e alguns verbetes têm saltos de um mês para o outro por isso, não por mudança no interesse das pessoas.</li>
+          <li><b>Verbetes novos:</b> verbetes criados depois de 2016 aparecem com zero nos meses em que ainda não existiam.</li>
+          <li><b>Atualização:</b> todo dia 3, uma rotina automática baixa o último mês completo. Os dados da Wikimedia são de domínio público (CC0).</li>
+          <li>Coleta e análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte. Correções e sugestões: <a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a>.</li>
+        </ul>
+      </div>
+      <p class="small" style="margin-top:14px">Veja também o painel de <a href="../dados-da-regiao/">dados da educação na região</a>, com Censo Escolar e IBGE do Vale do Rio Pardo, e os outros <a href="../">infográficos interativos</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Painel de interesse por inteligência artificial, organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja também a <a href="https://ohtopico.com.br/formacao-continuada/">formação continuada para professores em IA</a> e o <a href="https://ohtopico.com.br/material-didatico/">material didático</a>.</p>
+</div></footer>
+
+<div id="tip" role="presentation"></div>
+<script src="assets/dados.js?v=20261103"></script>
+<script src="assets/interesse.js?v=20261103"></script>
+</body>
+</html>

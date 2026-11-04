@@ -1,0 +1,48 @@
+# Atualiza o painel "Interesse por IA na Wikipédia" (/infograficos/interesse-por-ia/)
+# com as visualizações do último mês completo.
+# Roda todo dia 3 de manhã e também quando o gerador muda (em qualquer branch).
+name: Atualizar interesse por IA (Wikipédia)
+
+on:
+  schedule:
+    - cron: '30 9 3 * *'   # dia 3 de cada mês, 06h30 em Brasília
+  push:
+    paths:
+      - '_fonte/interesse-ia/**'
+      - '.github/workflows/atualizar-interesse-ia.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: interesse-ia-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Sao_Paulo
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Baixar as visualizações da Wikipédia e gerar o painel
+        run: python _fonte/interesse-ia/gerar.py
+
+      - name: Publicar se algo mudou
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada novo."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Interesse por IA: dados da Wikipédia atualizados em $(date +%d/%m/%Y)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
