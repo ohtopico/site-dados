@@ -1,0 +1,82 @@
+# Atualiza "Tecnologia nas escolas em dados" (/infograficos/tecnologia-nas-escolas/)
+# com os microdados do Censo Escolar (INEP). O INEP publica um ano novo por ano,
+# então roda em fevereiro e março, e também quando o gerador muda.
+name: Atualizar tecnologia nas escolas (Censo Escolar)
+
+on:
+  schedule:
+    - cron: '0 10 15 2,3 *'
+  push:
+    paths:
+      - '_fonte/tecnologia-escolas/gerar.py'
+      - '.github/workflows/atualizar-tecnologia-escolas.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tecnologia-escolas-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Baixar os microdados do Censo Escolar (2019 em diante)
+        run: |
+          mkdir -p /tmp/censo
+          # O servidor do INEP não envia o certificado intermediário. Busca o
+          # intermediário pelo endereço indicado no próprio certificado (AIA)
+          # e verifica normalmente com ele.
+          for t in 1 2 3 4 5; do
+            timeout 60 openssl s_client -connect download.inep.gov.br:443 -servername download.inep.gov.br -showcerts </dev/null > /tmp/inep-sc.txt 2>/tmp/inep-sc.err || true
+            grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt && break
+            echo "tentativa $t sem certificado:"; tail -3 /tmp/inep-sc.err; sleep 10
+          done
+          # se o INEP não responder ao openssl, usa o intermediário conhecido (RNP ICPEdu, 2025)
+          aia=http://secure.globalsign.com/cacert/rnpicpedugr46ovtlsca2025.crt
+          if grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt; then
+            grep -E '^ *[0-9] s:|^ *i:' /tmp/inep-sc.txt || true
+            openssl x509 -in /tmp/inep-sc.txt -outform PEM > /tmp/inep-folha.pem
+            lido=$(openssl x509 -in /tmp/inep-folha.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+            [ -n "$lido" ] && aia="$lido"
+          fi
+          echo "intermediário: $aia"
+          curl -fsSL "$aia" -o /tmp/inep-inter.crt
+          openssl x509 -inform DER -in /tmp/inep-inter.crt -out /tmp/inep-inter.pem 2>/dev/null || cp /tmp/inep-inter.crt /tmp/inep-inter.pem
+          cat /etc/ssl/certs/ca-certificates.crt /tmp/inep-inter.pem > /tmp/ca-inep.pem
+          ano_atual=$(date +%Y)
+          for ano in $(seq 2019 "$ano_atual"); do
+            url="https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_${ano}.zip"
+            if curl -fsSL --cacert /tmp/ca-inep.pem --retry 4 --retry-delay 10 -m 1500 -o "/tmp/censo/${ano}.zip" "$url"; then
+              echo "baixado $ano: $(du -h /tmp/censo/${ano}.zip | cut -f1)"
+            else
+              echo "sem microdados para $ano"
+              rm -f "/tmp/censo/${ano}.zip"
+            fi
+          done
+          ls -la /tmp/censo
+
+      - name: Gerar os dados da página
+        run: python _fonte/tecnologia-escolas/gerar.py /tmp/censo
+
+      - name: Publicar se algo mudou
+        run: |
+          git add -A infograficos/tecnologia-nas-escolas/dados.js _fonte/tecnologia-escolas/resumo.json
+          if git diff --cached --quiet; then
+            echo "Nada novo."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Tecnologia nas escolas: dados do Censo Escolar atualizados em $(date +%d/%m/%Y)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
