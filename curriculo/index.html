@@ -1291,7 +1291,7 @@ dialog.browser::backdrop {
                     <li data-perfil="completo docencia"><span><b>Integrante do grupo PrendAdas</b> <span class="org">· mulheres na Computação, UNISC; palestras</span></span><span class="when">2019</span><div class="pv-slot" data-preview="prendadas"></div></li>
                     <li><span><b>Hackathon: OdontoApp</b> <span class="org">· prontuário odontológico, em equipe</span></span><span class="when"></span><div class="pv-slot" data-preview="odontoapp"></div></li>
                     <li data-perfil="completo docencia"><span><b>Freelancer em design e marketing digital</b> <span class="org">· identidade visual, peças e redes sociais</span></span><span class="when"></span><div class="pv-slot" data-preview="freelancer"></div></li>
-                    <li><span><b>Desenvolvimento de sites</b> <span class="org">· este site, <a href="https://andreseo.com.br">andreseo.com.br</a> (portfólio e loja de um artista 3D) e <a href="https://chaiene.com">chaiene.com</a> (site profissional de uma advogada)</span></span><span class="when">2026</span></li>
+                    <li><span><b>Desenvolvimento de sites</b> <span class="org">· este site, <a href="https://andreseo.com.br">andreseo.com.br</a> (portfólio e loja de um artista 3D) e <a href="https://chaiene.com">chaiene.com</a> (site profissional de uma advogada)</span></span><span class="when">2026</span><div class="pv-slot" data-preview="sites"></div></li>
                 </ul>
             </div>
 
@@ -1556,6 +1556,21 @@ const PREVIAS = {
             { nome: 'Menção honrosa', img: 'img/mencao-honrosa.jpg', alt: 'Júlia Roberta Quoos Alves, sorrindo, segura o certificado de menção honrosa da V Mostra de Extensão, Ciência e Tecnologia da UNISC diante de um painel com logotipos da UNISC', legenda: 'Entrega do certificado de menção honrosa (2024).' }
         ]
     },
+    sites: {
+        tipo: 'Desenvolvimento web · 2026',
+        titulo: 'Sites para clientes',
+        url: 'projetos/sites',
+        texto: 'Sites feitos sob medida, do layout à publicação: o portfólio do artista 3D André Seo, com páginas de serviço e pedido de orçamento, e o site profissional da advogada Chaiene Meira de Oliveira, com trajetória, mentorias e agendamento de atendimento. Os dois funcionam no computador e no celular.',
+        fatos: [['2', 'sites publicados para clientes'], ['Responsivos', 'pensados para computador e celular']],
+        abas: [
+            { nome: 'Seo3D', img: 'img/site-andreseo.jpg', alt: 'Página inicial do site Seo3D: menu escuro com Trabalhos, Motion e vídeo, Modelagem e render, Impressão 3D, Blog e Orçamento; título “Sua ideia em 3D, pronta para ser vista.” sobre um render de cidade, com os botões “Pedir orçamento” e “Ver trabalhos”', legenda: 'andreseo.com.br: página inicial do portfólio de um artista 3D.', link: 'https://andreseo.com.br' },
+            { nome: 'Seo3D: serviço', img: 'img/site-andreseo-2.jpg', alt: 'Página “Modelagem e render” do site Seo3D, com o título “Personagens, produtos e assets em 3D.”, a faixa de preço e formatos de entrega e o começo da galeria de trabalhos', legenda: 'andreseo.com.br: página de serviço com galeria.', link: 'https://andreseo.com.br/modelagem.html' },
+            { nome: 'Seo3D no celular', img: 'img/site-andreseo-celular.jpg', alt: 'Página inicial do site Seo3D no celular, com menu recolhido, título em três linhas e os dois botões empilhados', legenda: 'andreseo.com.br no celular.', link: 'https://andreseo.com.br' },
+            { nome: 'Chaiene', img: 'img/site-chaiene.jpg', alt: 'Página inicial do site de Chaiene Meira de Oliveira, advogada em Cachoeira do Sul: nome, texto sobre Direito Público e compliance, botões “Agendar atendimento” e “Mentorias” e a faixa de números da carreira', legenda: 'chaiene.com: página inicial do site de uma advogada.', link: 'https://chaiene.com' },
+            { nome: 'Chaiene: sobre', img: 'img/site-chaiene-2.jpg', alt: 'Página “Sobre e currículo” do site de Chaiene Meira de Oliveira, com a formação e os botões “Ver currículo”, “Lattes” e “LinkedIn”, e a seção “Trajetória”', legenda: 'chaiene.com: página sobre e currículo.', link: 'https://chaiene.com/sobre' },
+            { nome: 'Chaiene no celular', img: 'img/site-chaiene-celular.jpg', alt: 'Página inicial do site de Chaiene Meira de Oliveira no celular, com os botões em largura total e o começo dos números da carreira', legenda: 'chaiene.com no celular.', link: 'https://chaiene.com' }
+        ]
+    },
     odontoapp: {
         tipo: 'Hackathon · projeto em equipe',
         titulo: 'OdontoApp',
@@ -1650,7 +1665,7 @@ const NOMES_CURTOS = {
     recompra: 'Previsão de recompra', salario: 'Faixa salarial', moedas: 'Moedas brasileiras',
     odontoapp: 'OdontoApp', iapraprof: 'IA pra Prof', oficinas: 'Oficinas para professores',
     cnpq: 'Pesquisa no CNPq', prendadas: 'Palestra PrendAdas', tutoria: 'UNISC Inclusão Digital',
-    licenciatura: 'Arduino e Scratch', mestrado: 'Pesquisa do mestrado', censo: 'Dados da região', fortalk: 'Fortalk', freelancer: 'Portfólio de design'
+    licenciatura: 'Arduino e Scratch', mestrado: 'Pesquisa do mestrado', censo: 'Dados da região', fortalk: 'Fortalk', freelancer: 'Portfólio de design', sites: 'Sites para clientes'
 };
 
 const COMPETENCIAS = {
