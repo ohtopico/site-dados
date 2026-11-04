@@ -72,7 +72,7 @@
   const verboTop = Object.entries(verbos).sort((a, b) => b[1] - a[1])[0];
   $('resumo').innerHTML = [
     [D.habilidades.length, `habilidades de ${C.disciplina} ${PERIODO}`],
-    ETAPA && ANOS.length === 1 ? [C.anosVisao.length, 'anos em que estas habilidades valem, aprofundadas a cada ano']
+    C.anosVisao && ANOS.length === 1 ? [C.anosVisao.length, 'anos em que estas habilidades valem, aprofundadas a cada ano']
       : [D.ligacoes.length, ETAPA ? 'ligações de conteúdo entre as duas etapas' : 'ligações de conteúdo entre anos seguidos'],
     [semAntes.length, `${semAntes.length === 1 ? 'habilidade que começa' : 'habilidades que começam'} um assunto novo (sem ligação com a ${ANTERIOR})`.replace('a ano', 'o ano')],
     [verboTop[0], `é o verbo mais usado, em ${verboTop[1]} habilidades`],
