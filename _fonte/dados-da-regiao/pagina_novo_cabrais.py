@@ -312,7 +312,7 @@ PAGINA = '''<!DOCTYPE html>
     <div class="wrap">
       <div class="chamada">
         <h2 style="margin-top:0">Quem organizou estes dados</h2>
-        <p>Júlia Roberta Quoos Alves é professora de computação, formadora de professores e mestranda na UFSM. Trabalhou na Prefeitura de Novo Cabrais e editou em Novo Cabrais o guia <a href="../../../ia-pra-prof/">IA pra Prof</a>, sobre inteligência artificial na sala de aula.</p>
+        <p>Júlia Roberta Quoos Alves é professora de computação, formadora de professores e mestranda na UFSM. Trabalhou na Prefeitura de Novo Cabrais e editou em Novo Cabrais o guia <a href="https://ohtopico.com.br/ia-pra-prof/">IA pra Prof</a>, sobre inteligência artificial na sala de aula.</p>
         <p>Escolas de Novo Cabrais e da região podem conhecer a <a href="https://ohtopico.com.br/formacao-continuada/">formação continuada para professores em IA</a> e o <a href="https://ohtopico.com.br/material-didatico/">material didático gratuito</a> de computação e matemática.</p>
       </div>
     </div>
