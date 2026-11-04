@@ -1,0 +1,1934 @@
+[
+ {
+  "codigo": "EF06CO01",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Tipos de dados",
+  "texto": "Classificar informações, agrupando-as em coleções (conjuntos) e associando cada coleção a um tipo de dado.",
+  "recursos": [
+   {
+    "id": "vale-bits",
+    "tipo": "jogo",
+    "titulo": "Vale dos Bits"
+   },
+   {
+    "id": "paridade",
+    "tipo": "jogo",
+    "titulo": "Mágica da Paridade"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-agrupamento",
+    "tipo": "3d",
+    "titulo": "Nuvem de Pontos e Agrupamento"
+   },
+   {
+    "id": "3d-espaco-palavras",
+    "tipo": "3d",
+    "titulo": "Espaço das Palavras"
+   },
+   {
+    "id": "f-co-tipos",
+    "tipo": "ficha",
+    "titulo": "Coleções e tipos de dados"
+   },
+   {
+    "id": "p-dados",
+    "tipo": "plano",
+    "titulo": "Coleções, entradas e saídas"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO02",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Linguagem de programação",
+  "texto": "Elaborar algoritmos com instruções sequenciais, de repetição e de seleção usando uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "robo",
+    "tipo": "jogo",
+    "titulo": "Robô Coletor"
+   },
+   {
+    "id": "vale-bits",
+    "tipo": "jogo",
+    "titulo": "Vale dos Bits"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "boletim",
+    "tipo": "jogo",
+    "titulo": "Fórmulas do Boletim"
+   },
+   {
+    "id": "chatbot",
+    "tipo": "jogo",
+    "titulo": "Chatbot de Regras"
+   },
+   {
+    "id": "f-robo",
+    "tipo": "ficha",
+    "titulo": "Programando o colega-robô"
+   },
+   {
+    "id": "p-robo",
+    "tipo": "plano",
+    "titulo": "Algoritmos: do papel ao robô"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO03",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Linguagem de programação",
+  "texto": "Descrever com precisão a solução de um problema, construindo o programa que implementa essa solução.",
+  "recursos": [
+   {
+    "id": "robo",
+    "tipo": "jogo",
+    "titulo": "Robô Coletor"
+   },
+   {
+    "id": "f-robo",
+    "tipo": "ficha",
+    "titulo": "Programando o colega-robô"
+   },
+   {
+    "id": "p-robo",
+    "tipo": "plano",
+    "titulo": "Algoritmos: do papel ao robô"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO04",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Decomposição",
+  "texto": "Construir soluções de problemas usando a técnica de decomposição e automatizá-las com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "robo",
+    "tipo": "jogo",
+    "titulo": "Robô Coletor"
+   },
+   {
+    "id": "f-decompor",
+    "tipo": "ficha",
+    "titulo": "Decompor para resolver"
+   },
+   {
+    "id": "p-robo",
+    "tipo": "plano",
+    "titulo": "Algoritmos: do papel ao robô"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO05",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Generalização",
+  "texto": "Identificar as entradas e as saídas esperadas de um problema, com seus tipos de dados, e definir a solução.",
+  "recursos": [
+   {
+    "id": "python",
+    "tipo": "jogo",
+    "titulo": "Horta em Python"
+   },
+   {
+    "id": "busca-binaria",
+    "tipo": "jogo",
+    "titulo": "Estante da Busca Binária"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-rede-neural",
+    "tipo": "3d",
+    "titulo": "Rede Neural por Dentro"
+   },
+   {
+    "id": "3d-olhos-ia",
+    "tipo": "3d",
+    "titulo": "Olhos da IA"
+   },
+   {
+    "id": "f-co-maquinas",
+    "tipo": "ficha",
+    "titulo": "Máquinas de entrada e saída"
+   },
+   {
+    "id": "p-dados",
+    "tipo": "plano",
+    "titulo": "Coleções, entradas e saídas"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO06",
+  "ano": 6,
+  "eixo": "PC",
+  "objeto": "Generalização",
+  "texto": "Comparar casos particulares de um mesmo problema e criar um algoritmo que resolva todos, usando variáveis (parâmetros).",
+  "recursos": [
+   {
+    "id": "f-co-generalizar",
+    "tipo": "ficha",
+    "titulo": "Uma receita para qualquer número"
+   },
+   {
+    "id": "p-dados",
+    "tipo": "plano",
+    "titulo": "Coleções, entradas e saídas"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO07",
+  "ano": 6,
+  "eixo": "MD",
+  "objeto": "Transmissão de dados",
+  "texto": "Entender como a informação é quebrada em pedaços, transmitida em pacotes por vários equipamentos e reconstruída no destino.",
+  "recursos": [
+   {
+    "id": "pacotes",
+    "tipo": "jogo",
+    "titulo": "Correio de Pacotes"
+   },
+   {
+    "id": "vale-bits",
+    "tipo": "jogo",
+    "titulo": "Vale dos Bits"
+   },
+   {
+    "id": "impostor",
+    "tipo": "jogo",
+    "titulo": "Impostor Digital"
+   },
+   {
+    "id": "paridade",
+    "tipo": "jogo",
+    "titulo": "Mágica da Paridade"
+   },
+   {
+    "id": "3d-viagem-pacote",
+    "tipo": "3d",
+    "titulo": "Viagem do Pacote"
+   },
+   {
+    "id": "f-pacotes",
+    "tipo": "ficha",
+    "titulo": "Mensagem em pacotes"
+   },
+   {
+    "id": "p-internet",
+    "tipo": "plano",
+    "titulo": "Como uma mensagem atravessa a internet"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO08",
+  "ano": 6,
+  "eixo": "MD",
+  "objeto": "Gestão de dados",
+  "texto": "Compreender e utilizar formas de armazenar, manipular, compactar e recuperar arquivos, documentos e metadados.",
+  "recursos": [
+   {
+    "id": "vale-bits",
+    "tipo": "jogo",
+    "titulo": "Vale dos Bits"
+   },
+   {
+    "id": "bingo",
+    "tipo": "jogo",
+    "titulo": "Bingo de Informática"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-arvore-viva",
+    "tipo": "3d",
+    "titulo": "Árvore Viva"
+   },
+   {
+    "id": "f-co-arquivos",
+    "tipo": "ficha",
+    "titulo": "Arrumando as pastas do computador"
+   },
+   {
+    "id": "p-arquivos",
+    "tipo": "plano",
+    "titulo": "Arquivos em ordem: pastas, compactação e metadados"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO09",
+  "ano": 6,
+  "eixo": "CD",
+  "objeto": "Tecnologia digital e sociedade",
+  "texto": "Apresentar conduta e linguagem apropriadas ao se comunicar em ambiente digital, com ética e respeito.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "digitacao",
+    "tipo": "jogo",
+    "titulo": "Dedos Ligeiros: Teste de Digitação"
+   },
+   {
+    "id": "carreira",
+    "tipo": "jogo",
+    "titulo": "Trilha da Carreira em Computação"
+   },
+   {
+    "id": "acessivel",
+    "tipo": "jogo",
+    "titulo": "Site para Todos"
+   },
+   {
+    "id": "f-co-respeito",
+    "tipo": "ficha",
+    "titulo": "Do outro lado da tela tem gente"
+   },
+   {
+    "id": "p-conduta",
+    "tipo": "plano",
+    "titulo": "Convivência digital: respeito, empatia e cyberbullying"
+   }
+  ]
+ },
+ {
+  "codigo": "EF06CO10",
+  "ano": 6,
+  "eixo": "CD",
+  "objeto": "Tecnologia digital e sustentabilidade",
+  "texto": "Analisar o consumo de tecnologia na sociedade, a produção dos recursos, a obsolescência e a sustentabilidade.",
+  "recursos": [
+   {
+    "id": "linha-tempo",
+    "tipo": "jogo",
+    "titulo": "Linha do Tempo da Computação"
+   },
+   {
+    "id": "3d-data-center",
+    "tipo": "3d",
+    "titulo": "Data Center por Dentro"
+   },
+   {
+    "id": "f-co-aparelho",
+    "tipo": "ficha",
+    "titulo": "A vida do meu aparelho"
+   },
+   {
+    "id": "p-lixo",
+    "tipo": "plano",
+    "titulo": "Do consumo ao lixo eletrônico"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO01",
+  "ano": 7,
+  "eixo": "PC",
+  "objeto": "Registros e matrizes",
+  "texto": "Criar soluções que usem registros e matrizes unidimensionais para descrever informações e automatizá-las com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "boletim",
+    "tipo": "jogo",
+    "titulo": "Fórmulas do Boletim"
+   },
+   {
+    "id": "3d-cubo-rgb",
+    "tipo": "3d",
+    "titulo": "Cubo das Cores RGB"
+   },
+   {
+    "id": "f-co-registros",
+    "tipo": "ficha",
+    "titulo": "A ficha da turma: registros e vetores"
+   },
+   {
+    "id": "p-registros",
+    "tipo": "plano",
+    "titulo": "Registros e listas: a ficha da turma"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO02",
+  "ano": 7,
+  "eixo": "PC",
+  "objeto": "Análise de programas",
+  "texto": "Analisar programas para detectar e remover erros, ampliando a confiança na sua correção.",
+  "recursos": [
+   {
+    "id": "python",
+    "tipo": "jogo",
+    "titulo": "Horta em Python"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "f-co-bugs",
+    "tipo": "ficha",
+    "titulo": "Caça aos bugs no papel"
+   },
+   {
+    "id": "p-bugs",
+    "tipo": "plano",
+    "titulo": "Caça aos bugs: depuração de programas"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO03",
+  "ano": 7,
+  "eixo": "PC",
+  "objeto": "Projetos com programação",
+  "texto": "Construir soluções computacionais de problemas de diferentes áreas, individual e colaborativamente, escolhendo estruturas de dados e técnicas adequadas.",
+  "recursos": [
+   {
+    "id": "filas-pilhas",
+    "tipo": "jogo",
+    "titulo": "Refeitório das Filas e Pilhas"
+   },
+   {
+    "id": "f-co-projeto7",
+    "tipo": "ficha",
+    "titulo": "Nosso projeto em uma página"
+   },
+   {
+    "id": "p-midia",
+    "tipo": "plano",
+    "titulo": "Projeto: nossa produção digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO04",
+  "ano": 7,
+  "eixo": "PC",
+  "objeto": "Propriedades de grafos",
+  "texto": "Explorar propriedades básicas de grafos.",
+  "recursos": [
+   {
+    "id": "rotas",
+    "tipo": "jogo",
+    "titulo": "Rota Mais Curta"
+   },
+   {
+    "id": "boato",
+    "tipo": "jogo",
+    "titulo": "Boato em Rede"
+   },
+   {
+    "id": "f-grafo",
+    "tipo": "ficha",
+    "titulo": "Mapa dos bairros"
+   },
+   {
+    "id": "p-grafos",
+    "tipo": "plano",
+    "titulo": "Grafos e o caminho mais curto"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO05",
+  "ano": 7,
+  "eixo": "PC",
+  "objeto": "Reúso",
+  "texto": "Criar algoritmos usando decomposição e reúso, de forma colaborativa, e automatizá-los com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "python",
+    "tipo": "jogo",
+    "titulo": "Horta em Python"
+   },
+   {
+    "id": "f-decompor",
+    "tipo": "ficha",
+    "titulo": "Decompor para resolver"
+   },
+   {
+    "id": "p-reuso",
+    "tipo": "plano",
+    "titulo": "Blocos que se repetem: funções e reúso"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO06",
+  "ano": 7,
+  "eixo": "MD",
+  "objeto": "Protocolos de comunicação em redes",
+  "texto": "Compreender o papel de protocolos para a transmissão de dados.",
+  "recursos": [
+   {
+    "id": "pacotes",
+    "tipo": "jogo",
+    "titulo": "Correio de Pacotes"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "3d-viagem-pacote",
+    "tipo": "3d",
+    "titulo": "Viagem do Pacote"
+   },
+   {
+    "id": "f-pacotes",
+    "tipo": "ficha",
+    "titulo": "Mensagem em pacotes"
+   },
+   {
+    "id": "p-internet",
+    "tipo": "plano",
+    "titulo": "Como uma mensagem atravessa a internet"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO07",
+  "ano": 7,
+  "eixo": "MD",
+  "objeto": "Segurança cibernética",
+  "texto": "Identificar problemas de segurança cibernética e experimentar formas de proteção.",
+  "recursos": [
+   {
+    "id": "golpe",
+    "tipo": "jogo",
+    "titulo": "Golpe ou Seguro?"
+   },
+   {
+    "id": "vale-bits",
+    "tipo": "jogo",
+    "titulo": "Vale dos Bits"
+   },
+   {
+    "id": "impostor",
+    "tipo": "jogo",
+    "titulo": "Impostor Digital"
+   },
+   {
+    "id": "senha",
+    "tipo": "jogo",
+    "titulo": "Senha Forte"
+   },
+   {
+    "id": "bingo",
+    "tipo": "jogo",
+    "titulo": "Bingo de Informática"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "f-co-seguranca7",
+    "tipo": "ficha",
+    "titulo": "Detetive de golpes e senhas fortes"
+   },
+   {
+    "id": "p-golpes",
+    "tipo": "plano",
+    "titulo": "Golpes digitais e dados pessoais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO08",
+  "ano": 7,
+  "eixo": "CD",
+  "objeto": "Cyberbullying",
+  "texto": "Demonstrar empatia sobre opiniões divergentes na web.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "f-co-empatia",
+    "tipo": "ficha",
+    "titulo": "Discordar sem ferir"
+   },
+   {
+    "id": "p-conduta",
+    "tipo": "plano",
+    "titulo": "Convivência digital: respeito, empatia e cyberbullying"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO09",
+  "ano": 7,
+  "eixo": "CD",
+  "objeto": "Cyberbullying",
+  "texto": "Reconhecer e debater sobre cyberbullying.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "f-co-cyberbullying",
+    "tipo": "ficha",
+    "titulo": "O que eu faria? Cyberbullying"
+   },
+   {
+    "id": "p-conduta",
+    "tipo": "plano",
+    "titulo": "Convivência digital: respeito, empatia e cyberbullying"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO10",
+  "ano": 7,
+  "eixo": "CD",
+  "objeto": "Impactos da tecnologia digital",
+  "texto": "Identificar os impactos ambientais do descarte de peças de computadores e eletrônicos e sua relação com a sustentabilidade.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-data-center",
+    "tipo": "3d",
+    "titulo": "Data Center por Dentro"
+   },
+   {
+    "id": "f-co-descarte",
+    "tipo": "ficha",
+    "titulo": "Mapa do descarte eletrônico"
+   },
+   {
+    "id": "p-lixo",
+    "tipo": "plano",
+    "titulo": "Do consumo ao lixo eletrônico"
+   }
+  ]
+ },
+ {
+  "codigo": "EF07CO11",
+  "ano": 7,
+  "eixo": "CD",
+  "objeto": "Produção digital",
+  "texto": "Criar, documentar e publicar produtos (vídeos, podcasts, sites) usando recursos de tecnologia, individual ou colaborativamente.",
+  "recursos": [
+   {
+    "id": "digitacao",
+    "tipo": "jogo",
+    "titulo": "Dedos Ligeiros: Teste de Digitação"
+   },
+   {
+    "id": "acessivel",
+    "tipo": "jogo",
+    "titulo": "Site para Todos"
+   },
+   {
+    "id": "f-co-roteiro",
+    "tipo": "ficha",
+    "titulo": "Roteiro relâmpago de produção digital"
+   },
+   {
+    "id": "p-midia",
+    "tipo": "plano",
+    "titulo": "Projeto: nossa produção digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO01",
+  "ano": 8,
+  "eixo": "PC",
+  "objeto": "Listas e recursão",
+  "texto": "Construir soluções de problemas usando a técnica de recursão e automatizá-las com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "3d-torre-recursao",
+    "tipo": "3d",
+    "titulo": "Torre da Recursão"
+   },
+   {
+    "id": "f-co-recursao",
+    "tipo": "ficha",
+    "titulo": "Fila recursiva e fatorial"
+   },
+   {
+    "id": "p-recursao",
+    "tipo": "plano",
+    "titulo": "Listas, recursão e algoritmos de ordenação"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO02",
+  "ano": 8,
+  "eixo": "PC",
+  "objeto": "Listas e recursão",
+  "texto": "Criar soluções que usem listas para descrever informações e automatizá-las com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "python",
+    "tipo": "jogo",
+    "titulo": "Horta em Python"
+   },
+   {
+    "id": "filas-pilhas",
+    "tipo": "jogo",
+    "titulo": "Refeitório das Filas e Pilhas"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-esteira-ordenacao",
+    "tipo": "3d",
+    "titulo": "Esteira da Ordenação"
+   },
+   {
+    "id": "f-co-listas",
+    "tipo": "ficha",
+    "titulo": "A playlist: listas que crescem"
+   },
+   {
+    "id": "p-recursao",
+    "tipo": "plano",
+    "titulo": "Listas, recursão e algoritmos de ordenação"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO03",
+  "ano": 8,
+  "eixo": "PC",
+  "objeto": "Algoritmos clássicos",
+  "texto": "Utilizar algoritmos clássicos de manipulação sobre listas.",
+  "recursos": [
+   {
+    "id": "busca-binaria",
+    "tipo": "jogo",
+    "titulo": "Estante da Busca Binária"
+   },
+   {
+    "id": "3d-esteira-ordenacao",
+    "tipo": "3d",
+    "titulo": "Esteira da Ordenação"
+   },
+   {
+    "id": "f-co-ordenar",
+    "tipo": "ficha",
+    "titulo": "Ordenar e buscar com cartões"
+   },
+   {
+    "id": "p-recursao",
+    "tipo": "plano",
+    "titulo": "Listas, recursão e algoritmos de ordenação"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO04",
+  "ano": 8,
+  "eixo": "PC",
+  "objeto": "Projetos com programação",
+  "texto": "Construir soluções computacionais de problemas de diferentes áreas, individual e colaborativamente.",
+  "recursos": [
+   {
+    "id": "f-co-projeto8",
+    "tipo": "ficha",
+    "titulo": "Ficha do projeto: requisitos e testes"
+   },
+   {
+    "id": "p-projeto8",
+    "tipo": "plano",
+    "titulo": "Projeto: um programa para outra disciplina"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO05",
+  "ano": 8,
+  "eixo": "MD",
+  "objeto": "Sistemas distribuídos",
+  "texto": "Compreender os conceitos de paralelismo, concorrência e armazenamento/processamento distribuídos.",
+  "recursos": [
+   {
+    "id": "3d-cozinha-paralela",
+    "tipo": "3d",
+    "titulo": "Cozinha Paralela"
+   },
+   {
+    "id": "f-co-paralelo",
+    "tipo": "ficha",
+    "titulo": "A corrida das somas: paralelismo"
+   },
+   {
+    "id": "p-paralelo",
+    "tipo": "plano",
+    "titulo": "Muitas mãos: paralelismo e sistemas distribuídos"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO06",
+  "ano": 8,
+  "eixo": "MD",
+  "objeto": "Internet",
+  "texto": "Entender como é a estrutura e o funcionamento da internet.",
+  "recursos": [
+   {
+    "id": "pacotes",
+    "tipo": "jogo",
+    "titulo": "Correio de Pacotes"
+   },
+   {
+    "id": "impostor",
+    "tipo": "jogo",
+    "titulo": "Impostor Digital"
+   },
+   {
+    "id": "bingo",
+    "tipo": "jogo",
+    "titulo": "Bingo de Informática"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "3d-viagem-pacote",
+    "tipo": "3d",
+    "titulo": "Viagem do Pacote"
+   },
+   {
+    "id": "f-co-internet",
+    "tipo": "ficha",
+    "titulo": "Mapa da internet: rede de redes"
+   },
+   {
+    "id": "p-internet",
+    "tipo": "plano",
+    "titulo": "Como uma mensagem atravessa a internet"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO07",
+  "ano": 8,
+  "eixo": "CD",
+  "objeto": "Redes sociais e segurança da informação",
+  "texto": "Compartilhar informações em redes sociais compreendendo sua dinâmica de funcionamento.",
+  "recursos": [
+   {
+    "id": "bolha",
+    "tipo": "jogo",
+    "titulo": "Bolha do Feed"
+   },
+   {
+    "id": "f-co-feed",
+    "tipo": "ficha",
+    "titulo": "O feed de papel"
+   },
+   {
+    "id": "p-redes",
+    "tipo": "plano",
+    "titulo": "Por dentro das redes sociais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO08",
+  "ano": 8,
+  "eixo": "CD",
+  "objeto": "Redes sociais e segurança da informação",
+  "texto": "Distinguir os tipos de dados pessoais solicitados em espaços digitais e os riscos associados.",
+  "recursos": [
+   {
+    "id": "golpe",
+    "tipo": "jogo",
+    "titulo": "Golpe ou Seguro?"
+   },
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "senha",
+    "tipo": "jogo",
+    "titulo": "Senha Forte"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "f-golpe",
+    "tipo": "ficha",
+    "titulo": "Meus dados, minhas regras"
+   },
+   {
+    "id": "p-golpes",
+    "tipo": "plano",
+    "titulo": "Golpes digitais e dados pessoais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO09",
+  "ano": 8,
+  "eixo": "CD",
+  "objeto": "Redes sociais e segurança da informação",
+  "texto": "Analisar criticamente as políticas e os termos de uso das redes sociais e demais plataformas.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "f-co-termos",
+    "tipo": "ficha",
+    "titulo": "Tradutores de termos de uso"
+   },
+   {
+    "id": "p-redes",
+    "tipo": "plano",
+    "titulo": "Por dentro das redes sociais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO10",
+  "ano": 8,
+  "eixo": "CD",
+  "objeto": "Segurança em ambientes virtuais",
+  "texto": "Discutir questões sobre segurança e privacidade relacionadas ao uso dos ambientes virtuais.",
+  "recursos": [
+   {
+    "id": "golpe",
+    "tipo": "jogo",
+    "titulo": "Golpe ou Seguro?"
+   },
+   {
+    "id": "3d-cidade-infectada",
+    "tipo": "3d",
+    "titulo": "Cidade Infectada"
+   },
+   {
+    "id": "3d-cofre-chaves",
+    "tipo": "3d",
+    "titulo": "Cofre das Chaves"
+   },
+   {
+    "id": "f-golpe",
+    "tipo": "ficha",
+    "titulo": "Meus dados, minhas regras"
+   },
+   {
+    "id": "p-golpes",
+    "tipo": "plano",
+    "titulo": "Golpes digitais e dados pessoais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF08CO11",
+  "ano": 8,
+  "eixo": "CD",
+  "objeto": "Uso crítico das mídias digitais",
+  "texto": "Avaliar precisão, relevância, adequação, abrangência e vieses de fontes de informação eletrônica.",
+  "recursos": [
+   {
+    "id": "wikipedia",
+    "tipo": "jogo",
+    "titulo": "Qual Verbete Tem Mais Visitas?"
+   },
+   {
+    "id": "bolha",
+    "tipo": "jogo",
+    "titulo": "Bolha do Feed"
+   },
+   {
+    "id": "boato",
+    "tipo": "jogo",
+    "titulo": "Boato em Rede"
+   },
+   {
+    "id": "3d-grafico-enganoso",
+    "tipo": "3d",
+    "titulo": "Gráfico 3D: Honesto ou Enganoso?"
+   },
+   {
+    "id": "3d-olhos-ia",
+    "tipo": "3d",
+    "titulo": "Olhos da IA"
+   },
+   {
+    "id": "3d-espaco-palavras",
+    "tipo": "3d",
+    "titulo": "Espaço das Palavras"
+   },
+   {
+    "id": "f-co-checagem8",
+    "tipo": "ficha",
+    "titulo": "Agência de checagem"
+   },
+   {
+    "id": "p-fontes",
+    "tipo": "plano",
+    "titulo": "Checagem de fatos: fontes, vieses e desinformação"
+   },
+   {
+    "id": "p-wikipedia",
+    "tipo": "plano",
+    "titulo": "A Wikipédia como base de dados"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO01",
+  "ano": 9,
+  "eixo": "PC",
+  "objeto": "Grafos e árvores",
+  "texto": "Criar soluções que usem árvores e grafos para descrever informações e automatizá-las com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "rotas",
+    "tipo": "jogo",
+    "titulo": "Rota Mais Curta"
+   },
+   {
+    "id": "3d-arvore-viva",
+    "tipo": "3d",
+    "titulo": "Árvore Viva"
+   },
+   {
+    "id": "f-co-arvore",
+    "tipo": "ficha",
+    "titulo": "Árvore de decisão: adivinhe o animal"
+   },
+   {
+    "id": "p-arvores",
+    "tipo": "plano",
+    "titulo": "Árvores de decisão e grafos"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO02",
+  "ano": 9,
+  "eixo": "PC",
+  "objeto": "Projetos com programação",
+  "texto": "Construir soluções computacionais de problemas de diferentes áreas, individual e colaborativamente.",
+  "recursos": [
+   {
+    "id": "f-co-prototipo",
+    "tipo": "ficha",
+    "titulo": "Protótipo de papel"
+   },
+   {
+    "id": "p-cidade",
+    "tipo": "plano",
+    "titulo": "Projeto: tecnologia para a nossa cidade"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO03",
+  "ano": 9,
+  "eixo": "PC",
+  "objeto": "Autômatos e eventos",
+  "texto": "Usar autômatos para descrever comportamentos de forma abstrata, automatizando-os com uma linguagem de programação.",
+  "recursos": [
+   {
+    "id": "chatbot",
+    "tipo": "jogo",
+    "titulo": "Chatbot de Regras"
+   },
+   {
+    "id": "3d-carro-que-aprende",
+    "tipo": "3d",
+    "titulo": "Carro que Aprende"
+   },
+   {
+    "id": "3d-maquina-estados",
+    "tipo": "3d",
+    "titulo": "Máquina de Estados"
+   },
+   {
+    "id": "f-co-estados",
+    "tipo": "ficha",
+    "titulo": "Máquina de estados do personagem"
+   },
+   {
+    "id": "p-automatos",
+    "tipo": "plano",
+    "titulo": "Máquinas de estados: do semáforo ao jogo"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO04",
+  "ano": 9,
+  "eixo": "MD",
+  "objeto": "Segurança cibernética",
+  "texto": "Compreender o funcionamento de malwares e outros ataques cibernéticos.",
+  "recursos": [
+   {
+    "id": "golpe",
+    "tipo": "jogo",
+    "titulo": "Golpe ou Seguro?"
+   },
+   {
+    "id": "bingo",
+    "tipo": "jogo",
+    "titulo": "Bingo de Informática"
+   },
+   {
+    "id": "3d-cidade-infectada",
+    "tipo": "3d",
+    "titulo": "Cidade Infectada"
+   },
+   {
+    "id": "f-co-incidente",
+    "tipo": "ficha",
+    "titulo": "Análise de incidente: como agem os ataques"
+   },
+   {
+    "id": "p-cripto",
+    "tipo": "plano",
+    "titulo": "Segredos em código: criptografia"
+   },
+   {
+    "id": "p-golpes",
+    "tipo": "plano",
+    "titulo": "Golpes digitais e dados pessoais"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO05",
+  "ano": 9,
+  "eixo": "MD",
+  "objeto": "Segurança cibernética",
+  "texto": "Analisar técnicas de criptografia para armazenamento e transmissão de dados.",
+  "recursos": [
+   {
+    "id": "cifra",
+    "tipo": "jogo",
+    "titulo": "Detetive da Cifra"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "3d-cofre-chaves",
+    "tipo": "3d",
+    "titulo": "Cofre das Chaves"
+   },
+   {
+    "id": "f-cesar",
+    "tipo": "ficha",
+    "titulo": "Disco da Cifra de César"
+   },
+   {
+    "id": "p-cripto",
+    "tipo": "plano",
+    "titulo": "Segredos em código: criptografia"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO06",
+  "ano": 9,
+  "eixo": "CD",
+  "objeto": "Tecnologia digital e sociedade",
+  "texto": "Analisar problemas sociais da cidade e do estado a partir de ambientes digitais, propondo soluções.",
+  "recursos": [
+   {
+    "id": "f-co-radar",
+    "tipo": "ficha",
+    "titulo": "Radar do bairro: dados para a cidade"
+   },
+   {
+    "id": "p-cidade",
+    "tipo": "plano",
+    "titulo": "Projeto: tecnologia para a nossa cidade"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO07",
+  "ano": 9,
+  "eixo": "CD",
+  "objeto": "Tecnologia digital e sociedade",
+  "texto": "Avaliar aplicações e implicações políticas, socioambientais e culturais das tecnologias digitais.",
+  "recursos": [
+   {
+    "id": "carreira",
+    "tipo": "jogo",
+    "titulo": "Trilha da Carreira em Computação"
+   },
+   {
+    "id": "impostor",
+    "tipo": "jogo",
+    "titulo": "Impostor Digital"
+   },
+   {
+    "id": "linha-tempo",
+    "tipo": "jogo",
+    "titulo": "Linha do Tempo da Computação"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "bolha",
+    "tipo": "jogo",
+    "titulo": "Bolha do Feed"
+   },
+   {
+    "id": "chatbot",
+    "tipo": "jogo",
+    "titulo": "Chatbot de Regras"
+   },
+   {
+    "id": "acessivel",
+    "tipo": "jogo",
+    "titulo": "Site para Todos"
+   },
+   {
+    "id": "3d-rede-neural",
+    "tipo": "3d",
+    "titulo": "Rede Neural por Dentro"
+   },
+   {
+    "id": "3d-montanha-erro",
+    "tipo": "3d",
+    "titulo": "Montanha do Erro: Descida do Gradiente"
+   },
+   {
+    "id": "3d-carro-que-aprende",
+    "tipo": "3d",
+    "titulo": "Carro que Aprende"
+   },
+   {
+    "id": "3d-agrupamento",
+    "tipo": "3d",
+    "titulo": "Nuvem de Pontos e Agrupamento"
+   },
+   {
+    "id": "3d-olhos-ia",
+    "tipo": "3d",
+    "titulo": "Olhos da IA"
+   },
+   {
+    "id": "3d-espaco-palavras",
+    "tipo": "3d",
+    "titulo": "Espaço das Palavras"
+   },
+   {
+    "id": "f-co-julgamento",
+    "tipo": "ficha",
+    "titulo": "Julgamento da tecnologia"
+   },
+   {
+    "id": "p-sociedade",
+    "tipo": "plano",
+    "titulo": "Tecnologia, poder e desigualdade digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO08",
+  "ano": 9,
+  "eixo": "CD",
+  "objeto": "Tecnologia digital e sociedade",
+  "texto": "Discutir como a distribuição desigual de recursos de computação na economia global levanta questões éticas.",
+  "recursos": [
+   {
+    "id": "carreira",
+    "tipo": "jogo",
+    "titulo": "Trilha da Carreira em Computação"
+   },
+   {
+    "id": "3d-data-center",
+    "tipo": "3d",
+    "titulo": "Data Center por Dentro"
+   },
+   {
+    "id": "f-co-acesso",
+    "tipo": "ficha",
+    "titulo": "Mapa do acesso digital"
+   },
+   {
+    "id": "p-sociedade",
+    "tipo": "plano",
+    "titulo": "Tecnologia, poder e desigualdade digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO09",
+  "ano": 9,
+  "eixo": "CD",
+  "objeto": "Autoria em meio digital",
+  "texto": "Criar ou utilizar conteúdo em meio digital compreendendo questões éticas de direitos autorais e uso de imagem.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "f-co-creditos",
+    "tipo": "ficha",
+    "titulo": "Créditos certos: licenças e uso de imagem"
+   },
+   {
+    "id": "p-autoria",
+    "tipo": "plano",
+    "titulo": "Autoria, direitos autorais e uso de imagem"
+   }
+  ]
+ },
+ {
+  "codigo": "EF09CO10",
+  "ano": 9,
+  "eixo": "CD",
+  "objeto": "Qualidade da informação",
+  "texto": "Avaliar a veracidade, a credibilidade e a relevância da informação em seus diferentes formatos.",
+  "recursos": [
+   {
+    "id": "vila-cidada",
+    "tipo": "jogo",
+    "titulo": "Vila Cidadã"
+   },
+   {
+    "id": "cidade-blocos",
+    "tipo": "jogo",
+    "titulo": "Cidade em Blocos"
+   },
+   {
+    "id": "fabrica-logica",
+    "tipo": "jogo",
+    "titulo": "Fábrica Lógica"
+   },
+   {
+    "id": "boato",
+    "tipo": "jogo",
+    "titulo": "Boato em Rede"
+   },
+   {
+    "id": "f-co-verdade",
+    "tipo": "ficha",
+    "titulo": "Checagem em todos os formatos"
+   },
+   {
+    "id": "p-fontes",
+    "tipo": "plano",
+    "titulo": "Checagem de fatos: fontes, vieses e desinformação"
+   },
+   {
+    "id": "p-wikipedia",
+    "tipo": "plano",
+    "titulo": "A Wikipédia como base de dados"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO01",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Reúso de soluções",
+  "texto": "Explorar e construir a solução de problemas reutilizando partes de soluções já existentes, com decomposição, generalização e abstração.",
+  "recursos": [
+   {
+    "id": "python",
+    "tipo": "jogo",
+    "titulo": "Horta em Python"
+   },
+   {
+    "id": "p-em-reuso",
+    "tipo": "plano",
+    "titulo": "Reaproveitar, refinar e gerar código"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO02",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Refinamento e abstração",
+  "texto": "Explorar e construir soluções por refinamentos sucessivos, em diferentes níveis de abstração, da especificação à implementação.",
+  "recursos": [
+   {
+    "id": "p-em-reuso",
+    "tipo": "plano",
+    "titulo": "Reaproveitar, refinar e gerar código"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO03",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Eficiência de algoritmos",
+  "texto": "Identificar e analisar o custo de algoritmos em tempo de execução, uso de memória e consumo de energia, comparando soluções para um mesmo problema.",
+  "recursos": [
+   {
+    "id": "busca-binaria",
+    "tipo": "jogo",
+    "titulo": "Estante da Busca Binária"
+   },
+   {
+    "id": "3d-data-center",
+    "tipo": "3d",
+    "titulo": "Data Center por Dentro"
+   },
+   {
+    "id": "3d-esteira-ordenacao",
+    "tipo": "3d",
+    "titulo": "Esteira da Ordenação"
+   },
+   {
+    "id": "3d-cozinha-paralela",
+    "tipo": "3d",
+    "titulo": "Cozinha Paralela"
+   },
+   {
+    "id": "p-em-eficiencia",
+    "tipo": "plano",
+    "titulo": "Quanto custa um algoritmo? Tempo, memória, energia e limites"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO04",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Metaprogramação",
+  "texto": "Reconhecer algoritmos que recebem, modificam ou produzem outros algoritmos (metaprogramação), como compiladores, interpretadores e geradores de código.",
+  "recursos": [
+   {
+    "id": "p-em-reuso",
+    "tipo": "plano",
+    "titulo": "Reaproveitar, refinar e gerar código"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO05",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Limites da computação",
+  "texto": "Identificar os limites da Computação, distinguindo o que pode ou não ser automatizado, e os limites da mente humana na resolução de problemas.",
+  "recursos": [
+   {
+    "id": "p-em-eficiencia",
+    "tipo": "plano",
+    "titulo": "Quanto custa um algoritmo? Tempo, memória, energia e limites"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO06",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Avaliação de software",
+  "texto": "Avaliar software considerando diferentes características e métricas, como correção, desempenho, usabilidade, segurança e facilidade de manutenção.",
+  "recursos": [
+   {
+    "id": "p-em-avaliar-software",
+    "tipo": "plano",
+    "titulo": "Avaliar um aplicativo: métricas, usabilidade e acessibilidade"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO07",
+  "ano": 10,
+  "eixo": "MD",
+  "objeto": "Redes de computadores",
+  "texto": "Compreender tecnologias, equipamentos, protocolos e serviços de redes de computadores, e como eles garantem escala e confiabilidade.",
+  "recursos": [
+   {
+    "id": "3d-viagem-pacote",
+    "tipo": "3d",
+    "titulo": "Viagem do Pacote"
+   },
+   {
+    "id": "3d-data-center",
+    "tipo": "3d",
+    "titulo": "Data Center por Dentro"
+   },
+   {
+    "id": "3d-cidade-infectada",
+    "tipo": "3d",
+    "titulo": "Cidade Infectada"
+   },
+   {
+    "id": "p-em-redes-seguranca",
+    "tipo": "plano",
+    "titulo": "Redes por dentro e segurança na prática"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO08",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Segurança e privacidade",
+  "texto": "Analisar como as mudanças tecnológicas afetam a segurança e a privacidade, identificando riscos, denunciando e buscando ajuda quando necessário.",
+  "recursos": [
+   {
+    "id": "golpe",
+    "tipo": "jogo",
+    "titulo": "Golpe ou Seguro?"
+   },
+   {
+    "id": "senha",
+    "tipo": "jogo",
+    "titulo": "Senha Forte"
+   },
+   {
+    "id": "3d-cidade-infectada",
+    "tipo": "3d",
+    "titulo": "Cidade Infectada"
+   },
+   {
+    "id": "3d-cofre-chaves",
+    "tipo": "3d",
+    "titulo": "Cofre das Chaves"
+   },
+   {
+    "id": "p-em-redes-seguranca",
+    "tipo": "plano",
+    "titulo": "Redes por dentro e segurança na prática"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO09",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Tecnologia e trabalho",
+  "texto": "Identificar a presença e o uso das tecnologias digitais no mundo do trabalho, nas profissões e nas carreiras ligadas à Computação.",
+  "recursos": [
+   {
+    "id": "carreira",
+    "tipo": "jogo",
+    "titulo": "Trilha da Carreira em Computação"
+   },
+   {
+    "id": "p-em-ia",
+    "tipo": "plano",
+    "titulo": "Como a IA aprende, onde ela erra e o que muda no trabalho"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO10",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Inteligência artificial",
+  "texto": "Conhecer os fundamentos da inteligência artificial, comparando-a com a inteligência humana e discutindo seus potenciais, riscos e limites.",
+  "recursos": [
+   {
+    "id": "chatbot",
+    "tipo": "jogo",
+    "titulo": "Chatbot de Regras"
+   },
+   {
+    "id": "3d-rede-neural",
+    "tipo": "3d",
+    "titulo": "Rede Neural por Dentro"
+   },
+   {
+    "id": "3d-montanha-erro",
+    "tipo": "3d",
+    "titulo": "Montanha do Erro: Descida do Gradiente"
+   },
+   {
+    "id": "3d-carro-que-aprende",
+    "tipo": "3d",
+    "titulo": "Carro que Aprende"
+   },
+   {
+    "id": "3d-olhos-ia",
+    "tipo": "3d",
+    "titulo": "Olhos da IA"
+   },
+   {
+    "id": "3d-espaco-palavras",
+    "tipo": "3d",
+    "titulo": "Espaço das Palavras"
+   },
+   {
+    "id": "p-em-ia",
+    "tipo": "plano",
+    "titulo": "Como a IA aprende, onde ela erra e o que muda no trabalho"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO11",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Modelagem e simulação",
+  "texto": "Criar modelos computacionais simples para simular situações e fazer previsões, reconhecendo a importância da modelagem para a ciência.",
+  "recursos": [
+   {
+    "id": "3d-montanha-erro",
+    "tipo": "3d",
+    "titulo": "Montanha do Erro: Descida do Gradiente"
+   },
+   {
+    "id": "p-em-dados",
+    "tipo": "plano",
+    "titulo": "Ciência de dados e modelos que preveem"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO12",
+  "ano": 10,
+  "eixo": "MD",
+  "objeto": "Ciência de dados",
+  "texto": "Produzir, analisar, gerir e compartilhar informações a partir de dados, aplicando princípios de ciência de dados.",
+  "recursos": [
+   {
+    "id": "3d-agrupamento",
+    "tipo": "3d",
+    "titulo": "Nuvem de Pontos e Agrupamento"
+   },
+   {
+    "id": "p-em-dados",
+    "tipo": "plano",
+    "titulo": "Ciência de dados e modelos que preveem"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO13",
+  "ano": 10,
+  "eixo": "MD",
+  "objeto": "Representação e consulta de dados",
+  "texto": "Usar diferentes formas de representar e consultar dados digitais, como tabelas, bancos de dados e gráficos, em pesquisas científicas.",
+  "recursos": [
+   {
+    "id": "3d-grafico-enganoso",
+    "tipo": "3d",
+    "titulo": "Gráfico 3D: Honesto ou Enganoso?"
+   },
+   {
+    "id": "p-em-dados",
+    "tipo": "plano",
+    "titulo": "Ciência de dados e modelos que preveem"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO14",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Confiabilidade da informação",
+  "texto": "Avaliar a confiabilidade de informações digitais considerando autoria, estrutura, propósito e contexto de produção.",
+  "recursos": [
+   {
+    "id": "boato",
+    "tipo": "jogo",
+    "titulo": "Boato em Rede"
+   },
+   {
+    "id": "3d-grafico-enganoso",
+    "tipo": "3d",
+    "titulo": "Gráfico 3D: Honesto ou Enganoso?"
+   },
+   {
+    "id": "p-em-publicar",
+    "tipo": "plano",
+    "titulo": "Checar, produzir e publicar conteúdo digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO15",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Interação humano-computador",
+  "texto": "Analisar a interação entre pessoas e artefatos computacionais, considerando experiência do usuário, acessibilidade e qualidade de uso.",
+  "recursos": [
+   {
+    "id": "acessivel",
+    "tipo": "jogo",
+    "titulo": "Site para Todos"
+   },
+   {
+    "id": "p-em-avaliar-software",
+    "tipo": "plano",
+    "titulo": "Avaliar um aplicativo: métricas, usabilidade e acessibilidade"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO16",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Robótica",
+  "texto": "Desenvolver projetos de robótica com equipamentos físicos ou simuladores, integrando programação, sensores e atuadores.",
+  "recursos": [
+   {
+    "id": "3d-carro-que-aprende",
+    "tipo": "3d",
+    "titulo": "Carro que Aprende"
+   },
+   {
+    "id": "3d-maquina-estados",
+    "tipo": "3d",
+    "titulo": "Máquina de Estados"
+   },
+   {
+    "id": "p-em-projeto",
+    "tipo": "plano",
+    "titulo": "Projeto integrador com robótica: planejar, colaborar e apresentar"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO17",
+  "ano": 10,
+  "eixo": "MD",
+  "objeto": "Redes de colaboração",
+  "texto": "Criar e usar redes virtuais de colaboração com segurança, respeitando a legislação e a ética.",
+  "recursos": [
+   {
+    "id": "p-em-projeto",
+    "tipo": "plano",
+    "titulo": "Projeto integrador com robótica: planejar, colaborar e apresentar"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO18",
+  "ano": 10,
+  "eixo": "PC",
+  "objeto": "Gestão de projetos",
+  "texto": "Planejar e gerenciar, de forma colaborativa, projetos integrados a outras áreas que usem artefatos computacionais.",
+  "recursos": [
+   {
+    "id": "p-em-projeto",
+    "tipo": "plano",
+    "titulo": "Projeto integrador com robótica: planejar, colaborar e apresentar"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO19",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Apresentação com mídias digitais",
+  "texto": "Apresentar, defender e negociar propostas, produtos e serviços usando mídias e ferramentas digitais.",
+  "recursos": [
+   {
+    "id": "p-em-projeto",
+    "tipo": "plano",
+    "titulo": "Projeto integrador com robótica: planejar, colaborar e apresentar"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO20",
+  "ano": 10,
+  "eixo": "MD",
+  "objeto": "Publicação on-line",
+  "texto": "Criar conteúdos para publicação on-line, avaliando sua confiabilidade e as consequências da divulgação.",
+  "recursos": [
+   {
+    "id": "p-em-publicar",
+    "tipo": "plano",
+    "titulo": "Checar, produzir e publicar conteúdo digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO21",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Comunicação de ideias complexas",
+  "texto": "Comunicar ideias complexas com objetos digitais, como mapas conceituais, infográficos e hipertextos.",
+  "recursos": [
+   {
+    "id": "p-em-projeto",
+    "tipo": "plano",
+    "titulo": "Projeto integrador com robótica: planejar, colaborar e apresentar"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO22",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Produção multimídia",
+  "texto": "Produzir e publicar textos, imagens, áudios e vídeos, usando ferramentas que os integram e organizam.",
+  "recursos": [
+   {
+    "id": "p-em-publicar",
+    "tipo": "plano",
+    "titulo": "Checar, produzir e publicar conteúdo digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO23",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Comunidades virtuais",
+  "texto": "Analisar criticamente comunidades virtuais, as relações que nelas se formam e seus impactos na sociedade.",
+  "recursos": [
+   {
+    "id": "bolha",
+    "tipo": "jogo",
+    "titulo": "Bolha do Feed"
+   },
+   {
+    "id": "boato",
+    "tipo": "jogo",
+    "titulo": "Boato em Rede"
+   },
+   {
+    "id": "p-em-cidadania",
+    "tipo": "plano",
+    "titulo": "Comunidades virtuais, saúde digital e direito digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO24",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Saúde e tecnologia",
+  "texto": "Reconhecer como redes sociais e artefatos digitais afetam a saúde física e mental, adotando hábitos de uso saudáveis.",
+  "recursos": [
+   {
+    "id": "bolha",
+    "tipo": "jogo",
+    "titulo": "Bolha do Feed"
+   },
+   {
+    "id": "p-em-cidadania",
+    "tipo": "plano",
+    "titulo": "Comunidades virtuais, saúde digital e direito digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO25",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Convivência on-line",
+  "texto": "Dialogar on-line com segurança e respeito à diversidade, reconhecendo e denunciando atitudes abusivas.",
+  "recursos": [
+   {
+    "id": "p-em-cidadania",
+    "tipo": "plano",
+    "titulo": "Comunidades virtuais, saúde digital e direito digital"
+   }
+  ]
+ },
+ {
+  "codigo": "EM13CO26",
+  "ano": 10,
+  "eixo": "CD",
+  "objeto": "Direito digital",
+  "texto": "Aplicar conceitos de direito digital, como LGPD, Marco Civil da Internet e direitos autorais, na própria conduta e no uso de artefatos computacionais.",
+  "recursos": [
+   {
+    "id": "p-em-cidadania",
+    "tipo": "plano",
+    "titulo": "Comunidades virtuais, saúde digital e direito digital"
+   }
+  ]
+ }
+]
