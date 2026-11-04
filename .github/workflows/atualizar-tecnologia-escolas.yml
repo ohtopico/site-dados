@@ -1,0 +1,62 @@
+# Atualiza "Tecnologia nas escolas em dados" (/infograficos/tecnologia-nas-escolas/)
+# com os microdados do Censo Escolar (INEP). O INEP publica um ano novo por ano,
+# então roda em fevereiro e março, e também quando o gerador muda.
+name: Atualizar tecnologia nas escolas (Censo Escolar)
+
+on:
+  schedule:
+    - cron: '0 10 15 2,3 *'
+  push:
+    paths:
+      - '_fonte/tecnologia-escolas/gerar.py'
+      - '.github/workflows/atualizar-tecnologia-escolas.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tecnologia-escolas-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Baixar os microdados do Censo Escolar (2019 em diante)
+        run: |
+          mkdir -p /tmp/censo
+          ano_atual=$(date +%Y)
+          for ano in $(seq 2019 "$ano_atual"); do
+            url="https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_${ano}.zip"
+            if curl -fsSL --retry 4 --retry-delay 10 -m 1500 -o "/tmp/censo/${ano}.zip" "$url"; then
+              echo "baixado $ano: $(du -h /tmp/censo/${ano}.zip | cut -f1)"
+            else
+              echo "sem microdados para $ano"
+              rm -f "/tmp/censo/${ano}.zip"
+            fi
+          done
+          ls -la /tmp/censo
+
+      - name: Gerar os dados da página
+        run: python _fonte/tecnologia-escolas/gerar.py /tmp/censo
+
+      - name: Publicar se algo mudou
+        run: |
+          git add -A infograficos/tecnologia-nas-escolas/dados.js _fonte/tecnologia-escolas/resumo.json
+          if git diff --cached --quiet; then
+            echo "Nada novo."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Tecnologia nas escolas: dados do Censo Escolar atualizados em $(date +%d/%m/%Y)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
