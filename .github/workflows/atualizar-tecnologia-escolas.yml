@@ -36,7 +36,13 @@ jobs:
           # O servidor do INEP não envia o certificado intermediário. Busca o
           # intermediário pelo endereço indicado no próprio certificado (AIA)
           # e verifica normalmente com ele.
-          python3 -c "import ssl; print(ssl.get_server_certificate(('download.inep.gov.br', 443), timeout=60))" > /tmp/inep-folha.pem
+          for t in 1 2 3 4 5; do
+            timeout 60 openssl s_client -connect download.inep.gov.br:443 -servername download.inep.gov.br -showcerts </dev/null > /tmp/inep-sc.txt 2>/tmp/inep-sc.err || true
+            grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt && break
+            echo "tentativa $t sem certificado:"; tail -3 /tmp/inep-sc.err; sleep 10
+          done
+          grep -E '^ *[0-9] s:|^ *i:' /tmp/inep-sc.txt || true
+          openssl x509 -in /tmp/inep-sc.txt -outform PEM > /tmp/inep-folha.pem
           openssl x509 -in /tmp/inep-folha.pem -noout -subject -issuer
           aia=$(openssl x509 -in /tmp/inep-folha.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
           echo "intermediário: $aia"
