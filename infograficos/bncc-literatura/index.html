@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo das 21 habilidades do campo artístico-literário de Língua Portuguesa da BNCC, do 6º ao 9º ano: leitura literária, produção, oralidade e como os conteúdos se ligam.">
+<meta property="og:title" content="BNCC Literatura em dados | Júlia Quoos">
+<meta property="og:description" content="As 21 habilidades de literatura da BNCC do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/bncc-literatura/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/bncc-literatura/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/bncc-literatura/og-bncc-literatura.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../assets/infograficos.css?v=202611041630">
+<link rel="stylesheet" href="../assets/bncc-rede.css?v=202611041630">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Dataset", "name": "Habilidades de Literatura da BNCC e as ligações entre os anos", "description": "As 21 habilidades do campo artístico-literário de Língua Portuguesa da BNCC, do 6º ao 9º ano, com prática de linguagem, objeto de conhecimento, verbo e ligações de conteúdo calculadas por semelhança de texto.", "url": "https://juliaroberta.com/infograficos/bncc-literatura/", "inLanguage": "pt-BR", "spatialCoverage": "Brasil", "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "isBasedOn": ["http://basenacionalcomum.mec.gov.br/", "https://github.com/bncc-dev/bncc-dados"]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/blog/">Blog</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ bncc literatura</span>
+      <h1>A BNCC Literatura <mark>em dados</mark></h1>
+      <p class="lead">Na BNCC, a literatura faz parte de Língua Portuguesa, no campo artístico-literário. São 21 habilidades do 6º ao 9º ano, ligadas pelo conteúdo. Clique em uma para ver de onde ela vem e para onde vai.</p>
+      <ul class="pilulas"><li>21 habilidades</li><li>6º ao 9º ano</li><li>campo artístico-literário</li><li>dados para baixar</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="resumo-num" id="resumo"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Progressão</span>
+      <h2>Como os conteúdos se ligam ao longo dos anos</h2>
+      <p class="muted">Cada coluna é um grupo de habilidades da BNCC: EF69LP vale para os quatro anos, EF67LP para o 6º e 7º, EF89LP para o 8º e 9º, e as demais para um ano só. As linhas ligam habilidades de colunas seguidas que tratam do mesmo conteúdo. Os fios são os objetos de conhecimento. Para ver ano a ano, use o quadro de práticas ou o filtro de ano na lista.</p>
+      <div class="seletor" id="fios" role="group" aria-label="Fios temáticos"></div>
+      <div class="legenda" id="legenda-eixos" style="margin-top:12px"></div>
+      <div class="janela" style="margin-top:14px"><div class="janela-barra"><i></i><i></i><i></i><span>progressao.html</span></div>
+        <div class="janela-corpo">
+          <div id="detalhe" class="detalhe" aria-live="polite"><p class="nota">Clique em uma habilidade para ver o texto, as ligações e a trilha.</p></div>
+          <div class="rolagem"><svg id="g-rede" class="grafico rede" role="img" aria-label="Habilidades por ano ligadas por conteúdo"></svg></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Práticas de linguagem</span>
+      <h2>Leitura, produção, oralidade e análise, ano a ano</h2>
+      <p class="muted">Quantas habilidades do campo artístico-literário há em cada prática de linguagem e em cada ano. Clique em um quadro para ver a lista.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>eixos.html</span></div>
+        <div class="janela-corpo"><div class="rolagem"><table class="mapa-calor" id="t-eixos"></table></div></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Verbos</span>
+      <h2>O que a BNCC pede que o estudante faça</h2>
+      <p class="muted">O verbo que abre cada habilidade diz o tipo de trabalho esperado: ler, inferir, criar. Clique em uma barra para ver as habilidades.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>verbos.html</span></div>
+        <div class="janela-corpo"><svg id="g-verbos" class="grafico" role="img" aria-label="Verbos que abrem as habilidades"></svg></div></div>
+    </div>
+  </section>
+
+  <svg id="g-material" hidden></svg><p id="material-texto" hidden></p>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Todas as habilidades</span>
+      <h2 id="t-lista">Procure uma habilidade</h2>
+      <div class="controles">
+        <label class="busca"><span class="sr-only">Buscar</span><input type="search" id="busca" placeholder="Buscar por código ou palavra, por exemplo: poema"></label>
+        <button class="chip" type="button" id="limpar">Limpar filtro</button>
+        <button class="chip" type="button" id="baixar">Baixar CSV</button>
+      </div>
+      <p class="nota" id="filtro-texto" style="margin-top:10px"></p>
+      <ul class="lista-habs" id="lista"></ul>
+      <p><button class="chip" type="button" id="mais" hidden>Mostrar todas as habilidades</button></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os números e como as ligações foram calculadas</h2>
+      <ul class="leitura">
+        <li><b>Habilidades:</b> BNCC, Língua Portuguesa do Ensino Fundamental (Resolução CNE/CP nº 2/2017), com o texto oficial, a partir da base aberta <a href="https://github.com/bncc-dev/bncc-dados">bncc.dev</a> (CC BY 4.0, mantida pela Profy).</li>
+        <li><b>Recorte:</b> as habilidades de Língua Portuguesa do 6º ao 9º ano cujo campo de atuação é o artístico-literário. Habilidades de "todos os campos" não entram, mesmo quando servem para a literatura.</li>
+        <li><b>Ligações:</b> o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, com um pequeno bônus quando são da mesma prática de linguagem ou do mesmo objeto de conhecimento. Cada habilidade se liga às duas mais parecidas da coluna seguinte, se a semelhança passar de 0,12. É uma leitura automática do texto, não a progressão oficial: serve para planejar e conversar, não para substituir o documento.</li>
+        <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc-linguagens">_fonte/bncc-linguagens</a> e <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc">_fonte/bncc</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte.</li>
+        <li>Veja também: <a href="../bncc-computacao/">BNCC Computação</a> · <a href="../bncc-matematica/">BNCC Matemática</a> · <a href="../bncc-arte/">BNCC Arte</a> · <a href="../bncc-lingua-portuguesa/">BNCC Língua Portuguesa</a> · <a href="../bncc-lingua-inglesa/">BNCC Língua Inglesa</a>.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>. Veja a <a href="../bncc-lingua-portuguesa/">BNCC Língua Portuguesa em dados</a> com todos os campos.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<div id="tip-g" role="tooltip"></div>
+<script src="dados.js?v=202611041630"></script>
+<script src="../assets/bncc-rede.js?v=202611041630"></script>
+</body>
+</html>

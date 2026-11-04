@@ -7,7 +7,7 @@ import html, json, os
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.join(AQUI, '..', '..')
-V = '202611041530'
+V = '202611041630'
 METODO = ('o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, '
           'cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, '
           'com um pequeno bônus quando são {bonus}. Cada habilidade se liga às duas mais parecidas {seguinte}, se a semelhança passar de 0,12. '
@@ -90,6 +90,79 @@ PAGINAS = [
             '<b>Fios:</b> os objetos de conhecimento da BNCC (contextos e práticas, elementos da linguagem, materialidades, processos de criação e os das artes integradas).',
         ],
         'fonte': 'bncc-arte',
+        'rodape': 'Materiais de Computação e Matemática para a sala de aula estão no <a href="https://ohtopico.com.br/material-didatico/">site de docência</a>.',
+    },
+    {
+        'slug': 'bncc-lingua-portuguesa', 'disciplina': 'Língua Portuguesa', 'n': 185, 'terminal': 'bncc língua portuguesa',
+        'title': 'BNCC Língua Portuguesa em dados: como as habilidades se ligam',
+        'description': 'Infográfico interativo das 185 habilidades de Língua Portuguesa da BNCC do 6º ao 9º ano: campos de atuação, práticas de linguagem, verbos e como os conteúdos se ligam de um ano para o outro.',
+        'og': '185 habilidades de Língua Portuguesa, do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
+        'og_alt': 'BNCC Língua Portuguesa em dados: as habilidades do 6º ao 9º ano ligadas por conteúdo',
+        'lead': 'As 185 habilidades de Língua Portuguesa do 6º ao 9º ano, ligadas pelo conteúdo. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
+        'pilulas': ['185 habilidades', '6º ao 9º ano', '5 campos de atuação', 'dados para baixar'],
+        'progressao': 'Na BNCC, parte das habilidades de Língua Portuguesa vale para um ano só (EF06LP, EF07LP...) e parte para blocos: EF69LP para os quatro anos, EF67LP para o 6º e 7º e EF89LP para o 8º e 9º. Cada coluna é um desses grupos, na ordem em que entram no percurso. As linhas ligam habilidades de colunas seguidas que tratam do mesmo conteúdo; quanto mais grossa, mais forte a ligação. Os fios são as práticas de linguagem: leitura, produção de textos, oralidade e análise linguística/semiótica. Para ver ano a ano, use o quadro de campos ou o filtro de ano na lista.',
+        'eixos_eyebrow': 'Campos de atuação', 'eixos_h2': 'Jornalístico, vida pública, estudo e pesquisa, artístico-literário, ano a ano',
+        'eixos_p': 'Quantas habilidades de cada campo de atuação valem em cada ano, somando as do ano e as dos blocos que incluem aquele ano. Clique em um quadro para ver a lista.',
+        'verbos_p': 'O verbo que abre cada habilidade diz o tipo de trabalho esperado: analisar, identificar, produzir. Clique em uma barra para ver as habilidades.',
+        'material_h2': '', 'material_p': '',
+        'busca': 'Buscar por código ou palavra, por exemplo: notícia',
+        'dataset': 'As 185 habilidades de Língua Portuguesa da BNCC do 6º ao 9º ano, com campo de atuação, prática de linguagem, objeto de conhecimento, verbo e ligações de conteúdo calculadas por semelhança de texto.',
+        'base': ['http://basenacionalcomum.mec.gov.br/', 'https://github.com/bncc-dev/bncc-dados'],
+        'sobre': [
+            '<b>Habilidades:</b> BNCC, Língua Portuguesa do Ensino Fundamental (Resolução CNE/CP nº 2/2017), com o texto oficial, a partir da base aberta <a href="https://github.com/bncc-dev/bncc-dados">bncc.dev</a> (CC BY 4.0, mantida pela Profy).',
+            '<b>Campos de atuação e práticas:</b> como na BNCC. Cada habilidade aparece no seu campo e na sua prática de linguagem principais.',
+            '<b>Ligações:</b> ' + METODO.format(bonus='do mesmo campo de atuação ou da mesma prática de linguagem', seguinte='da coluna seguinte'),
+        ],
+        'fonte': 'bncc-linguagens',
+        'rodape': 'Veja também a página de <a href="../bncc-literatura/">Literatura</a>, o recorte do campo artístico-literário.',
+    },
+    {
+        'slug': 'bncc-literatura', 'disciplina': 'Literatura', 'n': 21, 'terminal': 'bncc literatura',
+        'title': 'BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano',
+        'description': 'Infográfico interativo das 21 habilidades do campo artístico-literário de Língua Portuguesa da BNCC, do 6º ao 9º ano: leitura literária, produção, oralidade e como os conteúdos se ligam.',
+        'og': 'As 21 habilidades de literatura da BNCC do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
+        'og_alt': 'BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano',
+        'lead': 'Na BNCC, a literatura faz parte de Língua Portuguesa, no campo artístico-literário. São 21 habilidades do 6º ao 9º ano, ligadas pelo conteúdo. Clique em uma para ver de onde ela vem e para onde vai.',
+        'pilulas': ['21 habilidades', '6º ao 9º ano', 'campo artístico-literário', 'dados para baixar'],
+        'progressao': 'Cada coluna é um grupo de habilidades da BNCC: EF69LP vale para os quatro anos, EF67LP para o 6º e 7º, EF89LP para o 8º e 9º, e as demais para um ano só. As linhas ligam habilidades de colunas seguidas que tratam do mesmo conteúdo. Os fios são os objetos de conhecimento. Para ver ano a ano, use o quadro de práticas ou o filtro de ano na lista.',
+        'eixos_eyebrow': 'Práticas de linguagem', 'eixos_h2': 'Leitura, produção, oralidade e análise, ano a ano',
+        'eixos_p': 'Quantas habilidades do campo artístico-literário há em cada prática de linguagem e em cada ano. Clique em um quadro para ver a lista.',
+        'verbos_p': 'O verbo que abre cada habilidade diz o tipo de trabalho esperado: ler, inferir, criar. Clique em uma barra para ver as habilidades.',
+        'material_h2': '', 'material_p': '',
+        'busca': 'Buscar por código ou palavra, por exemplo: poema',
+        'dataset': 'As 21 habilidades do campo artístico-literário de Língua Portuguesa da BNCC, do 6º ao 9º ano, com prática de linguagem, objeto de conhecimento, verbo e ligações de conteúdo calculadas por semelhança de texto.',
+        'base': ['http://basenacionalcomum.mec.gov.br/', 'https://github.com/bncc-dev/bncc-dados'],
+        'sobre': [
+            '<b>Habilidades:</b> BNCC, Língua Portuguesa do Ensino Fundamental (Resolução CNE/CP nº 2/2017), com o texto oficial, a partir da base aberta <a href="https://github.com/bncc-dev/bncc-dados">bncc.dev</a> (CC BY 4.0, mantida pela Profy).',
+            '<b>Recorte:</b> as habilidades de Língua Portuguesa do 6º ao 9º ano cujo campo de atuação é o artístico-literário. Habilidades de "todos os campos" não entram, mesmo quando servem para a literatura.',
+            '<b>Ligações:</b> ' + METODO.format(bonus='da mesma prática de linguagem ou do mesmo objeto de conhecimento', seguinte='da coluna seguinte'),
+        ],
+        'fonte': 'bncc-linguagens',
+        'rodape': 'Veja a <a href="../bncc-lingua-portuguesa/">BNCC Língua Portuguesa em dados</a> com todos os campos.',
+    },
+    {
+        'slug': 'bncc-lingua-inglesa', 'disciplina': 'Língua Inglesa', 'n': 88, 'terminal': 'bncc língua inglesa',
+        'title': 'BNCC Língua Inglesa em dados: como as habilidades se ligam',
+        'description': 'Infográfico interativo das 88 habilidades de Língua Inglesa da BNCC do 6º ao 9º ano: eixos, unidades temáticas, verbos e como os conteúdos se ligam de um ano para o outro.',
+        'og': '88 habilidades de Língua Inglesa, do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
+        'og_alt': 'BNCC Língua Inglesa em dados: as habilidades do 6º ao 9º ano ligadas por conteúdo',
+        'lead': 'As 88 habilidades de Língua Inglesa do 6º ao 9º ano, ligadas pelo conteúdo de um ano para o outro. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
+        'pilulas': ['88 habilidades', '6º ao 9º ano', '5 eixos', 'dados para baixar'],
+        'progressao': 'Cada caixinha é uma habilidade, na coluna do seu ano. As linhas ligam habilidades de anos seguidos que tratam do mesmo conteúdo; quanto mais grossa, mais forte a ligação. Os fios são as unidades temáticas, como gramática e estratégias de leitura.',
+        'eixos_eyebrow': 'Eixos', 'eixos_h2': 'Oralidade, leitura, escrita, conhecimentos linguísticos e dimensão intercultural',
+        'eixos_p': 'Quantas habilidades de cada eixo há em cada ano. Clique em um quadro para ver a lista.',
+        'verbos_p': 'O verbo que abre cada habilidade diz o tipo de trabalho esperado: identificar, construir, utilizar. Clique em uma barra para ver as habilidades.',
+        'material_h2': '', 'material_p': '',
+        'busca': 'Buscar por código ou palavra, por exemplo: leitura',
+        'dataset': 'As 88 habilidades de Língua Inglesa da BNCC do 6º ao 9º ano, com eixo, unidade temática, objeto de conhecimento, verbo e ligações de conteúdo calculadas por semelhança de texto.',
+        'base': ['http://basenacionalcomum.mec.gov.br/', 'https://github.com/bncc-dev/bncc-dados'],
+        'sobre': [
+            '<b>Habilidades:</b> BNCC, Língua Inglesa do Ensino Fundamental (Resolução CNE/CP nº 2/2017), com o texto oficial, a partir da base aberta <a href="https://github.com/bncc-dev/bncc-dados">bncc.dev</a> (CC BY 4.0, mantida pela Profy).',
+            '<b>Eixos e unidades temáticas:</b> como na BNCC. As unidades parecidas (por exemplo, as várias estratégias de escrita) foram juntadas em um fio só.',
+            '<b>Ligações:</b> ' + METODO.format(bonus='do mesmo eixo ou da mesma unidade temática', seguinte='do ano seguinte'),
+            '<b>Espanhol:</b> a BNCC traz só a Língua Inglesa como língua estrangeira obrigatória no Ensino Fundamental; não há habilidades de Espanhol.',
+        ],
+        'fonte': 'bncc-linguagens',
         'rodape': 'Materiais de Computação e Matemática para a sala de aula estão no <a href="https://ohtopico.com.br/material-didatico/">site de docência</a>.',
     },
 ]

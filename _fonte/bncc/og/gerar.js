@@ -8,7 +8,10 @@ const BASE = process.argv[2] || 'http://localhost:8771';
 const PAGINAS = [
   { slug: 'bncc-computacao', disc: 'Computação', no: 10, largura: 1100, frase: '68 habilidades do 6º ano ao Ensino Médio, ligadas pelo conteúdo de um ano para o outro', p: ['68 habilidades', '98 ligações', '3 eixos'], margem: '-170px 0 0 -14px', img: 820 },
   { slug: 'bncc-matematica', disc: 'Matemática', no: 0, largura: 1300, frase: '247 habilidades do 1º ao 9º ano, ligadas pelo conteúdo de um ano para o outro', p: ['247 habilidades', '9 anos', '5 unidades'], margem: '-120px 0 0 -14px', img: 900 },
-  { slug: 'bncc-arte', disc: 'Arte', no: 3, largura: 900, frase: '61 habilidades dos anos iniciais aos anos finais, ligadas pelo conteúdo', p: ['61 habilidades', '5 linguagens', '2 etapas'], margem: '-40px 0 0 -20px', img: 540 },
+  { slug: 'bncc-arte', disc: 'Arte', no: 3, largura: 1100, frase: '61 habilidades do 1º ao 9º ano, ligadas pelo conteúdo de um ano para o outro', p: ['61 habilidades', '5 linguagens', '9 anos'], margem: '-120px 0 0 -14px', img: 900 },
+  { slug: 'bncc-lingua-portuguesa', disc: 'Língua Portuguesa', no: 100, largura: 1300, frase: '185 habilidades do 6º ao 9º ano, ligadas pelo conteúdo', p: ['185 habilidades', '5 campos', '4 práticas'], margem: '-700px 0 0 -14px', img: 900 },
+  { slug: 'bncc-literatura', disc: 'Literatura', no: 2, largura: 1100, frase: 'O campo artístico-literário de Língua Portuguesa do 6º ao 9º ano', p: ['21 habilidades', '6º ao 9º ano', '4 práticas'], margem: '-20px 0 0 -14px', img: 900 },
+  { slug: 'bncc-lingua-inglesa', disc: 'Língua Inglesa', no: 5, largura: 1100, frase: '88 habilidades do 6º ao 9º ano, ligadas pelo conteúdo de um ano para o outro', p: ['88 habilidades', '5 eixos', '6º ao 9º ano'], margem: '-40px 0 0 -14px', img: 820 },
 ];
 (async () => {
   const b = await chromium.launch();

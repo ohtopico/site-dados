@@ -51,3 +51,4 @@ button.cod:hover, a.cod:hover { background: var(--pill); }
 /* "Sobre os dados": texto alinhado com o título e na largura do bloco */
 .leitura { max-width: none; padding-left: 0; list-style: none; gap: 12px; }
 .leitura li { margin: 0; }
+#fios .chip { white-space: normal; text-align: left; max-width: 100%; }

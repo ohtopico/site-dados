@@ -37,7 +37,7 @@
   const EIXOS = Object.fromEntries(C.eixos);
   const COR = Object.fromEntries(C.eixos.map((e, i) => [e[0], 'e' + i]));
   const ETAPA = C.passo === 'etapa';
-  const ANTERIOR = ETAPA ? 'etapa anterior' : 'ano anterior', SEGUINTE = ETAPA ? 'etapa seguinte' : 'ano seguinte';
+  const ANTERIOR = C.anterior || (ETAPA ? 'etapa anterior' : 'ano anterior'), SEGUINTE = C.seguinte || (ETAPA ? 'etapa seguinte' : 'ano seguinte');
   const NO = Object.fromEntries(C.anos.map(a => [a[0], a[2] || 'no ' + a[1]]));
   const no = a => NO[a];
   const PERIODO = C.periodo;
@@ -73,7 +73,7 @@
   $('resumo').innerHTML = [
     [D.habilidades.length, `habilidades de ${C.disciplina} ${PERIODO}`],
     C.anosVisao && ANOS.length === 1 ? [C.anosVisao.length, 'anos em que estas habilidades valem, aprofundadas a cada ano']
-      : [D.ligacoes.length, ETAPA ? 'ligações de conteúdo entre as duas etapas' : 'ligações de conteúdo entre anos seguidos'],
+      : [D.ligacoes.length, C.anterior ? 'ligações de conteúdo entre colunas seguidas' : ETAPA ? 'ligações de conteúdo entre as duas etapas' : 'ligações de conteúdo entre anos seguidos'],
     [semAntes.length, `${semAntes.length === 1 ? 'habilidade que começa' : 'habilidades que começam'} um assunto novo (sem ligação com a ${ANTERIOR})`.replace('a ano', 'o ano')],
     [verboTop[0], `é o verbo mais usado, em ${verboTop[1]} habilidades`],
     C.material ? [comMaterial, 'habilidades com pelo menos um material gratuito pronto'] : [C.eixos.length, C.termoEixos]
