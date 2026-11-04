@@ -256,6 +256,79 @@
   ranking('g-comuns', comuns.slice(0, 15));
   ranking('g-raros', comuns.filter(s => s.n > 0).slice(-15).reverse());
 
+  // ---------- Transcrição ----------
+  (function transcricao() {
+    const T = window.TranscreverIPA; if (!T) return;
+    const txt = $('tr-texto'), idi = $('tr-idioma'), saida = $('tr-saida'), pal = $('tr-palavras'), nota = $('tr-nota');
+    const EXEMPLOS = { pt: 'Os sons das línguas do mundo', es: 'Los sonidos de las lenguas del mundo', it: 'I suoni delle lingue del mondo', de: 'Die Laute der Sprachen der Welt', en: 'The sounds of the languages of the world' };
+    idi.innerHTML = T.IDIOMAS.map(([id, n]) => `<option value="${id}">${esc(n)}</option>`).join('');
+    const MOD = /[̀-ͯʰ-˿ː]/; // diacríticos e modificadores que acompanham o símbolo
+    function simbolos(ipa) {
+      const out = []; // [texto, símbolo do quadro ou null]
+      for (let i = 0; i < ipa.length;) {
+        let s = null, n = 1;
+        if (POR_S[ipa.slice(i, i + 2)]) { s = POR_S[ipa.slice(i, i + 2)]; n = 2; }
+        else if (POR_S[ipa[i]]) s = POR_S[ipa[i]];
+        let txt = ipa.slice(i, i + n); i += n;
+        if (s || /\p{L}/u.test(txt)) while (i < ipa.length && MOD.test(ipa[i]) && !'ˈˌ'.includes(ipa[i])) { txt += ipa[i]; i++; }
+        out.push([txt, s]);
+      }
+      return out;
+    }
+    function html(ipa) {
+      return simbolos(ipa).map(([t, s]) => s
+        ? `<button type="button" class="tr-som" data-s="${esc(s.s)}" title="${esc(s.s + ': ' + s.nome)}">${esc(t)}</button>`
+        : `<span>${esc(t)}</span>`).join('');
+    }
+    let fila = [], seq = 0;
+    async function atualizar() {
+      const n = ++seq, lang = idi.value;
+      if (lang === 'en') nota.textContent = 'Carregando o dicionário de inglês...';
+      let r;
+      try { r = await T.transcrever(txt.value, lang); } catch (e) { nota.textContent = 'Não foi possível transcrever agora.'; return; }
+      if (n !== seq) return;
+      const pals = r.filter(x => !x.sep);
+      const linha = r.map(x => x.sep ? (x.ipa.trim() ? ' ' : ' ') : (x.falta ? '?' : x.ipa)).join('').replace(/ +/g, ' ').trim();
+      const ws = linha.split(' ');
+      saida.innerHTML = linha ? ws.map((w, k) => '<span class="tr-w">' + (k === 0 ? '<span class="tr-barra">[</span>' : '') + html(w) + (k === ws.length - 1 ? '<span class="tr-barra">]</span>' : '') + '</span>').join(' ') : '';
+      pal.innerHTML = pals.map(x => `<div class="tr-pal"><span class="tr-orig">${esc(x.orig)}</span><span class="tr-ipa">${x.falta ? '<span title="Palavra fora do dicionário">?</span>' : html(x.ipa)}</span></div>`).join('');
+      fila = simbolos(pals.map(x => x.ipa || '').join(' ')).filter(x => x[1] && x[1].som).map(x => x[1]);
+      const faltam = pals.filter(x => x.falta).length;
+      nota.textContent = (faltam ? `${faltam} ${faltam === 1 ? 'palavra ficou' : 'palavras ficaram'} de fora do dicionário. ` : '') +
+        'Transcrição aproximada, feita por regras' + (lang === 'en' ? ' e pelo dicionário CMUdict' : '') + '. O sinal ˈ marca a sílaba tônica.';
+      try { history.replaceState(null, '', '?' + new URLSearchParams({ texto: txt.value, idioma: lang }) + location.hash); } catch (e) {}
+    }
+    let espera;
+    txt.addEventListener('input', () => { clearTimeout(espera); espera = setTimeout(atualizar, 200); });
+    idi.addEventListener('change', () => {
+      if (Object.values(EXEMPLOS).includes(txt.value) || !txt.value.trim()) txt.value = EXEMPLOS[idi.value];
+      atualizar();
+    });
+    $('transcrever').addEventListener('click', e => {
+      const b = e.target.closest('.tr-som'); if (!b) return;
+      const s = POR_S[b.dataset.s];
+      tocar(s); mostrar(s, false);
+      $('transcrever').querySelectorAll('.tr-som').forEach(x => x.classList.toggle('on', x.dataset.s === s.s));
+    });
+    $('tr-ouvir').addEventListener('click', () => {
+      let k = 0;
+      const prox = () => {
+        if (k >= fila.length) { audio.onended = null; return; }
+        const s = fila[k++];
+        $('transcrever').querySelectorAll('.tr-som').forEach(x => x.classList.toggle('on', x.dataset.s === s.s));
+        audio.onended = () => setTimeout(prox, 120);
+        tocar(s);
+      };
+      prox();
+    });
+    try {
+      const q = new URLSearchParams(location.search);
+      if (q.get('idioma') && T.IDIOMAS.some(x => x[0] === q.get('idioma'))) idi.value = q.get('idioma');
+      if (q.get('texto')) txt.value = q.get('texto').slice(0, 500);
+    } catch (e) {}
+    atualizar();
+  })();
+
   // ---------- Início ----------
   const inicial = lerHash();
   pintar();
