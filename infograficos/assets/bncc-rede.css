@@ -1,11 +1,12 @@
-/* BNCC Computação em dados */
-:root { --pc: #166c40; --md: #3a62c9; --cd: #c9661b; --pc-soft: #e3f1e8; --md-soft: #e5ebfa; --cd-soft: #fbeadb; }
+/* BNCC em dados: estilos compartilhados pelas páginas de Computação, Matemática e Arte */
+:root { --e0: #166c40; --e1: #3a62c9; --e2: #c9661b; --e3: #8a3fb5; --e4: #c2366b; --e0-soft: #e3f1e8; --e1-soft: #e5ebfa; --e2-soft: #fbeadb; --e3-soft: #f1e6f8; --e4-soft: #fbe4ec; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --pc: #6fd39b; --md: #8eaaf2; --cd: #f0a35a; --pc-soft: #173323; --md-soft: #1b2440; --cd-soft: #3a2614; }
+  :root:not([data-theme="light"]) { --e0: #6fd39b; --e1: #8eaaf2; --e2: #f0a35a; --e3: #c79af0; --e4: #f08bb0; --e0-soft: #173323; --e1-soft: #1b2440; --e2-soft: #3a2614; --e3-soft: #2e1d3a; --e4-soft: #3a1a26; }
 }
-:root[data-theme="dark"] { --pc: #6fd39b; --md: #8eaaf2; --cd: #f0a35a; --pc-soft: #173323; --md-soft: #1b2440; --cd-soft: #3a2614; }
+:root[data-theme="dark"] { --e0: #6fd39b; --e1: #8eaaf2; --e2: #f0a35a; --e3: #c79af0; --e4: #f08bb0; --e0-soft: #173323; --e1-soft: #1b2440; --e2-soft: #3a2614; --e3-soft: #2e1d3a; --e4-soft: #3a1a26; }
 
 .rede { min-width: 760px; }
+.sec-oculta { display: none; }
 .rede .no rect { stroke: var(--ink); stroke-width: 1.2; cursor: pointer; }
 .rede .no text { font-size: 11px; font-weight: 600; pointer-events: none; }
 .rede .no:focus { outline: none; }
@@ -17,9 +18,9 @@
 .rede.foco .lig.on { stroke: var(--ink); stroke-opacity: .85; }
 .rede .no.sel rect { stroke-width: 3; }
 .rede .ano-titulo { font: 800 15px var(--display); }
-.eixo-PC { fill: var(--pc-soft); } .eixo-MD { fill: var(--md-soft); } .eixo-CD { fill: var(--cd-soft); }
-.barra-PC { fill: var(--pc); } .barra-MD { fill: var(--md); } .barra-CD { fill: var(--cd); }
-.sw-PC { background: var(--pc-soft); } .sw-MD { background: var(--md-soft); } .sw-CD { background: var(--cd-soft); }
+.eixo-e0 { fill: var(--e0-soft); } .eixo-e1 { fill: var(--e1-soft); } .eixo-e2 { fill: var(--e2-soft); } .eixo-e3 { fill: var(--e3-soft); } .eixo-e4 { fill: var(--e4-soft); }
+.barra-e0 { fill: var(--e0); } .barra-e1 { fill: var(--e1); } .barra-e2 { fill: var(--e2); } .barra-e3 { fill: var(--e3); } .barra-e4 { fill: var(--e4); }
+.sw-e0 { background: var(--e0-soft); } .sw-e1 { background: var(--e1-soft); } .sw-e2 { background: var(--e2-soft); } .sw-e3 { background: var(--e3-soft); } .sw-e4 { background: var(--e4-soft); }
 .legenda b { border-radius: 4px; }
 
 .detalhe { border-bottom: 1.5px dashed var(--line); padding-bottom: 12px; min-height: 60px; }
@@ -40,7 +41,7 @@ button.cod:hover, a.cod:hover { background: var(--pill); }
 .busca input { font: inherit; font-size: 16px; border: 1.5px solid var(--ink); border-radius: 99px; padding: 8px 16px; min-width: min(420px, 80vw); background: var(--paper); color: var(--ink); }
 .lista-habs { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 12px; }
 .lista-habs li { border: 2px solid var(--ink); border-radius: 16px; padding: 12px 14px; background: var(--paper); border-left-width: 8px; }
-.lista-habs li.eixo-PC { border-left-color: var(--pc); } .lista-habs li.eixo-MD { border-left-color: var(--md); } .lista-habs li.eixo-CD { border-left-color: var(--cd); }
+.lista-habs li.eixo-e0 { border-left-color: var(--e0); } .lista-habs li.eixo-e1 { border-left-color: var(--e1); } .lista-habs li.eixo-e2 { border-left-color: var(--e2); } .lista-habs li.eixo-e3 { border-left-color: var(--e3); } .lista-habs li.eixo-e4 { border-left-color: var(--e4); }
 .lista-habs .topo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin-bottom: 4px; }
 .lista-habs .topo strong { font-size: 15px; }
 .lista-habs .meta-hab { font-size: 13px; color: var(--ink-2); }

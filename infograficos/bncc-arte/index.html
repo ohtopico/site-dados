@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNCC Arte em dados: como as habilidades se ligam | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo das 61 habilidades de Arte da BNCC no Ensino Fundamental: como artes visuais, dança, música, teatro e artes integradas passam dos anos iniciais para os anos finais.">
+<meta property="og:title" content="BNCC Arte em dados | Júlia Quoos">
+<meta property="og:description" content="61 habilidades de Arte, dos anos iniciais aos anos finais: clique em uma e veja para onde ela vai.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/bncc-arte/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/bncc-arte/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/bncc-arte/og-bncc-arte.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BNCC Arte em dados: as habilidades dos anos iniciais aos anos finais ligadas por conteúdo">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../assets/infograficos.css?v=202611041300">
+<link rel="stylesheet" href="../assets/bncc-rede.css?v=202611041300">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Dataset", "name": "Habilidades de Arte da BNCC e as ligações entre os anos", "description": "As 61 habilidades de Arte da BNCC do Ensino Fundamental (EF15AR e EF69AR), com linguagem, objeto de conhecimento, verbo e ligações de conteúdo entre os anos iniciais e os anos finais calculadas por semelhança de texto.", "url": "https://juliaroberta.com/infograficos/bncc-arte/", "inLanguage": "pt-BR", "spatialCoverage": "Brasil", "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "isBasedOn": ["http://basenacionalcomum.mec.gov.br/"]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/blog/">Blog</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ bncc arte</span>
+      <h1>A BNCC Arte <mark>em dados</mark></h1>
+      <p class="lead">As 61 habilidades de Arte do Ensino Fundamental, ligadas pelo conteúdo dos anos iniciais (1º ao 5º ano) para os anos finais (6º ao 9º ano). Clique em uma habilidade para ver de onde ela vem e para onde vai.</p>
+      <ul class="pilulas"><li>61 habilidades</li><li>1º ao 9º ano</li><li>5 linguagens</li><li>dados para baixar</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="resumo-num" id="resumo"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Progressão</span>
+      <h2>Como os conteúdos se ligam ao longo dos anos</h2>
+      <p class="muted">Na BNCC, as habilidades de Arte valem para blocos de anos: 26 para o 1º ao 5º ano e 35 para o 6º ao 9º ano. Cada caixinha é uma habilidade, na coluna do seu bloco. As linhas ligam habilidades dos dois blocos que tratam do mesmo conteúdo; quanto mais grossa, mais forte a ligação. Os fios seguem os objetos de conhecimento, como processos de criação ou patrimônio cultural.</p>
+      <div class="seletor" id="fios" role="group" aria-label="Fios temáticos"></div>
+      <div class="legenda" id="legenda-eixos" style="margin-top:12px"></div>
+      <div class="janela" style="margin-top:14px"><div class="janela-barra"><i></i><i></i><i></i><span>progressao.html</span></div>
+        <div class="janela-corpo">
+          <div id="detalhe" class="detalhe" aria-live="polite"><p class="nota">Clique em uma habilidade para ver o texto, as ligações e a trilha.</p></div>
+          <div class="rolagem"><svg id="g-rede" class="grafico rede" role="img" aria-label="Habilidades por ano ligadas por conteúdo"></svg></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Linguagens</span>
+      <h2>Artes visuais, dança, música, teatro e artes integradas</h2>
+      <p class="muted">Quantas habilidades de cada linguagem há em cada bloco de anos. Clique em um quadro para ver a lista.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>eixos.html</span></div>
+        <div class="janela-corpo"><div class="rolagem"><table class="mapa-calor" id="t-eixos"></table></div></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Verbos</span>
+      <h2>O que a BNCC pede que o estudante faça</h2>
+      <p class="muted">O verbo que abre cada habilidade diz o tipo de trabalho esperado: explorar, experimentar, criar, analisar. Clique em uma barra para ver as habilidades.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>verbos.html</span></div>
+        <div class="janela-corpo"><svg id="g-verbos" class="grafico" role="img" aria-label="Verbos que abrem as habilidades"></svg></div></div>
+    </div>
+  </section>
+
+  <svg id="g-material" hidden></svg><p id="material-texto" hidden></p>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Todas as habilidades</span>
+      <h2 id="t-lista">Procure uma habilidade</h2>
+      <div class="controles">
+        <label class="busca"><span class="sr-only">Buscar</span><input type="search" id="busca" placeholder="Buscar por código ou palavra, por exemplo: música"></label>
+        <button class="chip" type="button" id="limpar">Limpar filtro</button>
+        <button class="chip" type="button" id="baixar">Baixar CSV</button>
+      </div>
+      <p class="nota" id="filtro-texto" style="margin-top:10px"></p>
+      <ul class="lista-habs" id="lista"></ul>
+      <p><button class="chip" type="button" id="mais" hidden>Mostrar todas as habilidades</button></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os números e como as ligações foram calculadas</h2>
+      <ul class="leitura">
+        <li><b>Habilidades:</b> BNCC, Arte do Ensino Fundamental (Resolução CNE/CP nº 2/2017): EF15AR01 a EF15AR26 para o 1º ao 5º ano e EF69AR01 a EF69AR35 para o 6º ao 9º ano. Os textos aparecem resumidos; para citar, use o documento oficial.</li>
+        <li><b>Linguagens:</b> artes visuais, dança, música, teatro e artes integradas, as unidades temáticas da BNCC de Arte.</li>
+        <li><b>Ligações:</b> o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, com um pequeno bônus quando são da mesma linguagem ou do mesmo objeto de conhecimento. Cada habilidade se liga às duas mais parecidas do 6º ao 9º ano, se a semelhança passar de 0,12. É uma leitura automática do texto, não a progressão oficial: serve para planejar e conversar, não para substituir o documento.</li>
+        <li><b>Fios:</b> os objetos de conhecimento da BNCC (contextos e práticas, elementos da linguagem, materialidades, processos de criação e os das artes integradas).</li>
+        <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc-arte">_fonte/bncc-arte</a> e <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc">_fonte/bncc</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte.</li>
+        <li>Veja também: <a href="../bncc-computacao/">BNCC Computação</a> · <a href="../bncc-matematica/">BNCC Matemática</a>.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>. Materiais de Computação e Matemática para a sala de aula estão no <a href="https://ohtopico.com.br/material-didatico/">site de docência</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<div id="tip-g" role="tooltip"></div>
+<script src="dados.js?v=202611041300"></script>
+<script src="../assets/bncc-rede.js?v=202611041300"></script>
+</body>
+</html>

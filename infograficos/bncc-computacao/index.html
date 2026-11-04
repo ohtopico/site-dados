@@ -22,17 +22,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/md.css">
-<link rel="stylesheet" href="../assets/infograficos.css?v=202611041200">
-<link rel="stylesheet" href="bncc.css?v=202611041200">
+<link rel="stylesheet" href="../assets/infograficos.css?v=202611041300">
+<link rel="stylesheet" href="../assets/bncc-rede.css?v=202611041300">
 <script>
   try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dataset","name":"Habilidades de Computação da BNCC e as ligações entre os anos",
-"description":"As 68 habilidades de Computação da BNCC do 6º ano do Ensino Fundamental ao Ensino Médio, com eixo, objeto de conhecimento, verbo, materiais didáticos que as trabalham e ligações de conteúdo calculadas por semelhança de texto.",
-"url":"https://juliaroberta.com/infograficos/bncc-computacao/","inLanguage":"pt-BR","spatialCoverage":"Brasil",
-"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
-"isBasedOn":["http://portal.mec.gov.br/conselho-nacional-de-educacao/base-nacional-comum-curricular-bncc","https://ohtopico.com.br/material-didatico/bncc/"]}
+{"@context": "https://schema.org", "@type": "Dataset", "name": "Habilidades de Computação da BNCC e as ligações entre os anos", "description": "As 68 habilidades de Computação da BNCC do 6º ano do Ensino Fundamental ao Ensino Médio, com eixo, objeto de conhecimento, verbo, materiais didáticos que as trabalham e ligações de conteúdo calculadas por semelhança de texto.", "url": "https://juliaroberta.com/infograficos/bncc-computacao/", "inLanguage": "pt-BR", "spatialCoverage": "Brasil", "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "isBasedOn": ["http://portal.mec.gov.br/conselho-nacional-de-educacao/base-nacional-comum-curricular-bncc", "https://ohtopico.com.br/material-didatico/bncc/"]}
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
@@ -144,7 +140,8 @@
         <li><b>Materiais:</b> jogos, planos de aula, fichas e recursos 3D do <a href="https://ohtopico.com.br/material-didatico/">material didático gratuito</a>, contados pela lista de habilidades de cada material.</li>
         <li><b>Ligações:</b> o texto e o objeto de conhecimento de cada habilidade viram palavras sem acento, sem palavras vazias e sem verbos gerais, cortadas nas 6 primeiras letras. Cada palavra pesa pelo TF-IDF e a semelhança entre duas habilidades é o cosseno entre elas, com um pequeno bônus quando são do mesmo eixo, do mesmo fio temático ou trabalhadas pelos mesmos materiais. Cada habilidade se liga às duas mais parecidas do ano seguinte, se a semelhança passar de 0,12. É uma leitura automática do texto, não a progressão oficial: serve para planejar e conversar, não para substituir o documento.</li>
         <li><b>Fios temáticos:</b> grupos de palavras escolhidos à mão (por exemplo, rede, internet, protocolo e pacote para "Redes e internet"). Uma habilidade entra no fio quando o texto ou o objeto de conhecimento tem uma dessas palavras.</li>
-        <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc-computacao">_fonte/bncc-computacao</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte.</li>
+        <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc-computacao">_fonte/bncc-computacao</a> e <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/bncc">_fonte/bncc</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte.</li>
+        <li>Veja também: <a href="../bncc-matematica/">BNCC Matemática</a> · <a href="../bncc-arte/">BNCC Arte</a>.</li>
       </ul>
     </div>
   </section>
@@ -155,7 +152,7 @@
   <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
 </div></footer>
 <div id="tip-g" role="tooltip"></div>
-<script src="dados.js?v=202611041200"></script>
-<script src="bncc.js?v=202611041200"></script>
+<script src="dados.js?v=202611041300"></script>
+<script src="../assets/bncc-rede.js?v=202611041300"></script>
 </body>
 </html>

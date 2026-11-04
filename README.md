@@ -11,7 +11,7 @@ O trabalho com formação de professores, material didático, simuladores e blog
 | `index.html` | Página inicial, no mesmo modelo de área de trabalho do ohtopico.com.br |
 | `blog/` | Blog de dados e IA, gerado por `_fonte/blog/gerar.py` |
 | `curriculo/` | Currículo de dados (a versão de docência fica em ohtopico.com.br/curriculo/) |
-| `infograficos/` | Painéis: BNCC Computação em dados, dados da educação no Vale do Rio Pardo, Novo Cabrais, chuva do RS e El Niño, interesse por IA na Wikipédia, paisagem sonora de Nova York |
+| `infograficos/` | Painéis: BNCC em dados (Computação, Matemática e Arte), dados da educação no Vale do Rio Pardo, Novo Cabrais, chuva do RS e El Niño, interesse por IA na Wikipédia, paisagem sonora de Nova York |
 | `infograficos/interesse-por-ia/notebooks/` | Página dos notebooks com dados da Wikipédia |
 | `notebooks/` | Notebooks (.ipynb) que abrem no Colab |
 | `assets/md.css` | Estilo compartilhado pelos infográficos |
@@ -21,9 +21,14 @@ O trabalho com formação de professores, material didático, simuladores e blog
 
 Cada post é uma entrada em `_fonte/blog/posts.json` (slug, título, descrição, data, tema, imagem, alt) e um arquivo `_fonte/blog/conteudo/<slug>.html` com o texto. Posts com data futura ficam agendados: a Action `.github/workflows/publicar-blog.yml` roda todo dia às 6h (Brasília) e publica os que chegaram na data, além do índice, do RSS (`blog/feed.xml`) e do sitemap.
 
-## BNCC Computação
+## BNCC em dados (Computação, Matemática e Arte)
 
-`node _fonte/bncc-computacao/extrair.js <pasta do repositório ohtopico/site>` lê o catálogo de habilidades e materiais do ohtopico.com.br e grava `habilidades.json`. `python3 _fonte/bncc-computacao/gerar.py` calcula as ligações entre os anos (TF-IDF e cosseno, método explicado na própria página) e grava `infograficos/bncc-computacao/dados.js`. A imagem de compartilhamento sai de `_fonte/bncc-computacao/og/` (Playwright, fontes Sniglet e Lexend locais).
+Três páginas em `infograficos/bncc-computacao/`, `bncc-matematica/` e `bncc-arte/` com o mesmo código (`infograficos/assets/bncc-rede.js` e `bncc-rede.css`); cada uma traz só o seu `dados.js`. O método das ligações (TF-IDF e cosseno) fica em `_fonte/bncc/rede.py` e os textos das páginas em `_fonte/bncc/paginas.py`.
+
+- Computação: `node _fonte/bncc-computacao/extrair.js <repo ohtopico/site>` e `python3 _fonte/bncc-computacao/gerar.py`.
+- Matemática: `python3 _fonte/bncc-matematica/extrair.py <repo ohtopico/site>` e `python3 _fonte/bncc-matematica/gerar.py`.
+- Arte: textos resumidos em `_fonte/bncc-arte/habilidades.py`; `python3 _fonte/bncc-arte/gerar.py`.
+- Páginas: `python3 _fonte/bncc/paginas.py`. Imagens de compartilhamento: `node _fonte/bncc/og/gerar.js` com um servidor local na raiz (fontes Sniglet e Lexend em `_fonte/bncc/og/fontes/`, fora do repositório).
 
 ## Atualização automática
 

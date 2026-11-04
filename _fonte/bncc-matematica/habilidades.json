@@ -1,0 +1,6179 @@
+[
+ {
+  "codigo": "EF01MA01",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Usar números naturais para indicar quantidade ou ordem em situações do dia a dia.",
+  "recursos": [
+   {
+    "id": "ad-numeros-que-contam-e-numeros-que-ordenam",
+    "tipo": "adaptada",
+    "titulo": "Números que contam e números que ordenam"
+   },
+   {
+    "id": "ad-contar-e-mostrar-quantidades",
+    "tipo": "revisao",
+    "titulo": "Contar e mostrar quantos tem"
+   },
+   {
+    "id": "ad-kit-de-apoio-visual",
+    "tipo": "adaptada",
+    "titulo": "Kit de apoio visual"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-que-contam-e-numeros-que-ordenam/",
+  "linkTexto": "Ficha adaptada de EF01MA01"
+ },
+ {
+  "codigo": "EF01MA02",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Contar de forma exata ou aproximada, usando pareamento e agrupamentos.",
+  "recursos": [
+   {
+    "id": "ad-contar-com-pares-e-grupos",
+    "tipo": "adaptada",
+    "titulo": "Contar com pares e grupos"
+   },
+   {
+    "id": "ad-contar-e-mostrar-quantidades",
+    "tipo": "revisao",
+    "titulo": "Contar e mostrar quantos tem"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/contar-com-pares-e-grupos/",
+  "linkTexto": "Ficha adaptada de EF01MA02"
+ },
+ {
+  "codigo": "EF01MA03",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Estimar e comparar quantidades de dois conjuntos (até cerca de 20 elementos).",
+  "recursos": [
+   {
+    "id": "ad-comparar-quantidades-onde-tem-mais",
+    "tipo": "adaptada",
+    "titulo": "Comparar quantidades: onde tem mais?"
+   },
+   {
+    "id": "ad-contar-e-mostrar-quantidades",
+    "tipo": "revisao",
+    "titulo": "Contar e mostrar quantos tem"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-quantidades-onde-tem-mais/",
+  "linkTexto": "Ficha adaptada de EF01MA03"
+ },
+ {
+  "codigo": "EF01MA04",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Contar coleções de até 100 objetos e registrar o resultado com palavras e números.",
+  "recursos": [
+   {
+    "id": "ad-contar-ate-100-e-escrever-os-numeros",
+    "tipo": "adaptada",
+    "titulo": "Contar até 100 e escrever os números"
+   },
+   {
+    "id": "ad-numeros-ate-100-contar-e-comparar",
+    "tipo": "revisao",
+    "titulo": "Números até 100: contar e comparar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/contar-ate-100-e-escrever-os-numeros/",
+  "linkTexto": "Ficha adaptada de EF01MA04"
+ },
+ {
+  "codigo": "EF01MA05",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Comparar números naturais de até duas ordens, com e sem a reta numérica.",
+  "recursos": [
+   {
+    "id": "ad-comparar-numeros-na-reta-numerica",
+    "tipo": "adaptada",
+    "titulo": "Comparar números na reta numérica"
+   },
+   {
+    "id": "ad-numeros-ate-100-contar-e-comparar",
+    "tipo": "revisao",
+    "titulo": "Números até 100: contar e comparar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-numeros-na-reta-numerica/",
+  "linkTexto": "Ficha adaptada de EF01MA05"
+ },
+ {
+  "codigo": "EF01MA06",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Construir fatos básicos da adição e usá-los no cálculo.",
+  "recursos": [
+   {
+    "id": "ad-fatos-basicos-da-adicao",
+    "tipo": "adaptada",
+    "titulo": "Fatos básicos da adição"
+   },
+   {
+    "id": "ad-juntar-quantidades-adicao",
+    "tipo": "revisao",
+    "titulo": "Juntar quantidades: adição com figuras"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fatos-basicos-da-adicao/",
+  "linkTexto": "Ficha adaptada de EF01MA06"
+ },
+ {
+  "codigo": "EF01MA07",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Compor e decompor números de até duas ordens, com material manipulável.",
+  "recursos": [
+   {
+    "id": "ad-compor-e-decompor-dezenas-e-unidades",
+    "tipo": "adaptada",
+    "titulo": "Compor e decompor dezenas e unidades"
+   },
+   {
+    "id": "ad-dezenas-e-unidades-material-dourado",
+    "tipo": "revisao",
+    "titulo": "Dezenas e unidades com material dourado"
+   },
+   {
+    "id": "ad-kit-de-apoio-visual",
+    "tipo": "adaptada",
+    "titulo": "Kit de apoio visual"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/compor-e-decompor-dezenas-e-unidades/",
+  "linkTexto": "Ficha adaptada de EF01MA07"
+ },
+ {
+  "codigo": "EF01MA08",
+  "ano": 1,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de adição e subtração (juntar, acrescentar, separar, retirar) com imagens ou material.",
+  "recursos": [
+   {
+    "id": "ad-tirar-e-ver-quantos-sobram-subtracao",
+    "tipo": "adaptada",
+    "titulo": "Tirar e ver quantos sobram: subtração"
+   },
+   {
+    "id": "ad-juntar-quantidades-adicao",
+    "tipo": "revisao",
+    "titulo": "Juntar quantidades: adição com figuras"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/tirar-e-ver-quantos-sobram-subtracao/",
+  "linkTexto": "Ficha adaptada de EF01MA08"
+ },
+ {
+  "codigo": "EF01MA09",
+  "ano": 1,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Organizar e ordenar objetos por atributos, como cor, forma e medida.",
+  "recursos": [
+   {
+    "id": "ad-separar-e-organizar-por-atributos",
+    "tipo": "adaptada",
+    "titulo": "Separar e organizar: cor, forma e tamanho"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/separar-e-organizar-por-atributos/",
+  "linkTexto": "Ficha adaptada de EF01MA09"
+ },
+ {
+  "codigo": "EF01MA10",
+  "ano": 1,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Descobrir os elementos que faltam em sequências de números, objetos ou figuras.",
+  "recursos": [
+   {
+    "id": "ad-o-que-falta-na-sequencia",
+    "tipo": "adaptada",
+    "titulo": "O que falta na sequência?"
+   },
+   {
+    "id": "ad-sequencias-e-padroes",
+    "tipo": "revisao",
+    "titulo": "Sequências e padrões"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/o-que-falta-na-sequencia/",
+  "linkTexto": "Ficha adaptada de EF01MA10"
+ },
+ {
+  "codigo": "EF01MA11",
+  "ano": 1,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Descrever a localização de pessoas e objetos no espaço (direita, esquerda, em frente, atrás).",
+  "recursos": [
+   {
+    "id": "ad-direita-esquerda-frente-e-atras",
+    "tipo": "adaptada",
+    "titulo": "Direita, esquerda, frente e atrás"
+   },
+   {
+    "id": "ad-onde-esta-localizacao-no-espaco",
+    "tipo": "revisao",
+    "titulo": "Onde está? Localização no espaço"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/direita-esquerda-frente-e-atras/",
+  "linkTexto": "Ficha adaptada de EF01MA11"
+ },
+ {
+  "codigo": "EF01MA12",
+  "ano": 1,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Descrever a localização usando pontos de referência e termos como entre, acima, abaixo.",
+  "recursos": [
+   {
+    "id": "ad-entre-acima-e-abaixo",
+    "tipo": "adaptada",
+    "titulo": "Entre, acima e abaixo: onde está?"
+   },
+   {
+    "id": "ad-onde-esta-localizacao-no-espaco",
+    "tipo": "revisao",
+    "titulo": "Onde está? Localização no espaço"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/entre-acima-e-abaixo/",
+  "linkTexto": "Ficha adaptada de EF01MA12"
+ },
+ {
+  "codigo": "EF01MA13",
+  "ano": 1,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Relacionar figuras espaciais (cone, cilindro, esfera, bloco retangular) a objetos do mundo físico.",
+  "recursos": [
+   {
+    "id": "ad-solidos-e-objetos-do-dia-a-dia",
+    "tipo": "adaptada",
+    "titulo": "Sólidos e objetos do dia a dia"
+   },
+   {
+    "id": "ad-formas-espaciais-no-dia-a-dia",
+    "tipo": "revisao",
+    "titulo": "Formas espaciais: esfera, cubo, cilindro e cone"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/solidos-e-objetos-do-dia-a-dia/",
+  "linkTexto": "Ficha adaptada de EF01MA13"
+ },
+ {
+  "codigo": "EF01MA14",
+  "ano": 1,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Identificar e nomear figuras planas (círculo, quadrado, retângulo, triângulo).",
+  "recursos": [
+   {
+    "id": "ad-circulo-quadrado-retangulo-e-triangulo",
+    "tipo": "adaptada",
+    "titulo": "Círculo, quadrado, retângulo e triângulo"
+   },
+   {
+    "id": "ad-formas-no-dia-a-dia",
+    "tipo": "revisao",
+    "titulo": "Formas no dia a dia"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/circulo-quadrado-retangulo-e-triangulo/",
+  "linkTexto": "Ficha adaptada de EF01MA14"
+ },
+ {
+  "codigo": "EF01MA15",
+  "ano": 1,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Comparar comprimentos, capacidades ou massas (mais alto, mais pesado, cabe mais).",
+  "recursos": [
+   {
+    "id": "ad-comparar-medidas-alto-pesado-cabe-mais",
+    "tipo": "adaptada",
+    "titulo": "Mais alto, mais pesado, cabe mais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-medidas-alto-pesado-cabe-mais/",
+  "linkTexto": "Ficha adaptada de EF01MA15"
+ },
+ {
+  "codigo": "EF01MA16",
+  "ano": 1,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Relatar a sequência de acontecimentos de um dia, usando os horários quando possível.",
+  "recursos": [
+   {
+    "id": "ad-o-que-acontece-primeiro-no-dia",
+    "tipo": "adaptada",
+    "titulo": "O que acontece primeiro no dia?"
+   },
+   {
+    "id": "ad-rotina-e-horas-do-dia",
+    "tipo": "revisao",
+    "titulo": "Rotina e horas do dia"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/o-que-acontece-primeiro-no-dia/",
+  "linkTexto": "Ficha adaptada de EF01MA16"
+ },
+ {
+  "codigo": "EF01MA17",
+  "ano": 1,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Reconhecer períodos do dia, dias da semana e meses do ano, com o calendário.",
+  "recursos": [
+   {
+    "id": "ad-periodos-do-dia-semana-e-meses",
+    "tipo": "adaptada",
+    "titulo": "Períodos do dia, semana e meses"
+   },
+   {
+    "id": "ad-rotina-e-horas-do-dia",
+    "tipo": "revisao",
+    "titulo": "Rotina e horas do dia"
+   },
+   {
+    "id": "ad-calendario-dias-semanas-e-meses",
+    "tipo": "revisao",
+    "titulo": "Calendário: dias, semanas e meses"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/periodos-do-dia-semana-e-meses/",
+  "linkTexto": "Ficha adaptada de EF01MA17"
+ },
+ {
+  "codigo": "EF01MA18",
+  "ano": 1,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Escrever uma data (dia, mês e ano) e indicar o dia da semana.",
+  "recursos": [
+   {
+    "id": "ad-escrever-a-data-e-o-dia-da-semana",
+    "tipo": "adaptada",
+    "titulo": "Escrever a data e o dia da semana"
+   },
+   {
+    "id": "ad-calendario-dias-semanas-e-meses",
+    "tipo": "revisao",
+    "titulo": "Calendário: dias, semanas e meses"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/escrever-a-data-e-o-dia-da-semana/",
+  "linkTexto": "Ficha adaptada de EF01MA18"
+ },
+ {
+  "codigo": "EF01MA19",
+  "ano": 1,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Reconhecer moedas e cédulas do sistema monetário brasileiro em situações simples.",
+  "recursos": [
+   {
+    "id": "ad-moedas-e-cedulas-do-real",
+    "tipo": "adaptada",
+    "titulo": "Moedas e cédulas do real"
+   },
+   {
+    "id": "ad-na-feira-moedas-e-cedulas",
+    "tipo": "revisao",
+    "titulo": "Na feira: moedas e cédulas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/moedas-e-cedulas-do-real/",
+  "linkTexto": "Ficha adaptada de EF01MA19"
+ },
+ {
+  "codigo": "EF01MA20",
+  "ano": 1,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Classificar eventos como \"acontecerá com certeza\", \"talvez aconteça\" e \"é impossível acontecer\".",
+  "recursos": [
+   {
+    "id": "ad-vai-acontecer-certo-talvez-ou-impossivel",
+    "tipo": "adaptada",
+    "titulo": "Vai acontecer? Certo, talvez ou impossível"
+   },
+   {
+    "id": "ad-certo-talvez-ou-impossivel",
+    "tipo": "revisao",
+    "titulo": "Certo, talvez ou impossível"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/vai-acontecer-certo-talvez-ou-impossivel/",
+  "linkTexto": "Ficha adaptada de EF01MA20"
+ },
+ {
+  "codigo": "EF01MA21",
+  "ano": 1,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Ler dados expressos em tabelas e em gráficos de colunas simples.",
+  "recursos": [
+   {
+    "id": "ad-ler-tabelas-e-graficos-de-colunas",
+    "tipo": "adaptada",
+    "titulo": "Ler tabelas e gráficos de colunas"
+   },
+   {
+    "id": "ad-pesquisa-da-turma-tabelas-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Pesquisa da turma: tabelas e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-tabelas-e-graficos-de-colunas/",
+  "linkTexto": "Ficha adaptada de EF01MA21"
+ },
+ {
+  "codigo": "EF01MA22",
+  "ano": 1,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Realizar pesquisa com até duas variáveis categóricas e organizar os dados em representações pessoais.",
+  "recursos": [
+   {
+    "id": "ad-fazer-uma-pesquisa-com-a-turma",
+    "tipo": "adaptada",
+    "titulo": "Fazer uma pesquisa com a turma"
+   },
+   {
+    "id": "ad-pesquisa-da-turma-tabelas-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Pesquisa da turma: tabelas e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fazer-uma-pesquisa-com-a-turma/",
+  "linkTexto": "Ficha adaptada de EF01MA22"
+ },
+ {
+  "codigo": "EF02MA01",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Comparar e ordenar números naturais até a ordem de centenas, pelo valor posicional e pela função do zero.",
+  "recursos": [
+   {
+    "id": "ad-dezenas-e-unidades-material-dourado",
+    "tipo": "revisao",
+    "titulo": "Dezenas e unidades com material dourado"
+   },
+   {
+    "id": "ad-comparar-e-ordenar-numeros-ate-999",
+    "tipo": "adaptada",
+    "titulo": "Comparar e ordenar números até 999"
+   },
+   {
+    "id": "ad-centenas-material-dourado-ate-999",
+    "tipo": "revisao",
+    "titulo": "Centenas com material dourado: números até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-e-ordenar-numeros-ate-999/",
+  "linkTexto": "Ficha adaptada de EF02MA01"
+ },
+ {
+  "codigo": "EF02MA02",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Estimar e contar quantidades de até 1000 objetos, por agrupamentos.",
+  "recursos": [
+   {
+    "id": "ad-estimar-e-contar-ate-1000",
+    "tipo": "adaptada",
+    "titulo": "Estimar e contar até 1000 agrupando"
+   },
+   {
+    "id": "ad-centenas-material-dourado-ate-999",
+    "tipo": "revisao",
+    "titulo": "Centenas com material dourado: números até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/estimar-e-contar-ate-1000/",
+  "linkTexto": "Ficha adaptada de EF02MA02"
+ },
+ {
+  "codigo": "EF02MA03",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Comparar quantidades de objetos de dois conjuntos (mais, menos, mesma quantidade) e indicar a diferença.",
+  "recursos": [
+   {
+    "id": "ad-comparar-quantidades-e-achar-a-diferenca",
+    "tipo": "adaptada",
+    "titulo": "Comparar quantidades e achar a diferença"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-ate-999",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-quantidades-e-achar-a-diferenca/",
+  "linkTexto": "Ficha adaptada de EF02MA03"
+ },
+ {
+  "codigo": "EF02MA04",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Compor e decompor números de até três ordens, com adições.",
+  "recursos": [
+   {
+    "id": "ad-compor-e-decompor-numeros-ate-999",
+    "tipo": "adaptada",
+    "titulo": "Compor e decompor números até 999"
+   },
+   {
+    "id": "ad-centenas-material-dourado-ate-999",
+    "tipo": "revisao",
+    "titulo": "Centenas com material dourado: números até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/compor-e-decompor-numeros-ate-999/",
+  "linkTexto": "Ficha adaptada de EF02MA04"
+ },
+ {
+  "codigo": "EF02MA05",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Construir fatos básicos da adição e da subtração para o cálculo mental ou escrito.",
+  "recursos": [
+   {
+    "id": "ad-fatos-de-adicao-e-subtracao",
+    "tipo": "adaptada",
+    "titulo": "Fatos de adição e de subtração"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-ate-999",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fatos-de-adicao-e-subtracao/",
+  "linkTexto": "Ficha adaptada de EF02MA05"
+ },
+ {
+  "codigo": "EF02MA06",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de adição e subtração com números de até três ordens.",
+  "recursos": [
+   {
+    "id": "ad-problemas-de-adicao-e-subtracao-ate-999",
+    "tipo": "adaptada",
+    "titulo": "Problemas de adição e subtração até 999"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-ate-999",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração até 999"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/problemas-de-adicao-e-subtracao-ate-999/",
+  "linkTexto": "Ficha adaptada de EF02MA06"
+ },
+ {
+  "codigo": "EF02MA07",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de multiplicação por 2, 3, 4 e 5 com a ideia de parcelas iguais.",
+  "recursos": [
+   {
+    "id": "ad-multiplicar-por-2-3-4-e-5",
+    "tipo": "adaptada",
+    "titulo": "Multiplicar por 2, 3, 4 e 5"
+   },
+   {
+    "id": "ad-grupos-iguais-multiplicacao",
+    "tipo": "revisao",
+    "titulo": "Grupos iguais: começando a multiplicar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/multiplicar-por-2-3-4-e-5/",
+  "linkTexto": "Ficha adaptada de EF02MA07"
+ },
+ {
+  "codigo": "EF02MA08",
+  "ano": 2,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de dobro, metade, triplo e terça parte.",
+  "recursos": [
+   {
+    "id": "ad-dobro-metade-triplo-e-terca-parte",
+    "tipo": "adaptada",
+    "titulo": "Dobro, metade, triplo e terça parte"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/dobro-metade-triplo-e-terca-parte/",
+  "linkTexto": "Ficha adaptada de EF02MA08"
+ },
+ {
+  "codigo": "EF02MA09",
+  "ano": 2,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Construir sequências de números naturais em ordem crescente ou decrescente, com uma regularidade.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-crescentes-e-decrescentes-com-regra",
+    "tipo": "adaptada",
+    "titulo": "Sequências crescentes e decrescentes"
+   },
+   {
+    "id": "ad-sequencias-crescentes-e-decrescentes",
+    "tipo": "revisao",
+    "titulo": "Sequências crescentes e decrescentes"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sequencias-crescentes-e-decrescentes-com-regra/",
+  "linkTexto": "Ficha adaptada de EF02MA09"
+ },
+ {
+  "codigo": "EF02MA10",
+  "ano": 2,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Descrever o padrão de sequências repetitivas e recursivas, com palavras, símbolos ou desenhos.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-e-padroes",
+    "tipo": "revisao",
+    "titulo": "Sequências e padrões"
+   },
+   {
+    "id": "ad-descrever-o-padrao-de-uma-sequencia",
+    "tipo": "adaptada",
+    "titulo": "Descrever o padrão de uma sequência"
+   },
+   {
+    "id": "ad-sequencias-crescentes-e-decrescentes",
+    "tipo": "revisao",
+    "titulo": "Sequências crescentes e decrescentes"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/descrever-o-padrao-de-uma-sequencia/",
+  "linkTexto": "Ficha adaptada de EF02MA10"
+ },
+ {
+  "codigo": "EF02MA11",
+  "ano": 2,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Descrever os elementos que faltam em sequências repetitivas e recursivas.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-e-padroes",
+    "tipo": "revisao",
+    "titulo": "Sequências e padrões"
+   },
+   {
+    "id": "ad-o-que-falta-em-sequencias-repetitivas-e-recursivas",
+    "tipo": "adaptada",
+    "titulo": "O que falta em sequências repetitivas e recursivas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/o-que-falta-em-sequencias-repetitivas-e-recursivas/",
+  "linkTexto": "Ficha adaptada de EF02MA11"
+ },
+ {
+  "codigo": "EF02MA12",
+  "ano": 2,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Identificar e registrar a localização e os deslocamentos de pessoas e objetos em trajetos e mapas simples.",
+  "recursos": [
+   {
+    "id": "ad-localizar-e-se-deslocar-num-mapa",
+    "tipo": "adaptada",
+    "titulo": "Localizar e se deslocar num mapa"
+   },
+   {
+    "id": "ad-trajetos-mapas-e-plantas",
+    "tipo": "revisao",
+    "titulo": "Trajetos, mapas e plantas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/localizar-e-se-deslocar-num-mapa/",
+  "linkTexto": "Ficha adaptada de EF02MA12"
+ },
+ {
+  "codigo": "EF02MA13",
+  "ano": 2,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Esboçar roteiros e plantas simples de ambientes familiares, com pontos de referência.",
+  "recursos": [
+   {
+    "id": "ad-plantas-e-roteiros-de-lugares-conhecidos",
+    "tipo": "adaptada",
+    "titulo": "Plantas e roteiros de lugares conhecidos"
+   },
+   {
+    "id": "ad-trajetos-mapas-e-plantas",
+    "tipo": "revisao",
+    "titulo": "Trajetos, mapas e plantas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/plantas-e-roteiros-de-lugares-conhecidos/",
+  "linkTexto": "Ficha adaptada de EF02MA13"
+ },
+ {
+  "codigo": "EF02MA14",
+  "ano": 2,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer, nomear e comparar figuras espaciais (cubo, bloco retangular, pirâmide, cone, cilindro, esfera).",
+  "recursos": [
+   {
+    "id": "ad-formas-espaciais-no-dia-a-dia",
+    "tipo": "revisao",
+    "titulo": "Formas espaciais: esfera, cubo, cilindro e cone"
+   },
+   {
+    "id": "ad-comparar-solidos-geometricos",
+    "tipo": "adaptada",
+    "titulo": "Comparar sólidos geométricos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-solidos-geometricos/",
+  "linkTexto": "Ficha adaptada de EF02MA14"
+ },
+ {
+  "codigo": "EF02MA15",
+  "ano": 2,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer, comparar e nomear figuras planas por características comuns.",
+  "recursos": [
+   {
+    "id": "ad-formas-no-dia-a-dia",
+    "tipo": "revisao",
+    "titulo": "Formas no dia a dia"
+   },
+   {
+    "id": "ad-comparar-figuras-planas-pelos-lados",
+    "tipo": "adaptada",
+    "titulo": "Comparar figuras planas pelos lados"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-figuras-planas-pelos-lados/",
+  "linkTexto": "Ficha adaptada de EF02MA15"
+ },
+ {
+  "codigo": "EF02MA16",
+  "ano": 2,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Estimar, medir e comparar comprimentos com unidades não padronizadas e padronizadas (metro, centímetro, milímetro).",
+  "recursos": [
+   {
+    "id": "ad-medir-comprimentos-metro-centimetro-e-milimetro",
+    "tipo": "adaptada",
+    "titulo": "Medir comprimentos: metro, centímetro e milímetro"
+   },
+   {
+    "id": "ad-medir-comprimentos-metro-e-centimetro",
+    "tipo": "revisao",
+    "titulo": "Medir comprimentos: metro e centímetro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/medir-comprimentos-metro-centimetro-e-milimetro/",
+  "linkTexto": "Ficha adaptada de EF02MA16"
+ },
+ {
+  "codigo": "EF02MA17",
+  "ano": 2,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Estimar, medir e comparar capacidade e massa (litro, mililitro, quilograma, grama).",
+  "recursos": [
+   {
+    "id": "ad-massa-e-capacidade-kg-g-litro-e-ml",
+    "tipo": "adaptada",
+    "titulo": "Massa e capacidade: kg, g, litro e mL"
+   },
+   {
+    "id": "ad-massa-e-capacidade-quilo-e-litro",
+    "tipo": "revisao",
+    "titulo": "Massa e capacidade: quilo e litro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/massa-e-capacidade-kg-g-litro-e-ml/",
+  "linkTexto": "Ficha adaptada de EF02MA17"
+ },
+ {
+  "codigo": "EF02MA18",
+  "ano": 2,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Indicar a duração de intervalos de tempo entre datas, usando o calendário.",
+  "recursos": [
+   {
+    "id": "ad-calendario-dias-semanas-e-meses",
+    "tipo": "revisao",
+    "titulo": "Calendário: dias, semanas e meses"
+   },
+   {
+    "id": "ad-quanto-tempo-entre-duas-datas",
+    "tipo": "adaptada",
+    "titulo": "Quanto tempo entre duas datas?"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/quanto-tempo-entre-duas-datas/",
+  "linkTexto": "Ficha adaptada de EF02MA18"
+ },
+ {
+  "codigo": "EF02MA19",
+  "ano": 2,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Medir a duração de um intervalo de tempo com relógio digital e registrar o início e o fim.",
+  "recursos": [
+   {
+    "id": "ad-rotina-e-horas-do-dia",
+    "tipo": "revisao",
+    "titulo": "Rotina e horas do dia"
+   },
+   {
+    "id": "ad-duracao-de-atividades-no-relogio-digital",
+    "tipo": "adaptada",
+    "titulo": "Duração de atividades no relógio digital"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/duracao-de-atividades-no-relogio-digital/",
+  "linkTexto": "Ficha adaptada de EF02MA19"
+ },
+ {
+  "codigo": "EF02MA20",
+  "ano": 2,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Estabelecer a equivalência de valores entre moedas e cédulas em situações do dia a dia.",
+  "recursos": [
+   {
+    "id": "ad-na-feira-moedas-e-cedulas",
+    "tipo": "revisao",
+    "titulo": "Na feira: moedas e cédulas"
+   },
+   {
+    "id": "ad-trocas-entre-moedas-e-cedulas",
+    "tipo": "adaptada",
+    "titulo": "Trocas entre moedas e cédulas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/trocas-entre-moedas-e-cedulas/",
+  "linkTexto": "Ficha adaptada de EF02MA20"
+ },
+ {
+  "codigo": "EF02MA21",
+  "ano": 2,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Classificar resultados de eventos do dia a dia como muito prováveis, pouco prováveis, improváveis e impossíveis.",
+  "recursos": [
+   {
+    "id": "ad-certo-talvez-ou-impossivel",
+    "tipo": "revisao",
+    "titulo": "Certo, talvez ou impossível"
+   },
+   {
+    "id": "ad-muito-provavel-pouco-provavel-ou-impossivel",
+    "tipo": "adaptada",
+    "titulo": "Muito provável, pouco provável ou impossível"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/muito-provavel-pouco-provavel-ou-impossivel/",
+  "linkTexto": "Ficha adaptada de EF02MA21"
+ },
+ {
+  "codigo": "EF02MA22",
+  "ano": 2,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Comparar informações de pesquisas em tabelas de dupla entrada e em gráficos de colunas ou barras.",
+  "recursos": [
+   {
+    "id": "ad-pesquisa-da-turma-tabelas-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Pesquisa da turma: tabelas e gráficos"
+   },
+   {
+    "id": "ad-tabelas-de-dupla-entrada-e-graficos",
+    "tipo": "adaptada",
+    "titulo": "Tabelas de dupla entrada e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/tabelas-de-dupla-entrada-e-graficos/",
+  "linkTexto": "Ficha adaptada de EF02MA22"
+ },
+ {
+  "codigo": "EF02MA23",
+  "ano": 2,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Realizar pesquisa com até três variáveis categóricas e organizar os dados em listas, tabelas e gráficos.",
+  "recursos": [
+   {
+    "id": "ad-pesquisa-da-turma-tabelas-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Pesquisa da turma: tabelas e gráficos"
+   },
+   {
+    "id": "ad-pesquisa-com-tres-perguntas",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa com três perguntas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/pesquisa-com-tres-perguntas/",
+  "linkTexto": "Ficha adaptada de EF02MA23"
+ },
+ {
+  "codigo": "EF03MA01",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Ler, escrever e comparar números naturais até a ordem de unidade de milhar.",
+  "recursos": [
+   {
+    "id": "ad-ler-escrever-e-comparar-numeros-ate-9999",
+    "tipo": "adaptada",
+    "titulo": "Ler, escrever e comparar números até 9999"
+   },
+   {
+    "id": "ad-numeros-ate-9999-milhar",
+    "tipo": "revisao",
+    "titulo": "Números até 9999: o milhar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-escrever-e-comparar-numeros-ate-9999/",
+  "linkTexto": "Ficha adaptada de EF03MA01"
+ },
+ {
+  "codigo": "EF03MA02",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Identificar características do sistema de numeração decimal, compondo e decompondo números de até quatro ordens.",
+  "recursos": [
+   {
+    "id": "ad-compor-e-decompor-numeros-de-quatro-ordens",
+    "tipo": "adaptada",
+    "titulo": "Compor e decompor números de quatro ordens"
+   },
+   {
+    "id": "ad-numeros-ate-9999-milhar",
+    "tipo": "revisao",
+    "titulo": "Números até 9999: o milhar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/compor-e-decompor-numeros-de-quatro-ordens/",
+  "linkTexto": "Ficha adaptada de EF03MA02"
+ },
+ {
+  "codigo": "EF03MA03",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Construir e usar fatos básicos da adição e da multiplicação para o cálculo mental ou escrito.",
+  "recursos": [
+   {
+    "id": "ad-fatos-basicos-de-adicao-e-multiplicacao",
+    "tipo": "adaptada",
+    "titulo": "Fatos básicos de adição e de multiplicação"
+   },
+   {
+    "id": "ad-calculo-mental-e-problemas-de-adicao-e-subtracao",
+    "tipo": "revisao",
+    "titulo": "Cálculo mental e problemas de adição e subtração"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fatos-basicos-de-adicao-e-multiplicacao/",
+  "linkTexto": "Ficha adaptada de EF03MA03"
+ },
+ {
+  "codigo": "EF03MA04",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Relacionar números naturais e pontos da reta numérica para ordenar números.",
+  "recursos": [
+   {
+    "id": "ad-numeros-na-reta-numerica",
+    "tipo": "adaptada",
+    "titulo": "Números na reta numérica"
+   },
+   {
+    "id": "ad-numeros-ate-9999-milhar",
+    "tipo": "revisao",
+    "titulo": "Números até 9999: o milhar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-na-reta-numerica/",
+  "linkTexto": "Ficha adaptada de EF03MA04"
+ },
+ {
+  "codigo": "EF03MA05",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Usar diferentes procedimentos de cálculo mental e escrito para a adição e a subtração.",
+  "recursos": [
+   {
+    "id": "ad-jeitos-de-calcular-adicao-e-subtracao",
+    "tipo": "adaptada",
+    "titulo": "Jeitos de calcular adição e subtração"
+   },
+   {
+    "id": "ad-calculo-mental-e-problemas-de-adicao-e-subtracao",
+    "tipo": "revisao",
+    "titulo": "Cálculo mental e problemas de adição e subtração"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/jeitos-de-calcular-adicao-e-subtracao/",
+  "linkTexto": "Ficha adaptada de EF03MA05"
+ },
+ {
+  "codigo": "EF03MA06",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de adição e subtração com os significados de juntar, acrescentar, separar, retirar, comparar e completar.",
+  "recursos": [
+   {
+    "id": "ad-problemas-de-juntar-tirar-comparar-e-completar",
+    "tipo": "adaptada",
+    "titulo": "Problemas de juntar, tirar, comparar e completar"
+   },
+   {
+    "id": "ad-calculo-mental-e-problemas-de-adicao-e-subtracao",
+    "tipo": "revisao",
+    "titulo": "Cálculo mental e problemas de adição e subtração"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/problemas-de-juntar-tirar-comparar-e-completar/",
+  "linkTexto": "Ficha adaptada de EF03MA06"
+ },
+ {
+  "codigo": "EF03MA07",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de multiplicação (por 2, 3, 4, 5 e 10) com parcelas iguais e disposição retangular.",
+  "recursos": [
+   {
+    "id": "ad-grupos-iguais-multiplicacao",
+    "tipo": "revisao",
+    "titulo": "Grupos iguais: começando a multiplicar"
+   },
+   {
+    "id": "ad-multiplicacao-por-2-3-4-5-e-10",
+    "tipo": "adaptada",
+    "titulo": "Multiplicação por 2, 3, 4, 5 e 10"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/multiplicacao-por-2-3-4-5-e-10/",
+  "linkTexto": "Ficha adaptada de EF03MA07"
+ },
+ {
+  "codigo": "EF03MA08",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de divisão por números de até 10, com resto zero e diferente de zero.",
+  "recursos": [
+   {
+    "id": "ad-divisao-com-resto-e-sem-resto",
+    "tipo": "adaptada",
+    "titulo": "Divisão com resto e sem resto"
+   },
+   {
+    "id": "ad-divisao-repartir-em-partes-iguais",
+    "tipo": "revisao",
+    "titulo": "Divisão: repartir em partes iguais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/divisao-com-resto-e-sem-resto/",
+  "linkTexto": "Ficha adaptada de EF03MA08"
+ },
+ {
+  "codigo": "EF03MA09",
+  "ano": 3,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Associar o quociente de uma divisão exata às ideias de metade, terça, quarta, quinta e décima partes.",
+  "recursos": [
+   {
+    "id": "ad-metade-terca-quarta-quinta-e-decima-parte",
+    "tipo": "adaptada",
+    "titulo": "Metade, terça, quarta, quinta e décima parte"
+   },
+   {
+    "id": "ad-divisao-repartir-em-partes-iguais",
+    "tipo": "revisao",
+    "titulo": "Divisão: repartir em partes iguais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/metade-terca-quarta-quinta-e-decima-parte/",
+  "linkTexto": "Ficha adaptada de EF03MA09"
+ },
+ {
+  "codigo": "EF03MA10",
+  "ano": 3,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Identificar regularidades em sequências de números naturais obtidas por adições ou subtrações sucessivas.",
+  "recursos": [
+   {
+    "id": "ad-regularidades-em-sequencias-numericas",
+    "tipo": "adaptada",
+    "titulo": "Regularidades em sequências numéricas"
+   },
+   {
+    "id": "ad-regularidades-e-igualdades",
+    "tipo": "revisao",
+    "titulo": "Regularidades em sequências e igualdades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/regularidades-em-sequencias-numericas/",
+  "linkTexto": "Ficha adaptada de EF03MA10"
+ },
+ {
+  "codigo": "EF03MA11",
+  "ano": 3,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Compreender a ideia de igualdade para escrever diferentes sentenças com o mesmo resultado.",
+  "recursos": [
+   {
+    "id": "ad-igualdades-com-o-mesmo-resultado",
+    "tipo": "adaptada",
+    "titulo": "Igualdades com o mesmo resultado"
+   },
+   {
+    "id": "ad-regularidades-e-igualdades",
+    "tipo": "revisao",
+    "titulo": "Regularidades em sequências e igualdades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/igualdades-com-o-mesmo-resultado/",
+  "linkTexto": "Ficha adaptada de EF03MA11"
+ },
+ {
+  "codigo": "EF03MA12",
+  "ano": 3,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Descrever e representar a localização e a movimentação de pessoas e objetos, com mudanças de direção.",
+  "recursos": [
+   {
+    "id": "ad-movimentacao-na-malha-e-mudancas-de-direcao",
+    "tipo": "adaptada",
+    "titulo": "Movimentação na malha e mudanças de direção"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/movimentacao-na-malha-e-mudancas-de-direcao/",
+  "linkTexto": "Ficha adaptada de EF03MA12"
+ },
+ {
+  "codigo": "EF03MA13",
+  "ano": 3,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Associar figuras espaciais a objetos do mundo físico e nomear essas figuras.",
+  "recursos": [
+   {
+    "id": "ad-formas-espaciais-no-dia-a-dia",
+    "tipo": "revisao",
+    "titulo": "Formas espaciais: esfera, cubo, cilindro e cone"
+   },
+   {
+    "id": "ad-solidos-geometricos-e-objetos-do-dia-a-dia",
+    "tipo": "adaptada",
+    "titulo": "Sólidos geométricos e objetos do dia a dia"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/solidos-geometricos-e-objetos-do-dia-a-dia/",
+  "linkTexto": "Ficha adaptada de EF03MA13"
+ },
+ {
+  "codigo": "EF03MA14",
+  "ano": 3,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Descrever características de prismas, pirâmides, cilindros e cones e relacioná-los com suas planificações.",
+  "recursos": [
+   {
+    "id": "ad-prismas-piramides-e-planificacoes",
+    "tipo": "adaptada",
+    "titulo": "Prismas, pirâmides e planificações"
+   },
+   {
+    "id": "ad-solidos-geometricos-e-planificacoes",
+    "tipo": "revisao",
+    "titulo": "Sólidos geométricos e planificações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/prismas-piramides-e-planificacoes/",
+  "linkTexto": "Ficha adaptada de EF03MA14"
+ },
+ {
+  "codigo": "EF03MA15",
+  "ano": 3,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Classificar e comparar figuras planas (triângulo, quadrado, retângulo, trapézio, paralelogramo) pelos lados e vértices.",
+  "recursos": [
+   {
+    "id": "ad-triangulos-e-quadrilateros-lados-e-vertices",
+    "tipo": "adaptada",
+    "titulo": "Triângulos e quadriláteros: lados e vértices"
+   },
+   {
+    "id": "ad-poligonos-e-figuras-congruentes",
+    "tipo": "revisao",
+    "titulo": "Polígonos e figuras congruentes"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/triangulos-e-quadrilateros-lados-e-vertices/",
+  "linkTexto": "Ficha adaptada de EF03MA15"
+ },
+ {
+  "codigo": "EF03MA16",
+  "ano": 3,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer figuras congruentes, usando sobreposição e desenhos em malhas.",
+  "recursos": [
+   {
+    "id": "ad-figuras-congruentes",
+    "tipo": "adaptada",
+    "titulo": "Figuras congruentes"
+   },
+   {
+    "id": "ad-poligonos-e-figuras-congruentes",
+    "tipo": "revisao",
+    "titulo": "Polígonos e figuras congruentes"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/figuras-congruentes/",
+  "linkTexto": "Ficha adaptada de EF03MA16"
+ },
+ {
+  "codigo": "EF03MA17",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Reconhecer que o resultado de uma medida depende da unidade de medida usada.",
+  "recursos": [
+   {
+    "id": "ad-a-medida-depende-da-unidade",
+    "tipo": "adaptada",
+    "titulo": "A medida depende da unidade"
+   },
+   {
+    "id": "ad-medidas-e-areas-com-quadradinhos",
+    "tipo": "revisao",
+    "titulo": "Medidas e áreas com quadradinhos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/a-medida-depende-da-unidade/",
+  "linkTexto": "Ficha adaptada de EF03MA17"
+ },
+ {
+  "codigo": "EF03MA18",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Escolher a unidade e o instrumento de medida mais apropriados para cada medição.",
+  "recursos": [
+   {
+    "id": "ad-medir-comprimentos-metro-e-centimetro",
+    "tipo": "revisao",
+    "titulo": "Medir comprimentos: metro e centímetro"
+   },
+   {
+    "id": "ad-escolher-a-unidade-e-o-instrumento-de-medida",
+    "tipo": "adaptada",
+    "titulo": "Escolher a unidade e o instrumento de medida"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/escolher-a-unidade-e-o-instrumento-de-medida/",
+  "linkTexto": "Ficha adaptada de EF03MA18"
+ },
+ {
+  "codigo": "EF03MA19",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Estimar, medir e comparar comprimentos com unidades padronizadas (metro, centímetro, milímetro).",
+  "recursos": [
+   {
+    "id": "ad-medir-comprimentos-metro-e-centimetro",
+    "tipo": "revisao",
+    "titulo": "Medir comprimentos: metro e centímetro"
+   },
+   {
+    "id": "ad-estimar-e-medir-comprimentos",
+    "tipo": "adaptada",
+    "titulo": "Estimar e medir comprimentos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/estimar-e-medir-comprimentos/",
+  "linkTexto": "Ficha adaptada de EF03MA19"
+ },
+ {
+  "codigo": "EF03MA20",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Estimar e medir capacidade e massa (litro, mililitro, quilograma, grama) em contextos do dia a dia.",
+  "recursos": [
+   {
+    "id": "ad-massa-e-capacidade-quilo-e-litro",
+    "tipo": "revisao",
+    "titulo": "Massa e capacidade: quilo e litro"
+   },
+   {
+    "id": "ad-estimar-e-medir-capacidade-e-massa",
+    "tipo": "adaptada",
+    "titulo": "Estimar e medir capacidade e massa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/estimar-e-medir-capacidade-e-massa/",
+  "linkTexto": "Ficha adaptada de EF03MA20"
+ },
+ {
+  "codigo": "EF03MA21",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Comparar áreas de faces de objetos e de figuras planas, visualmente ou por sobreposição.",
+  "recursos": [
+   {
+    "id": "ad-comparar-areas",
+    "tipo": "adaptada",
+    "titulo": "Comparar áreas"
+   },
+   {
+    "id": "ad-medidas-e-areas-com-quadradinhos",
+    "tipo": "revisao",
+    "titulo": "Medidas e áreas com quadradinhos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-areas/",
+  "linkTexto": "Ficha adaptada de EF03MA21"
+ },
+ {
+  "codigo": "EF03MA22",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Ler e registrar medidas e intervalos de tempo com relógios analógicos e digitais.",
+  "recursos": [
+   {
+    "id": "ad-rotina-e-horas-do-dia",
+    "tipo": "revisao",
+    "titulo": "Rotina e horas do dia"
+   },
+   {
+    "id": "ad-medir-intervalos-de-tempo",
+    "tipo": "adaptada",
+    "titulo": "Medir intervalos de tempo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/medir-intervalos-de-tempo/",
+  "linkTexto": "Ficha adaptada de EF03MA22"
+ },
+ {
+  "codigo": "EF03MA23",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Ler horas em relógios digitais e analógicos e reconhecer a relação entre hora e minutos e entre minuto e segundos.",
+  "recursos": [
+   {
+    "id": "ad-ler-horas-minutos-e-segundos",
+    "tipo": "adaptada",
+    "titulo": "Horas, minutos e segundos"
+   },
+   {
+    "id": "ad-horas-minutos-e-segundos",
+    "tipo": "revisao",
+    "titulo": "Horas, minutos e segundos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-horas-minutos-e-segundos/",
+  "linkTexto": "Ficha adaptada de EF03MA23"
+ },
+ {
+  "codigo": "EF03MA24",
+  "ano": 3,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de compra, venda e troca com o sistema monetário.",
+  "recursos": [
+   {
+    "id": "ad-compra-venda-e-troca-com-dinheiro",
+    "tipo": "adaptada",
+    "titulo": "Compra, venda e troca com dinheiro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/compra-venda-e-troca-com-dinheiro/",
+  "linkTexto": "Ficha adaptada de EF03MA24"
+ },
+ {
+  "codigo": "EF03MA25",
+  "ano": 3,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Identificar os resultados possíveis de um evento aleatório e estimar os mais prováveis.",
+  "recursos": [
+   {
+    "id": "ad-resultados-possiveis-e-mais-provaveis",
+    "tipo": "adaptada",
+    "titulo": "Resultados possíveis e mais prováveis"
+   },
+   {
+    "id": "ad-chances-o-que-e-mais-provavel",
+    "tipo": "revisao",
+    "titulo": "Chances: o que é mais provável?"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/resultados-possiveis-e-mais-provaveis/",
+  "linkTexto": "Ficha adaptada de EF03MA25"
+ },
+ {
+  "codigo": "EF03MA26",
+  "ano": 3,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Resolver problemas com dados de tabelas de dupla entrada e de gráficos de barras ou colunas.",
+  "recursos": [
+   {
+    "id": "ad-problemas-com-tabelas-e-graficos",
+    "tipo": "adaptada",
+    "titulo": "Problemas com tabelas e gráficos"
+   },
+   {
+    "id": "ad-tabelas-graficos-e-pesquisa-da-turma",
+    "tipo": "revisao",
+    "titulo": "Tabelas, gráficos e pesquisa da turma"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/problemas-com-tabelas-e-graficos/",
+  "linkTexto": "Ficha adaptada de EF03MA26"
+ },
+ {
+  "codigo": "EF03MA27",
+  "ano": 3,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Ler, interpretar e comparar dados de tabelas e gráficos, produzindo um texto sobre eles.",
+  "recursos": [
+   {
+    "id": "ad-ler-dados-e-escrever-sobre-eles",
+    "tipo": "adaptada",
+    "titulo": "Ler dados e escrever sobre eles"
+   },
+   {
+    "id": "ad-tabelas-graficos-e-pesquisa-da-turma",
+    "tipo": "revisao",
+    "titulo": "Tabelas, gráficos e pesquisa da turma"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-dados-e-escrever-sobre-eles/",
+  "linkTexto": "Ficha adaptada de EF03MA27"
+ },
+ {
+  "codigo": "EF03MA28",
+  "ano": 3,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Realizar pesquisa com variáveis categóricas (até 50 elementos) e organizar os dados em tabelas e gráficos.",
+  "recursos": [
+   {
+    "id": "ad-fazer-uma-pesquisa-e-organizar-os-dados",
+    "tipo": "adaptada",
+    "titulo": "Fazer uma pesquisa e organizar os dados"
+   },
+   {
+    "id": "ad-tabelas-graficos-e-pesquisa-da-turma",
+    "tipo": "revisao",
+    "titulo": "Tabelas, gráficos e pesquisa da turma"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fazer-uma-pesquisa-e-organizar-os-dados/",
+  "linkTexto": "Ficha adaptada de EF03MA28"
+ },
+ {
+  "codigo": "EF04MA01",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar.",
+  "recursos": [
+   {
+    "id": "ad-ler-escrever-e-ordenar-numeros-ate-99999",
+    "tipo": "adaptada",
+    "titulo": "Ler, escrever e ordenar números até 99 999"
+   },
+   {
+    "id": "ad-numeros-ate-99999-dezena-de-milhar",
+    "tipo": "revisao",
+    "titulo": "Números até 99 999: a dezena de milhar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-escrever-e-ordenar-numeros-ate-99999/",
+  "linkTexto": "Ficha adaptada de EF04MA01"
+ },
+ {
+  "codigo": "EF04MA02",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Mostrar, por composição e decomposição, que todo número natural pode ser escrito com adições e multiplicações por potências de dez.",
+  "recursos": [
+   {
+    "id": "ad-decompor-com-potencias-de-dez",
+    "tipo": "adaptada",
+    "titulo": "Decompor com potências de dez"
+   },
+   {
+    "id": "ad-numeros-ate-99999-dezena-de-milhar",
+    "tipo": "revisao",
+    "titulo": "Números até 99 999: a dezena de milhar"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/decompor-com-potencias-de-dez/",
+  "linkTexto": "Ficha adaptada de EF04MA02"
+ },
+ {
+  "codigo": "EF04MA03",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de adição e subtração com números naturais, usando estimativa e cálculo mental.",
+  "recursos": [
+   {
+    "id": "ad-problemas-de-adicao-e-subtracao-com-estimativa",
+    "tipo": "adaptada",
+    "titulo": "Problemas de adição e subtração com estimativa"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-com-estimativa",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração com estimativa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/problemas-de-adicao-e-subtracao-com-estimativa/",
+  "linkTexto": "Ficha adaptada de EF04MA03"
+ },
+ {
+  "codigo": "EF04MA04",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Usar as relações entre adição e subtração e entre multiplicação e divisão para ampliar as estratégias de cálculo.",
+  "recursos": [
+   {
+    "id": "ad-relacoes-entre-as-operacoes",
+    "tipo": "adaptada",
+    "titulo": "Relações entre as operações"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-com-estimativa",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração com estimativa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/relacoes-entre-as-operacoes/",
+  "linkTexto": "Ficha adaptada de EF04MA04"
+ },
+ {
+  "codigo": "EF04MA05",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Usar as propriedades das operações para desenvolver estratégias de cálculo.",
+  "recursos": [
+   {
+    "id": "ad-propriedades-das-operacoes-para-calcular",
+    "tipo": "adaptada",
+    "titulo": "Propriedades das operações para calcular"
+   },
+   {
+    "id": "ad-multiplicacao-estrategias-e-propriedades",
+    "tipo": "revisao",
+    "titulo": "Multiplicação: estratégias e propriedades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/propriedades-das-operacoes-para-calcular/",
+  "linkTexto": "Ficha adaptada de EF04MA05"
+ },
+ {
+  "codigo": "EF04MA06",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de multiplicação com diferentes significados (parcelas iguais, disposição retangular, proporcionalidade).",
+  "recursos": [
+   {
+    "id": "ad-problemas-de-multiplicacao",
+    "tipo": "adaptada",
+    "titulo": "Problemas de multiplicação"
+   },
+   {
+    "id": "ad-multiplicacao-estrategias-e-propriedades",
+    "tipo": "revisao",
+    "titulo": "Multiplicação: estratégias e propriedades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/problemas-de-multiplicacao/",
+  "linkTexto": "Ficha adaptada de EF04MA06"
+ },
+ {
+  "codigo": "EF04MA07",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de divisão com divisor de até dois algarismos.",
+  "recursos": [
+   {
+    "id": "ad-divisao-com-divisor-de-ate-dois-algarismos",
+    "tipo": "adaptada",
+    "titulo": "Divisão com divisor de até dois algarismos"
+   },
+   {
+    "id": "ad-divisao-com-resto-e-divisor-de-dois-algarismos",
+    "tipo": "revisao",
+    "titulo": "Divisão com resto e divisor de dois algarismos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/divisao-com-divisor-de-ate-dois-algarismos/",
+  "linkTexto": "Ficha adaptada de EF04MA07"
+ },
+ {
+  "codigo": "EF04MA08",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver problemas simples de contagem, com todas as combinações possíveis.",
+  "recursos": [
+   {
+    "id": "ad-combinacoes-quantas-possibilidades",
+    "tipo": "adaptada",
+    "titulo": "Combinações: quantas possibilidades?"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/combinacoes-quantas-possibilidades/",
+  "linkTexto": "Ficha adaptada de EF04MA08"
+ },
+ {
+  "codigo": "EF04MA09",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Reconhecer as frações unitárias mais usadas (1/2, 1/3, 1/4, 1/5, 1/10 e 1/100) como partes da unidade, com a reta numérica.",
+  "recursos": [
+   {
+    "id": "ad-fracoes-metade-terco-quarto-quinto-decimo",
+    "tipo": "adaptada",
+    "titulo": "Frações: metade, terço, quarto, quinto e décimo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fracoes-metade-terco-quarto-quinto-decimo/",
+  "linkTexto": "Ficha adaptada de EF04MA09"
+ },
+ {
+  "codigo": "EF04MA10",
+  "ano": 4,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Reconhecer que as regras do sistema de numeração decimal se estendem aos décimos e centésimos, como no dinheiro.",
+  "recursos": [
+   {
+    "id": "ad-decimos-e-centesimos-com-dinheiro",
+    "tipo": "adaptada",
+    "titulo": "Décimos e centésimos com dinheiro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/decimos-e-centesimos-com-dinheiro/",
+  "linkTexto": "Ficha adaptada de EF04MA10"
+ },
+ {
+  "codigo": "EF04MA11",
+  "ano": 4,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Identificar regularidades em sequências de múltiplos de um número natural.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-de-multiplos",
+    "tipo": "adaptada",
+    "titulo": "Sequências de múltiplos"
+   },
+   {
+    "id": "ad-multiplos-e-igualdades",
+    "tipo": "revisao",
+    "titulo": "Múltiplos e igualdades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sequencias-de-multiplos/",
+  "linkTexto": "Ficha adaptada de EF04MA11"
+ },
+ {
+  "codigo": "EF04MA12",
+  "ano": 4,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Reconhecer, por investigação, grupos de números que deixam o mesmo resto em uma divisão.",
+  "recursos": [
+   {
+    "id": "ad-numeros-que-deixam-o-mesmo-resto",
+    "tipo": "adaptada",
+    "titulo": "Números que deixam o mesmo resto"
+   },
+   {
+    "id": "ad-divisao-com-resto-e-divisor-de-dois-algarismos",
+    "tipo": "revisao",
+    "titulo": "Divisão com resto e divisor de dois algarismos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-que-deixam-o-mesmo-resto/",
+  "linkTexto": "Ficha adaptada de EF04MA12"
+ },
+ {
+  "codigo": "EF04MA13",
+  "ano": 4,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Reconhecer, por investigação, as relações inversas entre as operações.",
+  "recursos": [
+   {
+    "id": "ad-operacoes-inversas",
+    "tipo": "adaptada",
+    "titulo": "Operações inversas"
+   },
+   {
+    "id": "ad-adicao-e-subtracao-com-estimativa",
+    "tipo": "revisao",
+    "titulo": "Adição e subtração com estimativa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/operacoes-inversas/",
+  "linkTexto": "Ficha adaptada de EF04MA13"
+ },
+ {
+  "codigo": "EF04MA14",
+  "ano": 4,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Reconhecer que a igualdade se mantém ao adicionar ou subtrair o mesmo número dos dois termos.",
+  "recursos": [
+   {
+    "id": "ad-a-igualdade-continua-verdadeira",
+    "tipo": "adaptada",
+    "titulo": "A igualdade continua verdadeira"
+   },
+   {
+    "id": "ad-multiplos-e-igualdades",
+    "tipo": "revisao",
+    "titulo": "Múltiplos e igualdades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/a-igualdade-continua-verdadeira/",
+  "linkTexto": "Ficha adaptada de EF04MA14"
+ },
+ {
+  "codigo": "EF04MA15",
+  "ano": 4,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Determinar o número desconhecido que torna verdadeira uma igualdade com adição ou subtração.",
+  "recursos": [
+   {
+    "id": "ad-descobrir-o-numero-que-falta",
+    "tipo": "adaptada",
+    "titulo": "Descobrir o número que falta"
+   },
+   {
+    "id": "ad-multiplos-e-igualdades",
+    "tipo": "revisao",
+    "titulo": "Múltiplos e igualdades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/descobrir-o-numero-que-falta/",
+  "linkTexto": "Ficha adaptada de EF04MA15"
+ },
+ {
+  "codigo": "EF04MA16",
+  "ano": 4,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Descrever deslocamentos e localização em malhas quadriculadas e representações como plantas e mapas.",
+  "recursos": [
+   {
+    "id": "ad-localizacao-em-malhas-plantas-e-mapas",
+    "tipo": "adaptada",
+    "titulo": "Localização em malhas, plantas e mapas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/localizacao-em-malhas-plantas-e-mapas/",
+  "linkTexto": "Ficha adaptada de EF04MA16"
+ },
+ {
+  "codigo": "EF04MA17",
+  "ano": 4,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Associar prismas e pirâmides às suas planificações e comparar seus atributos.",
+  "recursos": [
+   {
+    "id": "ad-solidos-geometricos-e-planificacoes",
+    "tipo": "revisao",
+    "titulo": "Sólidos geométricos e planificações"
+   },
+   {
+    "id": "ad-contar-faces-vertices-e-arestas",
+    "tipo": "adaptada",
+    "titulo": "Prismas e pirâmides: faces, vértices e arestas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/contar-faces-vertices-e-arestas/",
+  "linkTexto": "Ficha adaptada de EF04MA17"
+ },
+ {
+  "codigo": "EF04MA18",
+  "ano": 4,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer ângulos retos e não retos em figuras, com dobraduras, esquadros ou programas de computador.",
+  "recursos": [
+   {
+    "id": "ad-angulos-retos-e-nao-retos",
+    "tipo": "adaptada",
+    "titulo": "Ângulos retos e não retos"
+   },
+   {
+    "id": "ad-angulos-retos-e-simetria",
+    "tipo": "revisao",
+    "titulo": "Ângulos retos e simetria"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/angulos-retos-e-nao-retos/",
+  "linkTexto": "Ficha adaptada de EF04MA18"
+ },
+ {
+  "codigo": "EF04MA19",
+  "ano": 4,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer simetria de reflexão em figuras planas e usá-la para construir figuras congruentes.",
+  "recursos": [
+   {
+    "id": "ad-simetria-de-reflexao",
+    "tipo": "adaptada",
+    "titulo": "Simetria de reflexão"
+   },
+   {
+    "id": "ad-angulos-retos-e-simetria",
+    "tipo": "revisao",
+    "titulo": "Ângulos retos e simetria"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/simetria-de-reflexao/",
+  "linkTexto": "Ficha adaptada de EF04MA19"
+ },
+ {
+  "codigo": "EF04MA20",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Medir e estimar comprimentos (incluindo perímetros), massas e capacidades com unidades padronizadas.",
+  "recursos": [
+   {
+    "id": "ad-perimetro-massa-e-capacidade",
+    "tipo": "adaptada",
+    "titulo": "Perímetro, massa e capacidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/perimetro-massa-e-capacidade/",
+  "linkTexto": "Ficha adaptada de EF04MA20"
+ },
+ {
+  "codigo": "EF04MA21",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Medir, comparar e estimar a área de figuras em malha quadriculada, contando os quadradinhos.",
+  "recursos": [
+   {
+    "id": "ad-medidas-e-areas-com-quadradinhos",
+    "tipo": "revisao",
+    "titulo": "Medidas e áreas com quadradinhos"
+   },
+   {
+    "id": "ad-area-na-malha-quadriculada",
+    "tipo": "adaptada",
+    "titulo": "Área na malha quadriculada"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/area-na-malha-quadriculada/",
+  "linkTexto": "Ficha adaptada de EF04MA21"
+ },
+ {
+  "codigo": "EF04MA22",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Ler e registrar medidas de tempo em horas, minutos e segundos e resolver problemas de duração.",
+  "recursos": [
+   {
+    "id": "ad-horas-minutos-e-segundos",
+    "tipo": "revisao",
+    "titulo": "Horas, minutos e segundos"
+   },
+   {
+    "id": "ad-duracao-em-horas-minutos-e-segundos",
+    "tipo": "adaptada",
+    "titulo": "Duração em horas, minutos e segundos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/duracao-em-horas-minutos-e-segundos/",
+  "linkTexto": "Ficha adaptada de EF04MA22"
+ },
+ {
+  "codigo": "EF04MA23",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Reconhecer a temperatura como grandeza e o grau Celsius como unidade de medida.",
+  "recursos": [
+   {
+    "id": "ad-temperatura-em-graus-celsius",
+    "tipo": "adaptada",
+    "titulo": "Temperatura em graus Celsius"
+   },
+   {
+    "id": "ad-temperatura-graus-celsius-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Temperatura: graus Celsius e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/temperatura-em-graus-celsius/",
+  "linkTexto": "Ficha adaptada de EF04MA23"
+ },
+ {
+  "codigo": "EF04MA24",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Registrar temperaturas máximas e mínimas do dia e organizar os dados em gráficos de colunas.",
+  "recursos": [
+   {
+    "id": "ad-temperaturas-maximas-e-minimas",
+    "tipo": "adaptada",
+    "titulo": "Temperaturas máximas e mínimas"
+   },
+   {
+    "id": "ad-temperatura-graus-celsius-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Temperatura: graus Celsius e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/temperaturas-maximas-e-minimas/",
+  "linkTexto": "Ficha adaptada de EF04MA24"
+ },
+ {
+  "codigo": "EF04MA25",
+  "ano": 4,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de compra e venda com formas de pagamento, troco e desconto.",
+  "recursos": [
+   {
+    "id": "ad-formas-de-pagamento-troco-e-desconto",
+    "tipo": "adaptada",
+    "titulo": "Formas de pagamento, troco e desconto"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/formas-de-pagamento-troco-e-desconto/",
+  "linkTexto": "Ficha adaptada de EF04MA25"
+ },
+ {
+  "codigo": "EF04MA26",
+  "ano": 4,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Identificar, entre eventos do dia a dia, aqueles que têm maior chance de acontecer.",
+  "recursos": [
+   {
+    "id": "ad-chances-o-que-e-mais-provavel",
+    "tipo": "revisao",
+    "titulo": "Chances: o que é mais provável?"
+   },
+   {
+    "id": "ad-eventos-com-mais-chance-de-acontecer",
+    "tipo": "adaptada",
+    "titulo": "Eventos com mais chance de acontecer"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/eventos-com-mais-chance-de-acontecer/",
+  "linkTexto": "Ficha adaptada de EF04MA26"
+ },
+ {
+  "codigo": "EF04MA27",
+  "ano": 4,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Analisar dados de tabelas simples ou de dupla entrada e de gráficos de colunas ou pictóricos.",
+  "recursos": [
+   {
+    "id": "ad-tabelas-graficos-e-pesquisa-da-turma",
+    "tipo": "revisao",
+    "titulo": "Tabelas, gráficos e pesquisa da turma"
+   },
+   {
+    "id": "ad-analisar-tabelas-e-graficos",
+    "tipo": "adaptada",
+    "titulo": "Analisar tabelas e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/analisar-tabelas-e-graficos/",
+  "linkTexto": "Ficha adaptada de EF04MA27"
+ },
+ {
+  "codigo": "EF04MA28",
+  "ano": 4,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Realizar pesquisa com variáveis categóricas e numéricas e organizar os dados em tabelas e gráficos de colunas.",
+  "recursos": [
+   {
+    "id": "ad-pesquisa-com-categorias-e-numeros",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa com dados de categorias e de números"
+   },
+   {
+    "id": "ad-temperatura-graus-celsius-e-graficos",
+    "tipo": "revisao",
+    "titulo": "Temperatura: graus Celsius e gráficos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/pesquisa-com-categorias-e-numeros/",
+  "linkTexto": "Ficha adaptada de EF04MA28"
+ },
+ {
+  "codigo": "EF05MA01",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Ler, escrever e ordenar números naturais até a ordem das centenas de milhar.",
+  "recursos": [
+   {
+    "id": "ad-ler-escrever-e-ordenar-numeros-ate-999999",
+    "tipo": "adaptada",
+    "titulo": "Ler, escrever e ordenar números até 999 999"
+   },
+   {
+    "id": "ad-numeros-ate-centenas-de-milhar-e-decimais",
+    "tipo": "revisao",
+    "titulo": "Números até centenas de milhar e números decimais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ler-escrever-e-ordenar-numeros-ate-999999/",
+  "linkTexto": "Ficha adaptada de EF05MA01"
+ },
+ {
+  "codigo": "EF05MA02",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Ler, escrever e ordenar números racionais na forma decimal, com a reta numérica.",
+  "recursos": [
+   {
+    "id": "ad-decimais-na-reta-numerica",
+    "tipo": "adaptada",
+    "titulo": "Decimais na reta numérica"
+   },
+   {
+    "id": "ad-numeros-ate-centenas-de-milhar-e-decimais",
+    "tipo": "revisao",
+    "titulo": "Números até centenas de milhar e números decimais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/decimais-na-reta-numerica/",
+  "linkTexto": "Ficha adaptada de EF05MA02"
+ },
+ {
+  "codigo": "EF05MA03",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Identificar e representar frações menores e maiores que a unidade, como parte de um todo e como resultado de divisão.",
+  "recursos": [
+   {
+    "id": "ad-fracoes-menores-e-maiores-que-o-inteiro",
+    "tipo": "adaptada",
+    "titulo": "Frações menores e maiores que o inteiro"
+   },
+   {
+    "id": "ad-fracoes-equivalentes-e-maiores-que-o-inteiro",
+    "tipo": "revisao",
+    "titulo": "Frações equivalentes e maiores que o inteiro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fracoes-menores-e-maiores-que-o-inteiro/",
+  "linkTexto": "Ficha adaptada de EF05MA03"
+ },
+ {
+  "codigo": "EF05MA04",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Identificar frações equivalentes.",
+  "recursos": [
+   {
+    "id": "ad-encontrar-fracoes-equivalentes",
+    "tipo": "adaptada",
+    "titulo": "Encontrar frações equivalentes"
+   },
+   {
+    "id": "ad-fracoes-equivalentes-e-maiores-que-o-inteiro",
+    "tipo": "revisao",
+    "titulo": "Frações equivalentes e maiores que o inteiro"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/encontrar-fracoes-equivalentes/",
+  "linkTexto": "Ficha adaptada de EF05MA04"
+ },
+ {
+  "codigo": "EF05MA05",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Comparar e ordenar números racionais positivos nas formas decimal e fracionária, com a reta numérica.",
+  "recursos": [
+   {
+    "id": "ad-comparar-fracoes-e-decimais",
+    "tipo": "adaptada",
+    "titulo": "Comparar frações e decimais"
+   },
+   {
+    "id": "ad-porcentagem-e-comparacao-de-decimais-e-fracoes",
+    "tipo": "revisao",
+    "titulo": "Porcentagem, decimais e frações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/comparar-fracoes-e-decimais/",
+  "linkTexto": "Ficha adaptada de EF05MA05"
+ },
+ {
+  "codigo": "EF05MA06",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Associar 10%, 25%, 50%, 75% e 100% à décima parte, quarta parte, metade, três quartos e um inteiro.",
+  "recursos": [
+   {
+    "id": "ad-porcentagens-10-25-50-75-100",
+    "tipo": "adaptada",
+    "titulo": "Porcentagens: 10%, 25%, 50%, 75% e 100%"
+   },
+   {
+    "id": "ad-porcentagem-e-comparacao-de-decimais-e-fracoes",
+    "tipo": "revisao",
+    "titulo": "Porcentagem, decimais e frações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/porcentagens-10-25-50-75-100/",
+  "linkTexto": "Ficha adaptada de EF05MA06"
+ },
+ {
+  "codigo": "EF05MA07",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de adição e subtração com números naturais e decimais.",
+  "recursos": [
+   {
+    "id": "ad-adicao-e-subtracao-com-decimais",
+    "tipo": "adaptada",
+    "titulo": "Adição e subtração com números decimais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/adicao-e-subtracao-com-decimais/",
+  "linkTexto": "Ficha adaptada de EF05MA07"
+ },
+ {
+  "codigo": "EF05MA08",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver e elaborar problemas de multiplicação e divisão com números naturais e decimais.",
+  "recursos": [
+   {
+    "id": "ad-multiplicacao-e-divisao-com-decimais",
+    "tipo": "adaptada",
+    "titulo": "Multiplicação e divisão com números decimais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/multiplicacao-e-divisao-com-decimais/",
+  "linkTexto": "Ficha adaptada de EF05MA08"
+ },
+ {
+  "codigo": "EF05MA09",
+  "ano": 5,
+  "eixo": "Números",
+  "objeto": "",
+  "texto": "Resolver problemas simples de contagem, listando todos os agrupamentos possíveis.",
+  "recursos": [
+   {
+    "id": "ad-listar-todos-os-agrupamentos",
+    "tipo": "adaptada",
+    "titulo": "Listar todos os agrupamentos"
+   },
+   {
+    "id": "ad-contagem-e-probabilidade",
+    "tipo": "revisao",
+    "titulo": "Contagem e probabilidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/listar-todos-os-agrupamentos/",
+  "linkTexto": "Ficha adaptada de EF05MA09"
+ },
+ {
+  "codigo": "EF05MA10",
+  "ano": 5,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Concluir, por investigação, que a igualdade se mantém ao fazer a mesma operação nos dois membros.",
+  "recursos": [
+   {
+    "id": "ad-mesma-operacao-nos-dois-lados",
+    "tipo": "adaptada",
+    "titulo": "Mesma operação nos dois lados"
+   },
+   {
+    "id": "ad-igualdades-e-numero-desconhecido",
+    "tipo": "revisao",
+    "titulo": "Igualdades e o número desconhecido"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/mesma-operacao-nos-dois-lados/",
+  "linkTexto": "Ficha adaptada de EF05MA10"
+ },
+ {
+  "codigo": "EF05MA11",
+  "ano": 5,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Resolver problemas com uma igualdade em que um dos termos é desconhecido.",
+  "recursos": [
+   {
+    "id": "ad-igualdade-com-termo-desconhecido",
+    "tipo": "adaptada",
+    "titulo": "Igualdade com termo desconhecido"
+   },
+   {
+    "id": "ad-igualdades-e-numero-desconhecido",
+    "tipo": "revisao",
+    "titulo": "Igualdades e o número desconhecido"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/igualdade-com-termo-desconhecido/",
+  "linkTexto": "Ficha adaptada de EF05MA11"
+ },
+ {
+  "codigo": "EF05MA12",
+  "ano": 5,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Resolver problemas de proporcionalidade direta entre duas grandezas (por exemplo, dobrar uma receita).",
+  "recursos": [
+   {
+    "id": "ad-proporcionalidade-direta",
+    "tipo": "adaptada",
+    "titulo": "Proporcionalidade: dobro, triplo e metade"
+   },
+   {
+    "id": "ad-proporcionalidade-e-partilha",
+    "tipo": "revisao",
+    "titulo": "Proporcionalidade e partilha"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/proporcionalidade-direta/",
+  "linkTexto": "Ficha adaptada de EF05MA12"
+ },
+ {
+  "codigo": "EF05MA13",
+  "ano": 5,
+  "eixo": "Álgebra",
+  "objeto": "",
+  "texto": "Resolver problemas de partilha de uma quantidade em duas partes desiguais (uma o dobro da outra, por exemplo).",
+  "recursos": [
+   {
+    "id": "ad-partilha-em-partes-desiguais",
+    "tipo": "adaptada",
+    "titulo": "Partilha em partes desiguais"
+   },
+   {
+    "id": "ad-proporcionalidade-e-partilha",
+    "tipo": "revisao",
+    "titulo": "Proporcionalidade e partilha"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/partilha-em-partes-desiguais/",
+  "linkTexto": "Ficha adaptada de EF05MA13"
+ },
+ {
+  "codigo": "EF05MA14",
+  "ano": 5,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Usar diferentes representações para localizar objetos no plano, como mapas e malhas quadriculadas.",
+  "recursos": [
+   {
+    "id": "ad-localizar-em-mapas-e-malhas",
+    "tipo": "adaptada",
+    "titulo": "Localizar em mapas e malhas"
+   },
+   {
+    "id": "ad-plano-cartesiano-coordenadas",
+    "tipo": "revisao",
+    "titulo": "Plano cartesiano: coordenadas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/localizar-em-mapas-e-malhas/",
+  "linkTexto": "Ficha adaptada de EF05MA14"
+ },
+ {
+  "codigo": "EF05MA15",
+  "ano": 5,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Interpretar, descrever e representar a localização e a movimentação de objetos no plano cartesiano (1º quadrante).",
+  "recursos": [
+   {
+    "id": "ad-movimentos-no-plano-cartesiano",
+    "tipo": "adaptada",
+    "titulo": "Movimentos no plano cartesiano"
+   },
+   {
+    "id": "ad-plano-cartesiano-coordenadas",
+    "tipo": "revisao",
+    "titulo": "Plano cartesiano: coordenadas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/movimentos-no-plano-cartesiano/",
+  "linkTexto": "Ficha adaptada de EF05MA15"
+ },
+ {
+  "codigo": "EF05MA16",
+  "ano": 5,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Associar figuras espaciais às suas planificações e comparar seus atributos.",
+  "recursos": [
+   {
+    "id": "ad-solidos-geometricos-e-planificacoes",
+    "tipo": "revisao",
+    "titulo": "Sólidos geométricos e planificações"
+   },
+   {
+    "id": "ad-solidos-e-suas-planificacoes",
+    "tipo": "adaptada",
+    "titulo": "Sólidos e suas planificações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/solidos-e-suas-planificacoes/",
+  "linkTexto": "Ficha adaptada de EF05MA16"
+ },
+ {
+  "codigo": "EF05MA17",
+  "ano": 5,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer, nomear e comparar polígonos pelos lados, vértices e ângulos, e desenhá-los.",
+  "recursos": [
+   {
+    "id": "ad-reconhecer-e-desenhar-poligonos",
+    "tipo": "adaptada",
+    "titulo": "Reconhecer e desenhar polígonos"
+   },
+   {
+    "id": "ad-poligonos-ampliacao-e-reducao",
+    "tipo": "revisao",
+    "titulo": "Polígonos, ampliação e redução"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/reconhecer-e-desenhar-poligonos/",
+  "linkTexto": "Ficha adaptada de EF05MA17"
+ },
+ {
+  "codigo": "EF05MA18",
+  "ano": 5,
+  "eixo": "Geometria",
+  "objeto": "",
+  "texto": "Reconhecer que, na ampliação e na redução de figuras em malhas, os ângulos se mantêm e os lados ficam proporcionais.",
+  "recursos": [
+   {
+    "id": "ad-ampliar-e-reduzir-figuras-na-malha",
+    "tipo": "adaptada",
+    "titulo": "Ampliar e reduzir figuras na malha"
+   },
+   {
+    "id": "ad-poligonos-ampliacao-e-reducao",
+    "tipo": "revisao",
+    "titulo": "Polígonos, ampliação e redução"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/ampliar-e-reduzir-figuras-na-malha/",
+  "linkTexto": "Ficha adaptada de EF05MA18"
+ },
+ {
+  "codigo": "EF05MA19",
+  "ano": 5,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Resolver problemas com medidas de comprimento, área, massa, tempo, temperatura e capacidade, transformando unidades.",
+  "recursos": [
+   {
+    "id": "ad-medidas-transformar-unidades",
+    "tipo": "adaptada",
+    "titulo": "Medidas: transformar unidades"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/medidas-transformar-unidades/",
+  "linkTexto": "Ficha adaptada de EF05MA19"
+ },
+ {
+  "codigo": "EF05MA20",
+  "ano": 5,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Concluir, por investigação, que figuras de mesmo perímetro podem ter áreas diferentes, e vice-versa.",
+  "recursos": [
+   {
+    "id": "ad-mesmo-perimetro-areas-diferentes",
+    "tipo": "adaptada",
+    "titulo": "Mesmo perímetro, áreas diferentes"
+   },
+   {
+    "id": "ad-perimetro-area-e-volume",
+    "tipo": "revisao",
+    "titulo": "Perímetro, área e volume"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/mesmo-perimetro-areas-diferentes/",
+  "linkTexto": "Ficha adaptada de EF05MA20"
+ },
+ {
+  "codigo": "EF05MA21",
+  "ano": 5,
+  "eixo": "Grandezas e medidas",
+  "objeto": "",
+  "texto": "Reconhecer volume como grandeza e medir volumes empilhando cubos.",
+  "recursos": [
+   {
+    "id": "ad-volume-com-cubinhos",
+    "tipo": "adaptada",
+    "titulo": "Volume com cubinhos"
+   },
+   {
+    "id": "ad-perimetro-area-e-volume",
+    "tipo": "revisao",
+    "titulo": "Perímetro, área e volume"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/volume-com-cubinhos/",
+  "linkTexto": "Ficha adaptada de EF05MA21"
+ },
+ {
+  "codigo": "EF05MA22",
+  "ano": 5,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Apresentar todos os resultados possíveis de um experimento aleatório e dizer se são igualmente prováveis.",
+  "recursos": [
+   {
+    "id": "ad-todos-os-resultados-possiveis",
+    "tipo": "adaptada",
+    "titulo": "Todos os resultados possíveis"
+   },
+   {
+    "id": "ad-contagem-e-probabilidade",
+    "tipo": "revisao",
+    "titulo": "Contagem e probabilidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/todos-os-resultados-possiveis/",
+  "linkTexto": "Ficha adaptada de EF05MA22"
+ },
+ {
+  "codigo": "EF05MA23",
+  "ano": 5,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Determinar a probabilidade de um resultado em eventos aleatórios igualmente prováveis.",
+  "recursos": [
+   {
+    "id": "ad-calcular-probabilidade",
+    "tipo": "adaptada",
+    "titulo": "Calcular a probabilidade"
+   },
+   {
+    "id": "ad-contagem-e-probabilidade",
+    "tipo": "revisao",
+    "titulo": "Contagem e probabilidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/calcular-probabilidade/",
+  "linkTexto": "Ficha adaptada de EF05MA23"
+ },
+ {
+  "codigo": "EF05MA24",
+  "ano": 5,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Interpretar dados de tabelas e gráficos de colunas, pictóricos e de linhas, produzindo textos.",
+  "recursos": [
+   {
+    "id": "ad-interpretar-graficos-e-produzir-textos",
+    "tipo": "adaptada",
+    "titulo": "Interpretar gráficos e produzir textos"
+   },
+   {
+    "id": "ad-graficos-de-linha-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Gráficos de linha e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/interpretar-graficos-e-produzir-textos/",
+  "linkTexto": "Ficha adaptada de EF05MA24"
+ },
+ {
+  "codigo": "EF05MA25",
+  "ano": 5,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "",
+  "texto": "Realizar pesquisa com variáveis categóricas e numéricas e organizar os dados em tabelas e gráficos, com e sem tecnologia.",
+  "recursos": [
+   {
+    "id": "ad-pesquisa-com-planilha-e-graficos",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa com planilha e gráficos"
+   },
+   {
+    "id": "ad-graficos-de-linha-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Gráficos de linha e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/pesquisa-com-planilha-e-graficos/",
+  "linkTexto": "Ficha adaptada de EF05MA25"
+ },
+ {
+  "codigo": "EF06MA01",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Sistema de numeração decimal",
+  "texto": "Comparar, ordenar, ler e escrever números naturais e números racionais cuja representação decimal é finita, fazendo uso da reta numérica.",
+  "recursos": [
+   {
+    "id": "3d-decimais",
+    "tipo": "3d",
+    "titulo": "Material Dourado 3D"
+   },
+   {
+    "id": "f-ma-decimais",
+    "tipo": "ficha",
+    "titulo": "Frações e decimais no metro"
+   },
+   {
+    "id": "p-ma-decimais",
+    "tipo": "plano",
+    "titulo": "Frações e decimais com o metro"
+   },
+   {
+    "id": "ad-comparar-naturais-e-decimais-na-reta",
+    "tipo": "adaptada",
+    "titulo": "Comparar naturais e decimais na reta"
+   },
+   {
+    "id": "ad-numeros-sistemas-de-numeracao-e-arredondamento",
+    "tipo": "revisao",
+    "titulo": "Números, sistemas de numeração e arredondamento"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma01/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA01"
+ },
+ {
+  "codigo": "EF06MA02",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Sistema de numeração decimal",
+  "texto": "Reconhecer o sistema de numeração decimal, como o que prevaleceu no mundo ocidental, e destacar semelhanças e diferenças com outros sistemas, de modo a sistematizar suas principais características (base, valor posicional e função do zero), utilizando, inclusive, a composição e decomposição de números naturais e números racionais em sua representação decimal.",
+  "recursos": [
+   {
+    "id": "3d-decimais",
+    "tipo": "3d",
+    "titulo": "Material Dourado 3D"
+   },
+   {
+    "id": "ad-sistema-de-numeracao-decimal",
+    "tipo": "adaptada",
+    "titulo": "Sistema de numeração decimal"
+   },
+   {
+    "id": "ad-numeros-sistemas-de-numeracao-e-arredondamento",
+    "tipo": "revisao",
+    "titulo": "Números, sistemas de numeração e arredondamento"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma02/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA02"
+ },
+ {
+  "codigo": "EF06MA03",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Operações com naturais",
+  "texto": "Resolver e elaborar problemas que envolvam cálculos (mentais ou escritos, exatos ou aproximados) com números naturais, por meio de estratégias variadas, com compreensão dos processos neles envolvidos com e sem uso de calculadora.",
+  "recursos": [
+   {
+    "id": "tabuada",
+    "tipo": "jogo",
+    "titulo": "Corrida da Tabuada"
+   },
+   {
+    "id": "valor-moeda",
+    "tipo": "jogo",
+    "titulo": "Adivinhe o Valor da Moeda"
+   },
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "p-ma-obmep",
+    "tipo": "plano",
+    "titulo": "Minha primeira OBMEP: estratégias para resolver problemas"
+   },
+   {
+    "id": "ad-calculos-com-estrategias-variadas",
+    "tipo": "adaptada",
+    "titulo": "Cálculos com estratégias variadas"
+   },
+   {
+    "id": "ad-calculo-algoritmos-e-fluxogramas",
+    "tipo": "revisao",
+    "titulo": "Cálculo, algoritmos e fluxogramas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma03/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA03"
+ },
+ {
+  "codigo": "EF06MA04",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Fluxograma",
+  "texto": "Construir algoritmo em linguagem natural e representá-lo por fluxograma que indique a resolução de um problema simples (por exemplo, se um número natural qualquer é par).",
+  "recursos": [
+   {
+    "id": "robo",
+    "tipo": "jogo",
+    "titulo": "Robô Coletor"
+   },
+   {
+    "id": "f-robo",
+    "tipo": "ficha",
+    "titulo": "Programando o colega-robô"
+   },
+   {
+    "id": "p-robo",
+    "tipo": "plano",
+    "titulo": "Algoritmos: do papel ao robô"
+   },
+   {
+    "id": "ad-algoritmo-e-fluxograma",
+    "tipo": "adaptada",
+    "titulo": "Algoritmo e fluxograma"
+   },
+   {
+    "id": "ad-calculo-algoritmos-e-fluxogramas",
+    "tipo": "revisao",
+    "titulo": "Cálculo, algoritmos e fluxogramas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma04/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA04"
+ },
+ {
+  "codigo": "EF06MA05",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Múltiplos e divisores",
+  "texto": "Classificar números naturais em primos e compostos, estabelecer relações entre números, expressas pelos termos “é múltiplo de”, “é divisor de”, “é fator de”, e estabelecer, por meio de investigações, critérios de divisibilidade por 2, 3, 4, 5, 6, 8, 9, 10, 100 e 1000.",
+  "recursos": [
+   {
+    "id": "3d-mmc",
+    "tipo": "3d",
+    "titulo": "Torres do MMC"
+   },
+   {
+    "id": "f-ma-mmc",
+    "tipo": "ficha",
+    "titulo": "Corrida dos sapos: MMC"
+   },
+   {
+    "id": "p-ma-mmc",
+    "tipo": "plano",
+    "titulo": "MMC com a corrida dos sapos"
+   },
+   {
+    "id": "ad-primos-compostos-e-divisibilidade",
+    "tipo": "adaptada",
+    "titulo": "Primos, compostos e divisibilidade"
+   },
+   {
+    "id": "ad-multiplos-divisores-e-numeros-primos",
+    "tipo": "revisao",
+    "titulo": "Múltiplos, divisores e números primos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma05/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA05"
+ },
+ {
+  "codigo": "EF06MA06",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Múltiplos e divisores",
+  "texto": "Resolver e elaborar problemas que envolvam as ideias de múltiplo e de divisor.",
+  "recursos": [
+   {
+    "id": "tabuada",
+    "tipo": "jogo",
+    "titulo": "Corrida da Tabuada"
+   },
+   {
+    "id": "3d-mmc",
+    "tipo": "3d",
+    "titulo": "Torres do MMC"
+   },
+   {
+    "id": "f-ma-mmc",
+    "tipo": "ficha",
+    "titulo": "Corrida dos sapos: MMC"
+   },
+   {
+    "id": "p-ma-mmc",
+    "tipo": "plano",
+    "titulo": "MMC com a corrida dos sapos"
+   },
+   {
+    "id": "ad-problemas-com-multiplos-e-divisores",
+    "tipo": "adaptada",
+    "titulo": "Problemas com múltiplos e divisores"
+   },
+   {
+    "id": "ad-multiplos-divisores-e-numeros-primos",
+    "tipo": "revisao",
+    "titulo": "Múltiplos, divisores e números primos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma06/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA06"
+ },
+ {
+  "codigo": "EF06MA07",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Frações",
+  "texto": "Compreender, comparar e ordenar frações associadas às ideias de partes de inteiros e resultado de divisão, identificando frações equivalentes.",
+  "recursos": [
+   {
+    "id": "fracoes",
+    "tipo": "jogo",
+    "titulo": "Corrida das Frações"
+   },
+   {
+    "id": "tangram",
+    "tipo": "jogo",
+    "titulo": "Tangram"
+   },
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "3d-fracoes",
+    "tipo": "3d",
+    "titulo": "Barras de Frações 3D"
+   },
+   {
+    "id": "f-fracoes",
+    "tipo": "ficha",
+    "titulo": "Barras de frações"
+   },
+   {
+    "id": "p-fracoes",
+    "tipo": "plano",
+    "titulo": "Comparando frações"
+   },
+   {
+    "id": "ad-comparar-e-ordenar-fracoes",
+    "tipo": "adaptada",
+    "titulo": "Comparar e ordenar frações"
+   },
+   {
+    "id": "ad-fracoes-e-decimais-comparar-e-converter",
+    "tipo": "revisao",
+    "titulo": "Frações e decimais: comparar e converter"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma07/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA07"
+ },
+ {
+  "codigo": "EF06MA08",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Frações e decimais",
+  "texto": "Reconhecer que os números racionais positivos podem ser expressos nas formas fracionária e decimal, estabelecer relações entre essas representações, passando de uma representação para outra, e relacioná- los a pontos na reta numérica.",
+  "recursos": [
+   {
+    "id": "3d-decimais",
+    "tipo": "3d",
+    "titulo": "Material Dourado 3D"
+   },
+   {
+    "id": "3d-fracoes",
+    "tipo": "3d",
+    "titulo": "Barras de Frações 3D"
+   },
+   {
+    "id": "f-ma-decimais",
+    "tipo": "ficha",
+    "titulo": "Frações e decimais no metro"
+   },
+   {
+    "id": "p-ma-decimais",
+    "tipo": "plano",
+    "titulo": "Frações e decimais com o metro"
+   },
+   {
+    "id": "ad-fracao-e-decimal-sao-o-mesmo-numero",
+    "tipo": "adaptada",
+    "titulo": "Fração e decimal: o mesmo número"
+   },
+   {
+    "id": "ad-fracoes-e-decimais-comparar-e-converter",
+    "tipo": "revisao",
+    "titulo": "Frações e decimais: comparar e converter"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma08/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA08"
+ },
+ {
+  "codigo": "EF06MA09",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Frações: significados (parte/todo, quociente), equivalência, comparação, adição e subtração; cálculo da fração de um número natural; adição e subtração de frações",
+  "texto": "Resolver e elaborar problemas que envolvam o cálculo da fração de uma quantidade e cujo resultado seja um número natural, com e sem uso de calculadora.",
+  "recursos": [
+   {
+    "id": "ad-fracao-de-uma-quantidade",
+    "tipo": "adaptada",
+    "titulo": "Fração de uma quantidade"
+   },
+   {
+    "id": "ad-fracao-de-quantidade-e-operacoes-com-fracoes",
+    "tipo": "revisao",
+    "titulo": "Fração de uma quantidade e operações com frações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fracao-de-uma-quantidade/",
+  "linkTexto": "Ficha adaptada de EF06MA09"
+ },
+ {
+  "codigo": "EF06MA10",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Frações",
+  "texto": "Resolver e elaborar problemas que envolvam adição ou subtração com números racionais positivos na representação fracionária.",
+  "recursos": [
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "ad-somar-e-subtrair-fracoes",
+    "tipo": "adaptada",
+    "titulo": "Somar e subtrair frações"
+   },
+   {
+    "id": "ad-fracao-de-quantidade-e-operacoes-com-fracoes",
+    "tipo": "revisao",
+    "titulo": "Fração de uma quantidade e operações com frações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma10/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA10"
+ },
+ {
+  "codigo": "EF06MA11",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Operações com racionais",
+  "texto": "Resolver e elaborar problemas com números racionais positivos na representação decimal, envolvendo as quatro operações fundamentais e a potenciação, por meio de estratégias diversas, utilizando estimativas e arredondamentos para verificar a razoabilidade de respostas, com e sem uso de calculadora.",
+  "recursos": [
+   {
+    "id": "valor-moeda",
+    "tipo": "jogo",
+    "titulo": "Adivinhe o Valor da Moeda"
+   },
+   {
+    "id": "3d-decimais",
+    "tipo": "3d",
+    "titulo": "Material Dourado 3D"
+   },
+   {
+    "id": "3d-potencias",
+    "tipo": "3d",
+    "titulo": "Cubos das Potências"
+   },
+   {
+    "id": "f-ma-potencias",
+    "tipo": "ficha",
+    "titulo": "Quadrados de tampinhas: potência e raiz"
+   },
+   {
+    "id": "p-ma-potencias",
+    "tipo": "plano",
+    "titulo": "Potências e raízes com quadrados"
+   },
+   {
+    "id": "ad-operacoes-com-decimais-e-potencias",
+    "tipo": "adaptada",
+    "titulo": "Operações com decimais e potências"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma11/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA11"
+ },
+ {
+  "codigo": "EF06MA12",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Aproximação de números para múltiplos de potências de 10",
+  "texto": "Fazer estimativas de quantidades e aproximar números para múltiplos da potência de 10 mais próxima.",
+  "recursos": [
+   {
+    "id": "ad-estimar-e-arredondar",
+    "tipo": "adaptada",
+    "titulo": "Estimar e arredondar"
+   },
+   {
+    "id": "ad-numeros-sistemas-de-numeracao-e-arredondamento",
+    "tipo": "revisao",
+    "titulo": "Números, sistemas de numeração e arredondamento"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/estimar-e-arredondar/",
+  "linkTexto": "Ficha adaptada de EF06MA12"
+ },
+ {
+  "codigo": "EF06MA13",
+  "ano": 6,
+  "eixo": "Números",
+  "objeto": "Porcentagens",
+  "texto": "Resolver e elaborar problemas que envolvam porcentagens, com base na ideia de proporcionalidade, sem fazer uso da “regra de três”, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos de educação financeira, entre outros.",
+  "recursos": [
+   {
+    "id": "mesada",
+    "tipo": "jogo",
+    "titulo": "Desafio da Mesada"
+   },
+   {
+    "id": "cofrinho",
+    "tipo": "jogo",
+    "titulo": "Cofrinho que Cresce"
+   },
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "p-ma-financeira",
+    "tipo": "plano",
+    "titulo": "Mesada, descontos e juros: decisões com porcentagem"
+   },
+   {
+    "id": "ad-porcentagem-descontos-e-acrescimos",
+    "tipo": "adaptada",
+    "titulo": "Porcentagem: descontos e acréscimos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma13/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA13"
+ },
+ {
+  "codigo": "EF06MA14",
+  "ano": 6,
+  "eixo": "Álgebra",
+  "objeto": "Propriedades da igualdade",
+  "texto": "Reconhecer que a relação de igualdade matemática não se altera ao adicionar, subtrair, multiplicar ou dividir os seus dois membros por um mesmo número e utilizar essa noção para determinar valores desconhecidos na resolução de problemas.",
+  "recursos": [
+   {
+    "id": "3d-balanca",
+    "tipo": "3d",
+    "titulo": "Equações na Balança 3D"
+   },
+   {
+    "id": "f-ma-equacoes",
+    "tipo": "ficha",
+    "titulo": "Envelopes na balança: equações"
+   },
+   {
+    "id": "p-ma-equacoes",
+    "tipo": "plano",
+    "titulo": "Equações do 1º grau com envelopes misteriosos"
+   },
+   {
+    "id": "ad-igualdade-e-valor-desconhecido",
+    "tipo": "adaptada",
+    "titulo": "Igualdade e valor desconhecido"
+   },
+   {
+    "id": "ad-igualdades-e-partilha-em-partes-desiguais",
+    "tipo": "revisao",
+    "titulo": "Igualdades e partilha em partes desiguais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma14/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA14"
+ },
+ {
+  "codigo": "EF06MA15",
+  "ano": 6,
+  "eixo": "Álgebra",
+  "objeto": "Partilha e razão",
+  "texto": "Resolver e elaborar problemas que envolvam a partilha de uma quantidade em duas partes desiguais, envolvendo relações aditivas e multiplicativas, bem como a razão entre as partes e entre uma das partes e o todo.",
+  "recursos": [
+   {
+    "id": "receitas",
+    "tipo": "jogo",
+    "titulo": "Cozinha das Proporções"
+   },
+   {
+    "id": "arquiteto",
+    "tipo": "jogo",
+    "titulo": "Arquiteto da Sala"
+   },
+   {
+    "id": "3d-sucos",
+    "tipo": "3d",
+    "titulo": "Laboratório de Sucos: Razão e Proporção"
+   },
+   {
+    "id": "f-ma-razao",
+    "tipo": "ficha",
+    "titulo": "Razões no corpo e no pátio"
+   },
+   {
+    "id": "p-ma-razao",
+    "tipo": "plano",
+    "titulo": "Razões medidas no corpo e no pátio"
+   },
+   {
+    "id": "ad-partilha-desigual-e-razao",
+    "tipo": "adaptada",
+    "titulo": "Partilha desigual e razão"
+   },
+   {
+    "id": "ad-igualdades-e-partilha-em-partes-desiguais",
+    "tipo": "revisao",
+    "titulo": "Igualdades e partilha em partes desiguais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma15/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA15"
+ },
+ {
+  "codigo": "EF06MA16",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Plano cartesiano",
+  "texto": "Associar pares ordenados de números a pontos do plano cartesiano do 1º quadrante, em situações como a localização dos vértices de um polígono.",
+  "recursos": [
+   {
+    "id": "cartesiano",
+    "tipo": "jogo",
+    "titulo": "Tesouro Cartesiano"
+   },
+   {
+    "id": "f-batalha",
+    "tipo": "ficha",
+    "titulo": "Batalha naval cartesiana"
+   },
+   {
+    "id": "p-cartesiano",
+    "tipo": "plano",
+    "titulo": "Localização no plano cartesiano"
+   },
+   {
+    "id": "ad-pares-ordenados-e-vertices",
+    "tipo": "adaptada",
+    "titulo": "Pares ordenados e vértices"
+   },
+   {
+    "id": "ad-plano-cartesiano-e-poligonos",
+    "tipo": "revisao",
+    "titulo": "Plano cartesiano e polígonos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma16/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA16"
+ },
+ {
+  "codigo": "EF06MA17",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Prismas e pirâmides",
+  "texto": "Quantificar e estabelecer relações entre o número de vértices, faces e arestas de prismas e pirâmides, em função do seu polígono da base, para resolver problemas e desenvolver a percepção espacial.",
+  "recursos": [
+   {
+    "id": "3d-figuras",
+    "tipo": "3d",
+    "titulo": "Figuras Geométricas em 3D"
+   },
+   {
+    "id": "ad-prismas-e-piramides-faces-vertices-e-arestas",
+    "tipo": "adaptada",
+    "titulo": "Prismas e pirâmides: faces, vértices e arestas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma17/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA17"
+ },
+ {
+  "codigo": "EF06MA18",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Polígonos",
+  "texto": "Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano como em faces de poliedros.",
+  "recursos": [
+   {
+    "id": "tangram",
+    "tipo": "jogo",
+    "titulo": "Tangram"
+   },
+   {
+    "id": "3d-ladrilhos",
+    "tipo": "3d",
+    "titulo": "Ladrilhos e Ângulos"
+   },
+   {
+    "id": "3d-figuras",
+    "tipo": "3d",
+    "titulo": "Figuras Geométricas em 3D"
+   },
+   {
+    "id": "f-ma-geometria",
+    "tipo": "ficha",
+    "titulo": "Ateliê de mosaicos: ângulos e polígonos"
+   },
+   {
+    "id": "p-ma-geometria",
+    "tipo": "plano",
+    "titulo": "Ateliê de mosaicos: geometria plana"
+   },
+   {
+    "id": "ad-poligonos-regulares-e-nao-regulares",
+    "tipo": "adaptada",
+    "titulo": "Polígonos regulares e não regulares"
+   },
+   {
+    "id": "ad-plano-cartesiano-e-poligonos",
+    "tipo": "revisao",
+    "titulo": "Plano cartesiano e polígonos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma18/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA18"
+ },
+ {
+  "codigo": "EF06MA19",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Triângulos",
+  "texto": "Identificar características dos triângulos e classificá-los em relação às medidas dos lados e dos ângulos.",
+  "recursos": [
+   {
+    "id": "tangram",
+    "tipo": "jogo",
+    "titulo": "Tangram"
+   },
+   {
+    "id": "3d-figuras",
+    "tipo": "3d",
+    "titulo": "Figuras Geométricas em 3D"
+   },
+   {
+    "id": "ad-classificar-triangulos",
+    "tipo": "adaptada",
+    "titulo": "Classificar triângulos"
+   },
+   {
+    "id": "ad-triangulos-e-quadrilateros",
+    "tipo": "revisao",
+    "titulo": "Triângulos e quadriláteros"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma19/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA19"
+ },
+ {
+  "codigo": "EF06MA20",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Quadriláteros",
+  "texto": "Identificar características dos quadriláteros, classificá-los em relação a lados e a ângulos e reconhecer a inclusão e a intersecção de classes entre eles.",
+  "recursos": [
+   {
+    "id": "tangram",
+    "tipo": "jogo",
+    "titulo": "Tangram"
+   },
+   {
+    "id": "3d-figuras",
+    "tipo": "3d",
+    "titulo": "Figuras Geométricas em 3D"
+   },
+   {
+    "id": "ad-classificar-quadrilateros",
+    "tipo": "adaptada",
+    "titulo": "Classificar quadriláteros"
+   },
+   {
+    "id": "ad-triangulos-e-quadrilateros",
+    "tipo": "revisao",
+    "titulo": "Triângulos e quadriláteros"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma20/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA20"
+ },
+ {
+  "codigo": "EF06MA21",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Construção de figuras semelhantes: ampliação e redução de figuras planas em malhas quadriculadas",
+  "texto": "Construir figuras planas semelhantes em situações de ampliação e de redução, com o uso de malhas quadriculadas, plano cartesiano ou tecnologias digitais.",
+  "recursos": [
+   {
+    "id": "ad-figuras-semelhantes-ampliar-e-reduzir",
+    "tipo": "adaptada",
+    "titulo": "Figuras semelhantes: ampliar e reduzir"
+   },
+   {
+    "id": "ad-retas-paralelas-e-perpendiculares-ampliacao-e-algoritmos",
+    "tipo": "revisao",
+    "titulo": "Retas paralelas e perpendiculares, ampliação e algoritmos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/figuras-semelhantes-ampliar-e-reduzir/",
+  "linkTexto": "Ficha adaptada de EF06MA21"
+ },
+ {
+  "codigo": "EF06MA22",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Construção de retas paralelas e perpendiculares, fazendo uso de réguas, esquadros e softwares",
+  "texto": "Utilizar instrumentos, como réguas e esquadros, ou softwares para representações de retas paralelas e perpendiculares e construção de quadriláteros, entre outros.",
+  "recursos": [
+   {
+    "id": "ad-retas-paralelas-e-perpendiculares",
+    "tipo": "adaptada",
+    "titulo": "Retas paralelas e perpendiculares"
+   },
+   {
+    "id": "ad-retas-paralelas-e-perpendiculares-ampliacao-e-algoritmos",
+    "tipo": "revisao",
+    "titulo": "Retas paralelas e perpendiculares, ampliação e algoritmos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/retas-paralelas-e-perpendiculares/",
+  "linkTexto": "Ficha adaptada de EF06MA22"
+ },
+ {
+  "codigo": "EF06MA23",
+  "ano": 6,
+  "eixo": "Geometria",
+  "objeto": "Construção de retas paralelas e perpendiculares, fazendo uso de réguas, esquadros e softwares",
+  "texto": "Construir algoritmo para resolver situações passo a passo (como na construção de dobraduras ou na indicação de deslocamento de um objeto no plano segundo pontos de referência e distâncias fornecidas etc.).",
+  "recursos": [
+   {
+    "id": "ad-algoritmo-passo-a-passo",
+    "tipo": "adaptada",
+    "titulo": "Algoritmo passo a passo"
+   },
+   {
+    "id": "ad-retas-paralelas-e-perpendiculares-ampliacao-e-algoritmos",
+    "tipo": "revisao",
+    "titulo": "Retas paralelas e perpendiculares, ampliação e algoritmos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/algoritmo-passo-a-passo/",
+  "linkTexto": "Ficha adaptada de EF06MA23"
+ },
+ {
+  "codigo": "EF06MA24",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Grandezas e medidas",
+  "texto": "Resolver e elaborar problemas que envolvam as grandezas comprimento, massa, tempo, temperatura, área (triângulos e retângulos), capacidade e volume (sólidos formados por blocos retangulares), sem uso de fórmulas, inseridos, sempre que possível, em contextos oriundos de situações reais e/ou relacionadas às outras áreas do conhecimento.",
+  "recursos": [
+   {
+    "id": "valor-moeda",
+    "tipo": "jogo",
+    "titulo": "Adivinhe o Valor da Moeda"
+   },
+   {
+    "id": "cunhe-moeda",
+    "tipo": "jogo",
+    "titulo": "Cunhe sua Própria Moeda"
+   },
+   {
+    "id": "meteorologista",
+    "tipo": "jogo",
+    "titulo": "Meteorologista de Dados"
+   },
+   {
+    "id": "arquiteto",
+    "tipo": "jogo",
+    "titulo": "Arquiteto da Sala"
+   },
+   {
+    "id": "3d-terreno",
+    "tipo": "3d",
+    "titulo": "Terreno: Área e Perímetro"
+   },
+   {
+    "id": "f-ma-area",
+    "tipo": "ficha",
+    "titulo": "Hortas com a mesma cerca: área e perímetro"
+   },
+   {
+    "id": "p-ma-area",
+    "tipo": "plano",
+    "titulo": "A horta da escola: área e perímetro"
+   },
+   {
+    "id": "ad-problemas-com-grandezas-e-medidas",
+    "tipo": "adaptada",
+    "titulo": "Problemas com grandezas e medidas"
+   },
+   {
+    "id": "ad-plantas-baixas-areas-e-grandezas",
+    "tipo": "revisao",
+    "titulo": "Plantas baixas, áreas e grandezas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma24/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA24"
+ },
+ {
+  "codigo": "EF06MA25",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Ângulos: noção e usos",
+  "texto": "Reconhecer a abertura do ângulo como grandeza associada às figuras geométricas.",
+  "recursos": [
+   {
+    "id": "angulos",
+    "tipo": "jogo",
+    "titulo": "Mira dos Ângulos"
+   },
+   {
+    "id": "ad-abertura-do-angulo",
+    "tipo": "adaptada",
+    "titulo": "Abertura do ângulo"
+   },
+   {
+    "id": "ad-angulos-abertura-e-transferidor",
+    "tipo": "revisao",
+    "titulo": "Ângulos: abertura e transferidor"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma25/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA25"
+ },
+ {
+  "codigo": "EF06MA26",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Ângulos: noção e usos",
+  "texto": "Resolver problemas que envolvam a noção de ângulo em diferentes contextos e em situações reais, como ângulo de visão.",
+  "recursos": [
+   {
+    "id": "ad-angulos-em-situacoes-reais",
+    "tipo": "adaptada",
+    "titulo": "Ângulos em situações reais"
+   },
+   {
+    "id": "ad-angulos-abertura-e-transferidor",
+    "tipo": "revisao",
+    "titulo": "Ângulos: abertura e transferidor"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/angulos-em-situacoes-reais/",
+  "linkTexto": "Ficha adaptada de EF06MA26"
+ },
+ {
+  "codigo": "EF06MA27",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Ângulos: medida",
+  "texto": "Determinar medidas da abertura de ângulos, por meio de transferidor e/ou tecnologias digitais.",
+  "recursos": [
+   {
+    "id": "angulos",
+    "tipo": "jogo",
+    "titulo": "Mira dos Ângulos"
+   },
+   {
+    "id": "ad-medir-angulos-com-transferidor",
+    "tipo": "adaptada",
+    "titulo": "Medir ângulos com o transferidor"
+   },
+   {
+    "id": "ad-angulos-abertura-e-transferidor",
+    "tipo": "revisao",
+    "titulo": "Ângulos: abertura e transferidor"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma27/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA27"
+ },
+ {
+  "codigo": "EF06MA28",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Plantas baixas e vistas aéreas",
+  "texto": "Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.",
+  "recursos": [
+   {
+    "id": "arquiteto",
+    "tipo": "jogo",
+    "titulo": "Arquiteto da Sala"
+   },
+   {
+    "id": "ad-plantas-baixas-e-vistas-aereas",
+    "tipo": "adaptada",
+    "titulo": "Plantas baixas e vistas aéreas"
+   },
+   {
+    "id": "ad-plantas-baixas-areas-e-grandezas",
+    "tipo": "revisao",
+    "titulo": "Plantas baixas, áreas e grandezas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma28/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA28"
+ },
+ {
+  "codigo": "EF06MA29",
+  "ano": 6,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Perímetro e área do quadrado",
+  "texto": "Analisar e descrever mudanças que ocorrem no perímetro e na área de um quadrado ao se ampliarem ou reduzirem, igualmente, as medidas de seus lados, para compreender que o perímetro é proporcional à medida do lado, o que não ocorre com a área.",
+  "recursos": [
+   {
+    "id": "3d-terreno",
+    "tipo": "3d",
+    "titulo": "Terreno: Área e Perímetro"
+   },
+   {
+    "id": "f-ma-area",
+    "tipo": "ficha",
+    "titulo": "Hortas com a mesma cerca: área e perímetro"
+   },
+   {
+    "id": "p-ma-area",
+    "tipo": "plano",
+    "titulo": "A horta da escola: área e perímetro"
+   },
+   {
+    "id": "ad-perimetro-e-area-do-quadrado",
+    "tipo": "adaptada",
+    "titulo": "Perímetro e área do quadrado"
+   },
+   {
+    "id": "ad-plantas-baixas-areas-e-grandezas",
+    "tipo": "revisao",
+    "titulo": "Plantas baixas, áreas e grandezas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma29/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA29"
+ },
+ {
+  "codigo": "EF06MA30",
+  "ano": 6,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Probabilidade",
+  "texto": "Calcular a probabilidade de um evento aleatório, expressando-a por número racional (forma fracionária, decimal e percentual) e comparar esse número com a probabilidade obtida por meio de experimentos sucessivos.",
+  "recursos": [
+   {
+    "id": "3d-dados-verdade",
+    "tipo": "3d",
+    "titulo": "Dados de Verdade"
+   },
+   {
+    "id": "ad-probabilidade-e-experimentos",
+    "tipo": "adaptada",
+    "titulo": "Probabilidade e experimentos"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma30/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA30"
+ },
+ {
+  "codigo": "EF06MA31",
+  "ano": 6,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Leitura de tabelas e gráficos",
+  "texto": "Identificar as variáveis e suas frequências e os elementos constitutivos (título, eixos, legendas, fontes e datas) em diferentes tipos de gráfico.",
+  "recursos": [
+   {
+    "id": "graficos",
+    "tipo": "jogo",
+    "titulo": "Detetive dos Gráficos"
+   },
+   {
+    "id": "empresa-sucos",
+    "tipo": "jogo",
+    "titulo": "Empresa de Sucos da Turma"
+   },
+   {
+    "id": "tabelas",
+    "tipo": "jogo",
+    "titulo": "Gincana das Tabelas"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "ad-elementos-de-um-grafico",
+    "tipo": "adaptada",
+    "titulo": "Elementos de um gráfico"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma31/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA31"
+ },
+ {
+  "codigo": "EF06MA32",
+  "ano": 6,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Tabelas e gráficos",
+  "texto": "Interpretar e resolver situações que envolvam dados de pesquisas sobre contextos ambientais, sustentabilidade, trânsito, consumo responsável, entre outros, apresentadas pela mídia em tabelas e em diferentes tipos de gráficos e redigir textos escritos com o objetivo de sintetizar conclusões.",
+  "recursos": [
+   {
+    "id": "wikipedia",
+    "tipo": "jogo",
+    "titulo": "Qual Verbete Tem Mais Visitas?"
+   },
+   {
+    "id": "empresa-sucos",
+    "tipo": "jogo",
+    "titulo": "Empresa de Sucos da Turma"
+   },
+   {
+    "id": "tabelas",
+    "tipo": "jogo",
+    "titulo": "Gincana das Tabelas"
+   },
+   {
+    "id": "meteorologista",
+    "tipo": "jogo",
+    "titulo": "Meteorologista de Dados"
+   },
+   {
+    "id": "ad-dados-da-midia-e-conclusoes",
+    "tipo": "adaptada",
+    "titulo": "Dados da mídia e conclusões"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma32/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA32"
+ },
+ {
+  "codigo": "EF06MA33",
+  "ano": 6,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Coleta de dados e construção de gráficos",
+  "texto": "Planejar e coletar dados de pesquisa referente a práticas sociais escolhidas pelos alunos e fazer uso de planilhas eletrônicas para registro, representação e interpretação das informações, em tabelas, vários tipos de gráficos e texto.",
+  "recursos": [
+   {
+    "id": "tabelas",
+    "tipo": "jogo",
+    "titulo": "Gincana das Tabelas"
+   },
+   {
+    "id": "boletim",
+    "tipo": "jogo",
+    "titulo": "Fórmulas do Boletim"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "ad-pesquisa-com-planilha-eletronica",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa com planilha eletrônica"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos e pesquisa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma33/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA33"
+ },
+ {
+  "codigo": "EF06MA34",
+  "ano": 6,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Fluxogramas e diagramas",
+  "texto": "Interpretar e desenvolver fluxogramas simples, identificando as relações entre os objetos representados (por exemplo, posição de cidades considerando as estradas que as unem, hierarquia dos funcionários de uma empresa etc.).",
+  "recursos": [
+   {
+    "id": "rotas",
+    "tipo": "jogo",
+    "titulo": "Rota Mais Curta"
+   },
+   {
+    "id": "f-grafo",
+    "tipo": "ficha",
+    "titulo": "Mapa dos bairros"
+   },
+   {
+    "id": "p-grafos",
+    "tipo": "plano",
+    "titulo": "Grafos e o caminho mais curto"
+   },
+   {
+    "id": "ad-fluxogramas-e-relacoes",
+    "tipo": "adaptada",
+    "titulo": "Fluxogramas e relações"
+   },
+   {
+    "id": "ad-calculo-algoritmos-e-fluxogramas",
+    "tipo": "revisao",
+    "titulo": "Cálculo, algoritmos e fluxogramas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef06ma34/",
+  "linkTexto": "Ver planos, jogos e fichas de EF06MA34"
+ },
+ {
+  "codigo": "EF07MA01",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Múltiplos e divisores de um número natural",
+  "texto": "Resolver e elaborar problemas com números naturais, envolvendo as noções de divisor e de múltiplo, podendo incluir máximo divisor comum ou mínimo múltiplo comum, por meio de estratégias diversas, sem a aplicação de algoritmos.",
+  "recursos": [
+   {
+    "id": "3d-mmc",
+    "tipo": "3d",
+    "titulo": "Torres do MMC"
+   },
+   {
+    "id": "f-ma-mmc",
+    "tipo": "ficha",
+    "titulo": "Corrida dos sapos: MMC"
+   },
+   {
+    "id": "p-ma-mmc",
+    "tipo": "plano",
+    "titulo": "MMC com a corrida dos sapos"
+   },
+   {
+    "id": "ad-mmc-e-mdc-em-problemas",
+    "tipo": "adaptada",
+    "titulo": "Múltiplos e divisores em problemas"
+   },
+   {
+    "id": "ad-multiplos-divisores-e-porcentagem",
+    "tipo": "revisao",
+    "titulo": "Múltiplos, divisores e porcentagem no dia a dia"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma01/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA01"
+ },
+ {
+  "codigo": "EF07MA02",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Porcentagens: acréscimos e decréscimos",
+  "texto": "Resolver e elaborar problemas que envolvam porcentagens, como os que lidam com acréscimos e decréscimos simples, utilizando estratégias pessoais, cálculo mental e calculadora, no contexto de educação financeira, entre outros.",
+  "recursos": [
+   {
+    "id": "mesada",
+    "tipo": "jogo",
+    "titulo": "Desafio da Mesada"
+   },
+   {
+    "id": "poupanca",
+    "tipo": "jogo",
+    "titulo": "Juros que Crescem"
+   },
+   {
+    "id": "cofrinho",
+    "tipo": "jogo",
+    "titulo": "Cofrinho que Cresce"
+   },
+   {
+    "id": "cartao",
+    "tipo": "jogo",
+    "titulo": "Cartão de Crédito de Treino"
+   },
+   {
+    "id": "p-ma-financeira",
+    "tipo": "plano",
+    "titulo": "Mesada, descontos e juros: decisões com porcentagem"
+   },
+   {
+    "id": "ad-porcentagem-acrescimo-e-desconto",
+    "tipo": "adaptada",
+    "titulo": "Porcentagem: acréscimo e desconto"
+   },
+   {
+    "id": "ad-multiplos-divisores-e-porcentagem",
+    "tipo": "revisao",
+    "titulo": "Múltiplos, divisores e porcentagem no dia a dia"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma02/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA02"
+ },
+ {
+  "codigo": "EF07MA03",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Números inteiros",
+  "texto": "Comparar e ordenar números inteiros em diferentes contextos, incluindo o histórico, associá-los a pontos da reta numérica e utilizá-los em situações que envolvam adição e subtração.",
+  "recursos": [
+   {
+    "id": "cartesiano",
+    "tipo": "jogo",
+    "titulo": "Tesouro Cartesiano"
+   },
+   {
+    "id": "3d-elevador",
+    "tipo": "3d",
+    "titulo": "Elevador dos Inteiros"
+   },
+   {
+    "id": "f-batalha",
+    "tipo": "ficha",
+    "titulo": "Batalha naval cartesiana"
+   },
+   {
+    "id": "f-ma-inteiros",
+    "tipo": "ficha",
+    "titulo": "Fichas positivas e negativas"
+   },
+   {
+    "id": "p-ma-inteiros",
+    "tipo": "plano",
+    "titulo": "Operações com negativos: pares zero"
+   },
+   {
+    "id": "p-cartesiano",
+    "tipo": "plano",
+    "titulo": "Localização no plano cartesiano"
+   },
+   {
+    "id": "ad-inteiros-na-reta-e-no-dia-a-dia",
+    "tipo": "adaptada",
+    "titulo": "Números inteiros na reta e no dia a dia"
+   },
+   {
+    "id": "ad-numeros-inteiros-reta-e-temperatura",
+    "tipo": "revisao",
+    "titulo": "Números inteiros: reta, temperatura e saldo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma03/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA03"
+ },
+ {
+  "codigo": "EF07MA04",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Números inteiros",
+  "texto": "Resolver e elaborar problemas que envolvam operações com números inteiros.",
+  "recursos": [
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "3d-elevador",
+    "tipo": "3d",
+    "titulo": "Elevador dos Inteiros"
+   },
+   {
+    "id": "f-ma-inteiros",
+    "tipo": "ficha",
+    "titulo": "Fichas positivas e negativas"
+   },
+   {
+    "id": "p-ma-inteiros",
+    "tipo": "plano",
+    "titulo": "Operações com negativos: pares zero"
+   },
+   {
+    "id": "ad-operacoes-com-numeros-inteiros",
+    "tipo": "adaptada",
+    "titulo": "Operações com números inteiros"
+   },
+   {
+    "id": "ad-numeros-inteiros-reta-e-temperatura",
+    "tipo": "revisao",
+    "titulo": "Números inteiros: reta, temperatura e saldo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma04/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA04"
+ },
+ {
+  "codigo": "EF07MA05",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Algoritmos",
+  "texto": "Resolver um mesmo problema utilizando diferentes algoritmos.",
+  "recursos": [
+   {
+    "id": "valor-moeda",
+    "tipo": "jogo",
+    "titulo": "Adivinhe o Valor da Moeda"
+   },
+   {
+    "id": "p-ma-obmep",
+    "tipo": "plano",
+    "titulo": "Minha primeira OBMEP: estratégias para resolver problemas"
+   },
+   {
+    "id": "p-reuso",
+    "tipo": "plano",
+    "titulo": "Blocos que se repetem: funções e reúso"
+   },
+   {
+    "id": "ad-um-problema-varios-algoritmos",
+    "tipo": "adaptada",
+    "titulo": "Um problema, vários algoritmos"
+   },
+   {
+    "id": "ad-algoritmos-e-fluxogramas-de-problemas",
+    "tipo": "revisao",
+    "titulo": "Algoritmos e fluxogramas para resolver problemas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma05/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA05"
+ },
+ {
+  "codigo": "EF07MA06",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Problemas de mesma estrutura",
+  "texto": "Reconhecer que as resoluções de um grupo de problemas que têm a mesma estrutura podem ser obtidas utilizando os mesmos procedimentos.",
+  "recursos": [
+   {
+    "id": "p-ma-obmep",
+    "tipo": "plano",
+    "titulo": "Minha primeira OBMEP: estratégias para resolver problemas"
+   },
+   {
+    "id": "ad-problemas-com-a-mesma-estrutura",
+    "tipo": "adaptada",
+    "titulo": "Problemas com a mesma estrutura"
+   },
+   {
+    "id": "ad-algoritmos-e-fluxogramas-de-problemas",
+    "tipo": "revisao",
+    "titulo": "Algoritmos e fluxogramas para resolver problemas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma06/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA06"
+ },
+ {
+  "codigo": "EF07MA07",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Fluxograma",
+  "texto": "Representar por meio de um fluxograma os passos utilizados para resolver um grupo de problemas.",
+  "recursos": [
+   {
+    "id": "robo",
+    "tipo": "jogo",
+    "titulo": "Robô Coletor"
+   },
+   {
+    "id": "ad-fluxograma-de-um-grupo-de-problemas",
+    "tipo": "adaptada",
+    "titulo": "Fluxograma de um grupo de problemas"
+   },
+   {
+    "id": "ad-algoritmos-e-fluxogramas-de-problemas",
+    "tipo": "revisao",
+    "titulo": "Algoritmos e fluxogramas para resolver problemas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma07/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA07"
+ },
+ {
+  "codigo": "EF07MA08",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Frações e seus significados",
+  "texto": "Comparar e ordenar frações associadas às ideias de partes de inteiros, resultado da divisão, razão e operador.",
+  "recursos": [
+   {
+    "id": "3d-fracoes",
+    "tipo": "3d",
+    "titulo": "Barras de Frações 3D"
+   },
+   {
+    "id": "f-ma-racionais",
+    "tipo": "ficha",
+    "titulo": "Varal dos números racionais"
+   },
+   {
+    "id": "p-ma-racionais",
+    "tipo": "plano",
+    "titulo": "O varal dos racionais"
+   },
+   {
+    "id": "ad-fracoes-parte-divisao-razao-e-operador",
+    "tipo": "adaptada",
+    "titulo": "Frações: parte, divisão, razão e operador"
+   },
+   {
+    "id": "ad-fracoes-e-razoes",
+    "tipo": "revisao",
+    "titulo": "Frações e razões"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma08/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA08"
+ },
+ {
+  "codigo": "EF07MA09",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Fração e razão",
+  "texto": "Utilizar, na resolução de problemas, a associação entre razão e fração, como a fração 2/3 para expressar a razão de duas partes de uma grandeza para três partes da mesma ou três partes de outra grandeza.",
+  "recursos": [
+   {
+    "id": "receitas",
+    "tipo": "jogo",
+    "titulo": "Cozinha das Proporções"
+   },
+   {
+    "id": "3d-sucos",
+    "tipo": "3d",
+    "titulo": "Laboratório de Sucos: Razão e Proporção"
+   },
+   {
+    "id": "f-ma-razao",
+    "tipo": "ficha",
+    "titulo": "Razões no corpo e no pátio"
+   },
+   {
+    "id": "p-ma-razao",
+    "tipo": "plano",
+    "titulo": "Razões medidas no corpo e no pátio"
+   },
+   {
+    "id": "ad-razao-como-fracao",
+    "tipo": "adaptada",
+    "titulo": "Razão escrita como fração"
+   },
+   {
+    "id": "ad-fracoes-e-razoes",
+    "tipo": "revisao",
+    "titulo": "Frações e razões"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma09/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA09"
+ },
+ {
+  "codigo": "EF07MA10",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Números racionais",
+  "texto": "Comparar e ordenar números racionais em diferentes contextos e associá-los a pontos da reta numérica.",
+  "recursos": [
+   {
+    "id": "3d-fracoes",
+    "tipo": "3d",
+    "titulo": "Barras de Frações 3D"
+   },
+   {
+    "id": "f-ma-racionais",
+    "tipo": "ficha",
+    "titulo": "Varal dos números racionais"
+   },
+   {
+    "id": "p-ma-racionais",
+    "tipo": "plano",
+    "titulo": "O varal dos racionais"
+   },
+   {
+    "id": "ad-racionais-na-reta",
+    "tipo": "adaptada",
+    "titulo": "Números racionais na reta"
+   },
+   {
+    "id": "ad-numeros-racionais-reta-e-operacoes",
+    "tipo": "revisao",
+    "titulo": "Números racionais: reta e operações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma10/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA10"
+ },
+ {
+  "codigo": "EF07MA11",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Números racionais",
+  "texto": "Compreender e utilizar a multiplicação e a divisão de números racionais, a relação entre elas e suas propriedades operatórias.",
+  "recursos": [
+   {
+    "id": "ad-multiplicar-e-dividir-racionais",
+    "tipo": "adaptada",
+    "titulo": "Multiplicar e dividir racionais"
+   },
+   {
+    "id": "ad-numeros-racionais-reta-e-operacoes",
+    "tipo": "revisao",
+    "titulo": "Números racionais: reta e operações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/multiplicar-e-dividir-racionais/",
+  "linkTexto": "Ficha adaptada de EF07MA11"
+ },
+ {
+  "codigo": "EF07MA12",
+  "ano": 7,
+  "eixo": "Números",
+  "objeto": "Números racionais",
+  "texto": "Resolver e elaborar problemas que envolvam as operações com números racionais.",
+  "recursos": [
+   {
+    "id": "cambio",
+    "tipo": "jogo",
+    "titulo": "Viagem com Câmbio"
+   },
+   {
+    "id": "f-ma-racionais",
+    "tipo": "ficha",
+    "titulo": "Varal dos números racionais"
+   },
+   {
+    "id": "p-ma-racionais",
+    "tipo": "plano",
+    "titulo": "O varal dos racionais"
+   },
+   {
+    "id": "ad-problemas-com-racionais",
+    "tipo": "adaptada",
+    "titulo": "Problemas com números racionais"
+   },
+   {
+    "id": "ad-numeros-racionais-reta-e-operacoes",
+    "tipo": "revisao",
+    "titulo": "Números racionais: reta e operações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma12/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA12"
+ },
+ {
+  "codigo": "EF07MA13",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Variável e incógnita",
+  "texto": "Compreender a ideia de variável, representada por letra ou símbolo, diferenciando-a da ideia de incógnita.",
+  "recursos": [
+   {
+    "id": "balanca",
+    "tipo": "jogo",
+    "titulo": "Balança das Equações"
+   },
+   {
+    "id": "p-equacoes",
+    "tipo": "plano",
+    "titulo": "Equações com a balança"
+   },
+   {
+    "id": "ad-variavel-e-incognita",
+    "tipo": "adaptada",
+    "titulo": "Variável e incógnita"
+   },
+   {
+    "id": "ad-variavel-e-sequencias",
+    "tipo": "revisao",
+    "titulo": "Variável, incógnita e sequências"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma13/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA13"
+ },
+ {
+  "codigo": "EF07MA14",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Linguagem algébrica: variável e incógnita",
+  "texto": "Classificar sequências em recursivas e não recursivas, reconhecendo que o conceito de recursão está presente não apenas na matemática, mas também nas artes e na literatura.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-recursivas",
+    "tipo": "adaptada",
+    "titulo": "Sequências recursivas"
+   },
+   {
+    "id": "ad-variavel-e-sequencias",
+    "tipo": "revisao",
+    "titulo": "Variável, incógnita e sequências"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sequencias-recursivas/",
+  "linkTexto": "Ficha adaptada de EF07MA14"
+ },
+ {
+  "codigo": "EF07MA15",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Linguagem algébrica: variável e incógnita",
+  "texto": "Utilizar a simbologia algébrica para expressar regularidades encontradas em sequências numéricas.",
+  "recursos": [
+   {
+    "id": "ad-sequencias-em-linguagem-algebrica",
+    "tipo": "adaptada",
+    "titulo": "Sequências em linguagem algébrica"
+   },
+   {
+    "id": "ad-variavel-e-sequencias",
+    "tipo": "revisao",
+    "titulo": "Variável, incógnita e sequências"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sequencias-em-linguagem-algebrica/",
+  "linkTexto": "Ficha adaptada de EF07MA15"
+ },
+ {
+  "codigo": "EF07MA16",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Equivalência de expressões algébricas: identificação da regularidade de uma sequência numérica",
+  "texto": "Reconhecer se duas expressões algébricas obtidas para descrever a regularidade de uma mesma sequência numérica são ou não equivalentes.",
+  "recursos": [
+   {
+    "id": "ad-expressoes-equivalentes-de-sequencias",
+    "tipo": "adaptada",
+    "titulo": "Expressões equivalentes de uma sequência"
+   },
+   {
+    "id": "ad-variavel-e-sequencias",
+    "tipo": "revisao",
+    "titulo": "Variável, incógnita e sequências"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/expressoes-equivalentes-de-sequencias/",
+  "linkTexto": "Ficha adaptada de EF07MA16"
+ },
+ {
+  "codigo": "EF07MA17",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Proporcionalidade",
+  "texto": "Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas.",
+  "recursos": [
+   {
+    "id": "valor-moeda",
+    "tipo": "jogo",
+    "titulo": "Adivinhe o Valor da Moeda"
+   },
+   {
+    "id": "cunhe-moeda",
+    "tipo": "jogo",
+    "titulo": "Cunhe sua Própria Moeda"
+   },
+   {
+    "id": "receitas",
+    "tipo": "jogo",
+    "titulo": "Cozinha das Proporções"
+   },
+   {
+    "id": "cambio",
+    "tipo": "jogo",
+    "titulo": "Viagem com Câmbio"
+   },
+   {
+    "id": "arquiteto",
+    "tipo": "jogo",
+    "titulo": "Arquiteto da Sala"
+   },
+   {
+    "id": "3d-sucos",
+    "tipo": "3d",
+    "titulo": "Laboratório de Sucos: Razão e Proporção"
+   },
+   {
+    "id": "f-ma-regra3",
+    "tipo": "ficha",
+    "titulo": "Regra de três na receita"
+   },
+   {
+    "id": "p-ma-regra3",
+    "tipo": "plano",
+    "titulo": "Regra de três na cozinha"
+   },
+   {
+    "id": "ad-proporcionalidade-direta-e-inversa",
+    "tipo": "adaptada",
+    "titulo": "Proporcionalidade direta e inversa"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma17/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA17"
+ },
+ {
+  "codigo": "EF07MA18",
+  "ano": 7,
+  "eixo": "Álgebra",
+  "objeto": "Equações de 1º grau",
+  "texto": "Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma ax + b = c, fazendo uso das propriedades da igualdade.",
+  "recursos": [
+   {
+    "id": "balanca",
+    "tipo": "jogo",
+    "titulo": "Balança das Equações"
+   },
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "3d-balanca",
+    "tipo": "3d",
+    "titulo": "Equações na Balança 3D"
+   },
+   {
+    "id": "f-ma-equacoes",
+    "tipo": "ficha",
+    "titulo": "Envelopes na balança: equações"
+   },
+   {
+    "id": "p-ma-equacoes",
+    "tipo": "plano",
+    "titulo": "Equações do 1º grau com envelopes misteriosos"
+   },
+   {
+    "id": "p-equacoes",
+    "tipo": "plano",
+    "titulo": "Equações com a balança"
+   },
+   {
+    "id": "ad-equacoes-do-primeiro-grau",
+    "tipo": "adaptada",
+    "titulo": "Equações do 1º grau com a balança"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma18/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA18"
+ },
+ {
+  "codigo": "EF07MA19",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Transformações geométricas de polígonos no plano cartesiano: multiplicação das coordenadas por um número inteiro e obtenção de simétricos em relação aos eixos e à origem",
+  "texto": "Realizar transformações de polígonos representados no plano cartesiano, decorrentes da multiplicação das coordenadas de seus vértices por um número inteiro.",
+  "recursos": [
+   {
+    "id": "ad-multiplicar-coordenadas-de-poligonos",
+    "tipo": "adaptada",
+    "titulo": "Multiplicar coordenadas de polígonos"
+   },
+   {
+    "id": "ad-transformacoes-no-plano-cartesiano",
+    "tipo": "revisao",
+    "titulo": "Transformações no plano cartesiano"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/multiplicar-coordenadas-de-poligonos/",
+  "linkTexto": "Ficha adaptada de EF07MA19"
+ },
+ {
+  "codigo": "EF07MA20",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Simetrias no plano cartesiano",
+  "texto": "Reconhecer e representar, no plano cartesiano, o simétrico de figuras em relação aos eixos e à origem.",
+  "recursos": [
+   {
+    "id": "cartesiano",
+    "tipo": "jogo",
+    "titulo": "Tesouro Cartesiano"
+   },
+   {
+    "id": "cunhe-moeda",
+    "tipo": "jogo",
+    "titulo": "Cunhe sua Própria Moeda"
+   },
+   {
+    "id": "p-cartesiano",
+    "tipo": "plano",
+    "titulo": "Localização no plano cartesiano"
+   },
+   {
+    "id": "ad-simetrico-no-plano-cartesiano",
+    "tipo": "adaptada",
+    "titulo": "Simétrico no plano cartesiano"
+   },
+   {
+    "id": "ad-transformacoes-no-plano-cartesiano",
+    "tipo": "revisao",
+    "titulo": "Transformações no plano cartesiano"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma20/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA20"
+ },
+ {
+  "codigo": "EF07MA21",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Simetrias de translação, rotação e reflexão",
+  "texto": "Reconhecer e construir figuras obtidas por simetrias de translação, rotação e reflexão, usando instrumentos de desenho ou softwares de geometria dinâmica e vincular esse estudo a representações planas de obras de arte, elementos arquitetônicos, entre outros.",
+  "recursos": [
+   {
+    "id": "ad-simetrias-translacao-rotacao-reflexao",
+    "tipo": "adaptada",
+    "titulo": "Simetrias: translação, rotação e reflexão"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/simetrias-translacao-rotacao-reflexao/",
+  "linkTexto": "Ficha adaptada de EF07MA21"
+ },
+ {
+  "codigo": "EF07MA22",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "A circunferência como lugar geométrico",
+  "texto": "Construir circunferências, utilizando compasso, reconhecê-las como lugar geométrico e utilizá-las para fazer composições artísticas e resolver problemas que envolvam objetos equidistantes.",
+  "recursos": [
+   {
+    "id": "ad-circunferencia-e-compasso",
+    "tipo": "adaptada",
+    "titulo": "Circunferência e compasso"
+   },
+   {
+    "id": "ad-circunferencia-compasso-e-pi",
+    "tipo": "revisao",
+    "titulo": "Circunferência, compasso e o número π"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/circunferencia-e-compasso/",
+  "linkTexto": "Ficha adaptada de EF07MA22"
+ },
+ {
+  "codigo": "EF07MA23",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Paralelas e transversal",
+  "texto": "Verificar relações entre os ângulos formados por retas paralelas cortadas por uma transversal, com e sem uso de softwares de geometria dinâmica.",
+  "recursos": [
+   {
+    "id": "angulos",
+    "tipo": "jogo",
+    "titulo": "Mira dos Ângulos"
+   },
+   {
+    "id": "ad-retas-paralelas-e-transversal",
+    "tipo": "adaptada",
+    "titulo": "Retas paralelas cortadas por uma transversal"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma23/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA23"
+ },
+ {
+  "codigo": "EF07MA24",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Triângulos",
+  "texto": "Construir triângulos, usando régua e compasso, reconhecer a condição de existência do triângulo quanto à medida dos lados e verificar que a soma das medidas dos ângulos internos de um triângulo é 180°.",
+  "recursos": [
+   {
+    "id": "angulos",
+    "tipo": "jogo",
+    "titulo": "Mira dos Ângulos"
+   },
+   {
+    "id": "3d-ladrilhos",
+    "tipo": "3d",
+    "titulo": "Ladrilhos e Ângulos"
+   },
+   {
+    "id": "f-ma-geometria",
+    "tipo": "ficha",
+    "titulo": "Ateliê de mosaicos: ângulos e polígonos"
+   },
+   {
+    "id": "p-ma-geometria",
+    "tipo": "plano",
+    "titulo": "Ateliê de mosaicos: geometria plana"
+   },
+   {
+    "id": "ad-condicao-de-existencia-do-triangulo",
+    "tipo": "adaptada",
+    "titulo": "Quando existe um triângulo"
+   },
+   {
+    "id": "ad-triangulos-construcao-e-rigidez",
+    "tipo": "revisao",
+    "titulo": "Triângulos: construção, existência e rigidez"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma24/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA24"
+ },
+ {
+  "codigo": "EF07MA25",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Triângulos: construção, condição de existência e soma das medidas dos ângulos internos",
+  "texto": "Reconhecer a rigidez geométrica dos triângulos e suas aplicações, como na construção de estruturas arquitetônicas (telhados, estruturas metálicas e outras) ou nas artes plásticas.",
+  "recursos": [
+   {
+    "id": "ad-rigidez-do-triangulo",
+    "tipo": "adaptada",
+    "titulo": "A rigidez do triângulo"
+   },
+   {
+    "id": "ad-triangulos-construcao-e-rigidez",
+    "tipo": "revisao",
+    "titulo": "Triângulos: construção, existência e rigidez"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/rigidez-do-triangulo/",
+  "linkTexto": "Ficha adaptada de EF07MA25"
+ },
+ {
+  "codigo": "EF07MA26",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Triângulos: construção, condição de existência e soma das medidas dos ângulos internos",
+  "texto": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um triângulo qualquer, conhecidas as medidas dos três lados.",
+  "recursos": [
+   {
+    "id": "ad-fluxograma-para-construir-triangulo",
+    "tipo": "adaptada",
+    "titulo": "Fluxograma para construir um triângulo"
+   },
+   {
+    "id": "ad-triangulos-construcao-e-rigidez",
+    "tipo": "revisao",
+    "titulo": "Triângulos: construção, existência e rigidez"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fluxograma-para-construir-triangulo/",
+  "linkTexto": "Ficha adaptada de EF07MA26"
+ },
+ {
+  "codigo": "EF07MA27",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Polígonos regulares",
+  "texto": "Calcular medidas de ângulos internos de polígonos regulares, sem o uso de fórmulas, e estabelecer relações entre ângulos internos e externos de polígonos, preferencialmente vinculadas à construção de mosaicos e de ladrilhamentos.",
+  "recursos": [
+   {
+    "id": "angulos",
+    "tipo": "jogo",
+    "titulo": "Mira dos Ângulos"
+   },
+   {
+    "id": "3d-ladrilhos",
+    "tipo": "3d",
+    "titulo": "Ladrilhos e Ângulos"
+   },
+   {
+    "id": "3d-figuras",
+    "tipo": "3d",
+    "titulo": "Figuras Geométricas em 3D"
+   },
+   {
+    "id": "f-ma-geometria",
+    "tipo": "ficha",
+    "titulo": "Ateliê de mosaicos: ângulos e polígonos"
+   },
+   {
+    "id": "p-ma-geometria",
+    "tipo": "plano",
+    "titulo": "Ateliê de mosaicos: geometria plana"
+   },
+   {
+    "id": "ad-angulos-de-poligonos-regulares-e-mosaicos",
+    "tipo": "adaptada",
+    "titulo": "Ângulos de polígonos regulares e mosaicos"
+   },
+   {
+    "id": "ad-poligonos-regulares-e-mosaicos",
+    "tipo": "revisao",
+    "titulo": "Polígonos regulares, ângulos e mosaicos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma27/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA27"
+ },
+ {
+  "codigo": "EF07MA28",
+  "ano": 7,
+  "eixo": "Geometria",
+  "objeto": "Polígonos regulares: quadrado e triângulo equilátero",
+  "texto": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um polígono regular (como quadrado e triângulo equilátero), conhecida a medida de seu lado.",
+  "recursos": [
+   {
+    "id": "ad-fluxograma-para-construir-poligono-regular",
+    "tipo": "adaptada",
+    "titulo": "Fluxograma para construir um polígono regular"
+   },
+   {
+    "id": "ad-poligonos-regulares-e-mosaicos",
+    "tipo": "revisao",
+    "titulo": "Polígonos regulares, ângulos e mosaicos"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fluxograma-para-construir-poligono-regular/",
+  "linkTexto": "Ficha adaptada de EF07MA28"
+ },
+ {
+  "codigo": "EF07MA29",
+  "ano": 7,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Problemas envolvendo medições",
+  "texto": "Resolver e elaborar problemas que envolvam medidas de grandezas inseridos em contextos oriundos de situações cotidianas ou de outras áreas do conhecimento, reconhecendo que toda medida empírica é aproximada.",
+  "recursos": [
+   {
+    "id": "ad-medidas-sao-aproximadas",
+    "tipo": "adaptada",
+    "titulo": "Toda medida é aproximada"
+   },
+   {
+    "id": "ad-volume-e-areas",
+    "tipo": "revisao",
+    "titulo": "Volume de blocos e áreas de figuras planas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/medidas-sao-aproximadas/",
+  "linkTexto": "Ficha adaptada de EF07MA29"
+ },
+ {
+  "codigo": "EF07MA30",
+  "ano": 7,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Cálculo de volume de blocos retangulares, utilizando unidades de medida convencionais mais usuais",
+  "texto": "Resolver e elaborar problemas de cálculo de medida do volume de blocos retangulares, envolvendo as unidades usuais (metro cúbico, decímetro cúbico e centímetro cúbico).",
+  "recursos": [
+   {
+    "id": "ad-volume-de-blocos-retangulares",
+    "tipo": "adaptada",
+    "titulo": "Volume de blocos retangulares"
+   },
+   {
+    "id": "ad-volume-e-areas",
+    "tipo": "revisao",
+    "titulo": "Volume de blocos e áreas de figuras planas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/volume-de-blocos-retangulares/",
+  "linkTexto": "Ficha adaptada de EF07MA30"
+ },
+ {
+  "codigo": "EF07MA31",
+  "ano": 7,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Área de figuras planas",
+  "texto": "Estabelecer expressões de cálculo de área de triângulos e de quadriláteros.",
+  "recursos": [
+   {
+    "id": "3d-terreno",
+    "tipo": "3d",
+    "titulo": "Terreno: Área e Perímetro"
+   },
+   {
+    "id": "f-ma-area",
+    "tipo": "ficha",
+    "titulo": "Hortas com a mesma cerca: área e perímetro"
+   },
+   {
+    "id": "p-ma-area",
+    "tipo": "plano",
+    "titulo": "A horta da escola: área e perímetro"
+   },
+   {
+    "id": "ad-area-de-triangulos-e-quadrilateros",
+    "tipo": "adaptada",
+    "titulo": "Área de triângulos e quadriláteros"
+   },
+   {
+    "id": "ad-volume-e-areas",
+    "tipo": "revisao",
+    "titulo": "Volume de blocos e áreas de figuras planas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma31/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA31"
+ },
+ {
+  "codigo": "EF07MA32",
+  "ano": 7,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Área de figuras planas",
+  "texto": "Resolver e elaborar problemas de cálculo de medida de área de figuras planas que podem ser decompostas por quadrados, retângulos e/ou triângulos, utilizando a equivalência entre áreas.",
+  "recursos": [
+   {
+    "id": "tangram",
+    "tipo": "jogo",
+    "titulo": "Tangram"
+   },
+   {
+    "id": "arquiteto",
+    "tipo": "jogo",
+    "titulo": "Arquiteto da Sala"
+   },
+   {
+    "id": "3d-terreno",
+    "tipo": "3d",
+    "titulo": "Terreno: Área e Perímetro"
+   },
+   {
+    "id": "ad-areas-por-decomposicao",
+    "tipo": "adaptada",
+    "titulo": "Áreas por decomposição"
+   },
+   {
+    "id": "ad-volume-e-areas",
+    "tipo": "revisao",
+    "titulo": "Volume de blocos e áreas de figuras planas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma32/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA32"
+ },
+ {
+  "codigo": "EF07MA33",
+  "ano": 7,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Medida do comprimento da circunferência",
+  "texto": "Estabelecer o número π como a razão entre a medida de uma circunferência e seu diâmetro, para compreender e resolver problemas, inclusive os de natureza histórica.",
+  "recursos": [
+   {
+    "id": "ad-o-numero-pi",
+    "tipo": "adaptada",
+    "titulo": "O número π"
+   },
+   {
+    "id": "ad-circunferencia-compasso-e-pi",
+    "tipo": "revisao",
+    "titulo": "Circunferência, compasso e o número π"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/o-numero-pi/",
+  "linkTexto": "Ficha adaptada de EF07MA33"
+ },
+ {
+  "codigo": "EF07MA34",
+  "ano": 7,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Experimentos aleatórios",
+  "texto": "Planejar e realizar experimentos aleatórios ou simulações que envolvem cálculo de probabilidades ou estimativas por meio de frequência de ocorrências.",
+  "recursos": [
+   {
+    "id": "3d-dados-verdade",
+    "tipo": "3d",
+    "titulo": "Dados de Verdade"
+   },
+   {
+    "id": "ad-experimentos-e-frequencia",
+    "tipo": "adaptada",
+    "titulo": "Experimentos e frequência"
+   },
+   {
+    "id": "ad-probabilidade-media-e-graficos-de-setores",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, média, pesquisa e gráfico de setores"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma34/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA34"
+ },
+ {
+  "codigo": "EF07MA35",
+  "ano": 7,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Média estatística",
+  "texto": "Compreender, em contextos significativos, o significado de média estatística como indicador da tendência de uma pesquisa, calcular seu valor e relacioná-lo, intuitivamente, com a amplitude do conjunto de dados.",
+  "recursos": [
+   {
+    "id": "tabelas",
+    "tipo": "jogo",
+    "titulo": "Gincana das Tabelas"
+   },
+   {
+    "id": "boletim",
+    "tipo": "jogo",
+    "titulo": "Fórmulas do Boletim"
+   },
+   {
+    "id": "meteorologista",
+    "tipo": "jogo",
+    "titulo": "Meteorologista de Dados"
+   },
+   {
+    "id": "ad-media-e-amplitude",
+    "tipo": "adaptada",
+    "titulo": "Média e amplitude"
+   },
+   {
+    "id": "ad-probabilidade-media-e-graficos-de-setores",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, média, pesquisa e gráfico de setores"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma35/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA35"
+ },
+ {
+  "codigo": "EF07MA36",
+  "ano": 7,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Pesquisa amostral e censitária",
+  "texto": "Planejar e realizar pesquisa envolvendo tema da realidade social, identificando a necessidade de ser censitária ou de usar amostra, e interpretar os dados para comunicá-los por meio de relatório escrito, tabelas e gráficos, com o apoio de planilhas eletrônicas.",
+  "recursos": [
+   {
+    "id": "wikipedia",
+    "tipo": "jogo",
+    "titulo": "Qual Verbete Tem Mais Visitas?"
+   },
+   {
+    "id": "tabelas",
+    "tipo": "jogo",
+    "titulo": "Gincana das Tabelas"
+   },
+   {
+    "id": "boletim",
+    "tipo": "jogo",
+    "titulo": "Fórmulas do Boletim"
+   },
+   {
+    "id": "p-wikipedia",
+    "tipo": "plano",
+    "titulo": "A Wikipédia como base de dados"
+   },
+   {
+    "id": "ad-pesquisa-censo-ou-amostra",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa: censo ou amostra"
+   },
+   {
+    "id": "ad-probabilidade-media-e-graficos-de-setores",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, média, pesquisa e gráfico de setores"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma36/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA36"
+ },
+ {
+  "codigo": "EF07MA37",
+  "ano": 7,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Gráficos de setores",
+  "texto": "Interpretar e analisar dados apresentados em gráfico de setores divulgados pela mídia e compreender quando é possível ou conveniente sua utilização.",
+  "recursos": [
+   {
+    "id": "graficos",
+    "tipo": "jogo",
+    "titulo": "Detetive dos Gráficos"
+   },
+   {
+    "id": "empresa-sucos",
+    "tipo": "jogo",
+    "titulo": "Empresa de Sucos da Turma"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "ad-graficos-de-setores-na-midia",
+    "tipo": "adaptada",
+    "titulo": "Gráficos de setores na mídia"
+   },
+   {
+    "id": "ad-probabilidade-media-e-graficos-de-setores",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, média, pesquisa e gráfico de setores"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef07ma37/",
+  "linkTexto": "Ver planos, jogos e fichas de EF07MA37"
+ },
+ {
+  "codigo": "EF08MA01",
+  "ano": 8,
+  "eixo": "Números",
+  "objeto": "Notação científica",
+  "texto": "Efetuar cálculos com potências de expoentes inteiros e aplicar esse conhecimento na representação de números em notação científica.",
+  "recursos": [
+   {
+    "id": "numeria",
+    "tipo": "jogo",
+    "titulo": "A Lenda de Numéria"
+   },
+   {
+    "id": "3d-potencias",
+    "tipo": "3d",
+    "titulo": "Cubos das Potências"
+   },
+   {
+    "id": "ad-potencias-e-notacao-cientifica",
+    "tipo": "adaptada",
+    "titulo": "Potências e notação científica"
+   },
+   {
+    "id": "ad-potencias-raizes-e-notacao-cientifica",
+    "tipo": "revisao",
+    "titulo": "Potências, raízes e notação científica"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma01/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA01"
+ },
+ {
+  "codigo": "EF08MA02",
+  "ano": 8,
+  "eixo": "Números",
+  "objeto": "Potenciação e radiciação",
+  "texto": "Resolver e elaborar problemas usando a relação entre potenciação e radiciação, para representar uma raiz como potência de expoente fracionário.",
+  "recursos": [
+   {
+    "id": "3d-potencias",
+    "tipo": "3d",
+    "titulo": "Cubos das Potências"
+   },
+   {
+    "id": "f-ma-potencias",
+    "tipo": "ficha",
+    "titulo": "Quadrados de tampinhas: potência e raiz"
+   },
+   {
+    "id": "p-ma-potencias",
+    "tipo": "plano",
+    "titulo": "Potências e raízes com quadrados"
+   },
+   {
+    "id": "ad-raiz-como-potencia",
+    "tipo": "adaptada",
+    "titulo": "Raiz como potência"
+   },
+   {
+    "id": "ad-potencias-raizes-e-notacao-cientifica",
+    "tipo": "revisao",
+    "titulo": "Potências, raízes e notação científica"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma02/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA02"
+ },
+ {
+  "codigo": "EF08MA03",
+  "ano": 8,
+  "eixo": "Números",
+  "objeto": "Princípio multiplicativo da contagem",
+  "texto": "Resolver e elaborar problemas de contagem cuja resolução envolva a aplicação do princípio multiplicativo.",
+  "recursos": [
+   {
+    "id": "p-ma-obmep",
+    "tipo": "plano",
+    "titulo": "Minha primeira OBMEP: estratégias para resolver problemas"
+   },
+   {
+    "id": "ad-principio-multiplicativo",
+    "tipo": "adaptada",
+    "titulo": "Princípio multiplicativo"
+   },
+   {
+    "id": "ad-contagem-e-probabilidade",
+    "tipo": "revisao",
+    "titulo": "Contagem e probabilidade com o princípio multiplicativo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma03/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA03"
+ },
+ {
+  "codigo": "EF08MA04",
+  "ano": 8,
+  "eixo": "Números",
+  "objeto": "Porcentagens",
+  "texto": "Resolver e elaborar problemas, envolvendo cálculo de porcentagens, incluindo o uso de tecnologias digitais.",
+  "recursos": [
+   {
+    "id": "mesada",
+    "tipo": "jogo",
+    "titulo": "Desafio da Mesada"
+   },
+   {
+    "id": "poupanca",
+    "tipo": "jogo",
+    "titulo": "Juros que Crescem"
+   },
+   {
+    "id": "cartao",
+    "tipo": "jogo",
+    "titulo": "Cartão de Crédito de Treino"
+   },
+   {
+    "id": "cambio",
+    "tipo": "jogo",
+    "titulo": "Viagem com Câmbio"
+   },
+   {
+    "id": "p-ma-financeira",
+    "tipo": "plano",
+    "titulo": "Mesada, descontos e juros: decisões com porcentagem"
+   },
+   {
+    "id": "ad-porcentagem-com-calculadora-e-planilha",
+    "tipo": "adaptada",
+    "titulo": "Porcentagem com calculadora e planilha"
+   },
+   {
+    "id": "ad-porcentagem-e-dizimas-periodicas",
+    "tipo": "revisao",
+    "titulo": "Porcentagem e dízimas periódicas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma04/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA04"
+ },
+ {
+  "codigo": "EF08MA05",
+  "ano": 8,
+  "eixo": "Números",
+  "objeto": "Dízimas periódicas: fração geratriz",
+  "texto": "Reconhecer e utilizar procedimentos para a obtenção de uma fração geratriz para uma dízima periódica.",
+  "recursos": [
+   {
+    "id": "ad-fracao-geratriz-de-dizimas",
+    "tipo": "adaptada",
+    "titulo": "Fração geratriz de dízimas"
+   },
+   {
+    "id": "ad-porcentagem-e-dizimas-periodicas",
+    "tipo": "revisao",
+    "titulo": "Porcentagem e dízimas periódicas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fracao-geratriz-de-dizimas/",
+  "linkTexto": "Ficha adaptada de EF08MA05"
+ },
+ {
+  "codigo": "EF08MA06",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Valor numérico",
+  "texto": "Resolver e elaborar problemas que envolvam o cálculo do valor numérico de expressões algébricas, usando as propriedades das operações.",
+  "recursos": [
+   {
+    "id": "balanca",
+    "tipo": "jogo",
+    "titulo": "Balança das Equações"
+   },
+   {
+    "id": "3d-produtos",
+    "tipo": "3d",
+    "titulo": "Produtos Notáveis em Blocos"
+   },
+   {
+    "id": "3d-algeblocos",
+    "tipo": "3d",
+    "titulo": "Blocos Algébricos: Polinômios e Fatoração"
+   },
+   {
+    "id": "f-ma-polinomios",
+    "tipo": "ficha",
+    "titulo": "Dominó dos polinômios"
+   },
+   {
+    "id": "p-ma-polinomios",
+    "tipo": "plano",
+    "titulo": "Polinômios com dominó de expressões"
+   },
+   {
+    "id": "p-projeto8",
+    "tipo": "plano",
+    "titulo": "Projeto: um programa para outra disciplina"
+   },
+   {
+    "id": "ad-expressoes-algebricas-e-valor-numerico",
+    "tipo": "adaptada",
+    "titulo": "Expressões algébricas e valor numérico"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma06/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA06"
+ },
+ {
+  "codigo": "EF08MA07",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Associação de uma equação linear de 1º grau a uma reta no plano cartesiano",
+  "texto": "Associar uma equação linear de 1º grau com duas incógnitas a uma reta no plano cartesiano.",
+  "recursos": [
+   {
+    "id": "ad-equacao-com-duas-incognitas-e-reta",
+    "tipo": "adaptada",
+    "titulo": "Equação com duas incógnitas e a reta"
+   },
+   {
+    "id": "ad-equacoes-com-duas-incognitas-e-sistemas",
+    "tipo": "revisao",
+    "titulo": "Equações com duas incógnitas e sistemas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/equacao-com-duas-incognitas-e-reta/",
+  "linkTexto": "Ficha adaptada de EF08MA07"
+ },
+ {
+  "codigo": "EF08MA08",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Sistemas de equações",
+  "texto": "Resolver e elaborar problemas relacionados ao seu contexto próximo, que possam ser representados por sistemas de equações de 1º grau com duas incógnitas e interpretá-los, utilizando, inclusive, o plano cartesiano como recurso.",
+  "recursos": [
+   {
+    "id": "ad-sistemas-de-equacoes-no-dia-a-dia",
+    "tipo": "adaptada",
+    "titulo": "Sistemas de equações no dia a dia"
+   },
+   {
+    "id": "ad-equacoes-com-duas-incognitas-e-sistemas",
+    "tipo": "revisao",
+    "titulo": "Equações com duas incógnitas e sistemas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sistemas-de-equacoes-no-dia-a-dia/",
+  "linkTexto": "Ficha adaptada de EF08MA08"
+ },
+ {
+  "codigo": "EF08MA09",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Equação polinomial de 2º grau do tipo ax² = b",
+  "texto": "Resolver e elaborar, com e sem uso de tecnologias, problemas que possam ser representados por equações polinomiais de 2º grau do tipo ax² = b.",
+  "recursos": [
+   {
+    "id": "ad-equacoes-do-segundo-grau-ax2-b",
+    "tipo": "adaptada",
+    "titulo": "Equações do 2º grau do tipo ax² = b"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/equacoes-do-segundo-grau-ax2-b/",
+  "linkTexto": "Ficha adaptada de EF08MA09"
+ },
+ {
+  "codigo": "EF08MA10",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Sequências",
+  "texto": "Identificar a regularidade de uma sequência numérica ou figural não recursiva e construir um algoritmo por meio de um fluxograma que permita indicar os números ou as figuras seguintes.",
+  "recursos": [
+   {
+    "id": "p-recursao",
+    "tipo": "plano",
+    "titulo": "Listas, recursão e algoritmos de ordenação"
+   },
+   {
+    "id": "ad-sequencia-nao-recursiva-e-fluxograma",
+    "tipo": "adaptada",
+    "titulo": "Sequência não recursiva e fluxograma"
+   },
+   {
+    "id": "ad-sequencias-e-fluxogramas",
+    "tipo": "revisao",
+    "titulo": "Sequências e fluxogramas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma10/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA10"
+ },
+ {
+  "codigo": "EF08MA11",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Sequências recursivas e não recursivas",
+  "texto": "Identificar a regularidade de uma sequência numérica recursiva e construir um algoritmo por meio de um fluxograma que permita indicar os números seguintes.",
+  "recursos": [
+   {
+    "id": "ad-sequencia-recursiva-e-fluxograma",
+    "tipo": "adaptada",
+    "titulo": "Sequência recursiva e fluxograma"
+   },
+   {
+    "id": "ad-sequencias-e-fluxogramas",
+    "tipo": "revisao",
+    "titulo": "Sequências e fluxogramas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/sequencia-recursiva-e-fluxograma/",
+  "linkTexto": "Ficha adaptada de EF08MA11"
+ },
+ {
+  "codigo": "EF08MA12",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Proporcionalidade",
+  "texto": "Identificar a natureza da variação de duas grandezas, diretamente, inversamente proporcionais ou não proporcionais, expressando a relação existente por meio de sentença algébrica e representá-la no plano cartesiano.",
+  "recursos": [
+   {
+    "id": "f-ma-proporcao",
+    "tipo": "ficha",
+    "titulo": "Ampliar sem deformar: proporção"
+   },
+   {
+    "id": "p-ma-proporcao",
+    "tipo": "plano",
+    "titulo": "Ampliar sem deformar: proporção e escala"
+   },
+   {
+    "id": "ad-grandezas-proporcionais-ou-nao",
+    "tipo": "adaptada",
+    "titulo": "Grandezas proporcionais ou não"
+   },
+   {
+    "id": "ad-grandezas-proporcionais-e-nao-proporcionais",
+    "tipo": "revisao",
+    "titulo": "Grandezas proporcionais e não proporcionais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma12/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA12"
+ },
+ {
+  "codigo": "EF08MA13",
+  "ano": 8,
+  "eixo": "Álgebra",
+  "objeto": "Proporcionalidade",
+  "texto": "Resolver e elaborar problemas que envolvam grandezas diretamente ou inversamente proporcionais, por meio de estratégias variadas.",
+  "recursos": [
+   {
+    "id": "receitas",
+    "tipo": "jogo",
+    "titulo": "Cozinha das Proporções"
+   },
+   {
+    "id": "3d-sucos",
+    "tipo": "3d",
+    "titulo": "Laboratório de Sucos: Razão e Proporção"
+   },
+   {
+    "id": "f-ma-regra3",
+    "tipo": "ficha",
+    "titulo": "Regra de três na receita"
+   },
+   {
+    "id": "p-ma-regra3",
+    "tipo": "plano",
+    "titulo": "Regra de três na cozinha"
+   },
+   {
+    "id": "ad-problemas-direta-e-inversamente-proporcionais",
+    "tipo": "adaptada",
+    "titulo": "Problemas com grandezas proporcionais"
+   },
+   {
+    "id": "ad-grandezas-proporcionais-e-nao-proporcionais",
+    "tipo": "revisao",
+    "titulo": "Grandezas proporcionais e não proporcionais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma13/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA13"
+ },
+ {
+  "codigo": "EF08MA14",
+  "ano": 8,
+  "eixo": "Geometria",
+  "objeto": "Congruência de triângulos e demonstrações de propriedades de quadriláteros",
+  "texto": "Demonstrar propriedades de quadriláteros por meio da identificação da congruência de triângulos.",
+  "recursos": [
+   {
+    "id": "ad-congruencia-de-triangulos-e-quadrilateros",
+    "tipo": "adaptada",
+    "titulo": "Congruência de triângulos e quadriláteros"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/congruencia-de-triangulos-e-quadrilateros/",
+  "linkTexto": "Ficha adaptada de EF08MA14"
+ },
+ {
+  "codigo": "EF08MA15",
+  "ano": 8,
+  "eixo": "Geometria",
+  "objeto": "Construções geométricas: ângulos de 90°, 60°, 45° e 30° e polígonos regulares",
+  "texto": "Construir, utilizando instrumentos de desenho ou softwares de geometria dinâmica, mediatriz, bissetriz, ângulos de 90°, 60°, 45° e 30° e polígonos regulares.",
+  "recursos": [
+   {
+    "id": "ad-construcoes-mediatriz-bissetriz-e-angulos",
+    "tipo": "adaptada",
+    "titulo": "Construções: mediatriz, bissetriz e ângulos"
+   },
+   {
+    "id": "ad-mediatriz-bissetriz-e-hexagono-regular",
+    "tipo": "revisao",
+    "titulo": "Mediatriz, bissetriz e hexágono regular"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/construcoes-mediatriz-bissetriz-e-angulos/",
+  "linkTexto": "Ficha adaptada de EF08MA15"
+ },
+ {
+  "codigo": "EF08MA16",
+  "ano": 8,
+  "eixo": "Geometria",
+  "objeto": "Construções geométricas: ângulos de 90°, 60°, 45° e 30° e polígonos regulares",
+  "texto": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um hexágono regular de qualquer área, a partir da medida do ângulo central e da utilização de esquadros e compasso.",
+  "recursos": [
+   {
+    "id": "ad-fluxograma-do-hexagono-regular",
+    "tipo": "adaptada",
+    "titulo": "Fluxograma do hexágono regular"
+   },
+   {
+    "id": "ad-mediatriz-bissetriz-e-hexagono-regular",
+    "tipo": "revisao",
+    "titulo": "Mediatriz, bissetriz e hexágono regular"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/fluxograma-do-hexagono-regular/",
+  "linkTexto": "Ficha adaptada de EF08MA16"
+ },
+ {
+  "codigo": "EF08MA17",
+  "ano": 8,
+  "eixo": "Geometria",
+  "objeto": "Mediatriz e bissetriz como lugares geométricos: construção e problemas",
+  "texto": "Aplicar os conceitos de mediatriz e bissetriz como lugares geométricos na resolução de problemas.",
+  "recursos": [
+   {
+    "id": "ad-mediatriz-e-bissetriz-em-problemas",
+    "tipo": "adaptada",
+    "titulo": "Mediatriz e bissetriz em problemas"
+   },
+   {
+    "id": "ad-mediatriz-bissetriz-e-hexagono-regular",
+    "tipo": "revisao",
+    "titulo": "Mediatriz, bissetriz e hexágono regular"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/mediatriz-e-bissetriz-em-problemas/",
+  "linkTexto": "Ficha adaptada de EF08MA17"
+ },
+ {
+  "codigo": "EF08MA18",
+  "ano": 8,
+  "eixo": "Geometria",
+  "objeto": "Transformações geométricas: simetrias de translação, reflexão e rotação",
+  "texto": "Reconhecer e construir figuras obtidas por composições de transformações geométricas (translação, reflexão e rotação), com o uso de instrumentos de desenho ou de softwares de geometria dinâmica.",
+  "recursos": [
+   {
+    "id": "ad-composicao-de-transformacoes",
+    "tipo": "adaptada",
+    "titulo": "Composição de transformações"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/composicao-de-transformacoes/",
+  "linkTexto": "Ficha adaptada de EF08MA18"
+ },
+ {
+  "codigo": "EF08MA19",
+  "ano": 8,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Área de figuras planas",
+  "texto": "Resolver e elaborar problemas que envolvam medidas de área de figuras geométricas, utilizando expressões de cálculo de área (quadriláteros, triângulos e círculos), em situações como determinar medida de terrenos.",
+  "recursos": [
+   {
+    "id": "cunhe-moeda",
+    "tipo": "jogo",
+    "titulo": "Cunhe sua Própria Moeda"
+   },
+   {
+    "id": "3d-terreno",
+    "tipo": "3d",
+    "titulo": "Terreno: Área e Perímetro"
+   },
+   {
+    "id": "ad-areas-de-terrenos",
+    "tipo": "adaptada",
+    "titulo": "Áreas de terrenos"
+   },
+   {
+    "id": "ad-areas-circulo-e-capacidade",
+    "tipo": "revisao",
+    "titulo": "Áreas, círculo e capacidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma19/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA19"
+ },
+ {
+  "codigo": "EF08MA20",
+  "ano": 8,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Volume de bloco retangular e capacidade",
+  "texto": "Reconhecer a relação entre um litro e um decímetro cúbico e a relação entre litro e metro cúbico, para resolver problemas de cálculo de capacidade de recipientes.",
+  "recursos": [
+   {
+    "id": "3d-tanque",
+    "tipo": "3d",
+    "titulo": "Enche o Tanque: Volume e Capacidade"
+   },
+   {
+    "id": "ad-litro-e-decimetro-cubico",
+    "tipo": "adaptada",
+    "titulo": "Litro, decímetro cúbico e metro cúbico"
+   },
+   {
+    "id": "ad-areas-circulo-e-capacidade",
+    "tipo": "revisao",
+    "titulo": "Áreas, círculo e capacidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma20/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA20"
+ },
+ {
+  "codigo": "EF08MA21",
+  "ano": 8,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Volume de bloco retangular e capacidade",
+  "texto": "Resolver e elaborar problemas que envolvam o cálculo do volume de recipiente cujo formato é o de um bloco retangular.",
+  "recursos": [
+   {
+    "id": "3d-tanque",
+    "tipo": "3d",
+    "titulo": "Enche o Tanque: Volume e Capacidade"
+   },
+   {
+    "id": "ad-volume-de-recipientes",
+    "tipo": "adaptada",
+    "titulo": "Volume de recipientes"
+   },
+   {
+    "id": "ad-areas-circulo-e-capacidade",
+    "tipo": "revisao",
+    "titulo": "Áreas, círculo e capacidade"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma21/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA21"
+ },
+ {
+  "codigo": "EF08MA22",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Probabilidade",
+  "texto": "Calcular a probabilidade de eventos, com base na construção do espaço amostral, utilizando o princípio multiplicativo, e reconhecer que a soma das probabilidades de todos os elementos do espaço amostral é igual a 1.",
+  "recursos": [
+   {
+    "id": "3d-dados-verdade",
+    "tipo": "3d",
+    "titulo": "Dados de Verdade"
+   },
+   {
+    "id": "ad-espaco-amostral-e-probabilidade",
+    "tipo": "adaptada",
+    "titulo": "Espaço amostral e probabilidade"
+   },
+   {
+    "id": "ad-contagem-e-probabilidade",
+    "tipo": "revisao",
+    "titulo": "Contagem e probabilidade com o princípio multiplicativo"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma22/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA22"
+ },
+ {
+  "codigo": "EF08MA23",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Adequação de gráficos",
+  "texto": "Avaliar a adequação de diferentes tipos de gráficos para representar um conjunto de dados de uma pesquisa.",
+  "recursos": [
+   {
+    "id": "graficos",
+    "tipo": "jogo",
+    "titulo": "Detetive dos Gráficos"
+   },
+   {
+    "id": "empresa-sucos",
+    "tipo": "jogo",
+    "titulo": "Empresa de Sucos da Turma"
+   },
+   {
+    "id": "3d-grafico-enganoso",
+    "tipo": "3d",
+    "titulo": "Gráfico 3D: Honesto ou Enganoso?"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "ad-escolher-o-grafico-adequado",
+    "tipo": "adaptada",
+    "titulo": "Escolher o gráfico adequado"
+   },
+   {
+    "id": "ad-pesquisa-amostral-graficos-e-medidas",
+    "tipo": "revisao",
+    "titulo": "Pesquisa amostral, gráficos e medidas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma23/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA23"
+ },
+ {
+  "codigo": "EF08MA24",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Organização dos dados de uma variável contínua em classes",
+  "texto": "Classificar as frequências de uma variável contínua de uma pesquisa em classes, de modo que resumam os dados de maneira adequada para a tomada de decisões.",
+  "recursos": [
+   {
+    "id": "ad-classes-de-frequencia",
+    "tipo": "adaptada",
+    "titulo": "Classes de frequência"
+   },
+   {
+    "id": "ad-pesquisa-amostral-graficos-e-medidas",
+    "tipo": "revisao",
+    "titulo": "Pesquisa amostral, gráficos e medidas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/classes-de-frequencia/",
+  "linkTexto": "Ficha adaptada de EF08MA24"
+ },
+ {
+  "codigo": "EF08MA25",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Medidas de tendência central",
+  "texto": "Obter os valores de medidas de tendência central de uma pesquisa estatística (média, moda e mediana) com a compreensão de seus significados e relacioná-los com a dispersão de dados, indicada pela amplitude.",
+  "recursos": [
+   {
+    "id": "meteorologista",
+    "tipo": "jogo",
+    "titulo": "Meteorologista de Dados"
+   },
+   {
+    "id": "ad-media-moda-e-mediana",
+    "tipo": "adaptada",
+    "titulo": "Média, moda e mediana"
+   },
+   {
+    "id": "ad-pesquisa-amostral-graficos-e-medidas",
+    "tipo": "revisao",
+    "titulo": "Pesquisa amostral, gráficos e medidas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef08ma25/",
+  "linkTexto": "Ver planos, jogos e fichas de EF08MA25"
+ },
+ {
+  "codigo": "EF08MA26",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Pesquisas censitária ou amostral; planejamento e execução de pesquisa amostral",
+  "texto": "Selecionar razões, de diferentes naturezas (física, ética ou econômica), que justificam a realização de pesquisas amostrais e não censitárias, e reconhecer que a seleção da amostra pode ser feita de diferentes maneiras (amostra casual simples, sistemática e estratificada).",
+  "recursos": [
+   {
+    "id": "ad-tipos-de-amostra",
+    "tipo": "adaptada",
+    "titulo": "Tipos de amostra"
+   },
+   {
+    "id": "ad-pesquisa-amostral-graficos-e-medidas",
+    "tipo": "revisao",
+    "titulo": "Pesquisa amostral, gráficos e medidas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/tipos-de-amostra/",
+  "linkTexto": "Ficha adaptada de EF08MA26"
+ },
+ {
+  "codigo": "EF08MA27",
+  "ano": 8,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Pesquisas censitária ou amostral; planejamento e execução de pesquisa amostral",
+  "texto": "Planejar e executar pesquisa amostral, selecionando uma técnica de amostragem adequada, e escrever relatório que contenha os gráficos apropriados para representar os conjuntos de dados, destacando aspectos como as medidas de tendência central, a amplitude e as conclusões.",
+  "recursos": [
+   {
+    "id": "ad-pesquisa-amostral-e-relatorio",
+    "tipo": "adaptada",
+    "titulo": "Pesquisa amostral e relatório"
+   },
+   {
+    "id": "ad-pesquisa-amostral-graficos-e-medidas",
+    "tipo": "revisao",
+    "titulo": "Pesquisa amostral, gráficos e medidas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/pesquisa-amostral-e-relatorio/",
+  "linkTexto": "Ficha adaptada de EF08MA27"
+ },
+ {
+  "codigo": "EF09MA01",
+  "ano": 9,
+  "eixo": "Números",
+  "objeto": "Necessidade dos números reais para medir qualquer segmento de reta; números irracionais: reconhecimento e localização de alguns na reta numérica",
+  "texto": "Reconhecer que, uma vez fixada uma unidade de comprimento, existem segmentos de reta cujo comprimento não é expresso por número racional (como as medidas de diagonais de um polígono e alturas de um triângulo, quando se toma a medida de cada lado como unidade).",
+  "recursos": [
+   {
+    "id": "ad-numeros-irracionais-e-reais",
+    "tipo": "revisao",
+    "titulo": "Números irracionais e reais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-irracionais-e-reais/",
+  "linkTexto": "Ficha adaptada de EF09MA01"
+ },
+ {
+  "codigo": "EF09MA02",
+  "ano": 9,
+  "eixo": "Números",
+  "objeto": "Necessidade dos números reais para medir qualquer segmento de reta; números irracionais: reconhecimento e localização de alguns na reta numérica",
+  "texto": "Reconhecer um número irracional como um número real cuja representação decimal é infinita e não periódica, e estimar a localização de alguns deles na reta numérica.",
+  "recursos": [
+   {
+    "id": "ad-numeros-irracionais-e-reais",
+    "tipo": "revisao",
+    "titulo": "Números irracionais e reais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-irracionais-e-reais/",
+  "linkTexto": "Ficha adaptada de EF09MA02"
+ },
+ {
+  "codigo": "EF09MA03",
+  "ano": 9,
+  "eixo": "Números",
+  "objeto": "Potências e raízes",
+  "texto": "Efetuar cálculos com números reais, inclusive potências com expoentes fracionários.",
+  "recursos": [
+   {
+    "id": "3d-potencias",
+    "tipo": "3d",
+    "titulo": "Cubos das Potências"
+   },
+   {
+    "id": "ad-numeros-irracionais-e-reais",
+    "tipo": "revisao",
+    "titulo": "Números irracionais e reais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma03/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA03"
+ },
+ {
+  "codigo": "EF09MA04",
+  "ano": 9,
+  "eixo": "Números",
+  "objeto": "Números reais: notação científica e problemas",
+  "texto": "Resolver e elaborar problemas com números reais, inclusive em notação científica, envolvendo diferentes operações.",
+  "recursos": [
+   {
+    "id": "ad-numeros-reais-notacao-cientifica-e-unidades",
+    "tipo": "revisao",
+    "titulo": "Notação científica e unidades muito grandes ou pequenas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-reais-notacao-cientifica-e-unidades/",
+  "linkTexto": "Ficha adaptada de EF09MA04"
+ },
+ {
+  "codigo": "EF09MA05",
+  "ano": 9,
+  "eixo": "Números",
+  "objeto": "Percentuais sucessivos",
+  "texto": "Resolver e elaborar problemas que envolvam porcentagens, com a ideia de aplicação de percentuais sucessivos e a determinação das taxas percentuais, preferencialmente com o uso de tecnologias digitais, no contexto da educação financeira.",
+  "recursos": [
+   {
+    "id": "mesada",
+    "tipo": "jogo",
+    "titulo": "Desafio da Mesada"
+   },
+   {
+    "id": "poupanca",
+    "tipo": "jogo",
+    "titulo": "Juros que Crescem"
+   },
+   {
+    "id": "cofrinho",
+    "tipo": "jogo",
+    "titulo": "Cofrinho que Cresce"
+   },
+   {
+    "id": "cartao",
+    "tipo": "jogo",
+    "titulo": "Cartão de Crédito de Treino"
+   },
+   {
+    "id": "p-ma-financeira",
+    "tipo": "plano",
+    "titulo": "Mesada, descontos e juros: decisões com porcentagem"
+   },
+   {
+    "id": "ad-porcentagens-sucessivas-e-educacao-financeira",
+    "tipo": "adaptada",
+    "titulo": "Porcentagens sucessivas e educação financeira"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma05/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA05"
+ },
+ {
+  "codigo": "EF09MA06",
+  "ano": 9,
+  "eixo": "Álgebra",
+  "objeto": "Funções",
+  "texto": "Compreender as funções como relações de dependência unívoca entre duas variáveis e suas representações numérica, algébrica e gráfica e utilizar esse conceito para analisar situações que envolvam relações funcionais entre duas variáveis.",
+  "recursos": [
+   {
+    "id": "3d-montanha-erro",
+    "tipo": "3d",
+    "titulo": "Montanha do Erro: Descida do Gradiente"
+   },
+   {
+    "id": "ad-funcoes-maquina-tabela-e-grafico",
+    "tipo": "adaptada",
+    "titulo": "Funções: máquina, tabela e gráfico"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma06/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA06"
+ },
+ {
+  "codigo": "EF09MA07",
+  "ano": 9,
+  "eixo": "Álgebra",
+  "objeto": "Razão entre grandezas de espécies diferentes",
+  "texto": "Resolver problemas que envolvam a razão entre duas grandezas de espécies diferentes, como velocidade e densidade demográfica.",
+  "recursos": [
+   {
+    "id": "cambio",
+    "tipo": "jogo",
+    "titulo": "Viagem com Câmbio"
+   },
+   {
+    "id": "ad-razoes-escalas-e-partes-proporcionais",
+    "tipo": "revisao",
+    "titulo": "Razões, escalas e divisão em partes proporcionais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma07/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA07"
+ },
+ {
+  "codigo": "EF09MA08",
+  "ano": 9,
+  "eixo": "Álgebra",
+  "objeto": "Proporcionalidade",
+  "texto": "Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.",
+  "recursos": [
+   {
+    "id": "3d-sucos",
+    "tipo": "3d",
+    "titulo": "Laboratório de Sucos: Razão e Proporção"
+   },
+   {
+    "id": "f-ma-proporcao",
+    "tipo": "ficha",
+    "titulo": "Ampliar sem deformar: proporção"
+   },
+   {
+    "id": "p-ma-proporcao",
+    "tipo": "plano",
+    "titulo": "Ampliar sem deformar: proporção e escala"
+   },
+   {
+    "id": "ad-razoes-escalas-e-partes-proporcionais",
+    "tipo": "revisao",
+    "titulo": "Razões, escalas e divisão em partes proporcionais"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma08/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA08"
+ },
+ {
+  "codigo": "EF09MA09",
+  "ano": 9,
+  "eixo": "Álgebra",
+  "objeto": "Expressões algébricas: fatoração e produtos notáveis",
+  "texto": "Compreender os processos de fatoração de expressões algébricas, com base em suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais do 2º grau.",
+  "recursos": [
+   {
+    "id": "bhaskara",
+    "tipo": "jogo",
+    "titulo": "Bhaskara Passo a Passo"
+   },
+   {
+    "id": "3d-produtos",
+    "tipo": "3d",
+    "titulo": "Produtos Notáveis em Blocos"
+   },
+   {
+    "id": "3d-algeblocos",
+    "tipo": "3d",
+    "titulo": "Blocos Algébricos: Polinômios e Fatoração"
+   },
+   {
+    "id": "f-ma-produtos",
+    "tipo": "ficha",
+    "titulo": "Quadrado recortado: produtos notáveis"
+   },
+   {
+    "id": "f-ma-fatoracao",
+    "tipo": "ficha",
+    "titulo": "Fatorar é montar retângulos"
+   },
+   {
+    "id": "p-ma-produtos",
+    "tipo": "plano",
+    "titulo": "Produtos notáveis com recortes"
+   },
+   {
+    "id": "p-ma-fatoracao",
+    "tipo": "plano",
+    "titulo": "Fatoração com blocos algébricos"
+   },
+   {
+    "id": "ad-fatoracao-produtos-notaveis-e-segundo-grau",
+    "tipo": "adaptada",
+    "titulo": "Fatoração, produtos notáveis e equações do 2º grau"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma09/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA09"
+ },
+ {
+  "codigo": "EF09MA10",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Paralelas e transversal",
+  "texto": "Demonstrar relações simples entre os ângulos formados por retas paralelas cortadas por uma transversal.",
+  "recursos": [
+   {
+    "id": "3d-tales",
+    "tipo": "3d",
+    "titulo": "Teorema de Tales: Sombras e Paralelas"
+   },
+   {
+    "id": "ad-angulos-na-circunferencia-e-paralelas",
+    "tipo": "revisao",
+    "titulo": "Ângulos na circunferência e retas paralelas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma10/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA10"
+ },
+ {
+  "codigo": "EF09MA11",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Relações entre arcos e ângulos na circunferência de um círculo",
+  "texto": "Resolver problemas por meio do estabelecimento de relações entre arcos, ângulos centrais e ângulos inscritos na circunferência, fazendo uso, inclusive, de softwares de geometria dinâmica.",
+  "recursos": [
+   {
+    "id": "ad-angulos-na-circunferencia-e-paralelas",
+    "tipo": "revisao",
+    "titulo": "Ângulos na circunferência e retas paralelas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/angulos-na-circunferencia-e-paralelas/",
+  "linkTexto": "Ficha adaptada de EF09MA11"
+ },
+ {
+  "codigo": "EF09MA12",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Semelhança de triângulos",
+  "texto": "Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes.",
+  "recursos": [
+   {
+    "id": "3d-tales",
+    "tipo": "3d",
+    "titulo": "Teorema de Tales: Sombras e Paralelas"
+   },
+   {
+    "id": "f-ma-tales",
+    "tipo": "ficha",
+    "titulo": "Medindo com sombras: Teorema de Tales"
+   },
+   {
+    "id": "p-ma-tales",
+    "tipo": "plano",
+    "titulo": "Medindo a escola com o Teorema de Tales"
+   },
+   {
+    "id": "ad-semelhanca-e-teorema-de-pitagoras",
+    "tipo": "revisao",
+    "titulo": "Semelhança de triângulos e teorema de Pitágoras"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma12/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA12"
+ },
+ {
+  "codigo": "EF09MA13",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Relações métricas no triângulo retângulo",
+  "texto": "Demonstrar relações métricas do triângulo retângulo, entre elas o teorema de Pitágoras, utilizando, inclusive, a semelhança de triângulos.",
+  "recursos": [
+   {
+    "id": "3d-escada-pitagoras",
+    "tipo": "3d",
+    "titulo": "Escada de Pitágoras"
+   },
+   {
+    "id": "ad-semelhanca-e-teorema-de-pitagoras",
+    "tipo": "revisao",
+    "titulo": "Semelhança de triângulos e teorema de Pitágoras"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma13/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA13"
+ },
+ {
+  "codigo": "EF09MA14",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Tales e Pitágoras",
+  "texto": "Resolver e elaborar problemas de aplicação do teorema de Pitágoras ou das relações de proporcionalidade envolvendo retas paralelas cortadas por secantes.",
+  "recursos": [
+   {
+    "id": "3d-tales",
+    "tipo": "3d",
+    "titulo": "Teorema de Tales: Sombras e Paralelas"
+   },
+   {
+    "id": "3d-escada-pitagoras",
+    "tipo": "3d",
+    "titulo": "Escada de Pitágoras"
+   },
+   {
+    "id": "f-ma-tales",
+    "tipo": "ficha",
+    "titulo": "Medindo com sombras: Teorema de Tales"
+   },
+   {
+    "id": "p-ma-tales",
+    "tipo": "plano",
+    "titulo": "Medindo a escola com o Teorema de Tales"
+   },
+   {
+    "id": "ad-semelhanca-e-teorema-de-pitagoras",
+    "tipo": "revisao",
+    "titulo": "Semelhança de triângulos e teorema de Pitágoras"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma14/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA14"
+ },
+ {
+  "codigo": "EF09MA15",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Polígonos regulares",
+  "texto": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um polígono regular cuja medida do lado é conhecida, utilizando régua e compasso, como também softwares.",
+  "recursos": [
+   {
+    "id": "ad-poligono-regular-ponto-medio-e-distancia",
+    "tipo": "revisao",
+    "titulo": "Polígono regular, ponto médio e distância no plano"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/poligono-regular-ponto-medio-e-distancia/",
+  "linkTexto": "Ficha adaptada de EF09MA15"
+ },
+ {
+  "codigo": "EF09MA16",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Distância entre pontos no plano cartesiano",
+  "texto": "Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer, dadas as coordenadas desses pontos no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano.",
+  "recursos": [
+   {
+    "id": "ad-poligono-regular-ponto-medio-e-distancia",
+    "tipo": "revisao",
+    "titulo": "Polígono regular, ponto médio e distância no plano"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/poligono-regular-ponto-medio-e-distancia/",
+  "linkTexto": "Ficha adaptada de EF09MA16"
+ },
+ {
+  "codigo": "EF09MA17",
+  "ano": 9,
+  "eixo": "Geometria",
+  "objeto": "Vistas ortogonais de figuras espaciais",
+  "texto": "Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.",
+  "recursos": [
+   {
+    "id": "ad-vistas-ortogonais-e-volumes",
+    "tipo": "revisao",
+    "titulo": "Vistas ortogonais e volumes de prismas e cilindros"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/vistas-ortogonais-e-volumes/",
+  "linkTexto": "Ficha adaptada de EF09MA17"
+ },
+ {
+  "codigo": "EF09MA18",
+  "ano": 9,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Unidades de medida para medir distâncias muito grandes e muito pequenas; unidades de medida utilizadas na informática",
+  "texto": "Reconhecer e empregar unidades usadas para expressar medidas muito grandes ou muito pequenas, tais como distância entre planetas e sistemas solares, tamanho de vírus ou de células, capacidade de armazenamento de computadores, entre outros.",
+  "recursos": [
+   {
+    "id": "ad-numeros-reais-notacao-cientifica-e-unidades",
+    "tipo": "revisao",
+    "titulo": "Notação científica e unidades muito grandes ou pequenas"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/numeros-reais-notacao-cientifica-e-unidades/",
+  "linkTexto": "Ficha adaptada de EF09MA18"
+ },
+ {
+  "codigo": "EF09MA19",
+  "ano": 9,
+  "eixo": "Grandezas e medidas",
+  "objeto": "Volume de prismas e cilindros",
+  "texto": "Resolver e elaborar problemas que envolvam medidas de volumes de prismas e de cilindros retos, inclusive com uso de expressões de cálculo, em situações cotidianas.",
+  "recursos": [
+   {
+    "id": "3d-tanque",
+    "tipo": "3d",
+    "titulo": "Enche o Tanque: Volume e Capacidade"
+   },
+   {
+    "id": "ad-vistas-ortogonais-e-volumes",
+    "tipo": "revisao",
+    "titulo": "Vistas ortogonais e volumes de prismas e cilindros"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma19/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA19"
+ },
+ {
+  "codigo": "EF09MA20",
+  "ano": 9,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Eventos independentes e dependentes",
+  "texto": "Reconhecer, em experimentos aleatórios, eventos independentes e dependentes e calcular a probabilidade de sua ocorrência, nos dois casos.",
+  "recursos": [
+   {
+    "id": "3d-dados-verdade",
+    "tipo": "3d",
+    "titulo": "Dados de Verdade"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa-amostral",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos enganosos e pesquisa amostral"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma20/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA20"
+ },
+ {
+  "codigo": "EF09MA21",
+  "ano": 9,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Gráficos que induzem a erros",
+  "texto": "Analisar e identificar, em gráficos divulgados pela mídia, os elementos que podem induzir, às vezes propositadamente, erros de leitura, como escalas inapropriadas, legendas não explicitadas corretamente, omissão de informações importantes (fontes e datas), entre outros.",
+  "recursos": [
+   {
+    "id": "graficos",
+    "tipo": "jogo",
+    "titulo": "Detetive dos Gráficos"
+   },
+   {
+    "id": "empresa-sucos",
+    "tipo": "jogo",
+    "titulo": "Empresa de Sucos da Turma"
+   },
+   {
+    "id": "3d-grafico-enganoso",
+    "tipo": "3d",
+    "titulo": "Gráfico 3D: Honesto ou Enganoso?"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "p-wikipedia",
+    "tipo": "plano",
+    "titulo": "A Wikipédia como base de dados"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa-amostral",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos enganosos e pesquisa amostral"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma21/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA21"
+ },
+ {
+  "codigo": "EF09MA22",
+  "ano": 9,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Escolha do gráfico adequado",
+  "texto": "Escolher e construir o gráfico mais adequado (colunas, setores, linhas), com ou sem uso de planilhas eletrônicas, para apresentar um determinado conjunto de dados, destacando aspectos como as medidas de tendência central.",
+  "recursos": [
+   {
+    "id": "meteorologista",
+    "tipo": "jogo",
+    "titulo": "Meteorologista de Dados"
+   },
+   {
+    "id": "3d-agrupamento",
+    "tipo": "3d",
+    "titulo": "Nuvem de Pontos e Agrupamento"
+   },
+   {
+    "id": "p-ma-graficos",
+    "tipo": "plano",
+    "titulo": "Pesquisa-relâmpago: da pergunta ao gráfico"
+   },
+   {
+    "id": "p-wikipedia",
+    "tipo": "plano",
+    "titulo": "A Wikipédia como base de dados"
+   },
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa-amostral",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos enganosos e pesquisa amostral"
+   }
+  ],
+  "link": "https://ohtopico.com.br/material-didatico/bncc/ef09ma22/",
+  "linkTexto": "Ver planos, jogos e fichas de EF09MA22"
+ },
+ {
+  "codigo": "EF09MA23",
+  "ano": 9,
+  "eixo": "Probabilidade e estatística",
+  "objeto": "Planejamento e execução de pesquisa amostral e apresentação de relatório",
+  "texto": "Planejar e executar pesquisa amostral envolvendo tema da realidade social e comunicar os resultados por meio de relatório contendo avaliação de medidas de tendência central e da amplitude, tabelas e gráficos adequados, construídos com o apoio de planilhas eletrônicas.",
+  "recursos": [
+   {
+    "id": "ad-probabilidade-graficos-e-pesquisa-amostral",
+    "tipo": "revisao",
+    "titulo": "Probabilidade, gráficos enganosos e pesquisa amostral"
+   }
+  ],
+  "link": "https://ohtopico.com.br/matematica-adaptada/fichas/probabilidade-graficos-e-pesquisa-amostral/",
+  "linkTexto": "Ficha adaptada de EF09MA23"
+ }
+]
