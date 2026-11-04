@@ -1,0 +1,6 @@
+Gravações dos sons do Alfabeto Fonético Internacional, convertidas para MP3.
+Originais no Wikimedia Commons (https://commons.wikimedia.org/), de Peter Isotalo, Erutoon,
+TFighterPilot, Adamsa123 e outros autores, licença CC BY-SA 3.0
+(https://creativecommons.org/licenses/by-sa/3.0/). Estas cópias seguem a mesma licença.
+O nome do arquivo original de cada som está em _fonte/alfabeto-fonetico/audio-commons.json
+e no painel do som na página.
