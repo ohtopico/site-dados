@@ -32,6 +32,10 @@ Três páginas em `infograficos/bncc-computacao/`, `bncc-matematica/` e `bncc-ar
 - Arte: a distribuição das habilidades EF69AR por ano (6º ao 9º) é uma proposta da autora, em `POR_ANO` de `_fonte/bncc-arte/gerar.py`.
 - Páginas: `python3 _fonte/bncc/paginas.py`. Imagens de compartilhamento: `node _fonte/bncc/og/gerar.js` com um servidor local na raiz (fontes Sniglet e Lexend em `_fonte/bncc/og/fontes/`, fora do repositório).
 
+## Análise das notas da turma
+
+`infograficos/notas-da-turma/` lê a planilha de notas do professor (.xlsx, .ods, .csv ou células coladas) no navegador, sem enviar nada: `planilha.js` faz a leitura sem bibliotecas e `notas.js` faz as contas e os gráficos. Os textos das habilidades vêm de `habilidades.js`, gerado das páginas BNCC em dados por `node _fonte/notas-da-turma/gerar.js` (rodar de novo quando uma página BNCC mudar).
+
 ## Atualização automática
 
 A Action `.github/workflows/atualizar-interesse-ia.yml` baixa as visualizações da Wikipédia todo dia 3 e atualiza o painel de interesse por IA.

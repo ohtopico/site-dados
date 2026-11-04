@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise das notas da turma: distribuição e habilidades com mais dificuldade | Júlia Quoos</title>
+<meta name="description" content="Abra a planilha de notas da sua turma no navegador e veja como as notas se distribuem, quais alunos precisam de atenção e em quais habilidades da BNCC a turma teve mais dificuldade. Os dados não saem do seu computador.">
+<meta property="og:title" content="Análise das notas da turma | Júlia Quoos">
+<meta property="og:description" content="A planilha de notas vira gráficos no seu navegador: distribuição, alunos que precisam de atenção e habilidades para retomar. Nada é enviado.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/notas-da-turma/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/notas-da-turma/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/notas-da-turma/og-notas-da-turma.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gráficos da análise de notas de uma turma de exemplo: distribuição das médias e habilidades da BNCC ordenadas da mais difícil para a mais fácil">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../assets/infograficos.css?v=202611041700">
+<link rel="stylesheet" href="notas.css?v=202611042330">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebApplication", "name": "Análise das notas da turma", "description": "Ferramenta que lê a planilha de notas da turma no navegador, sem enviar os dados, e mostra a distribuição das notas, os alunos abaixo da média e as habilidades da BNCC com mais dificuldade.", "url": "https://juliaroberta.com/infograficos/notas-da-turma/", "applicationCategory": "EducationalApplication", "operatingSystem": "Navegador", "inLanguage": "pt-BR", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/blog/">Blog</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero no-print">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ analisar notas.xlsx</span>
+      <h1>Análise das notas <mark>da turma</mark></h1>
+      <p class="lead">Abra a planilha de notas da sua turma e veja como as notas se distribuem, quais alunos precisam de atenção e em quais habilidades a turma teve mais dificuldade. A planilha é lida pelo próprio navegador: nenhuma nota ou nome sai do seu computador.</p>
+      <ul class="pilulas"><li>Excel, LibreOffice, Google Planilhas e CSV</li><li>códigos da BNCC</li><li>relatório para imprimir</li><li>nada é enviado</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block no-print" id="abrir">
+    <div class="wrap">
+      <span class="eyebrow">1. Abra a planilha</span>
+      <h2>Escolha o arquivo ou cole as notas</h2>
+      <div class="abrir-grade">
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>abrir.html</span></div>
+          <div class="janela-corpo">
+            <label class="soltar" id="soltar">
+              <input type="file" id="arquivo" accept=".xlsx,.ods,.csv,.tsv,.txt" class="sr-only">
+              <strong>Escolher planilha</strong>
+              <span class="muted">ou arraste o arquivo para cá (.xlsx, .ods ou .csv)</span>
+            </label>
+            <details class="howto">
+              <summary>Colar da planilha</summary>
+              <p class="nota">Selecione as células na planilha (com a linha dos títulos), copie e cole aqui.</p>
+              <label class="sr-only" for="colar">Notas coladas</label>
+              <textarea id="colar" rows="6" spellcheck="false" placeholder="Aluno&#9;EF06CO01&#9;EF06CO02&#10;Ana&#9;8,5&#9;6"></textarea>
+              <p><button class="chip" type="button" id="usar-colado">Analisar o que colei</button></p>
+            </details>
+            <div class="btn-row">
+              <button class="btn ghost" type="button" id="exemplo">Ver com uma turma de exemplo</button>
+              <a class="chip" href="modelo-notas.csv" download>Baixar planilha modelo</a>
+            </div>
+            <p class="feedback" id="msg" role="status" aria-live="polite"></p>
+          </div></div>
+        <div class="como">
+          <h3>Como a planilha deve estar</h3>
+          <ul class="leitura">
+            <li>Uma linha por aluno e uma coluna por avaliação, com os títulos na primeira linha.</li>
+            <li>Se o título da coluna tiver o código da habilidade da BNCC (por exemplo, <code>EF07CO02</code> ou <code>Prova EF06MA03</code>), a página mostra o texto da habilidade e o material para retomar.</li>
+            <li>Notas de 0 a 10, de 0 a 100 ou em pontos. Se a avaliação vale outro total, escreva no título, como <code>Trabalho (3)</code>, ou ajuste depois.</li>
+            <li>Célula vazia ou com F conta como "não fez" e fica fora da média. Colunas de média ou total já calculadas ficam desmarcadas.</li>
+          </ul>
+          <p class="nota privado"><b>Privacidade:</b> a página não envia nem guarda a planilha. Ao fechar a aba, os dados somem. Depois de aberta, a página funciona até sem internet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="resultado" hidden>
+    <section class="block no-print" id="ajustes">
+      <div class="wrap">
+        <span class="eyebrow">2. Confira as colunas</span>
+        <h2>O que entra na análise</h2>
+        <p class="muted" id="ajustes-resumo"></p>
+        <div class="controles ajustes-topo">
+          <label class="campo" id="campo-aba" hidden>Aba <select id="aba"></select></label>
+          <label class="campo">Média para aprovação <input type="number" id="corte" min="1" max="99" step="1" value="60"> %</label>
+          <label class="campo">Mostrar as notas <select id="escala"><option value="10">de 0 a 10</option><option value="100">de 0 a 100</option></select></label>
+          <button class="chip" type="button" id="nomes" aria-pressed="false">Esconder nomes</button>
+        </div>
+        <div class="rolagem">
+          <table class="tabela-colunas" id="tabela-colunas">
+            <thead><tr><th scope="col">Usar</th><th scope="col">Coluna da planilha</th><th scope="col">Vale</th><th scope="col">Habilidade da BNCC</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="relatorio">
+      <div class="wrap">
+        <div class="so-print">
+          <h1 class="titulo-print">Análise das notas da turma</h1>
+          <p class="nota" id="data-print"></p>
+        </div>
+        <span class="eyebrow no-print">3. Resultado</span>
+        <h2 class="no-print">A turma em números</h2>
+        <div class="resumo-num" id="resumo"></div>
+      </div>
+    </section>
+
+    <section class="block quebra">
+      <div class="wrap">
+        <span class="eyebrow">Distribuição</span>
+        <h2>Como as médias dos alunos se distribuem</h2>
+        <p class="muted" id="dist-txt"></p>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>distribuicao.html</span></div>
+          <div class="janela-corpo">
+            <div class="legenda" id="dist-legenda"></div>
+            <svg id="g-dist" class="grafico" role="img" aria-label="Histograma das médias dos alunos"></svg>
+          </div></div>
+      </div>
+    </section>
+
+    <section class="block quebra">
+      <div class="wrap">
+        <span class="eyebrow">Por habilidade</span>
+        <h2>Onde a turma teve mais dificuldade</h2>
+        <p class="muted">Cada linha é uma avaliação, da mais difícil para a mais fácil. A barra é a média da turma e cada ponto é um aluno. Passe o mouse ou toque para ver os nomes.</p>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>habilidades.html</span></div>
+          <div class="janela-corpo">
+            <div class="legenda" id="hab-legenda"></div>
+            <svg id="g-hab" class="grafico" role="img" aria-label="Média da turma em cada avaliação, ordenada da menor para a maior"></svg>
+          </div></div>
+        <div id="retomar"></div>
+      </div>
+    </section>
+
+    <section class="block quebra">
+      <div class="wrap">
+        <span class="eyebrow">Atenção</span>
+        <h2>Alunos abaixo da média para aprovação</h2>
+        <p class="muted" id="atencao-txt"></p>
+        <div class="atencao" id="atencao"></div>
+      </div>
+    </section>
+
+    <section class="block quebra">
+      <div class="wrap">
+        <span class="eyebrow">Mapa da turma</span>
+        <h2>Todas as notas, aluno por aluno</h2>
+        <p class="muted">Alunos da menor para a maior média. A cor mostra a distância da média para aprovação: vermelho abaixo, azul acima, mais forte quanto mais longe. Clique no título de uma coluna para ordenar por ela.</p>
+        <div class="rolagem mapa-moldura"><table class="mapa" id="mapa"></table></div>
+      </div>
+    </section>
+
+    <section class="block no-print">
+      <div class="wrap">
+        <span class="eyebrow">Levar junto</span>
+        <h2>Imprimir ou baixar</h2>
+        <p class="muted">O relatório sai em fundo branco, pronto para a reunião de conselho de classe. A planilha resumo traz a média de cada aluno e de cada avaliação.</p>
+        <div class="btn-row">
+          <button class="btn" type="button" id="imprimir">Imprimir relatório</button>
+          <button class="btn ghost" type="button" id="baixar">Baixar resumo (CSV)</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="block no-print">
+    <div class="wrap">
+      <span class="eyebrow">Sobre a ferramenta</span>
+      <h2>Como as contas são feitas</h2>
+      <ul class="leitura">
+        <li><b>Nota em percentual:</b> cada nota é dividida pelo valor da avaliação (a coluna "Vale"). Assim, uma prova de 0 a 10 e um trabalho que vale 3 pontos entram na mesma conta.</li>
+        <li><b>Média do aluno:</b> média simples das avaliações que ele fez, sem peso. Avaliações em branco ou com F não contam, e o número de avaliações que faltam aparece na lista de atenção.</li>
+        <li><b>Média da avaliação:</b> média dos alunos que fizeram aquela avaliação. "Abaixo" é o percentual desses alunos que ficou abaixo da média para aprovação.</li>
+        <li><b>Habilidades:</b> os textos vêm das páginas <a href="../">BNCC em dados</a> (Computação, Matemática, Arte, Língua Portuguesa, Literatura e Língua Inglesa). Para Computação e Matemática, o link leva ao material gratuito da habilidade em <a href="https://ohtopico.com.br/material-didatico/">ohtopico.com.br</a>, incluindo fichas para alunos com diferentes necessidades.</li>
+        <li><b>Arquivos:</b> a leitura de .xlsx e .ods é feita por código desta página, sem bibliotecas externas. Fórmulas valem pelo último resultado salvo na planilha. Do Google Planilhas, use Arquivo, Fazer download, Microsoft Excel ou CSV, ou copie e cole as células.</li>
+        <li>Código em <a href="https://github.com/ohtopico/site-dados/tree/main/infograficos/notas-da-turma">infograficos/notas-da-turma</a>. Ferramenta feita por Júlia Roberta Quoos Alves, de uso livre.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<div id="tip-g" role="tooltip"></div>
+
+<footer class="footer"><div class="wrap">
+  <p>Ferramenta organizada por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a> e a <a href="../bncc-computacao/">BNCC Computação em dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="habilidades.js?v=202611042330"></script>
+<script src="planilha.js?v=202611042330"></script>
+<script src="notas.js?v=202611042330"></script>
+</body>
+</html>
