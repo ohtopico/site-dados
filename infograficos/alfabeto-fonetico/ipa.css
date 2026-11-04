@@ -120,11 +120,3 @@ svg .t-claro { fill: var(--q-ink-claro); } svg .t-escuro { fill: var(--q-ink-esc
 .tr-ipa { font: 500 20px/1.3 "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", Georgia, serif; }
 #tr-texto { font: inherit; font-size: 16px; border: 1.5px solid var(--ink); border-radius: 99px; padding: 8px 16px; background: var(--paper); color: var(--ink); width: 100%; min-width: 0; box-sizing: border-box; }
 .controles-ipa .busca { display: flex; }
-.tr-exemplos { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
-@media (min-width: 700px) { .tr-exemplos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.tr-ex { border: 1.5px solid var(--ink); border-radius: 14px; padding: 12px 14px; background: var(--paper); display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
-.tr-ex p { margin: 0; }
-.tr-frase { font-size: 15px; }
-.tr-ipa-ex { font: 500 20px/1.45 "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", Georgia, serif; }
-.tr-fonte { font-size: 12.5px; color: var(--ink-2); }
-.tr-ex .chip { margin-top: auto; }

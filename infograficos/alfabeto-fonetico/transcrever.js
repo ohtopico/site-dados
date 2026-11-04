@@ -290,7 +290,9 @@
     if (c === 'sc' || c === 'sci') return 'ʃ';
     if (c === 'ci') return 't͡ʃ';
     if (c === 'gi') return 'd͡ʒ';
-    if (c === 'qu' || c === 'q') return 'k';
+    if (c === 'qu') return 'kw';
+    if (c === 'gu') return 'ɡw';
+    if (c === 'q') return 'k';
     if (c === 'c') return frente(i) ? 't͡ʃ' : 'k';
     if (c === 'g') return frente(i) ? 'd͡ʒ' : 'ɡ';
     if (c === 'z') return 't͡s';
@@ -298,7 +300,7 @@
     if (c === 's') return ant && ant.v && prox && prox.v ? 'z' : (prox && 'bdgvlmnr'.includes(prox.t[0]) ? 'z' : 's');
     if (c === 'r') return 'r';
     if (c === 'j') return 'j';
-    if (c === 'n' && prox && 'cgkq'.includes(prox.t[0]) && !frente(i + 1)) return 'ŋ';
+    if (c === 'n' && prox && (['gu', 'qu', 'ch', 'gh'].includes(prox.t) || ('cgkq'.includes(prox.t[0]) && prox.t.length === 1 && !frente(i + 1)))) return 'ŋ';
     return c;
   }
 
@@ -438,13 +440,20 @@
     ['pt', 'Português (Brasil)'], ['es', 'Espanhol'], ['it', 'Italiano'], ['de', 'Alemão'], ['en', 'Inglês (Estados Unidos)'],
   ];
   const FUNC = { pt, es, it, de };
+  const MAIS = window.TranscreverIPA_MAIS;
+  if (MAIS) { IDIOMAS.push(...MAIS.IDIOMAS); }
 
   async function transcrever(texto, lang) {
-    const partes = texto.normalize('NFC').split(/([^\p{L}'’-]+)/u).filter(x => x !== '');
+    const extra = MAIS && MAIS.FUNC[lang];
+    const sep = extra ? /([^\p{L}\p{M}\p{N}'’`‘-]+)/u : /([^\p{L}'’-]+)/u;
+    const partes = texto.normalize('NFC').split(sep).filter(x => x !== '');
     let dic = null;
     if (lang === 'en') dic = await carregarEN();
     return partes.map(orig => {
-      if (!/\p{L}/u.test(orig)) return { orig, ipa: orig.replace(/\s+/g, ' '), sep: true };
+      if (!/[\p{L}\p{N}]/u.test(orig)) return { orig, ipa: orig.replace(/\s+/g, ' '), sep: true };
+      if (extra) {
+        try { return { orig, ipa: extra(orig.toLowerCase().normalize('NFC')) }; } catch (e) { return { orig, ipa: '', falta: true }; }
+      }
       const p = orig.toLowerCase().replace(/’/g, "'");
       if (lang === 'es' && p === 'y') return { orig, ipa: 'i' };
       if (lang === 'en') {

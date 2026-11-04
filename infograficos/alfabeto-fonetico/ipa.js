@@ -261,20 +261,17 @@
     const T = window.TranscreverIPA; if (!T) return;
     const txt = $('tr-texto'), idi = $('tr-idioma'), saida = $('tr-saida'), pal = $('tr-palavras'), nota = $('tr-nota');
     const EXEMPLOS = { pt: 'Os sons das línguas do mundo', es: 'Los sonidos de las lenguas del mundo', it: 'I suoni delle lingue del mondo', de: 'Die Laute der Sprachen der Welt', en: 'The sounds of the languages of the world' };
-    const GALERIA = [
-      ['pt', 'Todos os seres humanos nascem livres e iguais em dignidade e em direitos.', 'Declaração Universal dos Direitos Humanos'],
-      ['pt', 'Minha terra tem palmeiras onde canta o sabiá.', 'Gonçalves Dias, Canção do exílio'],
-      ['es', 'Todos los seres humanos nacen libres e iguales en dignidad y derechos.', 'Declaración Universal de Derechos Humanos'],
-      ['es', 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme.', 'Cervantes, Dom Quixote'],
-      ['it', 'Tutti gli esseri umani nascono liberi ed eguali in dignità e diritti.', 'Dichiarazione universale dei diritti umani'],
-      ['it', 'Nel mezzo del cammin di nostra vita.', 'Dante, Divina Comédia'],
-      ['de', 'Alle Menschen sind frei und gleich an Würde und Rechten geboren.', 'Allgemeine Erklärung der Menschenrechte'],
-      ['de', 'Über allen Gipfeln ist Ruh.', 'Goethe, Canção noturna do viajante'],
-      ['en', 'All human beings are born free and equal in dignity and rights.', 'Universal Declaration of Human Rights'],
-      ['en', 'To be or not to be, that is the question.', 'Shakespeare, Hamlet'],
+    const MAIS = window.TranscreverIPA_MAIS || { EXEMPLOS: {}, DICAS: {} };
+    Object.assign(EXEMPLOS, MAIS.EXEMPLOS);
+    const NOMES_IDI = Object.fromEntries(T.IDIOMAS);
+    const GRUPOS = [
+      ['Europa', ['pt', 'es', 'it', 'de', 'en', 'tr']],
+      ['Línguas indígenas da América do Sul', ['tupi', 'gn']],
+      ['Ásia', ['zh', 'ja', 'ko']],
+      ['África e Oriente Médio', ['ar', 'sw', 'yo']],
     ];
-    const NOME_IDI = Object.fromEntries(T.IDIOMAS);
-    idi.innerHTML = T.IDIOMAS.map(([id, n]) => `<option value="${id}">${esc(n)}</option>`).join('');
+    idi.innerHTML = GRUPOS.map(([g, ids]) => `<optgroup label="${esc(g)}">` +
+      ids.filter(id => NOMES_IDI[id]).map(id => `<option value="${id}">${esc(NOMES_IDI[id])}</option>`).join('') + '</optgroup>').join('');
     const MOD = /[̀-ͯʰ-˿ː]/; // diacríticos e modificadores que acompanham o símbolo
     function simbolos(ipa) {
       const out = []; // [texto, símbolo do quadro ou null]
@@ -307,8 +304,9 @@
       pal.innerHTML = pals.map(x => `<div class="tr-pal"><span class="tr-orig">${esc(x.orig)}</span><span class="tr-ipa">${x.falta ? '<span title="Palavra fora do dicionário">?</span>' : html(x.ipa)}</span></div>`).join('');
       fila = simbolos(pals.map(x => x.ipa || '').join(' ')).filter(x => x[1] && x[1].som).map(x => x[1]);
       const faltam = pals.filter(x => x.falta).length;
-      nota.textContent = (faltam ? `${faltam} ${faltam === 1 ? 'palavra ficou' : 'palavras ficaram'} de fora do dicionário. ` : '') +
-        'Transcrição aproximada, feita por regras' + (lang === 'en' ? ' e pelo dicionário CMUdict' : '') + '. O sinal ˈ marca a sílaba tônica.';
+      nota.textContent = (faltam ? `${faltam} ${faltam === 1 ? 'palavra não pôde' : 'palavras não puderam'} ser lidas (aparecem com ?). ` : '') +
+        (MAIS.DICAS[lang] ? MAIS.DICAS[lang] + ' ' : '') +
+        'Transcrição aproximada, feita por regras' + (lang === 'en' ? ' e pelo dicionário CMUdict' : '') + '.' + (['zh', 'yo', 'ar', 'ja', 'ko'].includes(lang) ? '' : ' O sinal ˈ marca a sílaba tônica.');
       try { history.replaceState(null, '', '?' + new URLSearchParams({ texto: txt.value, idioma: lang }) + location.hash); } catch (e) {}
     }
     let espera;
@@ -334,20 +332,6 @@
       };
       prox();
     });
-    (async function galeria() {
-      const box = $('tr-exemplos');
-      for (const [lang, frase, fonte] of GALERIA) {
-        const d = document.createElement('div'); d.className = 'tr-ex';
-        d.innerHTML = `<span class="tr-orig">${esc(NOME_IDI[lang])}</span><p class="tr-frase">${esc(frase)}</p><p class="tr-ipa-ex" lang="und-fonipa">...</p><p class="tr-fonte">${esc(fonte)}</p><button class="chip" type="button">Usar esta frase</button>`;
-        d.querySelector('button').addEventListener('click', () => { idi.value = lang; txt.value = frase; atualizar(); $('transcrever').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
-        box.appendChild(d);
-        try {
-          const r = await T.transcrever(frase, lang);
-          const linha = r.map(x => x.sep ? ' ' : (x.falta ? '?' : x.ipa)).join('').replace(/ +/g, ' ').trim();
-          d.querySelector('.tr-ipa-ex').innerHTML = '[' + linha.split(' ').map(w => '<span class="tr-w">' + html(w) + '</span>').join(' ') + ']';
-        } catch (e) { d.querySelector('.tr-ipa-ex').textContent = ''; }
-      }
-    })();
     try {
       const q = new URLSearchParams(location.search);
       if (q.get('idioma') && T.IDIOMAS.some(x => x[0] === q.get('idioma'))) idi.value = q.get('idioma');

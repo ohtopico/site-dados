@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&family=Noto+Serif:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/md.css">
 <link rel="stylesheet" href="../assets/infograficos.css?v=202611041700">
-<link rel="stylesheet" href="ipa.css?v=202611041700">
+<link rel="stylesheet" href="ipa.css?v=202611041830">
 <script>
   try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
@@ -75,7 +75,7 @@
     <div class="wrap">
       <span class="eyebrow">Transcreva</span>
       <h2>Escreva uma frase e veja como ela fica no IPA</h2>
-      <p class="muted">Digite no nosso alfabeto, escolha o idioma e veja a transcrição fonética. Clique em um símbolo para ouvir o som dele e ver no quadro.</p>
+      <p class="muted">Digite no nosso alfabeto, escolha o idioma e veja a transcrição fonética. São 14 idiomas, do tupi ao mandarim: as línguas com outra escrita, como japonês, coreano, mandarim e árabe, entram pela romanização. Clique em um símbolo para ouvir o som dele e ver no quadro.</p>
       <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>transcrever.html</span></div>
         <div class="janela-corpo">
           <div class="controles-ipa">
@@ -86,9 +86,6 @@
           <p class="tr-saida" id="tr-saida" aria-live="polite"></p>
           <div class="tr-palavras" id="tr-palavras"></div>
           <p class="nota" id="tr-nota"></p>
-          <h3 style="margin:12px 0 0">Uma frase em cada idioma</h3>
-          <p class="nota">O artigo 1º da Declaração Universal dos Direitos Humanos e um verso conhecido de cada língua. Clique em um símbolo para ouvir ou em "Usar esta frase" para levar para a caixa.</p>
-          <div class="tr-exemplos" id="tr-exemplos"></div>
         </div></div>
     </div>
   </section>
@@ -149,7 +146,7 @@
         <li><b>Famílias e regiões:</b> <a href="https://glottolog.org/">Glottolog 5.2.1</a> (Hammarström, Forkel, Haspelmath e Bank), licença CC BY 4.0. Os dialetos contam como a língua a que pertencem. As línguas isoladas, que não têm parentes conhecidos, ficam juntas no grupo "Línguas isoladas". Os nomes das famílias em português são os mesmos do infográfico de <a href="../familias-de-linguas/">famílias de línguas</a>, e cada família tem link para lá.</li>
         <li><b>Como os sons são contados:</b> cada símbolo do quadro conta as línguas que têm aquele som como fonema, também quando a fonte marca um detalhe do lugar da língua nos dentes (por exemplo, t̪ dental conta como t). Formas com aspiração (tʰ), alongamento (tː) ou outra articulação junto (tʷ) são fonemas diferentes e aparecem só em "sons parecidos". Os cliques contam com qualquer acompanhamento (kǃ, ŋǃ), que é como as línguas os usam.</li>
         <li><b>Gravações:</b> arquivos do <a href="https://commons.wikimedia.org/wiki/Category:General_phonetics">Wikimedia Commons</a>, de Peter Isotalo, Erutoon, TFighterPilot, Adamsa123 e outros autores, licença <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, convertidos para MP3. O nome de cada arquivo original aparece no painel do som. O símbolo ɺ ainda não tem gravação.</li>
-        <li><b>Transcrição:</b> é feita no navegador, por regras de leitura da ortografia escritas para esta página (português do Brasil, espanhol, italiano e alemão), com divisão de sílabas e sílaba tônica. É uma transcrição aproximada: as regras não sabem, por exemplo, se o "e" de "pela" é aberto ou fechado, nem a pronúncia de nomes próprios e palavras estrangeiras. O espanhol segue a pronúncia americana (c e z como s). O inglês vem do dicionário de pronúncia <a href="https://github.com/cmusphinx/cmudict">CMUdict</a> (Carnegie Mellon University, licença BSD), com cerca de 125 mil palavras do inglês dos Estados Unidos; palavras fora do dicionário aparecem com "?".</li>
+        <li><b>Transcrição:</b> é feita no navegador, por regras de leitura da ortografia escritas para esta página (português do Brasil, espanhol, italiano e alemão), com divisão de sílabas e sílaba tônica. É uma transcrição aproximada: as regras não sabem, por exemplo, se o "e" de "pela" é aberto ou fechado, nem a pronúncia de nomes próprios e palavras estrangeiras. O espanhol segue a pronúncia americana (c e z como s). Tupi antigo (grafia de Eduardo Navarro), guarani, suaíli, iorubá e turco também seguem regras de leitura da escrita. Mandarim parte do pinyin, com os tons como letras de tom do IPA (˥ ˧˥ ˨˩˦ ˥˩); japonês, do rōmaji ou do kana (kanji não, porque a leitura depende da palavra); coreano, da romanização revisada ou do hangul, com a ligação e a assimilação entre sílabas; árabe, da romanização, porque a escrita árabe não marca as vogais curtas. O inglês vem do dicionário de pronúncia <a href="https://github.com/cmusphinx/cmudict">CMUdict</a> (Carnegie Mellon University, licença BSD), com cerca de 125 mil palavras do inglês dos Estados Unidos; palavras fora do dicionário aparecem com "?".</li>
         <li><b>Português:</b> a marca de "fonema do português" segue o português do Brasil. Os vários "r" de "rato" (x, χ, h, ʁ, r) e outras pronúncias regionais aparecem como "alguns sotaques".</li>
         <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/alfabeto-fonetico">_fonte/alfabeto-fonetico</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação das fontes; os dados e os sons seguem a licença CC BY-SA 3.0.</li>
       </ul>
@@ -162,7 +159,8 @@
   <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
 </div></footer>
 <script src="dados.js?v=202611041700"></script>
-<script src="transcrever.js?v=202611041810"></script>
-<script src="ipa.js?v=202611041810"></script>
+<script src="transcrever-mais.js?v=202611041830"></script>
+<script src="transcrever.js?v=202611041830"></script>
+<script src="ipa.js?v=202611041830"></script>
 </body>
 </html>
