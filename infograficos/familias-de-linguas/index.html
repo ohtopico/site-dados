@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Famílias de línguas do mundo | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo: as 7.674 línguas faladas do mundo em 238 famílias e 183 isoladas, a árvore de cada família, as línguas do Brasil e como as estruturas mudam de uma família para outra.">
+<meta property="og:title" content="Famílias de línguas do mundo | Júlia Quoos">
+<meta property="og:description" content="Árvore e mapa de cada família de línguas, as famílias indígenas do Brasil e traços de estrutura como a ordem das palavras, o tom e o plural.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/familias-de-linguas/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/familias-de-linguas/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/familias-de-linguas/og-familias-de-linguas.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Famílias de línguas do mundo, infográfico interativo">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../../infograficos/assets/infograficos.css?v=202611041700">
+<link rel="stylesheet" href="familias.css?v=202611041700">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Famílias de línguas do mundo",
+"description":"7.674 línguas faladas classificadas em famílias (Glottolog 5.2.1) e oito traços de estrutura do World Atlas of Language Structures (WALS Online).",
+"url":"https://juliaroberta.com/infograficos/familias-de-linguas/","inLanguage":"pt-BR","license":"https://creativecommons.org/licenses/by/4.0/",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://glottolog.org","https://wals.info"],
+"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://juliaroberta.com/infograficos/familias-de-linguas/linguas.csv"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://juliaroberta.com/infograficos/familias-de-linguas/familias.csv"}]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/blog/">Blog</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ línguas do mundo</span>
+      <h1>Famílias de <mark>línguas</mark></h1>
+      <p class="lead">Línguas que descendem de uma mesma língua antiga formam uma família, como o português, o espanhol e o romeno, que vieram do latim. Aqui estão todas as famílias do mundo, a árvore de cada uma, onde as línguas são faladas e como a estrutura delas muda de uma família para outra.</p>
+      <ul class="pilulas"><li>7.674 línguas</li><li>Glottolog 5.2.1</li><li>WALS Online</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">O mundo em famílias</span>
+      <h2>Poucas famílias, muitas línguas</h2>
+      <div class="resumo-num">
+        <div><b id="n-ling">–</b><span>línguas faladas como primeira língua, vivas ou já extintas</span></div>
+        <div><b id="n-fam">–</b><span>famílias com duas ou mais línguas</span></div>
+        <div><b id="n-iso">–</b><span>línguas isoladas, sem parente conhecido (como o basco)</span></div>
+        <div><b id="n-top5">–</b><span>das línguas estão nas cinco maiores famílias</span></div>
+        <div><b id="n-ame">–</b><span>das línguas vivas estão ameaçadas em algum grau</span></div>
+        <div><b id="n-ext">–</b><span>línguas já extintas registradas</span></div>
+      </div>
+      <p class="muted" style="margin-top:22px">Cada retângulo é uma família, do tamanho do número de línguas que ela tem. A cor mostra onde está a maior parte delas. Clique numa família para abrir a árvore e o mapa.</p>
+      <div class="janela" style="margin-top:12px"><div class="janela-barra"><i></i><i></i><i></i><span>familias.html</span></div>
+        <div class="janela-corpo"><svg id="g-tree" class="grafico" role="img" aria-label="Famílias de línguas por número de línguas"></svg><div class="legenda" id="leg-tree"></div></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="familia">
+    <div class="wrap">
+      <span class="eyebrow">Uma família por dentro</span>
+      <h2>A árvore e o mapa de cada família</h2>
+      <p class="muted">Escolha uma família ou procure uma língua. A árvore mostra os ramos, do mais antigo (à esquerda) até as línguas (à direita). As cores dos ramos são as mesmas no mapa.</p>
+      <div class="seletor" id="chips-fam" role="group" aria-label="Escolha a família"></div>
+      <div class="busca-linha">
+        <label for="busca" class="sr-only">Procurar uma língua</label>
+        <input id="busca" type="search" placeholder="Procurar uma língua (ex.: guarani, basco, japonês)" autocomplete="off">
+        <button class="btn" type="button" id="btn-pt">Onde fica o português</button>
+      </div>
+      <ul id="busca-lista" class="busca-lista"></ul>
+      <p class="nota" id="busca-res" aria-live="polite"></p>
+
+      <div class="ficha">
+        <div class="ficha-nome"><h3 id="f-nome">–</h3><span class="muted" id="f-orig"></span></div>
+        <div class="resumo-num">
+          <div><b id="f-n">–</b><span>línguas</span></div>
+          <div><b id="f-ame">–</b><span>das vivas estão ameaçadas</span></div>
+          <div><b id="f-ext">–</b><span>já extintas</span></div>
+          <div><b id="f-br">–</b><span>faladas no Brasil</span></div>
+        </div>
+        <p class="nota">Onde é falada: <span id="f-areas"></span></p>
+        <div id="f-sit"></div>
+        <div class="legenda"><span><b style="background:var(--s1)"></b>não ameaçada</span><span><b style="background:var(--s2)"></b>vulnerável</span><span><b style="background:var(--s3)"></b>ameaçada</span><span><b style="background:var(--s4)"></b>muito ameaçada</span><span><b style="background:var(--s5)"></b>quase extinta</span><span><b style="background:var(--s6)"></b>extinta</span></div>
+      </div>
+
+      <div class="janela" style="margin-top:20px"><div class="janela-barra"><i></i><i></i><i></i><span>arvore.html</span></div>
+        <div class="janela-corpo">
+          <div class="trilha" id="trilha" aria-label="Caminho na árvore"></div>
+          <svg id="g-arv" class="grafico" role="img" aria-label="Árvore da família escolhida"></svg>
+          <p class="nota" id="arv-nota"></p>
+        </div></div>
+
+      <div class="janela" style="margin-top:20px"><div class="janela-barra"><i></i><i></i><i></i><span>mapa.html</span></div>
+        <div class="janela-corpo">
+          <canvas id="g-mapa" class="mapa" role="img" aria-label="Mapa das línguas da família escolhida, coloridas por ramo"></canvas>
+          <div class="legenda" id="leg-mapa"></div>
+          <p class="nota">Cada ponto é uma língua, no lugar central onde é falada. Os pontos cinza claros são as línguas de outras famílias: juntos eles desenham os continentes. O mapa é centrado no Pacífico para não partir a Oceania. Clique num ramo da legenda para entrar nele.</p>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Brasil</span>
+      <h2>As famílias de línguas do Brasil</h2>
+      <p class="muted">O Glottolog registra <b id="n-br">–</b> línguas faladas no Brasil, hoje ou no passado, em <b id="n-br-fam">–</b> famílias, além de <b id="n-br-iso">–</b> línguas isoladas, como o pirahã e o yaathe dos fulni-ô. Tupi, macro-jê, aruaque e karib são os maiores troncos indígenas. Na família indo-europeia estão o português e as línguas que vieram com a imigração. Clique numa família para ver a árvore.</p>
+      <div class="janela" style="margin-top:16px"><div class="janela-barra"><i></i><i></i><i></i><span>brasil.html</span></div>
+        <div class="janela-corpo"><svg id="g-br" class="grafico" role="img" aria-label="Número de línguas faladas no Brasil por família"></svg></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Estruturas</span>
+      <h2>Como as línguas se organizam</h2>
+      <p class="muted">Línguas da mesma família costumam ter estruturas parecidas, mas não sempre, e famílias sem parentesco podem chegar às mesmas soluções. Escolha um traço para ver o mapa e a comparação entre as famílias.</p>
+      <div class="seletor" id="chips-traco" role="group" aria-label="Escolha o traço de estrutura"></div>
+      <p class="traco-desc" id="t-desc"></p>
+      <p class="nota" id="t-n"></p>
+      <div class="janela" style="margin-top:16px"><div class="janela-barra"><i></i><i></i><i></i><span>estrutura-mapa.html</span></div>
+        <div class="janela-corpo">
+          <canvas id="g-traco" class="mapa" role="img" aria-label="Mapa do traço de estrutura escolhido"></canvas>
+          <div class="legenda" id="leg-traco"></div>
+        </div></div>
+      <h3 style="margin-top:28px">Família por família</h3>
+      <p class="muted" id="t-filtro"></p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>estrutura-familias.html</span></div>
+        <div class="janela-corpo"><svg id="g-traco-fam" class="grafico" role="img" aria-label="Distribuição do traço nas maiores famílias da amostra"></svg>
+          <p class="nota">Mostra as famílias com pelo menos 12 línguas na amostra do WALS para o traço escolhido.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os números</h2>
+      <ul class="leitura">
+        <li><b>Línguas e famílias:</b> <a href="https://glottolog.org">Glottolog 5.2.1</a> (Hammarström, Forkel, Haspelmath e Bank, Instituto Max Planck de Antropologia Evolutiva), versão em CLDF. Contei as línguas da categoria "língua falada como primeira língua", vivas ou extintas. Ficam de fora línguas de sinais, pidgins, línguas artificiais e línguas não classificadas, que o Glottolog guarda em grupos à parte. Os nomes das línguas e dos grupos internos estão como no Glottolog (em inglês); traduzi os das famílias e de algumas línguas conhecidas.</li>
+        <li><b>Família, segundo o Glottolog:</b> só entram grupos cujo parentesco foi demonstrado pelo método comparativo. Por isso algumas propostas maiores, como o altaico, não aparecem aqui: o turco, o mongol e o japonês ficam em famílias separadas. O macro-jê aparece na versão nuclear, a parte do tronco que já foi demonstrada.</li>
+        <li><b>Situação:</b> grau de ameaça agregado pelo Glottolog a partir do Ethnologue, da UNESCO e do Catalogue of Endangered Languages. "Ameaçada em algum grau" soma vulnerável, ameaçada, muito ameaçada e quase extinta.</li>
+        <li><b>Brasil:</b> línguas que o Glottolog liga ao Brasil (código BR), inclusive extintas e de imigração.</li>
+        <li><b>Estruturas:</b> <a href="https://wals.info">World Atlas of Language Structures Online</a> (Dryer e Haspelmath, 2013), capítulos 81A, 87A, 85A, 26A, 13A, 30A, 33A e 138A. Cada traço tem uma amostra própria, de 230 a 1.376 línguas, ligada às famílias do Glottolog pelo glottocode.</li>
+        <li>Os dois bancos têm licença CC BY 4.0. Baixe os dados: <a href="linguas.csv" download>linguas.csv</a> (uma linha por língua) e <a href="familias.csv" download>familias.csv</a>. Organização e análise: Júlia Roberta Quoos Alves.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<div id="tip-g" role="tooltip"></div>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="dados.js?v=202611041700"></script>
+<script src="familias.js?v=202611041700"></script>
+</body>
+</html>
