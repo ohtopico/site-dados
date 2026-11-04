@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecnologia nas escolas em dados | Júlia Quoos</title>
+<meta name="description" content="Infográfico interativo com o Censo Escolar (INEP): internet, laboratório de informática e computadores por aluno nas escolas do Brasil, de cada estado e de cada município do RS, de 2019 a 2024.">
+<meta property="og:title" content="Tecnologia nas escolas em dados | Júlia Quoos">
+<meta property="og:description" content="Internet, laboratório de informática e alunos por computador, estado por estado e município por município do RS, com os microdados do Censo Escolar.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/tecnologia-nas-escolas/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/tecnologia-nas-escolas/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/tecnologia-nas-escolas/og-tecnologia-nas-escolas.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tecnologia nas escolas em dados: internet, laboratório e computadores por aluno">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../../infograficos/assets/infograficos.css?v=202611022330">
+<link rel="stylesheet" href="tecnologia.css?v=202611042330">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Tecnologia nas escolas em dados: Brasil, estados e municípios do RS, 2019 a 2024",
+"description":"Percentual de escolas com internet, banda larga, internet para os alunos, laboratório de informática e computador ou tablet para alunos, e alunos por computador, calculados a partir dos microdados do Censo Escolar da Educação Básica (INEP).",
+"url":"https://juliaroberta.com/infograficos/tecnologia-nas-escolas/","inLanguage":"pt-BR","spatialCoverage":"Brasil","temporalCoverage":"2019/2024",
+"creator":{"@type":"Person","name":"Júlia Roberta Quoos Alves","url":"https://juliaroberta.com/curriculo/"},
+"isBasedOn":["https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar"]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ censo escolar</span>
+      <h1>Tecnologia nas escolas <mark>em dados</mark></h1>
+      <p class="lead">Quantas escolas têm internet, quantas têm internet que chega aos alunos, quantas têm laboratório de informática e quantos alunos dividem cada computador. Para o Brasil, cada estado e cada município do Rio Grande do Sul, com os microdados do Censo Escolar.</p>
+      <ul class="pilulas" id="pilulas"><li>Censo Escolar (INEP)</li><li>27 estados</li><li>497 municípios do RS</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Escolha o recorte</span>
+      <h2>O que medir e em quais escolas</h2>
+      <p class="muted">Os seletores valem para a página inteira. As escolas públicas somam as redes municipal, estadual e federal.</p>
+      <h3 class="rotulo">Indicador</h3>
+      <div class="seletor" id="sel-ind" role="group" aria-label="Escolha o indicador"></div>
+      <h3 class="rotulo">Escolas</h3>
+      <div class="seletor" id="sel-rec" role="group" aria-label="Escolha as escolas"></div>
+      <h3 class="rotulo">Ano</h3>
+      <div class="seletor" id="sel-ano" role="group" aria-label="Escolha o ano"></div>
+      <div class="resumo-num" id="resumo-br" style="margin-top:22px"></div>
+      <p class="nota" id="nota-ind"></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Por estado</span>
+      <h2 id="t-uf">Os 27 estados</h2>
+      <p class="muted">Toque num estado para ver a evolução dele mais abaixo. A cor mais escura é sempre a situação melhor.</p>
+      <div class="dupla">
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>mapa-brasil.html</span></div>
+          <div class="janela-corpo"><svg id="g-br" class="grafico mapa" role="img" aria-label="Mapa do Brasil com o indicador por estado"></svg><div class="legenda" id="leg-br"></div></div></div>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>ranking-estados.html</span></div>
+          <div class="janela-corpo"><svg id="g-rank-uf" class="grafico" role="img" aria-label="Estados ordenados pelo indicador"></svg></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Rio Grande do Sul</span>
+      <h2>Município por município</h2>
+      <p class="muted">Toque num município no mapa ou procure pelo nome. Em município pequeno, poucas escolas mudam muito o percentual: veja sempre quantas escolas entram na conta.</p>
+      <label class="busca" for="busca-mun">Procurar município
+        <input id="busca-mun" list="lista-mun" placeholder="Digite o nome, por exemplo Candelária" autocomplete="off">
+      </label>
+      <datalist id="lista-mun"></datalist>
+      <div class="dupla" style="margin-top:16px">
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>mapa-rs.html</span></div>
+          <div class="janela-corpo"><svg id="g-rs" class="grafico mapa" role="img" aria-label="Mapa do RS com o indicador por município"></svg><div class="legenda" id="leg-rs"></div></div></div>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>municipio.html</span></div>
+          <div class="janela-corpo" id="ficha-mun"></div></div>
+      </div>
+      <h3 style="margin-top:28px">Os extremos do RS</h3>
+      <p class="muted">Municípios com pelo menos 5 escolas no recorte escolhido.</p>
+      <div class="dupla">
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>melhores.html</span></div>
+          <div class="janela-corpo"><svg id="g-top" class="grafico" role="img" aria-label="Municípios do RS com o melhor valor"></svg></div></div>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>piores.html</span></div>
+          <div class="janela-corpo"><svg id="g-fim" class="grafico" role="img" aria-label="Municípios do RS com o pior valor"></svg></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Ano a ano</span>
+      <h2>Como mudou desde 2019</h2>
+      <p class="muted" id="t-evol">Brasil, o estado e o município escolhidos, no mesmo indicador.</p>
+      <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>evolucao.html</span></div>
+        <div class="janela-corpo"><svg id="g-evol" class="grafico" role="img" aria-label="Evolução do indicador de 2019 a 2024"></svg><div class="legenda" id="leg-evol"></div></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">E na sala de aula</span>
+      <h2>Computação também sem computador</h2>
+      <p class="muted">Onde falta laboratório ou internet, a BNCC Computação continua valendo. No ohtopico.com.br há material pensado para isso.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://ohtopico.com.br/computacao-na-escola/">Como implantar Computação na escola</a>
+        <a class="btn ghost" href="https://ohtopico.com.br/material-didatico/bncc/">Material por habilidade da BNCC</a>
+        <a class="btn ghost" href="https://ohtopico.com.br/para-escolas/">Formação para escolas e redes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os números</h2>
+      <ul class="leitura">
+        <li><b>Fonte:</b> INEP, microdados do Censo Escolar da Educação Básica, tabela de escolas, <span id="anos-fonte">2019 a 2024</span>. Entram só as escolas em atividade.</li>
+        <li><b>Percentuais:</b> calculados sobre as escolas que responderam ao item. "Internet para os alunos" é a escola que declara internet disponível para uso dos alunos. "Computador ou tablet para alunos" é a escola com pelo menos um computador de mesa, portátil ou tablet para uso dos alunos.</li>
+        <li><b>Alunos por computador:</b> matrículas da educação básica divididas pelos computadores de mesa, portáteis e tablets para alunos, somando só as escolas que informaram os dois números. Quanto menor, melhor. Quando o INEP ainda não publicou as matrículas de um ano, esse número fica em branco.</li>
+        <li><b>Mapas:</b> contornos simplificados do IBGE (via geodata-br e click_that_hood). Pinto Bandeira, emancipado em 2013, ainda aparece dentro de Bento Gonçalves no mapa, mas tem os próprios números na busca.</li>
+        <li>Coleta e análise: Júlia Roberta Quoos Alves. Uso livre com citação da fonte. <button class="tag" type="button" id="baixar-csv">Baixar a tabela do recorte em CSV</button></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="dados.js?v=202611042330"></script>
+<script src="mapas.js?v=202611042330"></script>
+<script src="tecnologia.js?v=202611042330"></script>
+</body>
+</html>

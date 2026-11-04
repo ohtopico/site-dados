@@ -103,6 +103,10 @@ def ler_ano(caminho, acum, nomes_mun, nomes_uf):
                 recs = [k for k, f in RECORTES.items() if f(dep, loc)]
                 mat = num(r.get('QT_MAT_BAS'))
                 vals = [num(r.get(c)) for c in IND]
+                # banda larga e internet para alunos ficam em branco quando a escola
+                # não tem internet: contam como "não" sobre o total de escolas
+                if vals[0] is not None:
+                    vals = [vals[0]] + [0 if v is None else v for v in vals[1:]]
                 qts = [num(r.get(c)) for c in QT_DISP]
                 qts = [None if q is not None and q >= 88888 else q for q in qts]
                 # equipamento em branco numa escola que respondeu a parte de estrutura = nenhum
