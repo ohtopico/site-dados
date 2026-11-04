@@ -34,7 +34,7 @@ const COD_POR_NOME = {};
 MUNS.forEach(c => { COD_POR_NOME[T.mun[c].toLowerCase()] = c; });
 
 // estado da página (também no endereço, para compartilhar)
-const S = {ind: 0, rec: 'pub', ano: ANOS.length - 1, uf: 'RS', mun: COD_POR_NOME['candelária'] || MUNS[0]};
+const S = {ind: 1, rec: 'pub', ano: ANOS.length - 1, uf: 'RS', mun: COD_POR_NOME['candelária'] || MUNS[0]};
 (function lerHash() {
   const h = new URLSearchParams(location.hash.slice(1));
   const ii = IND.findIndex(x => x.id === h.get('indicador')); if (ii >= 0) S.ind = ii;
@@ -212,7 +212,7 @@ function evolucao() {
   }
   ANOS.forEach((a, k) => txt(svg, x(k), H - 10, a, {'text-anchor': 'middle', class: 'eixo', 'font-weight': k === S.ano ? 700 : 400}));
   el('line', {x1: x(S.ano), x2: x(S.ano), y1: Tp, y2: H - B, stroke: 'var(--ink-2)', 'stroke-dasharray': '3 4'}, svg);
-  const rotY = [];
+  const rotulos = [];
   series.forEach(([nome, cor, vals]) => {
     let d = '', pena = false;
     vals.forEach((v, k) => { if (v == null) { pena = false; return; } d += (pena ? 'L' : 'M') + x(k) + ',' + y(v); pena = true; });
@@ -223,13 +223,11 @@ function evolucao() {
       dica(c, `<b>${esc(nome)}, ${ANOS[k]}</b><br>${esc(ind.nome)}: ${fmt(v)}`);
     });
     const kUlt = vals.map((v, k) => v == null ? -1 : k).filter(k => k >= 0).pop();
-    if (kUlt != null) {
-      let yy = y(vals[kUlt]) + 4;
-      rotY.forEach(o => { if (Math.abs(o - yy) < 16) yy = o + 16; });
-      rotY.push(yy);
-      txt(svg, x(kUlt) + 10, yy, `${nome}: ${fmt(vals[kUlt])}`, {'font-size': 13, 'font-weight': 600, fill: cor});
-    }
+    if (kUlt != null) rotulos.push({x: x(kUlt) + 10, y: y(vals[kUlt]) + 4, t: `${nome}: ${fmt(vals[kUlt])}`, cor});
   });
+  rotulos.sort((a, b) => a.y - b.y);
+  rotulos.forEach((r, k) => { if (k && r.y - rotulos[k - 1].y < 17) r.y = rotulos[k - 1].y + 17; });
+  rotulos.forEach(r => txt(svg, r.x, r.y, r.t, {'font-size': 13, 'font-weight': 600, fill: r.cor}));
   $('leg-evol').innerHTML = series.map(([n, c]) => `<span><b style="background:${c}"></b>${esc(n)}</span>`).join('');
   $('t-evol').textContent = `${ind.nome} em ${NOME_REC[S.rec].toLowerCase()}: Brasil, ${T.uf[S.uf]} e ${T.mun[S.mun]}. Toque num estado ou município acima para trocar.`;
 }
