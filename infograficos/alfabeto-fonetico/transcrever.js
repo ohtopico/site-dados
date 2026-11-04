@@ -62,7 +62,7 @@
       if (cons.length >= 2) {
         const a = U[cons[cons.length - 2]].t, b = U[cons[cons.length - 1]].t;
         if (OBSTR.includes(a) && LIQ.includes(b)) ataque = 2;
-        if (lang === 'it' && a === 's' && cons.length === 2) ataque = 2;
+        if (lang === 'it' && a === 's' && b !== 's' && cons.length === 2) ataque = 2;
       }
       cons.forEach((i, j) => { const at = j >= cons.length - ataque; U[i].s = at ? k + 1 : k; U[i].papel = at ? 'A' : 'C'; });
     }
@@ -107,9 +107,12 @@
       return /([aeo]s?|[ae]m|ens)$/.test(palavra) ? n - 2 : n - 1;
     }
     if (lang === 'es') return /([aeiou]|[aeiou]s|n)$/.test(palavra) ? n - 2 : n - 1;
-    if (lang === 'it') return n - 2;
+    if (lang === 'it') return PROPAROX_IT.has(palavra) ? Math.max(0, n - 3) : n - 2;
     return 0;
   }
+
+  // Proparoxítonas comuns do italiano (a ortografia não marca o acento)
+  const PROPAROX_IT = new Set('esseri liberi nascono musica sabato piccolo piccola piccoli telefono numero numeri tavolo camera macchina pagina popolo medico utile facile difficile semplice ultimo ultima unico unica simile mobile albero lacrima anima favola regola tavola parlano vivono scrivono leggono vengono dicono fanno'.split(' '));
 
   // Palavras átonas (artigos, preposições curtas)
   const ATONAS = {
@@ -243,7 +246,7 @@
       else if (c === 'b' || c === 'v') o = aposPausaOuNasal ? 'b' : 'β';
       else if (c === 'd') o = (i === 0 || 'nl'.includes(ant)) ? 'd' : 'ð';
       else if (c === 'x') o = 'ks';
-      else if (c === 'n') o = U[i + 1] && 'gkcqj'.includes(U[i + 1].t[0]) && !(U[i + 1].t === 'c' && frente(i + 1)) ? 'ŋ' : 'n';
+      else if (c === 'n') o = U[i + 1] && 'gkcqj'.includes(U[i + 1].t[0]) && U[i + 1].t !== 'ch' && !(U[i + 1].t === 'c' && frente(i + 1)) ? 'ŋ' : 'n';
       else if (c === 'q') o = 'k';
       else o = c;
       out.push({ s: u.s, txt: o });
@@ -366,7 +369,7 @@
       if (r.startsWith('ig') && i + 2 === s.length && i > 0) { o += 'ɪç'; i += 2; nucleo++; continue; }
       if ((i === 0 || (pref && i === pref.length)) && /^s[pt]/.test(r)) { o += 'ʃ'; i += 1; continue; }
       if (r.startsWith('ss')) { o += 's'; i += 2; continue; }
-      const devoz = fimSil(i + 1) && (i + 1 >= s.length || !isV(s[i + 1]));
+      const devoz = i + 1 >= s.length || (!isV(s[i + 1]) && !'lr'.includes(s[i + 1]) && !(s[i + 1] === c));
       if (c === 's') { o += (isV(s[i + 1] || '#') && (i === 0 || isV(ant) || 'lnrm'.includes(ant))) ? 'z' : 's'; i++; continue; }
       if (c === 'b') { o += devoz ? 'p' : 'b'; i++; continue; }
       if (c === 'd') { o += devoz ? 't' : 'd'; i++; continue; }
@@ -443,6 +446,7 @@
     return partes.map(orig => {
       if (!/\p{L}/u.test(orig)) return { orig, ipa: orig.replace(/\s+/g, ' '), sep: true };
       const p = orig.toLowerCase().replace(/’/g, "'");
+      if (lang === 'es' && p === 'y') return { orig, ipa: 'i' };
       if (lang === 'en') {
         const a = dic.get(p) || dic.get(p.replace(/'s$/, '')) && (dic.get(p.replace(/'s$/, '')) + ' Z');
         return a ? { orig, ipa: arpaParaIPA(a) } : { orig, ipa: '', falta: true };
