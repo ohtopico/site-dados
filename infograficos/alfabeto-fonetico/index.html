@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfabeto Fonético Internacional interativo: ouça os sons das línguas | Júlia Quoos</title>
+<meta name="description" content="Quadro interativo do Alfabeto Fonético Internacional (IPA): clique em cada símbolo para ouvir o som e ver em quantas das 2.084 línguas do PHOIBLE e em quais famílias linguísticas ele aparece.">
+<meta property="og:title" content="Os sons das línguas: o IPA em dados | Júlia Quoos">
+<meta property="og:description" content="111 símbolos do Alfabeto Fonético Internacional para ouvir, com as famílias de línguas em que cada som aparece.">
+<meta property="og:url" content="https://juliaroberta.com/infograficos/alfabeto-fonetico/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/infograficos/alfabeto-fonetico/">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/alfabeto-fonetico/og-alfabeto-fonetico.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quadro das consoantes do Alfabeto Fonético Internacional colorido pela frequência de cada som nas línguas do mundo">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&family=Noto+Serif:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="../assets/infograficos.css?v=202611041700">
+<link rel="stylesheet" href="ipa.css?v=202611041700">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Dataset", "name": "Os sons das línguas: símbolos do Alfabeto Fonético Internacional e as famílias de línguas em que aparecem", "description": "Para cada um dos 111 símbolos do quadro do Alfabeto Fonético Internacional, em quantas das 2.084 línguas do PHOIBLE ele é fonema, em quais famílias do Glottolog e em quais regiões do mundo.", "url": "https://juliaroberta.com/infograficos/alfabeto-fonetico/", "inLanguage": "pt-BR", "license": "https://creativecommons.org/licenses/by-sa/3.0/", "isBasedOn": ["https://phoible.org/", "https://glottolog.org/"], "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "distribution": {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://juliaroberta.com/infograficos/alfabeto-fonetico/alfabeto-fonetico.csv"}}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../">Júlia Quoos</a>
+  <a class="brand-sub" href="../">/ infográficos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/blog/">Blog</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/infograficos/interesse-por-ia/notebooks/">Notebooks</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ alfabeto fonético internacional</span>
+      <h1>Os sons das línguas <mark>em dados</mark></h1>
+      <p class="lead">O quadro do Alfabeto Fonético Internacional (IPA) com som. Clique em um símbolo para ouvir e ver em quantas línguas do mundo ele existe e em quais famílias linguísticas aparece mais.</p>
+      <ul class="pilulas"><li>111 símbolos</li><li>110 gravações</li><li>2.084 línguas</li><li>179 famílias</li><li>dados para baixar</li></ul>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="resumo-num" id="resumo"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Ouça e compare</span>
+      <h2>O quadro do IPA, colorido pelas línguas que usam cada som</h2>
+      <p class="muted">Quanto mais forte a cor da casa, em mais línguas o som é um fonema. Escolha uma família para ver os sons dela, ou marque só os sons do português. Na tabela das consoantes, a casa da esquerda é a surda e a da direita, a sonora.</p>
+      <div class="controles-ipa">
+        <label><span class="sr-only">Família de línguas</span><select id="familia" aria-label="Família de línguas"></select></label>
+        <button class="chip" type="button" id="so-pt" aria-pressed="false">Destacar os sons do português</button>
+      </div>
+      <p class="nota" id="escopo" style="margin-top:10px"></p>
+      <div class="escala" id="escala" style="margin-top:8px"></div>
+      <div class="ipa-layout">
+        <div class="ipa-graficos" id="graficos">
+          <div class="janela" id="j-consoantes"><div class="janela-barra"><i></i><i></i><i></i><span>consoantes.html</span></div>
+            <div class="janela-corpo"><h3 style="margin:0">Consoantes pulmonares</h3><div class="rolagem"><table class="quadro" id="t-consoantes" aria-label="Consoantes pulmonares por lugar e modo de articulação"></table></div>
+            <p class="nota">Linhas: modo de articulação (como o ar passa). Colunas: lugar de articulação (onde a boca se fecha ou se estreita).</p></div></div>
+          <div class="janela" id="j-vogais"><div class="janela-barra"><i></i><i></i><i></i><span>vogais.html</span></div>
+            <div class="janela-corpo"><h3 style="margin:0">Vogais</h3><svg id="g-vogais" class="trapezio" role="group" aria-label="Trapézio das vogais"></svg>
+            <p class="nota">O trapézio é a boca vista de lado: em cima, a língua alta (vogais fechadas); embaixo, a boca aberta. Nos pares, a vogal da direita é arredondada (com os lábios em bico). O anel marca as vogais do português.</p></div></div>
+          <div class="janela" id="j-outros"><div class="janela-barra"><i></i><i></i><i></i><span>outros-sons.html</span></div>
+            <div class="janela-corpo"><h3 style="margin:0">Consoantes não pulmonares e outros símbolos</h3>
+            <p class="nota">Cliques, implosivas e ejetivas não usam o ar que sai dos pulmões: o som vem de um estalo ou de um movimento da glote.</p>
+            <div class="grupos-outros" id="outros"></div></div></div>
+        </div>
+        <aside class="painel-som" id="painel-caixa" aria-label="Som escolhido">
+          <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>som.html</span></div>
+            <div class="janela-corpo" id="painel" aria-live="polite"></div></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Mais comuns e mais raros</span>
+      <h2>Alguns sons estão em quase todas as línguas; outros, em meia dúzia</h2>
+      <p class="muted">Percentual das 2.084 línguas que têm cada som (nos raros, o número de línguas). As barras mais escuras são fonemas do português. Clique para ouvir.</p>
+      <div class="dois-col">
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>mais-comuns.html</span></div>
+          <div class="janela-corpo"><h3 style="margin:0">Os 15 mais comuns</h3><svg id="g-comuns" class="ranking" role="group" aria-label="Os 15 sons mais comuns"></svg></div></div>
+        <div class="janela"><div class="janela-barra"><i></i><i></i><i></i><span>mais-raros.html</span></div>
+          <div class="janela-corpo"><h3 style="margin:0">Os 15 mais raros</h3><svg id="g-raros" class="ranking" role="group" aria-label="Os 15 sons mais raros"></svg></div></div>
+      </div>
+      <p style="margin-top:18px"><a class="chip" href="alfabeto-fonetico.csv" download>Baixar CSV</a></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Sobre os dados</span>
+      <h2>De onde vêm os sons, as línguas e as famílias</h2>
+      <ul class="leitura">
+        <li><b>Inventários de sons:</b> <a href="https://phoible.org/">PHOIBLE 2.0</a> (Moran, Steven e McCloy, Daniel, 2019, Max Planck Institute for the Science of Human History), licença CC BY-SA 3.0. São 3.019 inventários de 2.084 línguas. Quando uma língua tem mais de um inventário, conta o som se ele aparece em pelo menos um.</li>
+        <li><b>Famílias e regiões:</b> <a href="https://glottolog.org/">Glottolog 5.2.1</a> (Hammarström, Forkel, Haspelmath e Bank), licença CC BY 4.0. Os dialetos contam como a língua a que pertencem. As línguas isoladas, que não têm parentes conhecidos, ficam juntas no grupo "Línguas isoladas". Os nomes das famílias em português são os mesmos do infográfico de <a href="../familias-de-linguas/">famílias de línguas</a>, e cada família tem link para lá.</li>
+        <li><b>Como os sons são contados:</b> cada símbolo do quadro conta as línguas que têm aquele som como fonema, também quando a fonte marca um detalhe do lugar da língua nos dentes (por exemplo, t̪ dental conta como t). Formas com aspiração (tʰ), alongamento (tː) ou outra articulação junto (tʷ) são fonemas diferentes e aparecem só em "sons parecidos". Os cliques contam com qualquer acompanhamento (kǃ, ŋǃ), que é como as línguas os usam.</li>
+        <li><b>Gravações:</b> arquivos do <a href="https://commons.wikimedia.org/wiki/Category:General_phonetics">Wikimedia Commons</a>, de Peter Isotalo, Erutoon, TFighterPilot, Adamsa123 e outros autores, licença <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, convertidos para MP3. O nome de cada arquivo original aparece no painel do som. O símbolo ɺ ainda não tem gravação.</li>
+        <li><b>Português:</b> a marca de "fonema do português" segue o português do Brasil. Os vários "r" de "rato" (x, χ, h, ʁ, r) e outras pronúncias regionais aparecem como "alguns sotaques".</li>
+        <li>Código de geração em <a href="https://github.com/ohtopico/site-dados/tree/main/_fonte/alfabeto-fonetico">_fonte/alfabeto-fonetico</a>. Análise: Júlia Roberta Quoos Alves. Uso livre com citação das fontes; os dados e os sons seguem a licença CC BY-SA 3.0.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Infográfico organizado por <a href="/curriculo/">Júlia Roberta Quoos Alves</a>. Veja os <a href="../">outros infográficos interativos</a>. Veja também as <a href="../familias-de-linguas/">famílias de línguas</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script src="dados.js?v=202611041700"></script>
+<script src="ipa.js?v=202611041700"></script>
+</body>
+</html>
