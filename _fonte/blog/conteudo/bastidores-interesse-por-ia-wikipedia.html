@@ -1,0 +1,18 @@
+<p>Como medir o interesse das pessoas por inteligência artificial sem fazer uma pesquisa? Uma resposta possível está nas visitas à Wikipédia. O painel <a href="/infograficos/interesse-por-ia/">Interesse por IA na Wikipédia</a> mostra quantas vezes por mês são lidos os verbetes sobre IA, sobre ferramentas como o ChatGPT e sobre educação digital na Wikipédia em português, desde janeiro de 2016. Ele se atualiza sozinho todo mês, e é desse funcionamento que trata este texto.</p>
+
+<h2>A fonte: a API de pageviews</h2>
+<p>A Wikimedia publica, para cada verbete, o número de visualizações por dia e por mês, com os dados em domínio público. Uso todos os acessos (computador, celular e aplicativo), mas só de pessoas: robôs e acessos automáticos ficam de fora. Qualquer número do painel pode ser conferido na ferramenta pública pageviews.wmcloud.org.</p>
+<p>Um limite que precisa ficar claro: a Wikipédia em português é lida no Brasil, em Portugal e nos outros países de língua portuguesa. A maior parte das visitas vem do Brasil, mas a API não separa por país.</p>
+
+<h2>Verbetes mudam de nome</h2>
+<p>O problema técnico mais interessante foi este. Verbetes são renomeados: "Aprendizado de máquina" e "Aprendizagem de máquina" já foram títulos do mesmo assunto. Se eu buscasse só o título atual, a série ficaria partida, com um buraco antes da mudança. Por isso o script consulta a API da Wikipédia para descobrir todos os redirecionamentos de cada verbete e soma as visitas do título principal com as dos títulos que levam até ele. Verbetes criados depois de 2016 aparecem com zero nos meses em que ainda não existiam.</p>
+<p>Outro cuidado: a Wikimedia revisa de tempos em tempos como separa pessoas de acessos automáticos. Alguns verbetes têm saltos de um mês para o outro por causa dessa revisão, não por mudança real de interesse. A página avisa isso em "Fontes e notas".</p>
+
+<h2>Um painel que se atualiza sozinho</h2>
+<p>Todo dia 3, uma rotina automática no GitHub (uma GitHub Action) roda o script em Python, baixa o último mês completo, regenera os dados do painel e reescreve o resumo em texto do topo da página, com o verbete mais lido e o mês de pico. Se nada mudou, ela não faz nada. Não há servidor nem banco de dados: o site é estático e a rotina só troca arquivos no repositório. Esse desenho deixa o painel barato de manter e fácil de auditar, porque cada atualização fica registrada no histórico do repositório.</p>
+
+<h2>O que os dados mostram</h2>
+<p>O verbete ChatGPT é, com folga, o mais lido entre os acompanhados. O que mais chama a atenção vem ao comparar com o ano anterior ao lançamento do ChatGPT: o verbete "OpenAI" passou a ter mais do que o dobro das visitas, e "Inteligência artificial" quase o dobro. O interesse pela ferramenta puxou o interesse pelo assunto.</p>
+
+<h2>Cinco notebooks com os mesmos dados</h2>
+<p>Para quem quer aprender a analisar esse tipo de série, a página tem cinco <a href="/infograficos/interesse-por-ia/notebooks/">notebooks no Google Colab</a>, que abrem no navegador sem instalar nada: do zero ao gráfico, previsão de séries com treino e teste, detecção de picos, sazonalidade escolar e um pequeno modelo de linguagem. Também há um plano de aula, no site de docência, em que a turma usa a Wikipédia como base de dados para investigar o que explica cada pico.</p>

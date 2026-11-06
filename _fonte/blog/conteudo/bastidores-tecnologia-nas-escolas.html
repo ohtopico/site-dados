@@ -1,0 +1,23 @@
+<p>O infográfico <a href="/infograficos/tecnologia-nas-escolas/">Tecnologia nas escolas em dados</a> responde a quatro perguntas para o Brasil, para cada estado e para os 497 municípios do Rio Grande do Sul: a escola tem internet, essa internet chega aos alunos, a escola tem laboratório de informática e quantos alunos dividem cada computador. Aqui conto como os números foram montados e o que mais me chamou a atenção neles.</p>
+
+<h2>A fonte: os microdados do Censo Escolar</h2>
+<p>Todos os números vêm da tabela de escolas dos microdados do Censo Escolar da Educação Básica, do INEP, de 2019 a 2024. Entram só as escolas em atividade, e os percentuais são calculados sobre as escolas que responderam a cada item. As escolas públicas somam as redes municipal, estadual e federal.</p>
+<p>Os microdados são arquivos grandes, publicados uma vez por ano. Em vez de baixar tudo à mão, deixei uma rotina automática no GitHub que baixa os arquivos do INEP, roda o script de tratamento e atualiza a página. Ela roda de novo em fevereiro e março, que é quando costuma sair a edição seguinte.</p>
+
+<h2>Três definições que mudam o resultado</h2>
+<ul>
+<li><strong>Internet não é o mesmo que internet para os alunos.</strong> Uma escola pode ter conexão só na secretaria. O indicador que importa para a aula é o da escola que declara internet disponível para uso dos alunos, e ele é bem mais baixo.</li>
+<li><strong>Computador para alunos inclui notebook e tablet.</strong> Conto a escola que tem pelo menos um computador de mesa, portátil ou tablet para uso dos alunos.</li>
+<li><strong>Alunos por computador só com quem informou os dois números.</strong> Divido as matrículas pelos equipamentos, somando apenas as escolas que informaram matrículas e computadores. Quando o INEP ainda não publicou as matrículas de um ano, o número fica em branco em vez de virar estimativa.</li>
+</ul>
+
+<h2>O que os dados mostram</h2>
+<p>Nas escolas públicas do Brasil, a internet chegou: eram 70% das escolas com conexão em 2019 e 90% em 2024. Mas a internet para os alunos passou de 26% para 40%, ou seja, ainda falta em seis de cada dez escolas. O número de alunos por computador caiu de 35 para 12,5 no mesmo período.</p>
+<p>O dado que mais me surpreendeu foi o laboratório de informática. Ele <strong>diminuiu</strong>, de 35% para 29% das escolas públicas, enquanto os computadores para alunos aumentaram. A leitura mais provável é a troca do laboratório fixo por notebooks e tablets que circulam pelas salas. Para quem planeja aulas de Computação, isso muda a pergunta: em vez de "a escola tem laboratório?", passa a ser "quantos equipamentos posso levar para a sala e com que internet?".</p>
+<p>Entre os estados, o Rio Grande do Sul lidera em internet para os alunos nas escolas públicas, com 62%, seguido de São Paulo (55%) e Mato Grosso (53%). Na outra ponta estão Acre, Pará e Amapá, com cerca de 15%.</p>
+
+<h2>Cuidado com municípios pequenos</h2>
+<p>No mapa do RS, um município com cinco escolas vai de 60% para 100% se duas escolas mudarem a resposta. Por isso a página mostra sempre quantas escolas entram na conta, e a lista dos extremos considera só municípios com pelo menos cinco escolas no recorte escolhido. Um detalhe do mapa: Pinto Bandeira, emancipado em 2013, ainda aparece dentro de Bento Gonçalves nos contornos simplificados, mas tem os próprios números na busca.</p>
+
+<h2>E onde não há computador?</h2>
+<p>A BNCC Computação continua valendo nas escolas sem laboratório ou sem internet. Para essas turmas, deixei no <a href="https://ohtopico.com.br/computacao-desplugada/">site de docência</a> atividades desplugadas e material por habilidade. Os dados do recorte que você escolher podem ser baixados em CSV na própria página, com uso livre e citação da fonte.</p>

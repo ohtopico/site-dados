@@ -1,0 +1,21 @@
+<p>Em agosto de 2026, o índice que mede o aquecimento do Pacífico equatorial marcou +2,16, um El Niño muito forte. No Rio Grande do Sul, essa notícia costuma vir junto com uma pergunta: a primavera vai ser de muita chuva? O infográfico <a href="/infograficos/chuva-el-nino/">A chuva do RS e o El Niño</a> coloca 65 anos de chuva em oito cidades gaúchas ao lado desse termômetro do oceano, para que cada pessoa possa olhar a relação com os próprios olhos.</p>
+
+<h2>Três fontes, um mesmo calendário</h2>
+<ul>
+<li><strong>Chuva:</strong> a reanálise ERA5, do ECMWF e do programa Copernicus, consultada pela API do Open-Meteo no ponto de grade de cada cidade (cerca de 25 km). A linha "RS (média)" é a média das oito cidades.</li>
+<li><strong>El Niño:</strong> o índice ONI da NOAA, que é a média de três meses da temperatura do mar na região chamada Niño 3.4. Acima de +0,5 é El Niño; abaixo de −0,5, La Niña.</li>
+<li><strong>Rios:</strong> a vazão diária do modelo GloFAS, também do Copernicus.</li>
+</ul>
+<p>O trabalho de base foi colocar as três séries no mesmo calendário e comparar cada mês com a média de 1991 a 2020 daquele mesmo mês, que é a normal climatológica usada hoje.</p>
+
+<h2>Por que reanálise e não estação meteorológica</h2>
+<p>Estações têm falhas, mudam de lugar e nem toda cidade tem uma com 65 anos de registro. A reanálise é um modelo ajustado às observações, então entrega uma série contínua desde 1961 para qualquer ponto. O preço é que ela suaviza chuvas muito localizadas. Para a pergunta da página, que é sobre o padrão de estações inteiras, a troca vale a pena. Para saber quanto choveu numa rua num dia específico, não.</p>
+
+<h2>Correlação, mas com o método certo</h2>
+<p>Chuva não segue uma distribuição normal: há muitos meses comuns e alguns meses extremos. Por isso usei a correlação de Spearman, que compara a ordem dos valores e não se deixa levar por um único mês fora da curva. Calculei a correlação entre o ONI e a chuva de cada trimestre, de 1961 a 2025. O resultado é claro: o efeito do El Niño é forte de setembro a janeiro e fraco no inverno. Por isso a página dá destaque à primavera.</p>
+
+<h2>Maio de 2024 e o limite do modelo</h2>
+<p>O El Niño de 2023 terminou em abril de 2024, e a chuva de abril e maio daquele ano foi a maior desde 1961 na média do RS. A página mostra a maior chuva somada em 10 dias em cada lugar e a vazão dos rios dia a dia. Aqui vale um aviso que está escrito na própria página: o GloFAS subestima o pico de maio de 2024 em vários rios. No Taquari e no Guaíba, as cotas medidas foram recorde histórico. O gráfico serve para comparar o formato da cheia, não o valor exato.</p>
+
+<h2>Para usar em aula</h2>
+<p>O mapa de quadradinhos, com um quadrado por mês e cor por anomalia, é um bom ponto de partida para conversar com a turma sobre leitura de gráficos e sobre a diferença entre correlação e causa. Os dados são abertos e as fontes estão todas citadas na página.</p>

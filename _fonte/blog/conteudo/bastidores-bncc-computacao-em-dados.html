@@ -1,0 +1,21 @@
+<p>A <a href="/infograficos/bncc-computacao/">BNCC Computação em dados</a> mostra as 68 habilidades de Computação, do 6º ano ao Ensino Médio, ligadas de um ano para o outro pelo conteúdo. A pergunta que me levou a fazer a página veio da sala de aula: quando trabalho uma habilidade do 7º ano, de onde ela vem no 6º e para onde ela vai no 8º? O documento oficial lista as habilidades por ano, mas não desenha esse caminho. Neste texto explico como as ligações foram calculadas.</p>
+
+<h2>De texto a números</h2>
+<p>Cada habilidade tem um texto e um objeto de conhecimento. Para comparar textos, primeiro é preciso transformá-los em algo que o computador consiga medir. O caminho foi este:</p>
+<ol>
+<li>Tirar os acentos, as palavras vazias (de, para, com) e os verbos gerais que aparecem em quase todas as habilidades, como "compreender" e "identificar".</li>
+<li>Cortar cada palavra nas 6 primeiras letras, para que "algoritmo" e "algoritmos" contem como a mesma coisa.</li>
+<li>Dar peso a cada palavra pelo TF-IDF: palavras raras no conjunto, como "protocolo", pesam mais do que palavras comuns.</li>
+<li>Medir a semelhança entre duas habilidades pelo cosseno entre os vetores de palavras.</li>
+</ol>
+<p>Somei um pequeno bônus quando duas habilidades são do mesmo eixo, do mesmo fio temático ou trabalhadas pelos mesmos materiais do site de docência. No fim, cada habilidade se liga às duas mais parecidas do ano seguinte, desde que a semelhança passe de 0,12. Com esse corte ficaram 98 ligações.</p>
+
+<h2>Por que um limite e não "todas as ligações"</h2>
+<p>Sem o corte, todas as habilidades se ligariam a todas, porque sempre há alguma palavra em comum. O gráfico viraria um novelo. O limite de 0,12 e o máximo de duas ligações por habilidade deixam só os parentescos mais fortes, que dá para conferir lendo os textos lado a lado.</p>
+
+<h2>Fios escolhidos à mão</h2>
+<p>Além das ligações automáticas, a página tem fios temáticos, como "Redes e internet" ou "Algoritmos". Eles são grupos de palavras que eu escolhi, e uma habilidade entra no fio quando o texto dela tem uma dessas palavras. É um jeito simples de seguir um tema do 6º ano ao Ensino Médio sem depender só da matemática do texto.</p>
+
+<h2>O que a página não é</h2>
+<p>É uma leitura automática do texto, não a progressão oficial. Serve para planejar e para conversar em reunião de área, não para substituir o documento. Os textos aparecem resumidos, como no catálogo do site de docência, então para citar é melhor usar o Parecer CNE/CEB nº 2/2022.</p>
+<p>Cada habilidade tem link para os planos, jogos e fichas gratuitos em <a href="https://ohtopico.com.br/material-didatico/bncc/">ohtopico.com.br</a>, e a tabela completa pode ser baixada em CSV. O mesmo método depois virou as páginas de Matemática, Arte, Língua Portuguesa, Literatura e Língua Inglesa, que comento em outro post.</p>
