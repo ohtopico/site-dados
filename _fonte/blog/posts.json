@@ -8,6 +8,182 @@
     "tema": "Projetos",
     "imagem": "/infograficos/dados-da-regiao/og-dados-da-regiao.jpg",
     "alt": "Cartão do painel Dados da educação, com mapa dos municípios do Vale do Rio Pardo",
-    "palavras": ["Censo Escolar", "dados abertos", "visualização de dados", "INEP", "IBGE"]
+    "palavras": [
+      "Censo Escolar",
+      "dados abertos",
+      "visualização de dados",
+      "INEP",
+      "IBGE"
+    ]
+  },
+  {
+    "slug": "bastidores-tecnologia-nas-escolas",
+    "titulo": "Internet, laboratório e computadores nas escolas: o que o Censo Escolar mostra",
+    "titulo_seo": "Internet e computadores nas escolas: o Censo Escolar",
+    "descricao": "Como montei o infográfico de tecnologia nas escolas com os microdados do INEP, e por que o laboratório de informática diminuiu enquanto os computadores aumentaram.",
+    "data": "2026-11-13",
+    "tema": "Educação em dados",
+    "imagem": "/infograficos/tecnologia-nas-escolas/og-tecnologia-nas-escolas.jpg",
+    "alt": "Cartão do infográfico Tecnologia nas escolas em dados, com mapa do Brasil",
+    "palavras": [
+      "Censo Escolar",
+      "INEP",
+      "internet nas escolas",
+      "laboratório de informática",
+      "dados abertos"
+    ]
+  },
+  {
+    "slug": "bastidores-bncc-computacao-em-dados",
+    "titulo": "Como liguei as 68 habilidades da BNCC Computação de um ano para o outro",
+    "titulo_seo": "BNCC Computação: ligando as habilidades com TF-IDF",
+    "descricao": "TF-IDF, cosseno e um limite de 0,12: o método por trás do mapa interativo da BNCC Computação, do 6º ano ao Ensino Médio.",
+    "data": "2026-11-27",
+    "tema": "Educação em dados",
+    "imagem": "/infograficos/bncc-computacao/og-bncc-computacao.jpg",
+    "alt": "Cartão do infográfico BNCC Computação em dados, com a rede de habilidades",
+    "palavras": [
+      "BNCC Computação",
+      "TF-IDF",
+      "similaridade de texto",
+      "processamento de linguagem natural",
+      "currículo"
+    ]
+  },
+  {
+    "slug": "bastidores-analise-notas-da-turma",
+    "titulo": "Uma análise de notas que não envia nada: planilhas lidas no navegador",
+    "titulo_seo": "Análise das notas da turma sem enviar dados",
+    "descricao": "Como funciona a ferramenta de análise das notas da turma: leitura de .xlsx no navegador, privacidade dos alunos e cores que todo mundo enxerga.",
+    "data": "2026-12-10",
+    "tema": "Ferramentas",
+    "imagem": "/infograficos/notas-da-turma/og-notas-da-turma.jpg",
+    "alt": "Cartão da ferramenta Análise das notas da turma",
+    "palavras": [
+      "análise de notas",
+      "privacidade",
+      "planilha",
+      "JavaScript",
+      "conselho de classe"
+    ]
+  },
+  {
+    "slug": "bastidores-chuva-rs-el-nino",
+    "titulo": "A chuva do RS e o El Niño: 65 anos de dados em um infográfico",
+    "titulo_seo": "A chuva do RS e o El Niño em 65 anos de dados",
+    "descricao": "Reanálise ERA5, índice ONI da NOAA e correlação de Spearman: como montei o infográfico sobre a chuva gaúcha e o El Niño, e os limites dos dados.",
+    "data": "2026-12-22",
+    "tema": "Clima e cidades",
+    "imagem": "/infograficos/chuva-el-nino/og-chuva-el-nino.jpg",
+    "alt": "Cartão do infográfico A chuva do RS e o El Niño",
+    "palavras": [
+      "El Niño",
+      "chuva",
+      "Rio Grande do Sul",
+      "ERA5",
+      "correlação de Spearman"
+    ]
+  },
+  {
+    "slug": "bastidores-familias-de-linguas",
+    "titulo": "Famílias de línguas: como organizei 7.674 línguas em um infográfico",
+    "titulo_seo": "Famílias de línguas: 7.674 línguas em um infográfico",
+    "descricao": "Glottolog, WALS e algumas escolhas de critério: os bastidores do infográfico interativo sobre as famílias de línguas do mundo e do Brasil.",
+    "data": "2027-01-08",
+    "tema": "Línguas",
+    "imagem": "/infograficos/familias-de-linguas/og-familias-de-linguas.jpg",
+    "alt": "Cartão do infográfico Famílias de línguas",
+    "palavras": [
+      "famílias de línguas",
+      "Glottolog",
+      "WALS",
+      "línguas indígenas",
+      "linguística"
+    ]
+  },
+  {
+    "slug": "bastidores-sons-das-linguas-ipa",
+    "titulo": "Os sons das línguas: o quadro do IPA com som e transcrição em 14 idiomas",
+    "titulo_seo": "O quadro do IPA com som e transcrição",
+    "descricao": "PHOIBLE, gravações abertas e regras de leitura escritas à mão: como funciona o infográfico do Alfabeto Fonético Internacional com transcrição.",
+    "data": "2027-01-22",
+    "tema": "Línguas",
+    "imagem": "/infograficos/alfabeto-fonetico/og-alfabeto-fonetico.jpg",
+    "alt": "Cartão do infográfico Os sons das línguas, com o quadro do IPA",
+    "palavras": [
+      "IPA",
+      "alfabeto fonético",
+      "fonética",
+      "PHOIBLE",
+      "transcrição fonética"
+    ]
+  },
+  {
+    "slug": "bastidores-interesse-por-ia-wikipedia",
+    "titulo": "Um painel que se atualiza sozinho: o interesse por IA na Wikipédia",
+    "titulo_seo": "Interesse por IA na Wikipédia: painel automático",
+    "descricao": "Como o painel de interesse por inteligência artificial busca as visitas da Wikipédia todo mês, trata verbetes renomeados e roda sem servidor.",
+    "data": "2027-02-05",
+    "tema": "Projetos",
+    "imagem": "/infograficos/interesse-por-ia/og-interesse-por-ia.jpg",
+    "alt": "Cartão do painel Interesse por IA na Wikipédia",
+    "palavras": [
+      "Wikipédia",
+      "pageviews",
+      "GitHub Actions",
+      "inteligência artificial",
+      "séries temporais"
+    ]
+  },
+  {
+    "slug": "bastidores-bncc-matematica-e-arte",
+    "titulo": "BNCC Matemática e Arte em dados: o mesmo método, problemas diferentes",
+    "titulo_seo": "BNCC Matemática e Arte em dados",
+    "descricao": "Código compartilhado, 247 habilidades de Matemática e uma proposta de distribuição por ano para a Arte: os bastidores de duas páginas da série BNCC em dados.",
+    "data": "2027-02-19",
+    "tema": "Educação em dados",
+    "imagem": "/infograficos/bncc-matematica/og-bncc-matematica.jpg",
+    "alt": "Cartão do infográfico BNCC Matemática em dados",
+    "palavras": [
+      "BNCC Matemática",
+      "BNCC Arte",
+      "currículo",
+      "visualização de dados",
+      "planejamento"
+    ]
+  },
+  {
+    "slug": "bastidores-bncc-linguagens",
+    "titulo": "BNCC Língua Portuguesa, Literatura e Inglês em dados",
+    "titulo_seo": "BNCC Linguagens em dados: Português, Literatura e Inglês",
+    "descricao": "Base aberta bncc.dev, habilidades que valem para vários anos e um recorte de literatura: como foram feitas as páginas de Linguagens da série BNCC em dados.",
+    "data": "2027-03-05",
+    "tema": "Educação em dados",
+    "imagem": "/infograficos/bncc-lingua-portuguesa/og-bncc-lingua-portuguesa.jpg",
+    "alt": "Cartão do infográfico BNCC Língua Portuguesa em dados",
+    "palavras": [
+      "BNCC Língua Portuguesa",
+      "BNCC Língua Inglesa",
+      "literatura",
+      "dados abertos",
+      "currículo"
+    ]
+  },
+  {
+    "slug": "bastidores-paisagem-sonora-nova-york",
+    "titulo": "A partitura da cidade: lendo Nova York pelos sons",
+    "titulo_seo": "A partitura da cidade: Nova York pelos sons",
+    "descricao": "18.510 gravações de 10 segundos, um cuidado importante antes de citar números e uma partitura que dá para ouvir: os bastidores do infográfico de paisagem sonora.",
+    "data": "2027-03-19",
+    "tema": "Clima e cidades",
+    "imagem": "/infograficos/paisagem-sonora/og-paisagem-sonora.jpg",
+    "alt": "Cartão do infográfico Paisagem sonora de Nova York",
+    "palavras": [
+      "paisagem sonora",
+      "SONYC",
+      "sonificação",
+      "dados urbanos",
+      "visualização de dados"
+    ]
   }
 ]

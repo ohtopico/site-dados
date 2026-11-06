@@ -1,0 +1,21 @@
+<p>No fim do ano, todo professor passa horas olhando a planilha de notas antes do conselho de classe. A <a href="/infograficos/notas-da-turma/">Análise das notas da turma</a> é uma ferramenta que lê essa planilha e mostra, em poucos segundos, a distribuição das médias, os alunos que precisam de atenção e as avaliações em que a turma teve mais dificuldade. A decisão mais importante do projeto foi uma só: nenhuma nota e nenhum nome sai do computador de quem usa.</p>
+
+<h2>Por que tudo no navegador</h2>
+<p>Notas e nomes de alunos são dados pessoais de menores de idade. Uma ferramenta que pedisse para enviar a planilha a um servidor criaria um problema de privacidade que nenhum gráfico compensa. Por isso a página não tem servidor: o arquivo é lido pelo próprio navegador, as contas são feitas ali e, ao fechar a aba, tudo some. Depois de aberta, a página funciona até sem internet.</p>
+
+<h2>Ler .xlsx sem bibliotecas</h2>
+<p>Um arquivo .xlsx (e também o .ods do LibreOffice) é, por dentro, um arquivo ZIP cheio de XML. Em vez de carregar uma biblioteca grande de planilhas, escrevi um leitor pequeno: ele localiza o índice do ZIP, descompacta cada parte com a <code>DecompressionStream</code>, que os navegadores atuais já trazem, e lê as células do XML. Fórmulas valem pelo último resultado salvo na planilha. Para quem usa Google Planilhas, a página aceita CSV ou células copiadas e coladas.</p>
+
+<h2>As contas</h2>
+<ul>
+<li><strong>Nota em percentual.</strong> Cada nota é dividida pelo valor da avaliação. Assim, uma prova de 0 a 10 e um trabalho que vale 3 pontos entram na mesma conta. Se o título da coluna for "Trabalho (3)", a página entende sozinha.</li>
+<li><strong>Média do aluno.</strong> Média simples das avaliações que ele fez. Célula vazia ou com F conta como "não fez" e fica fora da média, e o número de avaliações que faltam aparece na lista de atenção.</li>
+<li><strong>Média da avaliação.</strong> Média de quem fez, mais o percentual de alunos abaixo da média para aprovação.</li>
+</ul>
+
+<h2>Ligando a nota à habilidade</h2>
+<p>Se o título da coluna tiver o código de uma habilidade da BNCC, como EF07CO02, a página mostra o texto da habilidade e, para Computação e Matemática, o link para o material gratuito de retomada em <a href="https://ohtopico.com.br/">ohtopico.com.br</a>, incluindo fichas para alunos com diferentes necessidades. É aqui que a análise deixa de ser só um gráfico e vira um plano para a próxima aula.</p>
+
+<h2>Cores que todo mundo enxerga</h2>
+<p>No mapa da turma, a primeira ideia foi verde para acima e vermelho para abaixo da média. Na simulação de daltonismo, o par vermelho e verde se confundia. Fiquei com vermelho para abaixo e azul para acima, mais forte quanto mais longe da média. O relatório sai em fundo branco, pronto para imprimir.</p>
+<p>Dá para testar com uma turma de exemplo ou baixar a planilha modelo na própria página. A ferramenta é de uso livre.</p>
