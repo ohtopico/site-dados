@@ -1,0 +1,14 @@
+# juliaroberta.com
+
+> Site de dados e IA de Júlia Roberta Quoos Alves (Júlia Quoos), engenheira de dados e de machine learning e mestranda em Ciência da Computação na UFSM. Reúne projetos, infográficos interativos com dados abertos do Brasil, notebooks e o currículo.
+
+## Principais páginas
+- [Infográficos interativos](https://juliaroberta.com/infograficos/): painéis com dados abertos, como educação no Vale do Rio Pardo (INEP e IBGE), chuva e El Niño no RS, interesse por IA na Wikipédia e a paisagem sonora de Nova York.
+- [Mapas da BNCC](https://juliaroberta.com/infograficos/bncc-computacao/): como as habilidades de Computação, Matemática, Arte e Linguagens se ligam de um ano para o outro.
+- [Notebooks](https://juliaroberta.com/infograficos/interesse-por-ia/notebooks/): notebooks em Python para abrir no Colab.
+- [Blog](https://juliaroberta.com/blog/): bastidores dos projetos de dados.
+- [Currículo](https://juliaroberta.com/curriculo/)
+
+## Outros sites
+- [ohtopico.com.br](https://ohtopico.com.br/): material didático gratuito de Computação e Matemática e formação de professores.
+- [GitHub](https://github.com/ohtopico)

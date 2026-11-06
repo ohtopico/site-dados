@@ -76,9 +76,7 @@ def cabeca(titulo, descricao, url, imagem, tipo='article', extra=''):
 <meta property="og:image" content="{img}">
 <meta name="twitter:card" content="summary_large_image">
 {extra}<script>try {{ const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t) document.documentElement.dataset.theme = t; }} catch (e) {{}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
 <link rel="stylesheet" href="/blog/assets/blog.css?v={VERSAO}">
 <link rel="alternate" type="application/rss+xml" title="{TITULO_BLOG}" href="/blog/feed.xml">
 {GTAG}
@@ -213,7 +211,9 @@ def pagina_post(p, texto, publicados, i):
         </div>
     </aside>{nav}
 </article>'''
-    return cabeca(f'{p["titulo"]} | Júlia Quoos', p['descricao'], url, p['imagem'], extra=extra) + moldura(principal, publicados)
+    # o Google corta o título perto de 60 caracteres: use "titulo_seo" no posts.json para um título mais curto
+    t = p.get('titulo_seo') or p['titulo']
+    return cabeca(t if len(t) > 46 else f'{t} | Júlia Quoos', p['descricao'], url, p['imagem'], extra=extra) + moldura(principal, publicados)
 
 
 def pagina_indice(publicados):

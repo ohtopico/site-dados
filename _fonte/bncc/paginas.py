@@ -16,8 +16,8 @@ METODO = ('o texto e o objeto de conhecimento de cada habilidade viram palavras 
 PAGINAS = [
     {
         'slug': 'bncc-computacao', 'disciplina': 'Computação', 'n': 68, 'terminal': 'bncc computação',
-        'title': 'BNCC Computação em dados: como as habilidades se ligam',
-        'description': 'Infográfico interativo das 68 habilidades de Computação da BNCC, do 6º ano ao Ensino Médio: como os conteúdos se ligam de um ano para o outro, eixos, verbos e material pronto.',
+        'title': 'BNCC Computação: mapa interativo das habilidades',
+        'description': 'Infográfico interativo das 68 habilidades de Computação da BNCC, do 6º ano ao Ensino Médio: eixos, verbos e como se ligam de um ano para o outro.',
         'og': '68 habilidades, do 6º ano ao Ensino Médio: clique em uma e veja de onde ela vem e para onde vai.',
         'og_alt': 'BNCC Computação em dados: as habilidades do 6º ano ao Ensino Médio ligadas por conteúdo',
         'lead': 'As 68 habilidades de Computação do 6º ano ao Ensino Médio, ligadas pelo conteúdo de um ano para o outro. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
@@ -42,8 +42,8 @@ PAGINAS = [
     },
     {
         'slug': 'bncc-matematica', 'disciplina': 'Matemática', 'n': 247, 'terminal': 'bncc matemática',
-        'title': 'BNCC Matemática em dados: como as habilidades se ligam',
-        'description': 'Infográfico interativo das 247 habilidades de Matemática da BNCC, do 1º ao 9º ano: como os conteúdos se ligam de um ano para o outro, unidades temáticas, verbos e material pronto.',
+        'title': 'BNCC Matemática: mapa interativo das habilidades',
+        'description': 'Infográfico interativo das 247 habilidades de Matemática da BNCC, do 1º ao 9º ano: unidades temáticas, verbos e como se ligam de um ano para o outro.',
         'og': '247 habilidades, do 1º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
         'og_alt': 'BNCC Matemática em dados: as habilidades do 1º ao 9º ano ligadas por conteúdo',
         'lead': 'As 247 habilidades de Matemática do 1º ao 9º ano, ligadas pelo conteúdo de um ano para o outro. Clique em uma habilidade para ver de onde ela vem e para onde vai, das primeiras contagens às equações.',
@@ -68,8 +68,8 @@ PAGINAS = [
     },
     {
         'slug': 'bncc-arte', 'disciplina': 'Arte', 'n': 61, 'terminal': 'bncc arte',
-        'title': 'BNCC Arte em dados: como as habilidades se ligam',
-        'description': 'Infográfico interativo das 61 habilidades de Arte da BNCC no Ensino Fundamental: como artes visuais, dança, música, teatro e artes integradas passam dos anos iniciais para os anos finais.',
+        'title': 'BNCC Arte: mapa interativo das habilidades',
+        'description': 'Infográfico interativo das 61 habilidades de Arte da BNCC: artes visuais, dança, música, teatro e artes integradas, dos anos iniciais aos finais.',
         'og': '61 habilidades de Arte, dos anos iniciais aos anos finais: clique em uma e veja para onde ela vai.',
         'og_alt': 'BNCC Arte em dados: as habilidades dos anos iniciais aos anos finais ligadas por conteúdo',
         'lead': 'As 61 habilidades de Arte do Ensino Fundamental, ligadas pelo conteúdo dos anos iniciais (1º ao 5º ano) para o 6º, 7º, 8º e 9º ano. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
@@ -94,8 +94,8 @@ PAGINAS = [
     },
     {
         'slug': 'bncc-lingua-portuguesa', 'disciplina': 'Língua Portuguesa', 'n': 185, 'terminal': 'bncc língua portuguesa',
-        'title': 'BNCC Língua Portuguesa em dados: como as habilidades se ligam',
-        'description': 'Infográfico interativo das 185 habilidades de Língua Portuguesa da BNCC do 6º ao 9º ano: campos de atuação, práticas de linguagem, verbos e como os conteúdos se ligam de um ano para o outro.',
+        'title': 'BNCC Língua Portuguesa: mapa das habilidades',
+        'description': 'Infográfico interativo das 185 habilidades de Língua Portuguesa da BNCC do 6º ao 9º ano: campos de atuação, práticas de linguagem e verbos.',
         'og': '185 habilidades de Língua Portuguesa, do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
         'og_alt': 'BNCC Língua Portuguesa em dados: as habilidades do 6º ao 9º ano ligadas por conteúdo',
         'lead': 'As 185 habilidades de Língua Portuguesa do 6º ao 9º ano, ligadas pelo conteúdo. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
@@ -118,8 +118,8 @@ PAGINAS = [
     },
     {
         'slug': 'bncc-literatura', 'disciplina': 'Literatura', 'n': 21, 'terminal': 'bncc literatura',
-        'title': 'BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano',
-        'description': 'Infográfico interativo das 21 habilidades do campo artístico-literário de Língua Portuguesa da BNCC, do 6º ao 9º ano: leitura literária, produção, oralidade e como os conteúdos se ligam.',
+        'title': 'BNCC Literatura: campo artístico-literário',
+        'description': 'Infográfico interativo das 21 habilidades do campo artístico-literário da BNCC, do 6º ao 9º ano: leitura literária, produção e oralidade.',
         'og': 'As 21 habilidades de literatura da BNCC do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
         'og_alt': 'BNCC Literatura em dados: o campo artístico-literário do 6º ao 9º ano',
         'lead': 'Na BNCC, a literatura faz parte de Língua Portuguesa, no campo artístico-literário. São 21 habilidades do 6º ao 9º ano, ligadas pelo conteúdo. Clique em uma para ver de onde ela vem e para onde vai.',
@@ -142,8 +142,8 @@ PAGINAS = [
     },
     {
         'slug': 'bncc-lingua-inglesa', 'disciplina': 'Língua Inglesa', 'n': 88, 'terminal': 'bncc língua inglesa',
-        'title': 'BNCC Língua Inglesa em dados: como as habilidades se ligam',
-        'description': 'Infográfico interativo das 88 habilidades de Língua Inglesa da BNCC do 6º ao 9º ano: eixos, unidades temáticas, verbos e como os conteúdos se ligam de um ano para o outro.',
+        'title': 'BNCC Língua Inglesa: mapa interativo das habilidades',
+        'description': 'Infográfico interativo das 88 habilidades de Língua Inglesa da BNCC do 6º ao 9º ano: eixos, unidades temáticas, verbos e ligações entre anos.',
         'og': '88 habilidades de Língua Inglesa, do 6º ao 9º ano: clique em uma e veja de onde ela vem e para onde vai.',
         'og_alt': 'BNCC Língua Inglesa em dados: as habilidades do 6º ao 9º ano ligadas por conteúdo',
         'lead': 'As 88 habilidades de Língua Inglesa do 6º ao 9º ano, ligadas pelo conteúdo de um ano para o outro. Clique em uma habilidade para ver de onde ela vem e para onde vai.',
@@ -197,7 +197,7 @@ def pagina(p):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(p['title'])} | Júlia Quoos</title>
+<title>{e(p['title'] + ' | Júlia Quoos' if len(p['title']) <= 46 else p['title'])}</title>
 <meta name="description" content="{e(p['description'])}">
 <meta property="og:title" content="BNCC {e(p['disciplina'])} em dados | Júlia Quoos">
 <meta property="og:description" content="{e(p['og'])}">
@@ -212,9 +212,7 @@ def pagina(p):
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{e(p['og_alt'])}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
 <link rel="stylesheet" href="/assets/md.css">
 <link rel="stylesheet" href="../assets/infograficos.css?v={V}">
 <link rel="stylesheet" href="../assets/bncc-rede.css?v={V}">
