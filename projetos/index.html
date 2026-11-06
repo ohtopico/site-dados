@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Projetos de dados e IA: estudos de caso | Júlia Quoos</title>
+<meta name="description" content="Estudos de caso de Júlia Quoos em engenharia de dados, machine learning e visão computacional: pergunta, dados, método, resultado e limitações de cada projeto.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/projetos/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/projetos/">
+<meta property="og:title" content="Projetos de dados e IA: estudos de caso | Júlia Quoos">
+<meta property="og:description" content="Estudos de caso de Júlia Quoos em engenharia de dados, machine learning e visão computacional: pergunta, dados, método, resultado e limitações de cada projeto.">
+<meta property="og:image" content="https://juliaroberta.com/projetos/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="/infograficos/assets/infograficos.css?v=202611022300">
+<link rel="stylesheet" href="/projetos/projetos.css?v=202611061">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Projetos de dados e IA", "description": "Estudos de caso de engenharia de dados, machine learning e visão computacional.", "url": "https://juliaroberta.com/projetos/", "inLanguage": "pt-BR", "creator": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "hasPart": [{"@type": "CreativeWork", "name": "Visão computacional para pessoas com deficiência visual", "url": "https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/"}, {"@type": "CreativeWork", "name": "Quem vai comprar de novo? Previsão de recompra em 60 dias", "url": "https://juliaroberta.com/projetos/previsao-recompra-clientes/"}, {"@type": "CreativeWork", "name": "Reconhecer moedas do Real por foto, com um dataset próprio", "url": "https://juliaroberta.com/projetos/moedas-brasileiras/"}, {"@type": "CreativeWork", "name": "Censos do IBGE e do INEP para 21 municípios gaúchos", "url": "https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/"}]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Júlia Quoos</a>
+  <a class="brand-sub" href="/projetos/">/ projetos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/projetos/">Projetos</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <span class="terminal">$ estudos de caso</span>
+      <h1>Projetos de <mark>dados e IA</mark></h1>
+      <p class="lead">Quatro projetos contados do começo ao fim: a pergunta, os dados, o método, o resultado e o que ainda não funciona. O código de cada um está aberto no GitHub.</p>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="lista-info lista-projetos">
+        <a class="info" href="proximidade-objetos-deficiencia-visual/">
+          <div class="janela">
+            <div class="janela-barra"><i></i><i></i><i></i><span>Objetos e proximidade para pessoas cegas</span></div>
+            <img class="capa" src="proximidade-objetos-deficiencia-visual/og.jpg" alt="" loading="lazy" width="1200" height="630">
+            <div class="janela-corpo"><h3>Visão computacional para pessoas com deficiência visual</h3><p>Pesquisa de mestrado: MobileNets para reconhecer cenas e um pipeline que aponta os obstáculos mais próximos, pensado para rodar numa mochila.</p><div class="tags"><span class="tag">PyTorch</span><span class="tag">MobileNet</span><span class="tag">SegFormer</span><span class="tag">Depth Anything</span></div></div>
+          </div>
+        </a>
+        <a class="info" href="previsao-recompra-clientes/">
+          <div class="janela">
+            <div class="janela-barra"><i></i><i></i><i></i><span>Previsão de recompra de clientes</span></div>
+            <img class="capa" src="previsao-recompra-clientes/og.jpg" alt="" loading="lazy" width="1200" height="630">
+            <div class="janela-corpo"><h3>Quem vai comprar de novo? Previsão de recompra em 60 dias</h3><p>541 mil transações, segmentação RFM e 12 modelos comparados. A regressão logística com 5 variáveis empatou com as alternativas mais complexas.</p><div class="tags"><span class="tag">pandas</span><span class="tag">scikit-learn</span><span class="tag">LightGBM</span><span class="tag">XGBoost</span></div></div>
+          </div>
+        </a>
+        <a class="info" href="moedas-brasileiras/">
+          <div class="janela">
+            <div class="janela-barra"><i></i><i></i><i></i><span>Moedas brasileiras por foto</span></div>
+            <img class="capa" src="moedas-brasileiras/og.jpg" alt="" loading="lazy" width="1200" height="630">
+            <div class="janela-corpo"><h3>Reconhecer moedas do Real por foto, com um dataset próprio</h3><p>Dataset próprio de 186 fotos e MobileNetV2 por transfer learning, com a revisão de um vazamento entre treino e validação.</p><div class="tags"><span class="tag">TensorFlow</span><span class="tag">MobileNetV2</span><span class="tag">Google Cloud</span><span class="tag">Web scraping</span></div></div>
+          </div>
+        </a>
+        <a class="info" href="censo-vale-do-rio-pardo/">
+          <div class="janela">
+            <div class="janela-barra"><i></i><i></i><i></i><span>Censos no Vale do Rio Pardo</span></div>
+            <img class="capa" src="censo-vale-do-rio-pardo/og.jpg" alt="" loading="lazy" width="1200" height="630">
+            <div class="janela-corpo"><h3>Censos do IBGE e do INEP para 21 municípios gaúchos</h3><p>API do SIDRA e microdados do INEP em notebooks reprodutíveis, de 2010 a 2025. Virou painel, infográficos e matéria de jornal.</p><div class="tags"><span class="tag">pandas</span><span class="tag">API SIDRA</span><span class="tag">INEP</span><span class="tag">Colab</span></div></div>
+          </div>
+        </a>
+      </div>
+      <p class="muted mais">Outros repositórios, como a análise da pesquisa State of Data Brazil e o sumarizador de textos em português, estão no <a href="https://github.com/ohtopico">GitHub</a>. Os painéis com dados abertos ficam em <a href="/infograficos/">Infográficos</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Estudos de caso de <a href="/curriculo/">Júlia Roberta Quoos Alves</a>, engenheira de dados e de machine learning. Veja também os <a href="/infograficos/">infográficos interativos</a> e o <a href="/blog/">blog de dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>

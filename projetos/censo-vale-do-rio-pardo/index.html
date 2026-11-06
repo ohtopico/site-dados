@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Censo IBGE e Censo Escolar no Vale do Rio Pardo</title>
+<meta name="description" content="Estudo de caso de engenharia de dados públicos: API do SIDRA e microdados do INEP para 21 municípios do Vale do Rio Pardo, de 2010 a 2025, em notebooks reprodutíveis.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/">
+<meta property="og:title" content="Censo IBGE e Censo Escolar no Vale do Rio Pardo">
+<meta property="og:description" content="Estudo de caso de engenharia de dados públicos: API do SIDRA e microdados do INEP para 21 municípios do Vale do Rio Pardo, de 2010 a 2025, em notebooks reprodutíveis.">
+<meta property="og:image" content="https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="/infograficos/assets/infograficos.css?v=202611022300">
+<link rel="stylesheet" href="/projetos/projetos.css?v=202611061">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Censos do IBGE e do INEP para 21 municípios gaúchos", "headline": "Censos do IBGE e do INEP para 21 municípios gaúchos", "description": "Estudo de caso de engenharia de dados públicos: API do SIDRA e microdados do INEP para 21 municípios do Vale do Rio Pardo, de 2010 a 2025, em notebooks reprodutíveis.", "url": "https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/", "inLanguage": "pt-BR", "author": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "image": "https://juliaroberta.com/projetos/censo-vale-do-rio-pardo/og.jpg", "keywords": ["pandas", "API SIDRA", "INEP", "Colab", "Dados abertos"], "isBasedOn": "https://github.com/ohtopico/dados-censo"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Júlia Quoos</a>
+  <a class="brand-sub" href="/projetos/">/ projetos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/projetos/">Projetos</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <nav class="trilha" aria-label="Você está em"><a href="/projetos/">Projetos</a> / estudo de caso 4 de 4</nav>
+      <span class="terminal">$ engenharia de dados · dados públicos</span>
+      <h1>Censos do IBGE e do INEP para 21 municípios gaúchos</h1>
+      <p class="lead">Estudo de caso de engenharia de dados públicos: API do SIDRA e microdados do INEP para 21 municípios do Vale do Rio Pardo, de 2010 a 2025, em notebooks reprodutíveis.</p>
+      <ul class="pilulas"><li>pandas</li><li>API SIDRA</li><li>INEP</li><li>Colab</li><li>Dados abertos</li></ul>
+      <div class="btn-row acoes">
+        <a class="btn" href="https://github.com/ohtopico/dados-censo" rel="noopener">Código no GitHub</a>
+        <a class="btn ghost" href="/curriculo/">Currículo</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap caso">
+      <dl class="ficha"><div><dt>Pergunta</dt><dd>O que mudou entre 2010 e 2022 na vida e nas escolas de três recortes de municípios do Vale do Rio Pardo (RS)?</dd></div><div><dt>Dados</dt><dd>Censos Demográficos 2010 e 2022, PIB dos Municípios e censos agropecuários (API do SIDRA, IBGE) e microdados do Censo Escolar do INEP de 2010, 2022 e 2025.</dd></div><div><dt>Método</dt><dd>Notebooks no Colab que baixam tudo das fontes, harmonizam os códigos de município, corrigem valores pelo IPCA e geram planilhas, gráficos e infográficos.</dd></div><div><dt>Entrega</dt><dd>Planilhas com aba Leia-me, CSV escola a escola, infográficos em PDF, uma matéria de jornal e o painel interativo de juliaroberta.com.</dd></div></dl>
+      <div class="resumo-num"><div><b>21</b><span>municípios em 3 recortes</span></div><div><b>20+</b><span>tabelas do SIDRA consultadas</span></div><div><b>431 → 343</b><span>escolas em atividade, 2010 a 2025</span></div><div><b>+75%</b><span>matrículas de creche, 2010 a 2022</span></div></div>
+      <article class="texto">
+<h2>Perguntas concretas</h2>
+<p>O projeto parte de perguntas concretas sobre a região: Candelária encolheu? As escolas rurais estão fechando? A alfabetização melhorou? Para responder, montei três recortes: Candelária e os 8 municípios vizinhos, Novo Cabrais e os 4 vizinhos, e os 16 municípios da microrregião de Santa Cruz do Sul do IBGE. Juntos são 21 municípios, com o Rio Grande do Sul e o Brasil como referência.</p>
+
+<h2>Um pipeline reprodutível</h2>
+<p>Cada recorte tem um notebook que roda no Google Colab do começo ao fim. Ele consulta a API do SIDRA (mais de 20 tabelas, de população e cor ou raça a renda, saneamento e agropecuária) ou baixa os microdados do Censo Escolar do INEP, um arquivo por ano, filtra as escolas em atividade dos 21 municípios e gera a planilha, os gráficos e um arquivo compactado com tudo. A escolha de baixar das fontes, em vez de guardar planilhas editadas à mão, permite que qualquer pessoa refaça os números e que eu atualize tudo quando sai um ano novo.</p>
+
+<h2>Comparar só o que é comparável</h2>
+<p>A maior parte do trabalho não está no código, está nas notas. Alguns exemplos que ficaram documentados na aba Leia-me de cada planilha:</p>
+<ul>
+<li>Valores em reais de 2010 foram corrigidos pelo IPCA para julho de 2022 antes de comparar renda e PIB.</li>
+<li>As perguntas sobre água e esgoto mudaram em 2022, então a comparação com 2010 é aproximada.</li>
+<li>"Pessoas ocupadas" não é comparável: 2010 conta todos os ocupados, 2022 só os com rendimento.</li>
+<li>Em 2025 o INEP tirou matrículas, turmas e professores da tabela de escolas, então esses indicadores param em 2022.</li>
+<li>Professores são somados por escola: quem dá aula em duas escolas conta duas vezes.</li>
+</ul>
+<p>Um erro da primeira versão também ficou registrado: a planilha de alfabetização tinha o grupo de 65 anos ou mais zerado em 2010, o que deixava a taxa daquele ano alta demais.</p>
+
+<h2>O que os dados mostram</h2>
+<figure class="figura">
+  <img src="escolas-rurais.png" alt="Gráfico de halteres com as escolas rurais de cada município em 2010 e 2025. Quase todos os municípios perderam escolas rurais; Venâncio Aires foi de 49 para 21." width="1610" height="1510" loading="lazy">
+  <figcaption>Escolas rurais em atividade por município, 2010 e 2025. Gráfico gerado pelo notebook do Censo Escolar.</figcaption>
+</figure>
+<p>Na microrregião de Santa Cruz do Sul, as matrículas da educação básica caíram 10% de 2010 a 2022, mas as de creche subiram 75%. As escolas em atividade foram de 431 para 343 até 2025, e as rurais, de 242 para 108. Na alfabetização, todos os 16 municípios melhoraram, e a taxa da região subiu de 94,6% para 96,3%.</p>
+
+<h2>Do notebook para as pessoas</h2>
+<p>Os mesmos dados viraram entregas para públicos diferentes: infográficos em PDF para cada recorte, uma matéria de jornal sobre Candelária, o <a href="/infograficos/dados-da-regiao/">painel interativo de dados da educação na região</a> e a página <a href="/infograficos/dados-da-regiao/novo-cabrais/">Novo Cabrais em 12 anos</a>. Os bastidores do painel estão no <a href="/blog/bastidores-painel-educacao-vale-do-rio-pardo/">blog</a>.</p>
+      </article>
+      <aside class="outros">
+        <h2>Outros estudos de caso</h2>
+        <ul><li><a href="/projetos/proximidade-objetos-deficiencia-visual/">Objetos e proximidade para pessoas cegas</a></li><li><a href="/projetos/previsao-recompra-clientes/">Previsão de recompra de clientes</a></li><li><a href="/projetos/moedas-brasileiras/">Moedas brasileiras por foto</a></li></ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Estudos de caso de <a href="/curriculo/">Júlia Roberta Quoos Alves</a>, engenheira de dados e de machine learning. Veja também os <a href="/infograficos/">infográficos interativos</a> e o <a href="/blog/">blog de dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>

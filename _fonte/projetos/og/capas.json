@@ -1,0 +1,76 @@
+[
+ {
+  "arquivo": "projetos/proximidade-objetos-deficiencia-visual/og.jpg",
+  "terminal": "$ mestrado · visão computacional",
+  "titulo": "Visão computacional para pessoas com deficiência visual",
+  "tags": [
+   "PyTorch",
+   "MobileNet",
+   "SegFormer",
+   "Depth Anything"
+  ],
+  "numero": [
+   "1,5 M",
+   "parâmetros na MobileNetV3 Small"
+  ]
+ },
+ {
+  "arquivo": "projetos/previsao-recompra-clientes/og.jpg",
+  "terminal": "$ machine learning · varejo",
+  "titulo": "Quem vai comprar de novo? Previsão de recompra em 60 dias",
+  "tags": [
+   "pandas",
+   "scikit-learn",
+   "LightGBM",
+   "XGBoost"
+  ],
+  "numero": [
+   "541 mil",
+   "transações na base original"
+  ]
+ },
+ {
+  "arquivo": "projetos/moedas-brasileiras/og.jpg",
+  "terminal": "$ visão computacional · dataset próprio",
+  "titulo": "Reconhecer moedas do Real por foto, com um dataset próprio",
+  "tags": [
+   "TensorFlow",
+   "MobileNetV2",
+   "Google Cloud",
+   "Web scraping"
+  ],
+  "numero": [
+   "186",
+   "fotos no dataset próprio"
+  ]
+ },
+ {
+  "arquivo": "projetos/censo-vale-do-rio-pardo/og.jpg",
+  "terminal": "$ engenharia de dados · dados públicos",
+  "titulo": "Censos do IBGE e do INEP para 21 municípios gaúchos",
+  "tags": [
+   "pandas",
+   "API SIDRA",
+   "INEP",
+   "Colab"
+  ],
+  "numero": [
+   "21",
+   "municípios em 3 recortes"
+  ]
+ },
+ {
+  "arquivo": "projetos/og.jpg",
+  "terminal": "$ estudos de caso",
+  "titulo": "Projetos de dados e IA",
+  "tags": [
+   "Machine learning",
+   "Visão computacional",
+   "Dados públicos"
+  ],
+  "numero": [
+   "4",
+   "estudos de caso"
+  ]
+ }
+]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Visão computacional para pessoas cegas: estudo de caso</title>
+<meta name="description" content="Pesquisa de mestrado na UFSM: modelos leves (MobileNet) para reconhecer cenas, objetos e obstáculos próximos em uma mochila inteligente para pessoas cegas ou com baixa visão.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/">
+<meta property="og:title" content="Visão computacional para pessoas cegas: estudo de caso">
+<meta property="og:description" content="Pesquisa de mestrado na UFSM: modelos leves (MobileNet) para reconhecer cenas, objetos e obstáculos próximos em uma mochila inteligente para pessoas cegas ou com baixa visão.">
+<meta property="og:image" content="https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="/infograficos/assets/infograficos.css?v=202611022300">
+<link rel="stylesheet" href="/projetos/projetos.css?v=202611061">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Visão computacional para pessoas com deficiência visual", "headline": "Visão computacional para pessoas com deficiência visual", "description": "Pesquisa de mestrado na UFSM: modelos leves (MobileNet) para reconhecer cenas, objetos e obstáculos próximos em uma mochila inteligente para pessoas cegas ou com baixa visão.", "url": "https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/", "inLanguage": "pt-BR", "author": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "image": "https://juliaroberta.com/projetos/proximidade-objetos-deficiencia-visual/og.jpg", "keywords": ["PyTorch", "MobileNet", "SegFormer", "Depth Anything", "Mestrado"], "isBasedOn": "https://github.com/ohtopico/segmentacao-cegos"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Júlia Quoos</a>
+  <a class="brand-sub" href="/projetos/">/ projetos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/projetos/">Projetos</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <nav class="trilha" aria-label="Você está em"><a href="/projetos/">Projetos</a> / estudo de caso 1 de 4</nav>
+      <span class="terminal">$ mestrado · visão computacional</span>
+      <h1>Visão computacional para pessoas com deficiência visual</h1>
+      <p class="lead">Pesquisa de mestrado na UFSM: modelos leves (MobileNet) para reconhecer cenas, objetos e obstáculos próximos em uma mochila inteligente para pessoas cegas ou com baixa visão.</p>
+      <ul class="pilulas"><li>PyTorch</li><li>MobileNet</li><li>SegFormer</li><li>Depth Anything</li><li>Mestrado</li></ul>
+      <div class="btn-row acoes">
+        <a class="btn" href="https://github.com/ohtopico/segmentacao-cegos" rel="noopener">Código no GitHub</a>
+        <a class="btn ghost" href="/curriculo/">Currículo</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap caso">
+      <dl class="ficha"><div><dt>Pergunta</dt><dd>Como avisar uma pessoa cega sobre o ambiente e os obstáculos à frente usando só uma câmera e um computador pequeno?</dd></div><div><dt>Dados</dt><dd>MIT67, NYU Depth V2 (RGB e RGB-D), SUN RGB-D e um dataset próprio com 730 fotos e 3 vídeos de corredores e salas da UFSM.</dd></div><div><dt>Método</dt><dd>Quatro variantes da MobileNet treinadas com três sementes cada; segmentação semântica (SegFormer, ADE20K) e profundidade relativa (Depth Anything) sem treino extra.</dd></div><div><dt>Situação</dt><dd>Em andamento. Defesa prevista para junho de 2027; os resultados de acurácia vão para a dissertação.</dd></div></dl>
+      <div class="resumo-num"><div><b>1,5 M</b><span>parâmetros na MobileNetV3 Small</span></div><div><b>10 ms</b><span>por imagem em CPU</span></div><div><b>4 × 3</b><span>modelos × sementes por experimento</span></div><div><b>730</b><span>fotos próprias da UFSM</span></div></div>
+      <article class="texto">
+<h2>O problema</h2>
+<p>Uma bengala avisa o que está no chão, mas não diz se a pessoa entrou num corredor ou numa sala, nem que há uma porta aberta ou uma lixeira na altura do quadril. A ideia da pesquisa é uma mochila com câmera e um computador embarcado que descreva o ambiente por voz. Isso impõe uma restrição forte: o modelo precisa ser leve o bastante para rodar sem placa de vídeo, com bateria, em tempo real.</p>
+
+<h2>Duas frentes</h2>
+<h3>1. Que tipo de lugar é este?</h3>
+<p>Para reconhecer a cena, comparo quatro arquiteturas MobileNet (V1, V2, V3 Small e V3 Large), que foram desenhadas para celulares. Cada uma é treinada com três sementes diferentes, para que a comparação considere a variação do próprio treino e não um resultado de sorte. Os experimentos usam bases públicas (MIT67, NYU Depth V2 e SUN RGB-D, com e sem a profundidade) e uma base própria, fotografada nos prédios da UFSM.</p>
+<p>Na base própria, um cuidado foi decisivo: fotos tiradas no mesmo minuto e frames do mesmo vídeo ficam sempre na mesma partição. Sem isso, quase-duplicatas iriam para o treino e para o teste ao mesmo tempo, e a acurácia pareceria maior do que é.</p>
+
+<h3>2. O que está perto de mim?</h3>
+<p>A segunda frente não precisa de rótulos nem de treino. Dois modelos já treinados trabalham juntos: o SegFormer separa a imagem em objetos (parede, porta, cadeira, pessoa, chão, escada) e o Depth Anything estima a profundidade relativa. Cruzando os dois, o sistema lista os objetos que estão no terço mais próximo da cena, que são os candidatos a obstáculo.</p>
+<div class="painel-4">
+  <figure><img src="foto.jpg" alt="Foto de um corredor da UFSM" width="206" height="366" loading="lazy"><figcaption>Foto original</figcaption></figure>
+  <figure><img src="objetos.jpg" alt="O mesmo corredor com parede, chão e teto pintados em cores diferentes" width="206" height="366" loading="lazy"><figcaption>Objetos (SegFormer)</figcaption></figure>
+  <figure><img src="proximidade.jpg" alt="Mapa de proximidade do corredor: amarelo perto, roxo longe" width="206" height="366" loading="lazy"><figcaption>Proximidade (quente = perto)</figcaption></figure>
+  <figure><img src="obstaculos.jpg" alt="O corredor com só os objetos mais próximos destacados: chão, parede e teto" width="206" height="366" loading="lazy"><figcaption>Obstáculos próximos</figcaption></figure>
+</div>
+<p class="nota">Um corredor da UFSM passando pelo pipeline. Saída do notebook do repositório.</p>
+
+<h2>Leve de verdade</h2>
+<p>Medi o custo de cada arquitetura, além da acurácia. A MobileNetV3 Small tem 1,5 milhão de parâmetros e leva cerca de 10 ms por imagem em CPU; a MobileNetV1, com 3,2 milhões, leva cerca de 31 ms. Para um aparelho com bateria, essa diferença decide qual modelo é viável.</p>
+
+<h2>Para explicar o que o modelo vê</h2>
+<p>O pipeline também gera mapas Grad-CAM, que mostram em que parte da foto o modelo se apoiou para decidir a cena. Numa tecnologia assistiva, entender por que o modelo errou importa tanto quanto a taxa de acerto.</p>
+
+<h2>Próximos passos</h2>
+<ul>
+<li>Completar a rotulagem da base da UFSM, que ainda tem classes com poucas fotos.</li>
+<li>Testar a fusão de imagem e profundidade (RGB-D) nos modelos leves.</li>
+<li>Levar o melhor modelo para o hardware embarcado e para a demonstração por voz.</li>
+</ul>
+<p>Uma demonstração com comandos de voz está em <a href="https://ohtopico.com.br/teste-mestrado">ohtopico.com.br/teste-mestrado</a>.</p>
+      </article>
+      <aside class="outros">
+        <h2>Outros estudos de caso</h2>
+        <ul><li><a href="/projetos/previsao-recompra-clientes/">Previsão de recompra de clientes</a></li><li><a href="/projetos/moedas-brasileiras/">Moedas brasileiras por foto</a></li><li><a href="/projetos/censo-vale-do-rio-pardo/">Censos no Vale do Rio Pardo</a></li></ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Estudos de caso de <a href="/curriculo/">Júlia Roberta Quoos Alves</a>, engenheira de dados e de machine learning. Veja também os <a href="/infograficos/">infográficos interativos</a> e o <a href="/blog/">blog de dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>

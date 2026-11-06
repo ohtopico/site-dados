@@ -3,6 +3,7 @@
 > Site de dados e IA de Júlia Roberta Quoos Alves (Júlia Quoos), engenheira de dados e de machine learning e mestranda em Ciência da Computação na UFSM. Reúne projetos, infográficos interativos com dados abertos do Brasil, notebooks e o currículo.
 
 ## Principais páginas
+- [Projetos](https://juliaroberta.com/projetos/): estudos de caso com pergunta, dados, método, resultado e limitações: visão computacional para pessoas com deficiência visual (mestrado), previsão de recompra de clientes, classificação de moedas brasileiras e Censos do IBGE e do INEP no Vale do Rio Pardo.
 - [Infográficos interativos](https://juliaroberta.com/infograficos/): painéis com dados abertos, como educação no Vale do Rio Pardo (INEP e IBGE), chuva e El Niño no RS, interesse por IA na Wikipédia e a paisagem sonora de Nova York.
 - [Mapas da BNCC](https://juliaroberta.com/infograficos/bncc-computacao/): como as habilidades de Computação, Matemática, Arte e Linguagens se ligam de um ano para o outro.
 - [Notebooks](https://juliaroberta.com/infograficos/interesse-por-ia/notebooks/): notebooks em Python para abrir no Colab.
