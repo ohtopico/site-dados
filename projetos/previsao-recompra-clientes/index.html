@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Previsão de recompra de clientes: estudo de caso</title>
+<meta name="description" content="Estudo de caso com 541 mil transações de um varejo online: segmentação RFM, janela de observação sem vazamento e 12 modelos comparados para prever a recompra em 60 dias.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/projetos/previsao-recompra-clientes/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/projetos/previsao-recompra-clientes/">
+<meta property="og:title" content="Previsão de recompra de clientes: estudo de caso">
+<meta property="og:description" content="Estudo de caso com 541 mil transações de um varejo online: segmentação RFM, janela de observação sem vazamento e 12 modelos comparados para prever a recompra em 60 dias.">
+<meta property="og:image" content="https://juliaroberta.com/projetos/previsao-recompra-clientes/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="/infograficos/assets/infograficos.css?v=202611022300">
+<link rel="stylesheet" href="/projetos/projetos.css?v=202611061">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Quem vai comprar de novo? Previsão de recompra em 60 dias", "headline": "Quem vai comprar de novo? Previsão de recompra em 60 dias", "description": "Estudo de caso com 541 mil transações de um varejo online: segmentação RFM, janela de observação sem vazamento e 12 modelos comparados para prever a recompra em 60 dias.", "url": "https://juliaroberta.com/projetos/previsao-recompra-clientes/", "inLanguage": "pt-BR", "author": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "image": "https://juliaroberta.com/projetos/previsao-recompra-clientes/og.jpg", "keywords": ["pandas", "scikit-learn", "LightGBM", "XGBoost", "RFM"], "isBasedOn": "https://github.com/ohtopico/online-retail-dataset"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Júlia Quoos</a>
+  <a class="brand-sub" href="/projetos/">/ projetos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/projetos/">Projetos</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <nav class="trilha" aria-label="Você está em"><a href="/projetos/">Projetos</a> / estudo de caso 2 de 4</nav>
+      <span class="terminal">$ machine learning · varejo</span>
+      <h1>Quem vai comprar de novo? Previsão de recompra em 60 dias</h1>
+      <p class="lead">Estudo de caso com 541 mil transações de um varejo online: segmentação RFM, janela de observação sem vazamento e 12 modelos comparados para prever a recompra em 60 dias.</p>
+      <ul class="pilulas"><li>pandas</li><li>scikit-learn</li><li>LightGBM</li><li>XGBoost</li><li>RFM</li></ul>
+      <div class="btn-row acoes">
+        <a class="btn" href="https://github.com/ohtopico/online-retail-dataset" rel="noopener">Código no GitHub</a>
+        <a class="btn ghost" href="/curriculo/">Currículo</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap caso">
+      <dl class="ficha"><div><dt>Pergunta</dt><dd>Quais clientes têm maior probabilidade de comprar de novo nos próximos 60 dias, e como usar isso para priorizar ações comerciais?</dd></div><div><dt>Dados</dt><dd>Online Retail Dataset (UCI): 541.909 transações de um varejo online do Reino Unido, de dezembro de 2010 a dezembro de 2011.</dd></div><div><dt>Método</dt><dd>Limpeza, análise exploratória, segmentação RFM e três conjuntos de variáveis testados em 5 tipos de modelo, com a mesma divisão de clientes.</dd></div><div><dt>Resultado</dt><dd>Regressão logística com 5 variáveis: ROC AUC de 0,73 e F1 de 0,62 no teste, empatando com o modelo de 43 variáveis.</dd></div></dl>
+      <div class="resumo-num"><div><b>541 mil</b><span>transações na base original</span></div><div><b>4.257</b><span>clientes depois da limpeza</span></div><div><b>12</b><span>combinações de modelo e variáveis</span></div><div><b>0,73</b><span>ROC AUC do melhor modelo</span></div></div>
+      <article class="texto">
+<h2>De transações a clientes</h2>
+<p>A base original tem uma linha por item vendido. Antes de qualquer modelo, foi preciso decidir o que entra: linhas sem identificador de cliente saem, porque não podem ser ligadas a ninguém; pedidos cancelados (códigos que começam com C) vão para uma análise própria; quantidades e preços não positivos saem; e os valores extremos de quantidade e preço são cortados pelo método do intervalo interquartil. Sobram 382.861 linhas, 17.626 pedidos e 4.257 clientes.</p>
+<p>A análise exploratória já traz informação útil para o negócio: 65% dos clientes compram mais de uma vez, a taxa de cancelamento é de 17%, e há 23 itens baratos que quase não vendem, um risco de estoque parado.</p>
+
+<h2>Sem olhar para o futuro</h2>
+<p>A decisão metodológica mais importante foi separar o tempo. Tudo o que descreve o cliente (recência, frequência, valor, diversidade de produtos, taxa de cancelamento) é calculado só com as transações até 10/10/2011. O alvo é se ele comprou nos 60 dias seguintes. Se as variáveis usassem dados da janela de previsão, o modelo pareceria ótimo no notebook e falharia no uso real. A base de modelagem ficou com 3.654 clientes, 48% deles recompradores, separados em 80% para treino e 20% para teste de forma estratificada.</p>
+
+<h2>Três rodadas de variáveis</h2>
+<ol>
+<li><strong>RFM:</strong> recência, frequência e valor monetário.</li>
+<li><strong>Expandida (43 colunas):</strong> RFM mais quantidade comprada, diversidade de produtos, taxa de cancelamento, intervalo médio entre pedidos e país.</li>
+<li><strong>Agregada (5 colunas):</strong> recência, frequência, valor, quantidade total e itens únicos.</li>
+</ol>
+<div class="barras" role="img" aria-label="ROC AUC no conjunto de teste: regressão logística agregada 0,732; logística expandida 0,731; logística RFM 0,727; random forest expandida 0,704; LightGBM expandida 0,694; LightGBM agregada 0,687; random forest agregada 0,681; random forest RFM 0,678; XGBoost agregada 0,663; árvore de decisão expandida 0,566; árvore de decisão agregada 0,542.">
+  <p class="barras-titulo">ROC AUC no teste (quanto maior, melhor; 0,5 é o acaso)</p>
+  <div class="barra destaque"><span>Logística, agregada (5)</span><b style="--v:73.22%">0,732</b></div>
+  <div class="barra"><span>Logística, expandida (43)</span><b style="--v:73.08%">0,731</b></div>
+  <div class="barra"><span>Logística, RFM</span><b style="--v:72.67%">0,727</b></div>
+  <div class="barra"><span>Random Forest, expandida</span><b style="--v:70.41%">0,704</b></div>
+  <div class="barra"><span>LightGBM, expandida</span><b style="--v:69.35%">0,694</b></div>
+  <div class="barra"><span>LightGBM, agregada</span><b style="--v:68.74%">0,687</b></div>
+  <div class="barra"><span>Random Forest, agregada</span><b style="--v:68.06%">0,681</b></div>
+  <div class="barra"><span>Random Forest, RFM</span><b style="--v:67.82%">0,678</b></div>
+  <div class="barra"><span>XGBoost, agregada</span><b style="--v:66.31%">0,663</b></div>
+  <div class="barra"><span>Árvore de decisão, expandida</span><b style="--v:56.63%">0,566</b></div>
+  <div class="barra"><span>Árvore de decisão, agregada</span><b style="--v:54.20%">0,542</b></div>
+</div>
+
+<h2>O resultado</h2>
+<p>O melhor modelo foi o mais simples: a regressão logística com as 5 variáveis agregadas, com ROC AUC de 0,732, F1 de 0,62 e acurácia de 0,67. Ela empata na prática com a versão de 43 variáveis, usando muito menos informação. Random Forest, LightGBM e XGBoost não superaram a regressão logística neste volume de dados. Selecionar as 14 variáveis de maior coeficiente aumentou a precisão para 0,71, ao custo de recall menor: uma troca que faz sentido quando cada contato com o cliente custa caro.</p>
+
+<h2>Como usar no negócio</h2>
+<p>A saída é uma lista de clientes ordenada pela probabilidade de recompra, para priorizar e-mails e ofertas. A análise exploratória acrescenta itens para revisar no estoque, produtos para priorizar em cada país e a sazonalidade de dezembro a abril.</p>
+
+<h2>Limitações</h2>
+<ul>
+<li>O desempenho é moderado e foi medido em uma única divisão de 731 clientes de teste; validação cruzada e ajuste de hiperparâmetros são o próximo passo.</li>
+<li>A base cobre um único ano, e a janela de previsão inclui o fim de ano, que pode inflar a recompra.</li>
+<li>As variáveis não foram padronizadas na regressão logística, então os coeficientes não são comparáveis entre si.</li>
+</ul>
+      </article>
+      <aside class="outros">
+        <h2>Outros estudos de caso</h2>
+        <ul><li><a href="/projetos/proximidade-objetos-deficiencia-visual/">Objetos e proximidade para pessoas cegas</a></li><li><a href="/projetos/moedas-brasileiras/">Moedas brasileiras por foto</a></li><li><a href="/projetos/censo-vale-do-rio-pardo/">Censos no Vale do Rio Pardo</a></li></ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Estudos de caso de <a href="/curriculo/">Júlia Roberta Quoos Alves</a>, engenheira de dados e de machine learning. Veja também os <a href="/infograficos/">infográficos interativos</a> e o <a href="/blog/">blog de dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>

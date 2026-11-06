@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Classificação de moedas brasileiras: estudo de caso</title>
+<meta name="description" content="Estudo de caso de visão computacional: dataset próprio de 186 fotos, transfer learning com MobileNetV2 e uma revisão honesta de um vazamento entre treino e validação.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/projetos/moedas-brasileiras/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/projetos/moedas-brasileiras/">
+<meta property="og:title" content="Classificação de moedas brasileiras: estudo de caso">
+<meta property="og:description" content="Estudo de caso de visão computacional: dataset próprio de 186 fotos, transfer learning com MobileNetV2 e uma revisão honesta de um vazamento entre treino e validação.">
+<meta property="og:image" content="https://juliaroberta.com/projetos/moedas-brasileiras/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/assets/md.css">
+<link rel="stylesheet" href="/infograficos/assets/infograficos.css?v=202611022300">
+<link rel="stylesheet" href="/projetos/projetos.css?v=202611061">
+<script>
+  try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Reconhecer moedas do Real por foto, com um dataset próprio", "headline": "Reconhecer moedas do Real por foto, com um dataset próprio", "description": "Estudo de caso de visão computacional: dataset próprio de 186 fotos, transfer learning com MobileNetV2 e uma revisão honesta de um vazamento entre treino e validação.", "url": "https://juliaroberta.com/projetos/moedas-brasileiras/", "inLanguage": "pt-BR", "author": {"@type": "Person", "name": "Júlia Roberta Quoos Alves", "url": "https://juliaroberta.com/curriculo/"}, "image": "https://juliaroberta.com/projetos/moedas-brasileiras/og.jpg", "keywords": ["TensorFlow", "MobileNetV2", "Google Cloud", "Web scraping"], "isBasedOn": "https://github.com/ohtopico/moedas-brasileiras"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Júlia Quoos</a>
+  <a class="brand-sub" href="/projetos/">/ projetos</a>
+  <span class="spacer"></span>
+  <nav class="topnav" aria-label="Seções">
+    <a href="/projetos/">Projetos</a>
+    <a href="/infograficos/">Infográficos</a>
+    <a href="/blog/">Blog</a>
+    <a href="/curriculo/">Currículo</a>
+    <a href="https://ohtopico.com.br/">Formação de professores</a>
+  </nav>
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="hero-inner">
+      <nav class="trilha" aria-label="Você está em"><a href="/projetos/">Projetos</a> / estudo de caso 3 de 4</nav>
+      <span class="terminal">$ visão computacional · dataset próprio</span>
+      <h1>Reconhecer moedas do Real por foto, com um dataset próprio</h1>
+      <p class="lead">Estudo de caso de visão computacional: dataset próprio de 186 fotos, transfer learning com MobileNetV2 e uma revisão honesta de um vazamento entre treino e validação.</p>
+      <ul class="pilulas"><li>TensorFlow</li><li>MobileNetV2</li><li>Google Cloud</li><li>Web scraping</li></ul>
+      <div class="btn-row acoes">
+        <a class="btn" href="https://github.com/ohtopico/moedas-brasileiras" rel="noopener">Código no GitHub</a>
+        <a class="btn ghost" href="/curriculo/">Currículo</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="block">
+    <div class="wrap caso">
+      <dl class="ficha"><div><dt>Pergunta</dt><dd>Um modelo leve consegue dizer qual moeda do Real aparece numa foto de celular?</dd></div><div><dt>Dados</dt><dd>186 fotos tiradas por mim, cerca de 31 por classe, guardadas no Google Cloud Storage. Seis classes: 1, 5, 10, 25 e 50 centavos e 1 real.</dd></div><div><dt>Método</dt><dd>Transfer learning com a MobileNetV2 pré-treinada no ImageNet, congelada, e uma camada final de 6 saídas. Aumento de dados com giros e espelhamento.</dd></div><div><dt>Resultado</dt><dd>20 de 38 fotos de validação certas. A moeda de 1 real acertou 5 de 5; as de 1, 5 e 10 centavos se confundiram entre si.</dd></div></dl>
+      <div class="resumo-num"><div><b>186</b><span>fotos no dataset próprio</span></div><div><b>6</b><span>classes de moeda</span></div><div><b>20 / 38</b><span>acertos na validação</span></div><div><b>5 / 5</b><span>acertos na moeda de 1 real</span></div></div>
+      <article class="texto">
+<h2>Por que começar pelo dataset</h2>
+<p>Foi o meu primeiro dataset próprio, e a escolha foi de propósito. Com dados prontos, uma parte importante de um projeto de visão computacional fica escondida: fotografar, organizar uma pasta por classe e decidir o que é uma foto boa. As 186 fotos ficaram num bucket do Google Cloud Storage, e o notebook lê direto de lá.</p>
+
+<h2>O modelo</h2>
+<p>Com cerca de 31 fotos por classe, treinar uma rede do zero não faria sentido. Usei transfer learning: a MobileNetV2, já treinada no ImageNet, fica congelada e funciona como extratora de características, e só uma camada final com uma saída por moeda é treinada. As fotos foram redimensionadas para 224 × 224, e no treino receberam giros de 90 graus e espelhamento aleatórios, já que uma moeda pode aparecer em qualquer orientação.</p>
+
+<h2>O que a matriz de confusão mostra</h2>
+<div class="rolagem">
+<table class="matriz">
+  <caption>Validação: linhas são a moeda real, colunas a previsão do modelo</caption>
+  <thead><tr><th scope="col"></th><th scope="col">1 ¢</th><th scope="col">5 ¢</th><th scope="col">10 ¢</th><th scope="col">25 ¢</th><th scope="col">50 ¢</th><th scope="col">R$ 1</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">1 ¢</th><td class="ok">1</td><td>1</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><th scope="row">5 ¢</th><td>2</td><td class="ok">7</td><td>2</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><th scope="row">10 ¢</th><td>2</td><td>2</td><td class="ok">3</td><td>0</td><td>0</td><td>2</td></tr>
+    <tr><th scope="row">25 ¢</th><td>0</td><td>0</td><td>0</td><td class="ok">1</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">50 ¢</th><td>1</td><td>0</td><td>2</td><td>0</td><td class="ok">3</td><td>0</td></tr>
+    <tr><th scope="row">R$ 1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="ok">5</td></tr>
+  </tbody>
+</table>
+</div>
+<p>A moeda de 1 real, bicolor e maior, acertou todas. As de 1, 5 e 10 centavos, com cor e tamanho parecidos, foram as mais confundidas. O padrão é o que se esperaria de uma pessoa olhando rápido, e mostra onde faltam exemplos.</p>
+
+<h2>Revisitando o próprio trabalho</h2>
+<p>Numa revisão posterior do código apareceu um problema: a lista de fotos era embaralhada de novo a cada leitura, e como treino e validação liam a lista separadamente, parte das fotos de validação também entrava no treino. Num teste, de 15 a 18 das 38 fotos estavam nos dois conjuntos. Por isso a acurácia de validação (cerca de 53%) tende a ser otimista, e o README do projeto diz isso com todas as letras, junto com a correção: embaralhar uma única vez, com semente fixa, antes de separar. As fotos originais não estão mais disponíveis, então o número fica registrado com esse aviso em vez de ser refeito.</p>
+
+<h2>Fase 2: o estado de conservação</h2>
+<p>A continuação ataca um problema mais difícil: classificar o grau de conservação de uma moeda (FC, SOB, MBC, BC), que é o que define o valor para colecionadores. Escrevi um coletor que monta um dataset a partir das buscas públicas de leilões numismáticos, cujos títulos trazem o grau dado pelo leiloeiro, e um notebook que treina uma MobileNetV3 Large. Os rótulos vêm de vendedores, então têm ruído, e as fotos não são redistribuídas: o repositório guarda só o código.</p>
+      </article>
+      <aside class="outros">
+        <h2>Outros estudos de caso</h2>
+        <ul><li><a href="/projetos/proximidade-objetos-deficiencia-visual/">Objetos e proximidade para pessoas cegas</a></li><li><a href="/projetos/previsao-recompra-clientes/">Previsão de recompra de clientes</a></li><li><a href="/projetos/censo-vale-do-rio-pardo/">Censos no Vale do Rio Pardo</a></li></ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p>Estudos de caso de <a href="/curriculo/">Júlia Roberta Quoos Alves</a>, engenheira de dados e de machine learning. Veja também os <a href="/infograficos/">infográficos interativos</a> e o <a href="/blog/">blog de dados</a>.</p>
+  <p>Júlia Roberta Quoos Alves · <a href="https://juliaroberta.com/">juliaroberta.com</a> · Formação de professores em <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</div></footer>
+<script>
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const root = document.documentElement;
+    const escuro = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.dataset.theme = escuro ? 'light' : 'dark';
+    try { localStorage.setItem('iapraprof:theme', JSON.stringify(root.dataset.theme)); } catch (e) {}
+  });
+</script>
+</body>
+</html>
