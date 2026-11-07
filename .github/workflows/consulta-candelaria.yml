@@ -1,0 +1,29 @@
+# Consulta temporária: escolas municipais de EF em Candelária (não vai para o main)
+name: Consulta temporaria Candelaria
+on:
+  push:
+    branches: [claude/project-thread-twmxc8]
+    paths: ['_fonte/consulta-temp/**', '.github/workflows/consulta-candelaria.yml']
+jobs:
+  consulta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar 2024 e 2025
+        run: |
+          mkdir -p /tmp/censo
+          timeout 60 openssl s_client -connect download.inep.gov.br:443 -servername download.inep.gov.br -showcerts </dev/null > /tmp/inep-sc.txt 2>/dev/null || true
+          aia=http://secure.globalsign.com/cacert/rnpicpedugr46ovtlsca2025.crt
+          if grep -q 'BEGIN CERTIFICATE' /tmp/inep-sc.txt; then
+            openssl x509 -in /tmp/inep-sc.txt -outform PEM > /tmp/f.pem
+            lido=$(openssl x509 -in /tmp/f.pem -noout -text | grep -o 'CA Issuers - URI:[^ ]*' | head -1 | sed 's/CA Issuers - URI://')
+            [ -n "$lido" ] && aia="$lido"
+          fi
+          curl -fsSL "$aia" -o /tmp/i.crt
+          openssl x509 -inform DER -in /tmp/i.crt -out /tmp/i.pem 2>/dev/null || cp /tmp/i.crt /tmp/i.pem
+          cat /etc/ssl/certs/ca-certificates.crt /tmp/i.pem > /tmp/ca.pem
+          for ano in 2024 2025; do
+            curl -fsSL --cacert /tmp/ca.pem --retry 4 --retry-delay 10 -m 1500 -o /tmp/censo/$ano.zip "https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_${ano}.zip" && echo "ok $ano" || { echo "sem $ano"; rm -f /tmp/censo/$ano.zip; }
+          done
+      - run: python3 _fonte/consulta-temp/candelaria.py
