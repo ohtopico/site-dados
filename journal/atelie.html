@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ateliê do Journal</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo"><div class="topo-in">
+  <a class="marca" href="index.html">Journal <span>2027</span></a>
+  <nav class="nav"><a href="index.html">Acervo</a><a href="atelie.html" aria-current="page">Ateliê</a></nav>
+</div></header>
+
+<main>
+  <h1>Ateliê</h1>
+  <p class="sub">Escolha um tema e veja o que combinar com o que você já tem, o que falta comprar e onde o acervo está fraco.</p>
+
+  <div class="abas" role="tablist">
+    <button role="tab" data-aba="combinar" aria-selected="true">Combinar por tema</button>
+    <button role="tab" data-aba="compras" aria-selected="false">Lista de compras</button>
+    <button role="tab" data-aba="lacunas" aria-selected="false">Lacunas do acervo</button>
+    <button role="tab" data-aba="cadastrar" aria-selected="false">Cadastrar material</button>
+  </div>
+
+  <!-- COMBINAR -->
+  <section class="painel" id="aba-combinar">
+    <div class="bloco">
+      <h2>Qual o tema da página?</h2>
+      <div class="temas-rapidos" id="temas-rapidos"></div>
+      <form id="form-tema" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+        <input class="busca" style="flex:1;min-width:200px" id="tema-livre" placeholder="Ou escreva: chuva, café, Paris, roxo, Halloween...">
+        <button class="btn">Combinar</button>
+      </form>
+    </div>
+    <div id="resultado"></div>
+  </section>
+
+  <!-- COMPRAS -->
+  <section class="painel" id="aba-compras" hidden>
+    <div class="bloco">
+      <h2>O que falta comprar</h2>
+      <form id="form-compra" style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px">
+        <input class="busca" style="flex:1;min-width:200px" id="nova-compra" placeholder="Adicionar item: papel textura roxo, fita PET tech...">
+        <button class="btn">Adicionar</button>
+      </form>
+      <div class="compras" id="compras"></div>
+      <div class="acoes"><button class="btn claro" id="copiar-lista">Copiar lista</button></div>
+    </div>
+    <div class="bloco">
+      <h2>Ideias dos vídeos de referência</h2>
+      <div id="prioridades"></div>
+      <p class="aviso">Comparação de cada vídeo com o seu acervo. Use “+ lista” no que você quiser comprar.</p>
+      <div id="refs"></div>
+    </div>
+  </section>
+
+  <!-- LACUNAS -->
+  <section class="painel" id="aba-lacunas" hidden>
+    <div class="bloco"><h2>Temas prontos e incompletos</h2><p class="aviso">Para cada tema, quantas partes de um kit (fundo, adesivos, fitas, carimbo, detalhe, cor) você já consegue montar.</p><div class="barras" id="cob-temas"></div></div>
+    <div class="bloco"><h2>Por tipo de material</h2><div class="barras" id="cob-tipos"></div></div>
+    <div class="bloco"><h2>Por cor</h2><p class="aviso">Em vermelho, as cores com 2 itens ou menos.</p><div class="barras" id="cob-cores"></div></div>
+  </section>
+
+  <!-- CADASTRAR -->
+  <section class="painel" id="aba-cadastrar" hidden>
+    <div class="bloco">
+      <h2 id="titulo-form">Novo material</h2>
+      <form class="form" id="form-mat">
+        <input type="hidden" id="m-id">
+        <label class="cheio">Nome <input id="m-nome" required placeholder="Ex.: Adesivos de cogumelos vintage"></label>
+        <label>Tipo de material
+          <input id="m-tipo" list="lista-tipos" required placeholder="adesivo, washi, carimbo...">
+          <datalist id="lista-tipos"></datalist>
+        </label>
+        <label>Loja / origem <input id="m-origem" list="lista-origens" placeholder="Shopee, Temu, papelaria..."><datalist id="lista-origens"></datalist></label>
+        <label>Cores <input id="m-cores" placeholder="verde, bege, marrom"><span class="dica">Separe por vírgula.</span></label>
+        <label>Estilo de desenho <input id="m-estilos" placeholder="vintage, aquarela, kawaii"><span class="dica">Separe por vírgula.</span></label>
+        <label class="cheio">Temas <input id="m-temas" placeholder="natureza, outono, cogumelos"><span class="dica">Separe por vírgula. Os temas que já existem: <span id="temas-existentes"></span></span></label>
+        <label class="cheio">Notas <textarea id="m-obs" rows="2" placeholder="Quantidade, onde guardei, se já usei..."></textarea></label>
+        <div class="cheio" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <div class="previa" id="previa">sem foto</div>
+          <label>Foto <input type="file" id="m-foto" accept="image/*"><span class="dica">A foto é reduzida e salva neste navegador.</span></label>
+        </div>
+        <div class="cheio acoes">
+          <button class="btn" type="submit">Salvar</button>
+          <button class="btn claro" type="button" id="cancelar">Limpar</button>
+          <button class="btn perigo" type="button" id="remover" hidden>Remover do acervo</button>
+        </div>
+      </form>
+    </div>
+    <div class="bloco">
+      <h2>Cadastrados e editados por você</h2>
+      <p class="aviso">Ficam salvos só neste navegador. Exporte um backup de vez em quando (e me mande o arquivo se quiser que eu incorpore ao acervo fixo).</p>
+      <div class="lista-meus" id="meus"></div>
+      <div class="acoes">
+        <button class="btn claro" id="exportar">Exportar backup</button>
+        <label class="btn claro" style="cursor:pointer">Importar backup<input type="file" id="importar" accept="application/json" hidden></label>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="dados.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const S = J.semAcento;
+
+  // ---------- Abas ----------
+  function abrirAba(nome) {
+    document.querySelectorAll('[data-aba]').forEach(b => b.setAttribute('aria-selected', b.dataset.aba === nome));
+    document.querySelectorAll('.painel').forEach(p => p.hidden = p.id !== 'aba-' + nome);
+    if (nome === 'lacunas') desenharLacunas();
+    if (nome === 'compras') desenharCompras();
+    if (nome === 'cadastrar') desenharMeus();
+  }
+  document.querySelector('.abas').addEventListener('click', ev => { const b = ev.target.closest('[data-aba]'); if (b) abrirAba(b.dataset.aba); });
+
+  // ---------- Kit: partes e temas ----------
+  const PARTES = [
+    { id: 'fundo', nome: 'Fundo', dica: 'papel de base', tipos: ['papel de material', 'papel estampado'], qtd: 2 },
+    { id: 'adesivos', nome: 'Adesivos', dica: 'personagens e recortes', tipos: ['adesivo'], qtd: 3 },
+    { id: 'fitas', nome: 'Fitas', dica: 'washi e PET', tipos: ['washi', 'fita PET'], qtd: 2 },
+    { id: 'carimbo', nome: 'Carimbo', dica: 'ou estêncil', tipos: ['carimbo', 'estêncil'], qtd: 1 },
+    { id: 'detalhe', nome: 'Detalhe', dica: 'brilho, moldura, lacre', tipos: ['película holográfica', 'moldura PET', 'enfeite', 'ferramenta'], qtd: 1 },
+    { id: 'cor', nome: 'Cor e escrita', dica: 'tinta, caneta, aquarela', tipos: ['tinta', 'caneta', 'aquarela'], qtd: 2, neutro: true }
+  ];
+
+  const TEMAS = [
+    { nome: 'Natureza e cottagecore', kw: ['natureza', 'botanic', 'folha', 'cogumelo', 'inseto', 'jardim', 'planta', 'campo', 'cottagecore', 'abelha'], paleta: ['verde', 'marrom', 'bege'] },
+    { nome: 'Viagem e correio', kw: ['viagem', 'correio', 'ticket', 'selo', 'mapa', 'carta', 'lacre', 'cidade', 'japao'], paleta: ['bege', 'marrom', 'vermelho'] },
+    { nome: 'Espaço e noite', kw: ['espaco', 'astronomia', 'lua', 'noite', 'ceu', 'estrela', 'planeta'], paleta: ['preto', 'azul-marinho', 'dourado'] },
+    { nome: 'Mar e oceano', kw: ['mar', 'oceano', 'sereia', 'agua', 'concha', 'peixe', 'baleia'], paleta: ['azul', 'branco', 'lilás'] },
+    { nome: 'Cyberpunk e tecnologia', kw: ['tecnologia', 'computador', 'interface', 'y2k', 'neon', 'holografic', 'cyber', 'eletronic'], paleta: ['roxo', 'rosa', 'azul', 'preto', 'holográfico'],
+      falta: { fundo: 'papel de fundo urbano/neon em roxo e rosa', fitas: 'fita PET transparente com texto tech (binário, frases em inglês)', carimbo: 'carimbo de código de barras ou circuito' } },
+    { nome: 'Cartas e escrita vintage', kw: ['carta', 'escrita', 'retro', 'vintage', 'caligrafia', 'frase', 'nostalgia', 'lacre', 'maquina'], paleta: ['marrom', 'bege'] },
+    { nome: 'Comidinhas kawaii', kw: ['comida', 'doce', 'padaria', 'fruta', 'mercado', 'leite', 'kawaii', 'fofo', 'cafe'], paleta: ['rosa', 'amarelo', 'azul'] },
+    { nome: 'Primavera floral', kw: ['flor', 'flores', 'primavera', 'rosa', 'glicinia', 'delicad', 'borboleta'], paleta: ['rosa', 'lilás', 'verde', 'branco'] },
+    { nome: 'Outono', kw: ['outono', 'cogumelo', 'folha', 'terroso', 'deserto', 'aconchego'], paleta: ['marrom', 'laranja', 'vermelho', 'mostarda'] },
+    { nome: 'Cinema, música e foto', kw: ['cinema', 'fotografia', 'camera', 'filme', 'musica', 'revista', 'moda'], paleta: ['preto', 'branco', 'bege'] },
+    { nome: 'Verão e girassóis', kw: ['girassol', 'girassois', 'verao', 'sol', 'fruta', 'frescor'], paleta: ['amarelo', 'laranja', 'verde'] },
+    { nome: 'Plantas de casa', kw: ['planta', 'folha', 'botanic', 'vaso', 'casa', 'jardim', 'natureza'], paleta: ['verde', 'bege', 'marrom', 'branco'] },
+    { nome: 'Morangos', kw: ['morango', 'fruta', 'doce', 'fofo', 'kawaii', 'piquenique'], paleta: ['vermelho', 'rosa', 'branco', 'verde'],
+      falta: { fundo: 'papel xadrez vermelho e branco (toalha de piquenique)' } },
+    { nome: 'Gótico e lua de sangue', kw: ['gotico', 'lua', 'noite', 'bruxa', 'vampir', 'sangue', 'fantasia'], paleta: ['preto', 'vermelho', 'vinho', 'dourado'],
+      falta: { fundo: 'papel escuro (preto ou vinho) com textura', detalhe: 'charms metálicos, chaves ou correntes' } },
+    { nome: 'Coraline', kw: ['coraline', 'boneca', 'botao', 'chave', 'fantasia', 'noite', 'lua', 'surreal'], paleta: ['azul-marinho', 'amarelo', 'preto', 'roxo'],
+      falta: { detalhe: 'botões e chaves vintage (embelezamento 3D)', adesivos: 'adesivos de letras e palavras recortadas' } },
+    { nome: 'Fantasia e magia', kw: ['fantasia', 'fada', 'bruxa', 'gotico', 'magia', 'sereia', 'brilho'], paleta: ['preto', 'dourado', 'roxo', 'holográfico'] }
+  ];
+  const NOMES_CORES = Object.keys(J.CORES);
+
+  function temaDoTexto(txt) {
+    const pre = TEMAS.find(t => S(t.nome) === S(txt));
+    if (pre) return pre;
+    const palavras = S(txt).split(/[\s,]+/).filter(p => p.length > 2);
+    const paleta = NOMES_CORES.filter(c => S(txt).includes(S(c)));
+    const kw = palavras.filter(p => !paleta.some(c => S(c) === p)).map(p => p.replace(/(s|es)$/, ''));
+    return { nome: txt, kw, paleta, livre: true };
+  }
+
+  function pontuar(m, tema) {
+    const texto = S([m.nome].concat(m.temas || [], m.estilos || []).join(' '));
+    const kw = tema.kw.filter(k => k && texto.includes(k)).length;
+    const cor = (m.cores || []).filter(c => tema.paleta.includes(c)).length;
+    return { kw, cor, total: kw * 3 + cor };
+  }
+
+  let ultimoTema = null;
+  function combinar(tema, embaralhar) {
+    ultimoTema = tema;
+    const todos = J.materiais();
+    const partes = PARTES.map(p => {
+      const cands = todos.filter(m => p.tipos.includes(m.tipo)).map(m => ({ m, s: pontuar(m, tema) }));
+      let bons = cands.filter(c => p.neutro ? (c.s.cor > 0 || c.s.kw > 0) : c.s.kw > 0).sort((a, b) => b.s.total - a.s.total);
+      let pelaCor = false;
+      if (!bons.length && !p.neutro) {
+        bons = cands.filter(c => c.s.cor >= 2).sort((a, b) => b.s.total - a.s.total);
+        pelaCor = bons.length > 0;
+      }
+      let pool = bons.slice(0, Math.max(p.qtd * 3, 6));
+      if (embaralhar) pool = pool.sort(() => Math.random() - .5);
+      return { p, escolhidos: pool.slice(0, p.qtd).map(c => c.m), total: bons.length, pelaCor };
+    });
+    desenharResultado(tema, partes);
+  }
+
+  function sugestaoFalta(p, tema) {
+    if (tema.falta && tema.falta[p.id]) return tema.falta[p.id];
+    const cores = tema.paleta.length ? ' em ' + tema.paleta.slice(0, 3).join(', ') : '';
+    return `${p.nome.toLowerCase()} (${p.dica}) com tema “${tema.nome}”${cores}`;
+  }
+
+  function refsDoTema(tema) {
+    const refs = (window.REFERENCIAS && window.REFERENCIAS.videos) || [];
+    const alvo = [S(tema.nome)].concat(tema.kw);
+    return refs.filter(v => alvo.some(k => k && S(v.tema).includes(k)) || S(tema.nome).includes(S(v.tema)));
+  }
+
+  function desenharResultado(tema, partes) {
+    const ok = partes.filter(x => x.escolhidos.length).length;
+    const refs = refsDoTema(tema);
+    const html = `
+      <div class="bloco">
+        <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline">
+          <h2>${J.esc(tema.nome)}</h2>
+          <span class="aviso">${ok} de ${partes.length} partes com o que você já tem</span>
+        </div>
+        ${tema.paleta.length ? `<div class="paleta">Paleta: ${tema.paleta.map(J.bolinha).join('')} ${tema.paleta.map(J.esc).join(', ')}</div>` : '<div class="paleta">Dica: inclua cores no texto (ex.: “chuva azul cinza”) para afinar a busca.</div>'}
+        <div class="kit">
+          ${partes.map(x => `
+            <div class="papel-kit">
+              <div class="rot">${x.p.nome}<small>${x.p.dica}${x.total > x.escolhidos.length ? ` · ${x.total} opções` : ''}${x.pelaCor ? ' · escolhidos pela cor' : ''}</small></div>
+              <div class="mini-grade">
+                ${x.escolhidos.map(m => `<button class="mini" data-id="${J.esc(m.id)}"><img src="${J.esc(m.img)}" alt=""><span>${J.esc(m.nome)}</span></button>`).join('')}
+                ${(!x.escolhidos.length || x.pelaCor) ? `<div class="falta"><b>${x.escolhidos.length ? 'Ficaria melhor com' : 'Falta'}:</b> ${J.esc(sugestaoFalta(x.p, tema))}<br><button class="btn claro" data-comprar="${J.esc(sugestaoFalta(x.p, tema))}" data-origem="${J.esc(tema.nome)}">+ lista de compras</button></div>` : ''}
+              </div>
+            </div>`).join('')}
+        </div>
+        <div class="acoes"><button class="btn" id="embaralhar">Outra combinação</button></div>
+      </div>
+      ${refs.length ? `<div class="bloco"><h2>Dos vídeos de referência</h2>${refs.map(desenharRef).join('')}</div>` : ''}`;
+    const r = document.getElementById('resultado');
+    r.innerHTML = html;
+    r.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.getElementById('resultado').addEventListener('click', ev => {
+    const mini = ev.target.closest('.mini');
+    if (mini) J.abrirDetalhes(J.materiais().find(m => m.id === mini.dataset.id));
+    if (ev.target.id === 'embaralhar' && ultimoTema) combinar(ultimoTema, true);
+  });
+
+  document.getElementById('temas-rapidos').innerHTML = TEMAS.map((t, i) =>
+    `<button class="chip" data-tema="${i}">${t.paleta.slice(0, 3).map(J.bolinha).join('')}${J.esc(t.nome)}</button>`).join('');
+  document.getElementById('temas-rapidos').addEventListener('click', ev => {
+    const b = ev.target.closest('[data-tema]');
+    if (!b) return;
+    document.querySelectorAll('[data-tema]').forEach(x => x.setAttribute('aria-pressed', x === b));
+    combinar(TEMAS[+b.dataset.tema]);
+  });
+  document.getElementById('form-tema').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const v = document.getElementById('tema-livre').value.trim();
+    if (v) combinar(temaDoTexto(v));
+  });
+
+  // ---------- Compras ----------
+  function addCompra(texto, origem) {
+    const e = J.ler();
+    if (e.compras.some(c => S(c.texto) === S(texto))) { J.toast('Já está na lista'); return; }
+    e.compras.push({ id: 'c' + Date.now() + Math.random().toString(36).slice(2, 5), texto, origem: origem || '', feito: false });
+    if (J.salvar(e)) J.toast('Adicionado à lista de compras');
+    desenharCompras();
+  }
+  document.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-comprar]');
+    if (b) addCompra(b.dataset.comprar, b.dataset.origem);
+  });
+  document.getElementById('form-compra').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const i = document.getElementById('nova-compra');
+    if (i.value.trim()) { addCompra(i.value.trim(), 'eu'); i.value = ''; }
+  });
+
+  function desenharCompras() {
+    const e = J.ler();
+    const el = document.getElementById('compras');
+    el.innerHTML = e.compras.length ? e.compras.map(c => `
+      <div class="compra ${c.feito ? 'feito' : ''}">
+        <input type="checkbox" data-feito="${c.id}" ${c.feito ? 'checked' : ''} aria-label="Comprado">
+        <div class="t">${J.esc(c.texto)}${c.origem && c.origem !== 'eu' ? `<small>para: ${J.esc(c.origem)}</small>` : ''}</div>
+        <button data-tirar="${c.id}" aria-label="Remover">×</button>
+      </div>`).join('') : '<p class="aviso">Lista vazia. Adicione itens aqui, pelas combinações ou pelas ideias dos vídeos abaixo.</p>';
+    const refs = (window.REFERENCIAS && window.REFERENCIAS.videos) || [];
+    const pr = (window.REFERENCIAS && window.REFERENCIAS.resumo_prioridades) || [];
+    document.getElementById('prioridades').innerHTML = pr.length ? `<h3>Prioridades (o que mais aparece nos vídeos e você não tem)</h3>
+      <div class="compras" style="margin-bottom:16px">${pr.map(p => `<div class="compra"><div class="t">${J.esc(p)}</div><button class="btn claro" style="font-size:13px;padding:3px 10px" data-comprar="${J.esc(p)}" data-origem="prioridade dos vídeos">+ lista</button></div>`).join('')}</div>` : '';
+    document.getElementById('refs').innerHTML = refs.length ? refs.map(desenharRef).join('') : '<p class="aviso">Nenhum vídeo comparado ainda.</p>';
+  }
+  document.getElementById('compras').addEventListener('change', ev => {
+    const id = ev.target.dataset.feito; if (!id) return;
+    const e = J.ler(); const c = e.compras.find(x => x.id === id); if (c) c.feito = ev.target.checked; J.salvar(e); desenharCompras();
+  });
+  document.getElementById('compras').addEventListener('click', ev => {
+    const id = ev.target.dataset.tirar; if (!id) return;
+    const e = J.ler(); e.compras = e.compras.filter(x => x.id !== id); J.salvar(e); desenharCompras();
+  });
+  document.getElementById('copiar-lista').addEventListener('click', () => {
+    const txt = J.ler().compras.filter(c => !c.feito).map(c => '- ' + c.texto).join('\n');
+    if (!txt) { J.toast('Nada pendente na lista'); return; }
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => J.toast('Lista copiada'), () => prompt('Copie a lista:', txt));
+  });
+
+  const ROTULO = { falta: ['falta-s', 'falta'], parcial: ['parcial', 'parcial'], tenho_parecido: ['tenho', 'tenho parecido'], nao_vi: ['nao_vi', 'não vi'] };
+  function desenharRef(v) {
+    return `<div class="ref-video">
+      <h3>${J.esc(v.tema)} <small class="aviso">· ${J.esc(v.autor || '')} ${v.url ? `· <a href="${J.esc(v.url)}" target="_blank" rel="noopener">ver vídeo</a>` : ''}</small></h3>
+      ${v.paleta ? `<div class="paleta">${v.paleta.map(J.bolinha).join('')} ${v.paleta.map(J.esc).join(', ')}</div>` : ''}
+      ${(v.itens || []).map(it => {
+        const r = ROTULO[it.status] || ['nao_vi', it.status];
+        const pode = it.status === 'falta' || it.status === 'parcial';
+        return `<div class="ref-item">
+          <div><span class="status ${r[0]}">${J.esc(r[1])}</span></div>
+          <div>${J.esc(it.item)}
+            ${it.similar_no_acervo && it.similar_no_acervo.length ? `<small>Parecido no acervo: ${it.similar_no_acervo.map(J.esc).join('; ')}</small>` : ''}
+            ${it.nota ? `<small>${J.esc(it.nota)}</small>` : ''}
+            ${pode ? `<button class="btn claro" style="padding:3px 10px;margin-top:4px;font-size:13px" data-comprar="${J.esc(it.item)}" data-origem="${J.esc(v.tema)}">+ lista</button>` : ''}
+          </div></div>`;
+      }).join('')}
+    </div>`;
+  }
+
+  // ---------- Lacunas ----------
+  function barras(alvo, linhas, max, limite) {
+    document.getElementById(alvo).innerHTML = linhas.map(([nome, n, extra]) => `
+      <div class="barra ${n <= limite ? 'pouco' : ''}"><span>${extra || ''}${J.esc(nome)}</span><span class="trilho"><i style="width:${Math.max(3, 100 * n / max)}%"></i></span><b>${n}</b></div>`).join('');
+  }
+  function desenharLacunas() {
+    const todos = J.materiais();
+    const tipos = J.contar(todos, 'tipo');
+    barras('cob-tipos', tipos, tipos[0] ? tipos[0][1] : 1, 2);
+    const cores = NOMES_CORES.map(c => [c, todos.filter(m => (m.cores || []).includes(c)).length, J.bolinha(c) + ' ']).sort((a, b) => b[1] - a[1]);
+    barras('cob-cores', cores, cores[0][1] || 1, 2);
+    const cob = TEMAS.map(t => {
+      const n = PARTES.filter(p => todos.some(m => p.tipos.includes(m.tipo) && (p.neutro ? pontuar(m, t).cor > 0 : pontuar(m, t).kw > 0))).length;
+      return [t.nome, n];
+    }).sort((a, b) => b[1] - a[1]);
+    barras('cob-temas', cob, PARTES.length, PARTES.length - 2);
+  }
+
+  // ---------- Cadastro ----------
+  const $ = id => document.getElementById(id);
+  const lista = s => s.split(',').map(x => x.trim()).filter(Boolean);
+  let fotoNova = null;
+
+  function preencherListas() {
+    const todos = J.materiais();
+    $('lista-tipos').innerHTML = J.contar(todos, 'tipo').map(([t]) => `<option value="${J.esc(t)}">`).join('');
+    $('lista-origens').innerHTML = J.contar(todos, 'origem').map(([t]) => `<option value="${J.esc(t)}">`).join('');
+    $('temas-existentes').textContent = J.contar(todos, 'temas').slice(0, 25).map(x => x[0]).join(', ') + '…';
+  }
+
+  function limparForm() {
+    $('form-mat').reset(); $('m-id').value = ''; fotoNova = null;
+    $('previa').innerHTML = 'sem foto'; $('titulo-form').textContent = 'Novo material'; $('remover').hidden = true;
+  }
+  function editar(id) {
+    const m = J.materiais().find(x => x.id === id);
+    if (!m) return;
+    abrirAba('cadastrar');
+    $('m-id').value = m.id; $('m-nome').value = m.nome; $('m-tipo').value = m.tipo; $('m-origem').value = m.origem || '';
+    $('m-cores').value = (m.cores || []).join(', '); $('m-estilos').value = (m.estilos || []).join(', ');
+    $('m-temas').value = (m.temas || []).join(', '); $('m-obs').value = m.obs || '';
+    $('previa').innerHTML = `<img src="${J.esc(m.img)}" alt="">`; fotoNova = null;
+    $('titulo-form').textContent = 'Editar: ' + m.nome; $('remover').hidden = false;
+    $('form-mat').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  $('m-foto').addEventListener('change', ev => {
+    const f = ev.target.files[0]; if (!f) return;
+    const img = new Image();
+    img.onload = () => {
+      const lado = 500, r = Math.min(1, lado / Math.max(img.width, img.height));
+      const c = document.createElement('canvas'); c.width = Math.round(img.width * r); c.height = Math.round(img.height * r);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      fotoNova = c.toDataURL('image/jpeg', .8);
+      $('previa').innerHTML = `<img src="${fotoNova}" alt="">`;
+      URL.revokeObjectURL(img.src);
+    };
+    img.src = URL.createObjectURL(f);
+  });
+
+  $('form-mat').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const e = J.ler();
+    const dados = {
+      nome: $('m-nome').value.trim(), tipo: $('m-tipo').value.trim(), origem: $('m-origem').value.trim(),
+      cores: lista($('m-cores').value), estilos: lista($('m-estilos').value), temas: lista($('m-temas').value), obs: $('m-obs').value.trim()
+    };
+    if (fotoNova) dados.img = fotoNova;
+    const id = $('m-id').value;
+    const ehBase = id && (window.MATERIAIS || []).some(m => m.id === id);
+    if (ehBase) {
+      e.editados[id] = Object.assign({}, e.editados[id] || {}, dados);
+    } else if (id) {
+      const i = e.novos.findIndex(m => m.id === id);
+      if (i >= 0) e.novos[i] = Object.assign({}, e.novos[i], dados);
+    } else {
+      if (!dados.img) { if (!confirm('Salvar sem foto?')) return; dados.img = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#efe6d4"/><text x="50" y="56" font-size="12" text-anchor="middle" fill="#7a6a5c">sem foto</text></svg>'); }
+      dados.id = 'N' + Date.now().toString(36);
+      e.novos.push(dados);
+    }
+    if (J.salvar(e)) { J.toast('Salvo!'); limparForm(); desenharMeus(); preencherListas(); }
+  });
+  $('cancelar').addEventListener('click', limparForm);
+  $('remover').addEventListener('click', () => {
+    const id = $('m-id').value; if (!id || !confirm('Remover este material do acervo?')) return;
+    const e = J.ler();
+    if (e.novos.some(m => m.id === id)) e.novos = e.novos.filter(m => m.id !== id);
+    else if (!e.removidos.includes(id)) e.removidos.push(id);
+    J.salvar(e); limparForm(); desenharMeus(); J.toast('Removido');
+  });
+
+  function desenharMeus() {
+    const e = J.ler();
+    const todos = J.materiais();
+    const ids = e.novos.map(m => m.id).concat(Object.keys(e.editados));
+    const meus = todos.filter(m => ids.includes(m.id));
+    const rem = (window.MATERIAIS || []).filter(m => e.removidos.includes(m.id));
+    $('meus').innerHTML = (meus.length || rem.length) ? meus.map(m => `
+      <div class="linha-meu"><img src="${J.esc(m.img)}" alt=""><span class="n">${J.esc(m.nome)} <span class="etq ${m.novo ? 'novo' : ''}">${m.novo ? 'novo' : 'editado'}</span></span><button data-editar="${J.esc(m.id)}">editar</button></div>`).join('') +
+      rem.map(m => `<div class="linha-meu"><img src="${J.esc(m.img)}" alt="" style="opacity:.4"><span class="n">${J.esc(m.nome)} <span class="etq">removido</span></span><button data-voltar="${J.esc(m.id)}">desfazer</button></div>`).join('')
+      : '<p class="aviso">Nada ainda.</p>';
+  }
+  $('meus').addEventListener('click', ev => {
+    if (ev.target.dataset.editar) editar(ev.target.dataset.editar);
+    if (ev.target.dataset.voltar) { const e = J.ler(); e.removidos = e.removidos.filter(x => x !== ev.target.dataset.voltar); J.salvar(e); desenharMeus(); }
+  });
+
+  $('exportar').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(Object.assign({ exportado: new Date().toISOString() }, J.ler()), null, 1)], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = 'journal-2027-backup-' + new Date().toISOString().slice(0, 10) + '.json'; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  $('importar').addEventListener('change', ev => {
+    const f = ev.target.files[0]; if (!f) return;
+    f.text().then(t => {
+      const d = JSON.parse(t);
+      if (!confirm('Substituir o que está salvo neste navegador pelo backup?')) return;
+      J.salvar({ novos: d.novos || [], editados: d.editados || {}, removidos: d.removidos || [], compras: d.compras || [] });
+      J.toast('Backup importado'); desenharMeus(); preencherListas();
+    }).catch(() => alert('Arquivo inválido.'));
+  });
+
+  // ---------- Início ----------
+  preencherListas();
+  function lerHash() {
+    const h = decodeURIComponent(location.hash || '');
+    if (h.startsWith('#editar=')) editar(h.slice(8));
+    else if (['#compras', '#lacunas', '#cadastrar', '#combinar'].includes(h)) abrirAba(h.slice(1));
+  }
+  window.addEventListener('hashchange', lerHash);
+  lerHash();
+})();
+</script>
+</body>
+</html>

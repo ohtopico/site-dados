@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acervo do Journal 2027</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo"><div class="topo-in">
+  <a class="marca" href="index.html">Journal <span>2027</span></a>
+  <nav class="nav"><a href="index.html" aria-current="page">Acervo</a><a href="atelie.html">Ateliê</a></nav>
+</div></header>
+
+<main>
+  <h1>Meu acervo</h1>
+  <p class="sub">Todos os materiais, com filtros por tipo, cor, estilo de desenho e tema. Clique num item para ver os detalhes.</p>
+
+  <div class="resumo" id="resumo"></div>
+
+  <section class="filtros" aria-label="Filtros">
+    <input class="busca" id="busca" type="search" placeholder="Buscar: cogumelo, borboleta, carimbo, vintage...">
+    <div class="grupo"><div class="grupo-titulo">Tipo de material <button data-limpa="tipo">limpar</button></div><div class="chips" id="f-tipo"></div></div>
+    <div class="grupo"><div class="grupo-titulo">Cor <button data-limpa="cores">limpar</button></div><div class="chips" id="f-cores"></div></div>
+    <details class="mais-filtros">
+      <summary>Mais filtros: estilo de desenho, tema e loja</summary>
+      <div class="grupo"><div class="grupo-titulo">Estilo de desenho <button data-limpa="estilos">limpar</button></div><div class="chips rolar" id="f-estilos"></div></div>
+      <div class="grupo"><div class="grupo-titulo">Tema <button data-limpa="temas">limpar</button></div><div class="chips rolar" id="f-temas"></div></div>
+      <div class="grupo"><div class="grupo-titulo">Loja <button data-limpa="origem">limpar</button></div><div class="chips" id="f-origem"></div></div>
+    </details>
+  </section>
+
+  <p class="aviso" id="contagem"></p>
+  <div class="grade" id="grade"></div>
+</main>
+
+<script src="dados.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const todos = J.materiais();
+  const sel = { tipo: new Set(), cores: new Set(), estilos: new Set(), temas: new Set(), origem: new Set() };
+  let termo = '';
+
+  // Resumo
+  const porTipo = J.contar(todos, 'tipo');
+  document.getElementById('resumo').innerHTML =
+    `<div class="num"><b>${todos.length}</b> materiais</div>` +
+    porTipo.slice(0, 5).map(([t, n]) => `<div class="num"><b>${n}</b> ${J.esc(t)}</div>`).join('');
+
+  function montarChips(campo, alvo, comCor) {
+    const el = document.getElementById(alvo);
+    el.innerHTML = J.contar(todos, campo).map(([v, n]) =>
+      `<button class="chip" data-campo="${campo}" data-valor="${J.esc(v)}" aria-pressed="false">${comCor ? J.bolinha(v) : ''}${J.esc(v)} <small>${n}</small></button>`).join('');
+  }
+  montarChips('tipo', 'f-tipo');
+  montarChips('cores', 'f-cores', true);
+  montarChips('estilos', 'f-estilos');
+  montarChips('temas', 'f-temas');
+  montarChips('origem', 'f-origem');
+
+  document.querySelector('.filtros').addEventListener('click', ev => {
+    const c = ev.target.closest('.chip');
+    if (c) {
+      const s = sel[c.dataset.campo], v = c.dataset.valor;
+      s.has(v) ? s.delete(v) : s.add(v);
+      c.setAttribute('aria-pressed', s.has(v));
+      desenhar();
+    }
+    const l = ev.target.closest('[data-limpa]');
+    if (l) {
+      sel[l.dataset.limpa].clear();
+      document.querySelectorAll(`.chip[data-campo="${l.dataset.limpa}"]`).forEach(b => b.setAttribute('aria-pressed', 'false'));
+      desenhar();
+    }
+  });
+  document.getElementById('busca').addEventListener('input', ev => { termo = J.semAcento(ev.target.value.trim()); desenhar(); });
+
+  function passa(m) {
+    for (const campo in sel) {
+      const s = sel[campo];
+      if (!s.size) continue;
+      const vals = [].concat(m[campo] || []);
+      // dentro de um grupo: qualquer um serve; entre grupos: todos precisam bater
+      if (!vals.some(v => s.has(v))) return false;
+    }
+    if (termo) {
+      const txt = J.semAcento([m.nome, m.tipo, m.origem, m.obs].concat(m.cores, m.estilos, m.temas).join(' '));
+      if (!termo.split(/\s+/).every(p => txt.includes(p))) return false;
+    }
+    return true;
+  }
+
+  function desenhar() {
+    const lista = todos.filter(passa);
+    document.getElementById('contagem').textContent = lista.length === todos.length ? '' : `Mostrando ${lista.length} de ${todos.length}`;
+    const g = document.getElementById('grade');
+    if (!lista.length) { g.innerHTML = '<p class="vazio">Nada com esses filtros. Que tal anotar na lista de compras do Ateliê?</p>'; return; }
+    g.innerHTML = lista.map(m => `
+      <button class="card" data-id="${J.esc(m.id)}">
+        <div class="foto"><img loading="lazy" src="${J.esc(m.img)}" alt=""></div>
+        <div class="info">
+          <span><span class="etq ${m.novo ? 'novo' : ''}">${J.esc(m.tipo)}</span></span>
+          <span class="nome">${J.esc(m.nome)}</span>
+          <span class="cores">${(m.cores || []).map(J.bolinha).join('')}</span>
+        </div>
+      </button>`).join('');
+  }
+  document.getElementById('grade').addEventListener('click', ev => {
+    const c = ev.target.closest('.card');
+    if (c) J.abrirDetalhes(todos.find(m => m.id === c.dataset.id));
+  });
+  desenhar();
+})();
+</script>
+</body>
+</html>
