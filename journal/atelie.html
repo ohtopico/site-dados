@@ -433,7 +433,7 @@
     f.text().then(t => {
       const d = JSON.parse(t);
       if (!confirm('Substituir o que está salvo neste navegador pelo backup?')) return;
-      J.salvar({ novos: d.novos || [], editados: d.editados || {}, removidos: d.removidos || [], compras: d.compras || [] });
+      J.salvar({ novos: d.novos || [], editados: d.editados || {}, removidos: d.removidos || [], compras: d.compras || [], feitas: d.feitas || [], sementes: d.sementes || [] });
       J.toast('Backup importado'); desenharMeus(); preencherListas();
     }).catch(() => alert('Arquivo inválido.'));
   });
