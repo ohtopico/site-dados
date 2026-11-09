@@ -176,7 +176,8 @@ def pagina(p):
     url = f'https://juliaroberta.com/infograficos/{p["slug"]}/'
     ld = {'@context': 'https://schema.org', '@type': 'Dataset', 'name': f'Habilidades de {p["disciplina"]} da BNCC e as ligações entre os anos',
           'description': p['dataset'], 'url': url, 'inLanguage': 'pt-BR', 'spatialCoverage': 'Brasil',
-          'creator': {'@type': 'Person', 'name': 'Júlia Roberta Quoos Alves', 'url': 'https://juliaroberta.com/curriculo/'}, 'isBasedOn': p['base']}
+          'creator': {'@type': 'Person', 'name': 'Júlia Roberta Quoos Alves', 'url': 'https://juliaroberta.com/curriculo/'}, 'isBasedOn': p['base'],
+          'license': 'https://creativecommons.org/licenses/by/4.0/'}
     outras = ' · '.join(f'<a href="../{q["slug"]}/">BNCC {q["disciplina"]}</a>' for q in PAGINAS if q is not p)
     material = '' if not p['material_h2'] else f'''
   <section class="block">
