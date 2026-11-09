@@ -19,9 +19,19 @@
   function ler() {
     try {
       const s = JSON.parse(localStorage.getItem(CHAVE) || '{}');
-      return { novos: s.novos || [], editados: s.editados || {}, removidos: s.removidos || [], compras: s.compras || [], feitas: s.feitas || [] };
+      const e = { novos: s.novos || [], editados: s.editados || {}, removidos: s.removidos || [], compras: s.compras || [], feitas: s.feitas || [], sementes: s.sementes || [] };
+      // Itens que saíram do acervo entram uma vez na lista de compras (se apagar, não voltam).
+      const pend = (window.COMPRAS_INICIAIS || []).filter(c => !e.sementes.includes(c.id));
+      if (pend.length) {
+        pend.forEach(c => {
+          if (!e.compras.some(x => semAcento(x.texto) === semAcento(c.texto))) e.compras.push(Object.assign({}, c));
+          e.sementes.push(c.id);
+        });
+        try { localStorage.setItem(CHAVE, JSON.stringify(e)); } catch (_) {}
+      }
+      return e;
     } catch (e) {
-      return { novos: [], editados: {}, removidos: [], compras: [], feitas: [] };
+      return { novos: [], editados: {}, removidos: [], compras: (window.COMPRAS_INICIAIS || []).map(c => Object.assign({}, c)), feitas: [], sementes: [] };
     }
   }
   function salvar(estado) {

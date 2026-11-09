@@ -1779,41 +1779,6 @@ window.MATERIAIS = [
   "img": "imagens/T01.jpg"
  },
  {
-  "id": "T02",
-  "nome": "Livro de adesivos japoneses (+400 peças)",
-  "tipo": "adesivo",
-  "cores": [
-   "multicolorido"
-  ],
-  "estilos": [
-   "kawaii",
-   "Japão"
-  ],
-  "temas": [
-   "casa",
-   "animais",
-   "cotidiano"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T02.jpg"
- },
- {
-  "id": "T03",
-  "nome": "Almofada de carimbo multicolorida",
-  "tipo": "tinta",
-  "cores": [
-   "multicolorido"
-  ],
-  "estilos": [
-   "degradê"
-  ],
-  "temas": [
-   "carimbo"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T03.jpg"
- },
- {
   "id": "T04",
   "nome": "Adesivos fofos do dia a dia (50 folhas)",
   "tipo": "adesivo",
@@ -1849,24 +1814,6 @@ window.MATERIAIS = [
   ],
   "origem": "Temu",
   "img": "imagens/T05.jpg"
- },
- {
-  "id": "T06",
-  "nome": "Flocos holográficos transparentes (80 un.)",
-  "tipo": "película holográfica",
-  "cores": [
-   "holográfico",
-   "transparente"
-  ],
-  "estilos": [
-   "holográfico"
-  ],
-  "temas": [
-   "brilho",
-   "magia"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T06.jpg"
  },
  {
   "id": "T07",
@@ -1910,36 +1857,6 @@ window.MATERIAIS = [
   "img": "imagens/T08.jpg"
  },
  {
-  "id": "T09",
-  "nome": "Estojo organizador de papelaria",
-  "tipo": "organização",
-  "cores": [],
-  "estilos": [],
-  "temas": [],
-  "origem": "Temu",
-  "img": "imagens/T09.jpg"
- },
- {
-  "id": "T10",
-  "nome": "Papel base vintage floral com bordas irregulares (8 folhas)",
-  "tipo": "papel de material",
-  "cores": [
-   "bege",
-   "rosa",
-   "marrom"
-  ],
-  "estilos": [
-   "vintage",
-   "floral"
-  ],
-  "temas": [
-   "flores",
-   "fundo"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T10.jpg"
- },
- {
   "id": "T11",
   "nome": "Adesivos vintage surreais de olhos (50 un.)",
   "tipo": "adesivo",
@@ -1974,16 +1891,6 @@ window.MATERIAIS = [
   ],
   "origem": "Temu",
   "img": "imagens/T12.jpg"
- },
- {
-  "id": "T13",
-  "nome": "Porta-canetas de mesa com divisórias",
-  "tipo": "organização",
-  "cores": [],
-  "estilos": [],
-  "temas": [],
-  "origem": "Temu",
-  "img": "imagens/T13.jpg"
  },
  {
   "id": "T14",
@@ -2098,24 +2005,6 @@ window.MATERIAIS = [
   "img": "imagens/T19.jpg"
  },
  {
-  "id": "T20",
-  "nome": "Mini quadrados holográficos",
-  "tipo": "película holográfica",
-  "cores": [
-   "holográfico",
-   "transparente"
-  ],
-  "estilos": [
-   "holográfico"
-  ],
-  "temas": [
-   "brilho",
-   "magia"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T20.jpg"
- },
- {
   "id": "T21",
   "nome": "Adesivos de transferência holográfica (50 un.)",
   "tipo": "película holográfica",
@@ -2130,27 +2019,6 @@ window.MATERIAIS = [
   ],
   "origem": "Temu",
   "img": "imagens/T21.jpg"
- },
- {
-  "id": "T22",
-  "nome": "Papel de material sereia perolado (12 folhas)",
-  "tipo": "papel de material",
-  "cores": [
-   "perolado",
-   "azul",
-   "rosa",
-   "lilás"
-  ],
-  "estilos": [
-   "perolado",
-   "fantasia"
-  ],
-  "temas": [
-   "mar",
-   "sereia"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T22.jpg"
  },
  {
   "id": "T23",
@@ -2247,18 +2115,6 @@ window.MATERIAIS = [
   ],
   "origem": "Temu",
   "img": "imagens/T27.jpg"
- },
- {
-  "id": "T28",
-  "nome": "Fita washi decorativa",
-  "tipo": "washi",
-  "cores": [
-   "multicolorido"
-  ],
-  "estilos": [],
-  "temas": [],
-  "origem": "Temu",
-  "img": "imagens/T28.jpg"
  },
  {
   "id": "T29",
@@ -2363,24 +2219,6 @@ window.MATERIAIS = [
   ],
   "origem": "Temu",
   "img": "imagens/T34.jpg"
- },
- {
-  "id": "T35",
-  "nome": "Cristais suncatcher prisma (12 peças)",
-  "tipo": "enfeite",
-  "cores": [
-   "holográfico",
-   "transparente"
-  ],
-  "estilos": [
-   "cristal"
-  ],
-  "temas": [
-   "luz",
-   "arco-íris"
-  ],
-  "origem": "Temu",
-  "img": "imagens/T35.jpg"
  }
 ];
 
@@ -2415,8 +2253,7 @@ window.REFERENCIAS = {
      "status": "tenho_parecido",
      "similar_no_acervo": [
       "Temu: 80 folhas de laminação holográfica",
-      "Temu: adesivos de transferência holográfica 4x20cm",
-      "Temu: flocos e mini quadrados holográficos"
+      "Temu: adesivos de transferência holográfica 4x20cm"
      ]
     },
     {
@@ -2477,11 +2314,8 @@ window.REFERENCIAS = {
     {
      "item": "Adesivos de cristais/prismas e estrela 3D holográficos",
      "tipo": "adesivo",
-     "status": "parcial",
-     "similar_no_acervo": [
-      "Temu: flocos holográficos"
-     ],
-     "nota": "Os suncatchers da Temu são decoração, não adesivo."
+     "status": "falta",
+     "similar_no_acervo": []
     },
     {
      "item": "Círculos HUD/holográficos (anéis tecnológicos, alvo)",
@@ -2793,10 +2627,8 @@ window.REFERENCIAS = {
     {
      "item": "Pedrinhas/strass coloridos",
      "tipo": "embelezamento 3D",
-     "status": "parcial",
-     "similar_no_acervo": [
-      "Temu: flocos holográficos"
-     ]
+     "status": "falta",
+     "similar_no_acervo": []
     },
     {
      "item": "Lua e céu noturno",
@@ -2818,3 +2650,67 @@ window.REFERENCIAS = {
   "Base: fichário A5 de argolas e pinça (não aparecem nas fotos)"
  ]
 };
+
+// Itens que estavam no acervo por engano (constam nos pedidos, mas a Júlia não tem). Entram uma vez na lista de compras.
+window.COMPRAS_INICIAIS = [
+ {
+  "id": "semente-T02",
+  "texto": "Livro de adesivos japoneses (+400 peças)",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T03",
+  "texto": "Almofada de carimbo multicolorida",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T06",
+  "texto": "Flocos holográficos transparentes (80 un.)",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T09",
+  "texto": "Estojo organizador de papelaria",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T10",
+  "texto": "Papel base vintage floral com bordas irregulares (8 folhas)",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T13",
+  "texto": "Porta-canetas de mesa com divisórias",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T20",
+  "texto": "Mini quadrados holográficos",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T22",
+  "texto": "Papel de material sereia perolado (12 folhas)",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T28",
+  "texto": "Fita washi decorativa",
+  "origem": "",
+  "feito": false
+ },
+ {
+  "id": "semente-T35",
+  "texto": "Cristais suncatcher prisma (12 peças)",
+  "origem": "",
+  "feito": false
+ }
+];
