@@ -315,6 +315,7 @@ PAGINA = '''<!DOCTYPE html>
       <div class="chamada">
         <h2 style="margin-top:0">Quem organizou estes dados</h2>
         <p>Júlia Roberta Quoos Alves é professora de computação, formadora de professores e mestranda na UFSM. Trabalhou na Prefeitura de Novo Cabrais e editou em Novo Cabrais o guia <a href="https://ohtopico.com.br/ia-pra-prof/">IA pra Prof</a>, sobre inteligência artificial na sala de aula.</p>
+        <p>Esta pesquisa foi notícia no jornal O Correio, de Cachoeira do Sul, em 11/11/2026: <a href="https://ocorreio.com.br/pesquisa-analisa-desempenho-de-novo-cabrais-nos-ultimos-anos/" target="_blank" rel="noopener">Pesquisa analisa desempenho de Novo Cabrais nos últimos anos</a>.</p>
         <p>Escolas de Novo Cabrais e da região podem conhecer a <a href="https://ohtopico.com.br/formacao-continuada/">formação continuada para professores em IA</a> e o <a href="https://ohtopico.com.br/material-didatico/">material didático gratuito</a> de computação e matemática.</p>
       </div>
     </div>
