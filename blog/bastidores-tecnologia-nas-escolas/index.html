@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Internet e computadores nas escolas: o Censo Escolar</title>
+<meta name="description" content="Como montei o infográfico de tecnologia nas escolas com os microdados do INEP, e por que o laboratório de informática diminuiu enquanto os computadores aumentaram.">
+<meta name="author" content="Júlia Roberta Quoos Alves">
+<link rel="canonical" href="https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Júlia Quoos">
+<meta property="og:url" content="https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/">
+<meta property="og:title" content="Internet e computadores nas escolas: o Censo Escolar">
+<meta property="og:description" content="Como montei o infográfico de tecnologia nas escolas com os microdados do INEP, e por que o laboratório de informática diminuiu enquanto os computadores aumentaram.">
+<meta property="og:image" content="https://juliaroberta.com/infograficos/tecnologia-nas-escolas/og-tecnologia-nas-escolas.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-13">
+<meta property="article:section" content="Educação em dados">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/#post",
+      "headline": "Internet, laboratório e computadores nas escolas: o que o Censo Escolar mostra",
+      "description": "Como montei o infográfico de tecnologia nas escolas com os microdados do INEP, e por que o laboratório de informática diminuiu enquanto os computadores aumentaram.",
+      "url": "https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/",
+      "mainEntityOfPage": "https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/",
+      "image": "https://juliaroberta.com/infograficos/tecnologia-nas-escolas/og-tecnologia-nas-escolas.jpg",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "pt-BR",
+      "keywords": [
+        "Censo Escolar",
+        "INEP",
+        "internet nas escolas",
+        "laboratório de informática",
+        "dados abertos"
+      ],
+      "articleSection": "Educação em dados",
+      "author": {
+        "@type": "Person",
+        "@id": "https://juliaroberta.com/#julia",
+        "name": "Júlia Roberta Quoos Alves",
+        "url": "https://juliaroberta.com/"
+      },
+      "publisher": {
+        "@id": "https://juliaroberta.com/#julia"
+      },
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://juliaroberta.com/blog/#blog",
+        "name": "Blog de dados de Júlia Roberta Quoos Alves"
+      },
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://juliaroberta.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://juliaroberta.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Internet, laboratório e computadores nas escolas: o que o Censo Escolar mostra",
+          "item": "https://juliaroberta.com/blog/bastidores-tecnologia-nas-escolas/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>try { const t = JSON.parse(localStorage.getItem('iapraprof:theme')); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="stylesheet" href="/assets/fontes/fontes.css">
+<link rel="stylesheet" href="/blog/assets/blog.css?v=6e76ae2a56">
+<link rel="alternate" type="application/rss+xml" title="Blog de dados de Júlia Roberta Quoos Alves" href="/blog/feed.xml">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7QDTBLC4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7QDTBLC4K');
+</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="area">
+<div class="janela">
+    <header class="cabecalho">
+        <a class="marca-site" href="/">Júlia Quoos</a>
+        <nav class="cabecalho-links" aria-label="Principal">
+            <a href="/blog/">Blog</a>
+            <a href="/infograficos/">Infográficos</a>
+            <a href="/curriculo/">Currículo</a>
+        </nav>
+    </header>
+    <div class="corpo">
+        <main class="pagina" id="conteudo" tabindex="-1">
+<article class="texto">
+    <nav class="trilha" aria-label="Você está em"><ol><li><a href="/">Início</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Educação em dados</li></ol></nav>
+    <p class="rotulo">Educação em dados</p>
+    <h1>Internet, laboratório e computadores nas escolas: o que o Censo Escolar mostra</h1>
+    <p class="linha-fina">Como montei o infográfico de tecnologia nas escolas com os microdados do INEP, e por que o laboratório de informática diminuiu enquanto os computadores aumentaram.</p>
+    <div class="meta">
+        <img src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="36" height="36">
+        <span>Por <a href="/curriculo/" rel="author">Júlia Roberta Quoos Alves</a></span>
+        <span><time datetime="2026-11-13">13 de novembro de 2026</time></span>
+        <span>3 min de leitura</span>
+    </div>
+    <div class="artigo">
+<p>O infográfico <a href="/infograficos/tecnologia-nas-escolas/">Tecnologia nas escolas em dados</a> responde a quatro perguntas para o Brasil, para cada estado e para os 497 municípios do Rio Grande do Sul: a escola tem internet, essa internet chega aos alunos, a escola tem laboratório de informática e quantos alunos dividem cada computador. Aqui conto como os números foram montados e o que mais me chamou a atenção neles.</p>
+
+<h2>A fonte: os microdados do Censo Escolar</h2>
+<p>Todos os números vêm da tabela de escolas dos microdados do Censo Escolar da Educação Básica, do INEP, de 2019 a 2024. Entram só as escolas em atividade, e os percentuais são calculados sobre as escolas que responderam a cada item. As escolas públicas somam as redes municipal, estadual e federal.</p>
+<p>Os microdados são arquivos grandes, publicados uma vez por ano. Em vez de baixar tudo à mão, deixei uma rotina automática no GitHub que baixa os arquivos do INEP, roda o script de tratamento e atualiza a página. Ela roda de novo em fevereiro e março, que é quando costuma sair a edição seguinte.</p>
+
+<h2>Três definições que mudam o resultado</h2>
+<ul>
+<li><strong>Internet não é o mesmo que internet para os alunos.</strong> Uma escola pode ter conexão só na secretaria. O indicador que importa para a aula é o da escola que declara internet disponível para uso dos alunos, e ele é bem mais baixo.</li>
+<li><strong>Computador para alunos inclui notebook e tablet.</strong> Conto a escola que tem pelo menos um computador de mesa, portátil ou tablet para uso dos alunos.</li>
+<li><strong>Alunos por computador só com quem informou os dois números.</strong> Divido as matrículas pelos equipamentos, somando apenas as escolas que informaram matrículas e computadores. Quando o INEP ainda não publicou as matrículas de um ano, o número fica em branco em vez de virar estimativa.</li>
+</ul>
+
+<h2>O que os dados mostram</h2>
+<p>Nas escolas públicas do Brasil, a internet chegou: eram 70% das escolas com conexão em 2019 e 90% em 2024. Mas a internet para os alunos passou de 26% para 40%, ou seja, ainda falta em seis de cada dez escolas. O número de alunos por computador caiu de 35 para 12,5 no mesmo período.</p>
+<p>O dado que mais me surpreendeu foi o laboratório de informática. Ele <strong>diminuiu</strong>, de 35% para 29% das escolas públicas, enquanto os computadores para alunos aumentaram. A leitura mais provável é a troca do laboratório fixo por notebooks e tablets que circulam pelas salas. Para quem planeja aulas de Computação, isso muda a pergunta: em vez de "a escola tem laboratório?", passa a ser "quantos equipamentos posso levar para a sala e com que internet?".</p>
+<p>Entre os estados, o Rio Grande do Sul lidera em internet para os alunos nas escolas públicas, com 62%, seguido de São Paulo (55%) e Mato Grosso (53%). Na outra ponta estão Acre, Pará e Amapá, com cerca de 15%.</p>
+
+<h2>Cuidado com municípios pequenos</h2>
+<p>No mapa do RS, um município com cinco escolas vai de 60% para 100% se duas escolas mudarem a resposta. Por isso a página mostra sempre quantas escolas entram na conta, e a lista dos extremos considera só municípios com pelo menos cinco escolas no recorte escolhido. Um detalhe do mapa: Pinto Bandeira, emancipado em 2013, ainda aparece dentro de Bento Gonçalves nos contornos simplificados, mas tem os próprios números na busca.</p>
+
+<h2>E onde não há computador?</h2>
+<p>A BNCC Computação continua valendo nas escolas sem laboratório ou sem internet. Para essas turmas, deixei no <a href="https://ohtopico.com.br/computacao-desplugada/">site de docência</a> atividades desplugadas e material por habilidade. Os dados do recorte que você escolher podem ser baixados em CSV na própria página, com uso livre e citação da fonte.</p>
+    </div>
+    <div class="compartilhar">
+        <p>Compartilhar:</p>
+        <a class="btn98" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fjuliaroberta.com%2Fblog%2Fbastidores-tecnologia-nas-escolas%2F" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (abre em nova aba)</span></a>
+        <a class="btn98" href="https://wa.me/?text=Internet%2C%20laborat%C3%B3rio%20e%20computadores%20nas%20escolas%3A%20o%20que%20o%20Censo%20Escolar%20mostra%20https%3A%2F%2Fjuliaroberta.com%2Fblog%2Fbastidores-tecnologia-nas-escolas%2F" target="_blank" rel="noopener">WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+    </div>
+    <aside class="autora" aria-labelledby="sobre-autora">
+        <img src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="72" height="72" loading="lazy">
+        <div>
+            <h2 id="sobre-autora">Júlia Roberta Quoos Alves</h2>
+            <p>Engenheira de dados e de machine learning, especialista em Ciência de Dados e Big Data Analytics (UNISC) e mestranda em Ciência da Computação na UFSM.</p>
+            <p class="links"><a href="/curriculo/">Currículo</a> <a href="https://github.com/ohtopico" rel="me">GitHub</a> <a href="https://www.linkedin.com/in/ohtopico" rel="me">LinkedIn</a></p>
+        </div>
+    </aside>
+    <nav class="vizinhos" aria-label="Outros posts"><a class="ant" href="/blog/bastidores-painel-educacao-vale-do-rio-pardo/" rel="prev"><span>◄ Anterior</span>Bastidores do painel de dados da educação no Vale do Rio Pardo</a></nav>
+</article>
+        </main>
+        <aside class="lateral lateral-esq" aria-label="Menu do blog">
+            <section class="caixa caixa-amarela">
+                <h2 class="caixa-titulo">★ Navegue</h2>
+                <ul class="lista-menu"><li><a href="/"><span aria-hidden="true">◄</span> Área de trabalho</a></li><li><a href="/blog/"><span aria-hidden="true">⌂</span> Início do blog</a></li><li><a href="/infograficos/"><span aria-hidden="true">▲</span> Infográficos</a></li><li><a href="/infograficos/interesse-por-ia/notebooks/"><span aria-hidden="true">✎</span> Notebooks</a></li><li><a href="/curriculo/"><span aria-hidden="true">✦</span> Currículo</a></li></ul>
+                <button type="button" class="btn98 tema-btn" id="tema-btn"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg> Tema claro/escuro</button>
+            </section>
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Temas</h2>
+                <ul class="lista-menu"><li><a href="/blog/#educacao-em-dados">Educação em dados</a></li><li><a href="/blog/#projetos">Projetos</a></li></ul>
+            </section>
+            <section class="caixa caixa-verde">
+                <h2 class="caixa-titulo">★ Posts recentes</h2>
+                <ul class="lista-recentes"><li><a href="/blog/bastidores-tecnologia-nas-escolas/">Internet, laboratório e computadores nas escolas: o que o Censo Escolar mostra</a></li><li><a href="/blog/bastidores-painel-educacao-vale-do-rio-pardo/">Bastidores do painel de dados da educação no Vale do Rio Pardo</a></li></ul>
+            </section>
+        </aside>
+        <aside class="lateral lateral-dir" aria-label="Sobre a autora">
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Quem escreve</h2>
+                <img class="foto" src="/img/perfil.jpg" alt="Foto de Júlia Roberta Quoos Alves" width="96" height="96" loading="lazy">
+                <p><strong>Júlia Roberta Quoos Alves</strong>, engenheira de dados e de machine learning, mestranda em Ciência da Computação na UFSM.</p>
+                <a class="btn98 escuro" href="/curriculo/">Currículo</a>
+            </section>
+            <section class="caixa caixa-amarela">
+                <h2 class="caixa-titulo">★ Site de docência</h2>
+                <p>Material didático, simuladores e formação de professores ficam em ohtopico.com.br.</p>
+                <a class="btn98 escuro" href="https://ohtopico.com.br/">Ir para o site</a>
+            </section>
+            <section class="caixa">
+                <h2 class="caixa-titulo">★ Selos</h2>
+                <ul class="selos">
+                    <li class="selo selo-amarelo">feito à mão</li>
+                    <li class="selo selo-verde">dados abertos</li>
+                    <li class="selo"><a href="/blog/feed.xml">RSS</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+</div>
+</div>
+<footer class="rodape">
+    <p>© 2026 Júlia Roberta Quoos Alves · dados e IA</p>
+    <p><a href="mailto:contato@ohtopico.com.br">contato@ohtopico.com.br</a> · <a href="https://www.linkedin.com/in/ohtopico" rel="me">LinkedIn</a> · <a href="https://github.com/ohtopico" rel="me">GitHub</a> · <a href="https://ohtopico.com.br/">ohtopico.com.br</a></p>
+</footer>
+<script src="/blog/assets/blog.js?v=6e76ae2a56" defer></script>
+</body>
+</html>
